@@ -1,0 +1,272 @@
+Name,Email,Company,first_meeting_dt,last_meeting_dt,segment,mv_result,mv_quality,mv_subresult
+Paige Buschkoetter,paige.buschkoetter@1986studios.com,1986 Studios,2025-04-03 17:00,2025-04-03 17:00,other,ok,good,ok
+Mike Ware,mike.ware@1986studios.com,1986 Studios,2025-03-19 12:00,2025-03-19 12:00,other,ok,good,ok
+Patrick Clarici,patrick.clarici@22squared.com,22 Squared,2019-09-26 7:00,2019-09-26 7:00,other,invalid,bad,no_mailbox
+jane.dawson@22squared.com,jane.dawson@22squared.com,22 Squared,2022-03-18 9:00,2022-03-18 9:00,other,invalid,bad,no_mailbox
+Carina Reimers,carina.reimers@72andsunny.com,72andSunny,2024-03-11 12:00,2024-03-11 12:00,other,catch_all,risky,ok
+Yaritza Acevedo,yaritza.acevedo@72andsunny.com,72andSunny,2024-07-23 10:30,2024-07-23 10:30,other,catch_all,risky,ok
+Hannah Guillermo,hannah.guillermo@72andsunny.com,72andSunny,2025-12-09 12:00,2025-12-09 12:00,other,catch_all,risky,ok
+PAL LA,pal.la@72andsunny.com,72andSunny,2025-12-09 12:00,2025-12-09 12:00,other,catch_all,risky,ok
+Partnerships NYC,partnerships.nyc@72andsunny.com,72andSunny,2025-12-09 12:00,2025-12-09 12:00,other,catch_all,risky,ok
+Production LA,production.la@72andsunny.com,72andSunny,2025-12-09 12:00,2025-12-09 12:00,other,catch_all,risky,ok
+Rachel Leib,rleib@9rooftops.com,9Rooftops,2024-01-25 13:00,2024-01-25 13:00,other,ok,good,ok
+Alex Shepherd,alexshepherd@atp.tv,Across The Pond Inc.,2022-08-15 14:00,2022-08-15 14:00,other,invalid,bad,no_mailbox
+Fawna ,fawna@atp.tv,Across The Pond Inc.,2022-08-15 14:00,2022-08-15 14:00,other,ok,good,ok
+Vanessa Avery,vanessa@atp.tv,Across The Pond Inc.,2022-08-15 14:00,2022-08-15 14:00,other,ok,good,ok
+Matthew Kirby,matt.kirby@amillionads.com,AMA,2024-01-16 10:00,2024-01-16 10:00,other,ok,good,ok
+Victor Mims,victor.mims@amillionads.com,AMA,2024-01-16 10:00,2024-01-16 10:00,other,invalid,bad,no_mailbox
+Meghan Graham Boylan,meghan@amillionads.com,AMA,2024-01-16 10:00,2025-02-04 11:00,other,ok,good,ok
+Nikki@animatedstoryboards.com,nikki@animatedstoryboards.com,Animated Storyboards,2025-03-26 8:00,2025-04-09 9:30,other,ok,good,ok
+Laura Richey,laura.p.richey@gmail.com,Anomaly,2025-02-24 10:00,2025-02-24 10:00,other,ok,good,ok
+Kathy Keith,kkeith@aprco.com,APRCO,2025-09-22 14:00,2025-09-22 14:00,other,ok,good,ok
+Carrell McCarthy,carrell.mccarthy@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Dora Lee,dora.lee@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Erin Fox,erin.fox@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Jeff Smith,jeff.smith@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Jeremy Arth,jeremy.arth@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Jim Vaughan,jim.vaughan@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Jon Drawbaugh,jon.drawbaugh@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Linda Casson,linda.casson@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Nelson Luesse,nelson.luesse@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Tashia Neuhaus,tashia.neuhaus@argonautinc.com,Argonaut,2021-02-04 11:30,2021-02-04 11:30,other,catch_all,risky,ok
+Farheena Mustafa,farheena.mustafa@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+Jennifer Kmetzsch,jennifer@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+Julie Lefton,julie.lefton@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+London Scalise,london.scalise@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+Momo Berg-Munch,momo@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+Zack Sabin,zack.sabin@artsandletters.xyz,Arts & Letters,2025-10-14 12:30,2025-10-14 12:30,other,ok,good,ok
+Adrienne Daniel,adrienne.daniel@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Alex Asencio,alex.asencio@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,invalid,bad,no_mailbox
+Andrea Rodriguez,andrea.rodriguez@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Danny Ryan,danny.ryan@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Jason Sheldon,jason.sheldon@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Jourdan Valdes,jourdan.valdes@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Rachel Acors,rachel@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,invalid,bad,no_mailbox
+Rob Harris,rob.harris@artsandletters.xyz,Arts & Letters,2025-10-14 12:00,2025-10-14 12:30,other,ok,good,ok
+Barbara Sanders,bs593p@att.com,AT&T,2025-04-03 11:00,2025-04-08 13:00,other,catch_all,risky,ok
+Lauen Gilbert,lauren.gilbert@bondbl.com,bondx,2025-03-27 9:00,2025-03-27 9:00,other,invalid,bad,no_mailbox
+"Rasche, Maxwell",maxwell.rasche@bondbl.com,bondx,2025-03-27 9:00,2025-03-27 9:00,other,ok,good,ok
+Eileen Mullen,emullen@boathouseinc.com,Bouthouse,2026-01-28 12:30,2026-01-28 12:30,other,ok,good,ok
+Kelly Lenthe,klenthe@boathouseinc.com,Bouthouse,2026-01-28 12:30,2026-01-28 12:30,other,ok,good,ok
+Roger Mulcahy,rmulcahy@boathouseinc.com,Bouthouse,2026-01-28 12:30,2026-01-28 12:30,other,ok,good,ok
+Taryn,taryn@cactusinc.com,Cactus,2026-03-03 9:00,2026-03-03 9:00,other,ok,good,ok
+Mary Carlington,mary.carlington@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Martha Carter,martha.carter@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Teri Kachler,teri.kachler@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Susan Keeler-Perkins,susan.keeler-perkins@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Jerry Levenson,jerry.levenson@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Kelly Maines,kelly.maines@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Laura McGowan,laura.mcgowan@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Lindsay Russell,lindsay.russell@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Erica Saad,erica.saad@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Max Sznewajs,max.sznewajs@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Syndey Witham,sydney.witham@c-e.com,CE,2022-03-24 10:00,2022-03-24 10:00,other,catch_all,risky,ok
+Marcom Producers,marcom.producers@codeandtheory.com,Code & Theory,2025-11-20 16:00,2025-11-20 16:00,other,catch_all,risky,ok
+Studio Team,creativestudios@codeandtheory.com,Code & Theory,2025-11-20 16:00,2025-11-20 16:00,other,catch_all,risky,ok
+Jelena Savanovic,jelena.savanovic@codeandtheory.com,Code and Theory,2025-11-11 9:00,2025-11-20 16:00,other,catch_all,risky,ok
+Sarah Ko,sarah.ko@codeandtheory.com,Code and Theory,2025-08-08 9:00,2025-11-20 16:00,other,catch_all,risky,ok
+Samantha Derderian,samantha@wearecolossus.com,Colossus,2024-06-10 11:00,2025-02-28 9:00,other,ok,good,ok
+Trisha,trisha@wearecolossus.com,Colossus,2024-06-10 11:00,2025-02-28 9:00,other,ok,good,ok
+Brittaney Kelly,brittaney@wearecolossus.com,Colossus,2024-06-10 11:00,2024-06-10 11:00,other,invalid,bad,no_mailbox
+Diana   ,diana@commonthreadent.com,Common Thread Entertainment,2025-07-16 8:30,2025-07-16 8:30,other,ok,good,ok
+Ashley Harsen,ashley.harsen@crispin.com,Crispin,2025-02-12 14:00,2025-02-12 14:00,other,catch_all,risky,ok
+Nicklaus Von Nolde,nicklaus.vonnolde@crispin.com,Crispin,2025-02-12 14:00,2025-02-12 14:00,other,catch_all,risky,ok
+Sloan Schroeder,sloan.schroeder@crispin.com,Crispin,2025-02-12 14:00,2025-02-12 14:00,other,catch_all,risky,ok
+Shelby,shelby@dallasaudiopost.com,Dallas Audio Post,2025-02-24 11:00,2025-02-24 11:00,other,ok,good,ok
+Alicia Rodgers,alicia.rodgers@lvly.tv,Decibel,2024-02-05 8:30,2024-02-05 8:30,other,ok,good,ok
+Alicia Rodgers,alicia@decibel.nyc,Decibel,2024-02-05 8:30,2024-02-05 8:30,other,ok,good,ok
+Linzy,linzy@decodedadvertising.com,Decoded Advertising,2024-06-13 13:00,2024-06-13 13:00,other,catch_all,risky,ok
+Liz Mistriel,lmistriel@decodedadvertising.com,Decoded Advertising,2024-06-13 13:00,2024-06-13 13:00,other,catch_all,risky,ok
+Shannon Barnes,sbarnes@decodedadvertising.com,Decoded Advertising,2024-06-13 13:00,2024-06-13 13:00,other,catch_all,risky,ok
+Ellen McLaren,ellen.mclaren@dentsu.com,Dentsu,2025-01-17 9:00,2025-01-17 9:00,other,unknown,risky,greylisted
+John Costello,jcostello@dieste.com,Dieste,2024-04-25 8:30,2024-04-25 8:30,other,ok,good,ok
+Georgia Cavvouras,georgia.cavvouras@digitashealth.com,Digitas Health,2024-04-29 9:00,2024-04-29 9:00,other,invalid,bad,unknown
+Dave Rowe,dave.rowe@dng.com,DNG,2022-01-26 12:30,2022-01-26 12:30,other,invalid,bad,no_mailbox
+Allison Casey,acasey@doner.com,Doner,2024-06-05 7:30,2024-06-05 7:30,other,catch_all,risky,ok
+Jane Greening,jgreening@doner.com,Doner,2024-06-05 7:30,2024-06-05 7:30,other,catch_all,risky,ok
+Kendra Goolsby,kgoolsby@doner.com,Doner,2024-06-05 7:30,2024-06-05 7:30,other,catch_all,risky,ok
+James ,james@eraserfarm.com,Eraser Farm,2022-06-20 12:00,2022-06-20 12:00,other,ok,good,ok
+Nicolette Steele,nsteele@fableadvertising.com,Fable,2025-09-10 8:30,2025-09-10 8:30,other,ok,good,ok
+Jeff Cowie,jeff.cowie@fcb.com,FCB,2021-09-15 11:00,2025-01-08 8:00,other,catch_all,risky,ok
+Carol Riffle,carol.riffle@fcb.com,FCB,2021-09-15 13:00,2025-01-08 8:00,other,catch_all,risky,ok
+Steve Armstead,steve.armstead@fcb.com,FCB,2021-09-17 9:00,2021-09-17 9:00,other,catch_all,risky,ok
+Cathi Fremer,cathi.fremer@fcb.com,FCB,2021-09-15 11:00,2021-09-15 13:00,other,catch_all,risky,ok
+Danielle Linn,danielle.linn@fcb.com,FCB,2021-09-15 11:00,2021-09-15 13:00,other,catch_all,risky,ok
+Karen Laurich,karen.laurich@fcb.com,FCB,2021-09-15 11:00,2021-09-15 13:00,other,catch_all,risky,ok
+Jen Helm,jen.helm@me.com,Freelance,2025-07-09 10:00,2025-10-06 9:00,other,ok,good,ok
+Melissa Rothman,mizmel71@gmail.com,Freelance,2025-10-06 9:00,2025-10-06 9:00,other,ok,good,ok
+Lindsay Cohen,lindsay.cohen@frida.com,Frida,2024-08-14 9:00,2024-08-14 9:00,other,invalid,bad,no_mailbox
+Melania,melania@funday.agency,Funday,2025-03-06 11:00,2025-03-06 11:00,other,ok,good,ok
+Debbie Ashpes,debbie.ashpes@gmmb.com,GMMB,2024-04-17 8:30,2024-04-17 8:30,other,ok,good,ok
+Allison Shahrestani,allisonmurray@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Chris Bradford,chrisjbradford@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Connery Obeng,cobeng@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Dana Ross,danaross@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Eloise Harper Connolly,eloisehc@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Evelyn Loomis,eloomis@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Jelly Mazza,jmazza@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Kat Caturano,caturano@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Kirsten Harkonen,kharkonen@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Kyle Conerty,kconerty@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Kyra Bailey,kyrabailey@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Rick Segal,rsegal@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Scott Lahn,lahn@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Stacey Gera,staceygera@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+TJ Gassaway,tjgassaway@google.com,Google Studios,2025-07-24 13:00,2025-07-24 13:00,other,catch_all,risky,ok
+Evelyn Sadowski,evelyn.sadowski@gravityglobal.com,Gravity Global,2025-02-26 13:00,2025-02-26 13:00,other,ok,good,ok
+Greg Haggart,greg.haggart@gravityglobal.com,Gravity Global,2025-02-26 13:00,2025-10-16 12:30,other,ok,good,ok
+Keira Rosenthal,keira.rosenthal@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Lisa Mercier,lisa.mercier@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Nicole Bove,nicole.bove@tankww.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Regina Gomez,regina.gomez@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Saul Metnick,saul.metnick@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Stephen Bernstein,stephen.bernstein@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Stephen Bernstein,stephen.bernstein@hogarth.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Tara Fitzgerald,tara.fitzgerald@tankww.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Timothy O'Shea,timothy.oshea@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Van Ovart,vanessa.ovart@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Vicky Giovanis,vicky.giovanis@grey.com,Grey Advertising ,2025-10-01 7:00,2025-10-01 7:00,other,catch_all,risky,ok
+Alexa Magnotto,alexa.magnotto@harborpicturecompany.com,Harbor,2022-10-25 9:00,2022-10-25 9:00,other,invalid,bad,unknown
+Tricia ,tricia@harborpicturecompany.com,Harbor,2024-07-16 9:00,2024-07-16 9:00,other,invalid,bad,unknown
+Arman Golemohammadi,arman.golemohammadi@annexexp.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,invalid,bad,no_mailbox
+Ellen Kuratnik,ellen.kuratnik@annexexp.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,invalid,bad,no_mailbox
+Eric Psihoules,eric.psihoules@annexexp.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,unknown,risky,ip_blocked
+Graham Chapman,graham.chapman@havas.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,unknown,risky,ip_blocked
+Jason Georgen,jason.georgen@havas.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,ok,good,ok
+Megan Swartzlander,megan.swartzlander@havas.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,ok,good,ok
+Paige Pucel,paige.pucel@annexexp.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,unknown,risky,ip_blocked
+Peter Feldman,peter.feldman@havas.com,Havas/The Annex,2025-03-19 10:30,2024-10-02 9:00,other,ok,good,ok
+Sarajane Gallagher,sarajane.gallagher@havas.com,Havas/The Annex,2025-03-19 10:30,2025-03-19 10:30,other,invalid,bad,no_mailbox
+Tejaswita Desai,tj.desai@hogarth.com,Hogarth,2024-07-31 12:00,2025-02-07 14:00,other,catch_all,risky,ok
+Chadrian,chadrian@housecasting.com,House Casting,2021-09-15 16:00,2021-09-15 16:00,other,ok,good,ok
+Angela Bennett,angela@hyperbolicaudio.com,Hyperbolic Audio,2024-02-08 8:00,2024-02-08 8:00,other,ok,good,ok
+Rob Sondik,rsondik@innoceanusa.com,Innocean,2025-02-07 10:00,2025-02-07 10:00,other,ok,good,ok
+Dustin Soriano,dsoriano@levi.com,Levi's,2025-10-22 10:30,2025-10-22 10:30,other,catch_all,risky,ok
+Leslie Patson,lpatson@levi.com,Levi's,2025-10-22 10:30,2025-10-22 10:30,other,catch_all,risky,ok
+Leah Quinaz,lequinaz@levi.com,Levi's,2025-10-22 10:30,2025-10-22 10:30,other,catch_all,risky,ok
+Nicole Hollis Vitale,nicole.hollis-vitale@libertymutual.com,Liberty Mutual,2026-02-06 18:00,2026-02-06 18:00,other,ok,good,ok
+Kayla Phungglan,kayla@limestudios.tv,Lime Studios,2021-02-04 14:00,2021-02-04 14:00,other,invalid,bad,no_mailbox
+Sam Sotomura,samantha@limestudios.tv,Lime Studios,2021-02-04 14:00,2021-02-04 14:00,other,invalid,bad,no_mailbox
+Susie Boyajan,susie@limestudios.tv,Lime Studios,2021-02-04 14:00,2021-02-04 14:00,other,ok,good,ok
+Billy Sanford,bsanford@martinadvertising.com,Martin Advertising,2025-07-24 8:00,2025-07-24 8:00,other,ok,good,ok
+Lindsey Vansant,lvansant@martinadvertising.com,Martin Advertising,2025-07-24 8:00,2025-07-24 8:00,other,ok,good,ok
+Mary-Hannah Jenkins,mhjenkins@martinadvertising.com,Martin Advertising,2025-07-24 8:00,2025-07-24 8:00,other,ok,good,ok
+businessaffairs,businessaffairs@martinagency.com,Martin Agency,2022-08-18 13:00,2022-08-18 13:00,other,catch_all,risky,ok
+Maggie Weishaar,maggie.weishaar@martinagency.com,Martin Agency,2022-08-18 13:00,2022-08-18 13:00,other,catch_all,risky,ok
+Jamet Jackson,jamet.jackson@martinagency.com,Martin Agency,2025-02-12 13:00,2025-02-12 13:00,other,catch_all,risky,ok
+Chris Bentley,chris.bentley@martinretail.com,Martin Retail Group,2025-01-08 10:00,2025-01-08 10:00,other,ok,good,ok
+Deborah Mccauley-Ellis,deborah.mccauley-ellis@martinretail.com,Martin Retail Group,2025-01-08 10:00,2025-01-08 10:00,other,invalid,bad,no_mailbox
+Jeff Clark,jeff.clark@martinretail.com,Martin Retail Group,2025-01-08 10:00,2025-01-08 10:00,other,ok,good,ok
+Jessica Shults,jessica.shults@martinretail.com,Martin Retail Group,2025-01-08 10:00,2025-01-08 10:00,other,ok,good,ok
+Lori Peace,lori.peace@martinretail.com,Martin Retail Group,2025-01-08 10:00,2025-01-08 10:00,other,ok,good,ok
+Marie Anne Aizac,marieanne.aizac@mattel.com,Mattel,2025-02-26 15:00,2025-02-26 15:00,other,catch_all,risky,ok
+Samer Ajluni,samer.ajluni@mccann.com,McCann,2024-01-25 8:30,2024-01-25 8:30,other,catch_all,risky,ok
+Debra Sliva,debra.sliva@mccann.com,McCann,2024-01-25 8:30,2024-01-25 8:30,other,catch_all,risky,ok
+Cynthia Noyes,cynthia.noyes@mccann.com,McCann,2024-01-25 8:30,2024-01-25 8:30,other,catch_all,risky,ok
+Paula Price,paula.price@commonwealth-team.com,McCann,2024-01-25 8:30,2024-01-25 8:30,other,catch_all,risky,ok
+Nadia Torres,nadia.torres@mediamonks.com,Media Monks,2024-05-09 14:00,2024-05-09 14:00,other,catch_all,risky,ok
+Nadia Torres,ntorres@decodedadvertising.com,Media Monks,2024-05-09 14:00,2024-05-09 14:00,other,catch_all,risky,ok
+Liz Ross,lross@mering.com,Mering,2021-02-12 14:00,2021-02-12 14:00,other,invalid,bad,no_mailbox
+Sara Ventetuolo,sventetuolo@mmb580.com,MMB580,2021-09-20 12:30,2021-09-20 12:30,other,invalid,bad,no_mailbox
+Doreen Jones,doreen.jones@monks.com,Monks,2026-03-03 9:30,2026-03-03 9:30,other,catch_all,risky,ok
+Irka Seng,irka.seng@monks.com,Monks,2025-11-03 11:00,2025-11-03 11:00,other,catch_all,risky,ok
+Mike Schaeffer,michael.schaeffer@monks.com,Monks,2025-11-03 11:00,2025-11-03 11:00,other,catch_all,risky,ok
+Charles Self,charles.self@monks.com,Monks,2025-10-09 11:30,2025-11-03 11:00,other,catch_all,risky,ok
+Alec Johnson,alec.johnson@mono-1.com,Mono,2021-11-15 13:30,2021-11-15 13:30,other,catch_all,risky,ok
+Maddie Caldis,maddie.caldis@mono-1.com,Mono,2021-11-15 13:30,2021-11-15 13:30,other,catch_all,risky,ok
+Maria Becchetti ,mariah.becchetti@mono-1.com,Mono,2021-11-15 13:30,2021-11-15 13:30,other,catch_all,risky,ok
+Evelyn Macki,evelyn.macki@msccruisesusa.com,MSC Cruises,2024-09-13 11:30,2024-09-13 11:30,other,ok,good,ok
+JP Nissenberg,jp.nissenberg@msccruisesusa.com,MSC Cruises,2024-09-13 11:30,2024-09-13 11:30,other,ok,good,ok
+Kristina Valdes,kristina.valdes@msccruisesusa.com,MSC Cruises,2024-09-13 11:30,2024-09-13 11:30,other,ok,good,ok
+Teri Hernandez,teri.hernandez@msccruisesusa.com,MSC Cruises,2024-09-13 11:30,2024-09-13 11:30,other,ok,good,ok
+Susan Hatten,shatten@newhonorsociety.com,New Honor Society,2022-08-26 13:00,2022-08-26 13:00,other,catch_all,risky,ok
+Jessica ,jessica@oconnorcasting.tv,O'Connor Casting,2025-10-21 10:00,2025-10-21 10:00,other,ok,good,ok
+Virginia,virginia@oconnorcasting.tv,O'Connor Casting,2025-10-21 10:00,2025-10-21 10:00,other,ok,good,ok
+Sharon Petro,sharon.petro@ogilvy.com,Ogilvy,2022-08-30 13:00,2022-08-30 13:00,other,catch_all,risky,ok
+Ashley Heyer,ashley.heyer@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,unknown,risky,greylisted
+Greta Kovach,greta.kovach@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,unknown,risky,greylisted
+Hannah Kfoury,hannah.kfoury@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,catch_all,risky,ok
+Kristin Grandberry,kristin.grandberry@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,unknown,risky,greylisted
+Laurie Gustafson,laurie.gustafson@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,catch_all,risky,ok
+Paul Ripa,paul.ripa@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,unknown,risky,greylisted
+Valerie Bonner,valerie.bonner@okrp.com,OKRP,2024-03-29 9:00,2024-03-29 9:00,other,unknown,risky,greylisted
+Jack Cutler,jack.cutler@omc.com,OMC,2025-11-10 14:30,2025-11-10 14:30,other,ok,good,ok
+Mim Epstein,mim.epstein@omc.com,OMC,2026-03-02 9:30,2026-03-02 9:30,other,ok,good,ok
+Tracy,tracy@paradise.love,Paradise Love,2025-01-16 8:00,2025-01-16 8:00,other,ok,good,ok
+Jennifer  ,jennifer@prcasting.com,PR Casting,2025-10-24 9:00,2025-10-24 9:00,other,ok,good,ok
+Mickie,mickie@prcasting.com,PR Casting,2025-10-24 9:00,2025-10-24 9:00,other,ok,good,ok
+Autumn Childress,autumn@qualitymeatscreative.com,Quality Meats Creative,2025-02-26 10:30,2025-02-26 10:30,other,invalid,bad,no_mailbox
+Melique Berger,melique@thequirkcreative.com,Quirk Creative,2024-01-24 9:30,2024-01-24 9:30,other,ok,good,ok
+Lynda Blaney-Smith,lynda.blaney-smith@rga.com,R/GA,2024-07-11 11:00,2024-07-11 11:00,other,unknown,risky,greylisted
+Jazmyn Carter,jazmyn.carter@rga.com,R/GA,2024-07-11 11:00,2024-07-11 11:00,other,unknown,risky,greylisted
+Miriam Hughes,miriam.hughes@rga.com,R/GA,2024-07-11 11:00,2024-07-11 11:00,other,unknown,risky,greylisted
+Andrea Sueker,andrea.sueker@riseandshineandpartners.com,Rise and Shine Partners,2025-06-18 13:35,2025-06-18 13:35,other,ok,good,ok
+Brynn Hausmann,brynn.hausmann@riseandshineandpartners.com,Rise and Shine Partners,2025-06-18 13:35,2025-06-18 13:35,other,ok,good,ok
+Freddie Richards,freddie.richards@riseandshineandpartners.com,Rise and Shine Partners,2025-06-18 13:35,2025-06-18 13:35,other,ok,good,ok
+Natasha Carlson,natasha.carlson@riseandshineandpartners.com,Rise and Shine Partners,2025-06-18 13:35,2023-01-23 13:00,other,ok,good,ok
+Rachel Zlebek,rachel.zlebek@riseandshineandpartners.com,Rise and Shine Partners,2025-06-18 13:35,2025-06-18 13:35,other,ok,good,ok
+Jeff Piper,jeff.piper@royals.com,Royals,2025-02-07 9:00,2025-02-07 9:00,other,ok,good,ok
+Danita Collazo,danita.collazo@rrpartners.com,RR Partners,2025-03-05 12:30,2025-03-07 9:30,other,catch_all,risky,ok
+Kat Urban,kat.urban@rrpartners.com,RR Partners,2025-03-05 12:30,2025-03-07 9:30,other,catch_all,risky,ok
+Lauren Langfitt,lauren.langfitt@signaltheory.com,Signal Theory,2022-03-22 12:00,2022-03-22 12:00,other,ok,good,ok
+Mari Bligh,mari.bligh@signaltheory.com,Signal Theory,2022-03-22 12:00,2022-03-22 12:00,other,ok,good,ok
+Simeon Brown,simeon.brown@signaltheory.com,Signal Theory,2022-03-22 12:00,2022-03-22 12:00,other,invalid,bad,no_mailbox
+Jesse Vandenelzen,jesse.vandenelzen@six-speed.com,Six Speed,2025-07-01 12:00,2025-07-01 12:00,other,catch_all,risky,ok
+Delilah Nieves,d.nieves@spcshp.com,SPCSHP,2025-03-11 9:00,2025-03-11 9:00,other,unknown,risky,greylisted
+Angelina Phengphong,angelina@squeakeclean.com,Squeak E Clean,2024-02-06 9:00,2024-02-06 9:00,other,catch_all,risky,ok
+Kerry Ayers,kerry.ayers@wearesuperjoy.com,SuperJoy,2022-08-18 13:00,2025-02-12 13:00,other,catch_all,risky,ok
+Brian Fox,brian.fox@wearesuperjoy.com,SuperJoy,2025-02-12 13:00,2025-02-12 13:00,other,catch_all,risky,ok
+Russell Sharpe,rsharpe@aprco.com,Supplier Intel: APR & Select Casting/Studio Awesome (1 pm PT/2 pm MT/4 pm ET),2025-09-22 14:00,2025-09-22 14:00,other,ok,good,ok
+Ninnette Robare,ninnette.robare3@t-mobile.com,T-Mobile,2022-05-19 8:15,2022-05-19 8:15,other,ok,good,ok
+Cindy Mayer,cindy@theescapepodagency.com,The Escape Pod,2024-12-19 10:00,2024-12-19 8:00,other,ok,good,ok
+,,,,,other,no_email,,
+Lynn Louria,lynn.louria@trg-studios.com,TRG Studios,2026-01-20 10:00,2025-09-30 11:00,other,ok,good,ok
+Anne Watkins,anne.watkins@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Cassie Greenwald,cassie.greenwald@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+David Rucker,david.rucker@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Laurie Shannon,laurie.shannon@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Michael Sonnier,michael.sonnier@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Sheri Cartwright,sheri.cartwright@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Ty McDonald,ty.mcdonald@trg-studios.com,TRG Studios,2026-01-20 10:00,2026-01-20 10:00,other,ok,good,ok
+Clinton Spell,clinton.spell@tiltcp.com,Tilt,2025-08-26 15:00,2025-08-26 15:00,other,catch_all,risky,ok
+Scott Friske,scott.friske@tiltcp.com,Tilt,2025-08-26 15:00,2025-08-26 15:00,other,catch_all,risky,ok
+Jeff ,jeff@upstream360.com,Upstream 360,2025-03-28 11:00,2025-04-04 8:00,other,ok,good,ok
+Debbie Steeg,debbie.steeg@vml.com,VML,2024-06-26 13:00,2025-09-19 12:00,other,catch_all,risky,ok
+Tristynn Clark,tristynn.clark@vml.com,VML,2025-02-28 11:00,2025-02-28 11:00,other,catch_all,risky,ok
+Kirin Dowden,kirin.dowden@vml.com,VML,2024-06-26 9:00,2024-06-26 9:00,other,catch_all,risky,ok
+Aarolyn Spradley,aarolyn.spradley@wundermanthompson.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Allie Magill,allie.magill@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Amy Turner,amy.turner@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Celena Mossell,celena.mossell@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Craig Jelniker,craig.jelniker@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Eric Weiss,eric.weiss@bc-p.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Ethan Downing,ethan.downing@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Jason Calloway,jason.calloway@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Kasey Ferlic,kasey.ferlic@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+LaToya Yeargans,latoya.yeargans@wundermanthompson.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Lisa Kunst,lisa.kunst@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Marina Korzon,marina.korzon@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Mathieu Shrontz,mathieu.shrontz@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Melissa Barany,melissa.barany@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Nanci Santiago-meyers,nanci.santiago-meyers@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Nikki O'dell,nikki.odell@yr.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Pamela Pietrowski,pamela.pietrowski@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Rinel Lara,rinel.lara@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Salima Millott,salima.millott@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Sherry McLenon,sherry.mclenon@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Tomas Valladares,tomas.valladares@swift.co,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Tommy Sherk,tommy.sherk@vml.com,VML,2025-03-25 13:00,2025-03-25 13:00,other,catch_all,risky,ok
+Jennifer Brunker,jennifer.brunker@vml.com,VML,2024-06-26 13:00,2024-06-26 13:00,other,catch_all,risky,ok
+Tyler Smith,tyler.smith@vml.com,VML,2024-06-26 13:00,2024-06-26 13:00,other,catch_all,risky,ok
+Scott Stone,scott.stone@vml.com,VML,2024-06-26 9:00,2025-01-10 8:00,other,catch_all,risky,ok
+Steve Stone,steve.stone@vml.com,VML,2024-06-26 9:00,2025-01-10 8:00,other,catch_all,risky,ok
+Amy Bretz,abretz@vsapartners.com,VSA Partners,2019-10-15 12:00,2021-12-02 9:00,other,invalid,bad,no_mailbox
+Bryan Haney,bhaney@vsapartners.com,VSA Partners,2019-10-15 12:00,2021-12-02 9:00,other,invalid,bad,no_mailbox
+Josh Peterson,jpeterson@vsapartners.com,VSA Partners,2021-12-02 9:00,2021-12-02 9:00,other,invalid,bad,no_mailbox
+Mike Middleton,mmiddleton@vsapartners.com,VSA Partners,2021-12-02 9:00,2021-12-02 9:00,other,invalid,bad,no_mailbox
+Taylor Cairns,tcairns@vsapartners.com,VSA Partners,2021-12-02 9:00,2021-12-02 9:00,other,invalid,bad,no_mailbox
+Tarek El Mofty,telmofty@vsapartners.com,VSA Partners,2019-10-15 12:00,2021-12-02 9:00,other,ok,good,ok
+Thomas Thorne,thorne@vsapartners.com,VSA Partners,2021-12-02 9:00,2021-12-02 9:00,other,ok,good,ok
+Elsa Rubacava,elsa.rubalcava@waltonisaacson.com,Walton Isaacson,2022-10-24 11:00,2022-11-10 10:00,other,ok,good,ok
+Ryan Scully,ryan.scully@wbtdp.com,Warshal Blumenthal,2024-06-04 8:30,2024-06-04 8:30,other,ok,good,ok
+Kiki Powell,kiki_s_powell@whirlpool.com,Whirlpool,2025-04-29 13:00,2025-04-29 13:00,other,catch_all,risky,ok
