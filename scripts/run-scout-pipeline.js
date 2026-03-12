@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-// Orchestrator for the full Echo Studio Awesome lead pipeline.
-// 1. Runs echo-apollo-run.js (Apollo pull + de-dupe for agencies + brands)
-// 2. Runs verify-studio-leads.js (MillionVerifier + SmartReach export)
+// Orchestrator for the full Scout lead pipeline.
+// 1. Runs scout-apollo-run.js (Apollo pull + de-dupe)
+// 2. Runs verify-small-mid-agencies.js (MillionVerifier + SmartReach export)
 // 3. Runs push-smartreach-leads.js (push SmartReach CSV → SmartReach list)
 
 const fs = require('node:fs');
@@ -11,9 +11,8 @@ const { spawnSync } = require('node:child_process');
 
 const ROOT_DIR = process.cwd();
 const LEADS_DIR = path.join(ROOT_DIR, 'leads');
-const AGENCIES_CSV = path.join(LEADS_DIR, 'studio-agencies.csv');
-const BRANDS_CSV = path.join(LEADS_DIR, 'studio-brands.csv');
-const SMARTREACH_CSV = path.join(LEADS_DIR, 'studio-smartreach.csv');
+const APOLLO_CSV = path.join(LEADS_DIR, 'select-small-mid-agencies-us.csv');
+const SMARTREACH_CSV = path.join(LEADS_DIR, 'select-small-mid-agencies-us-smartreach.csv');
 
 function countRows(filePath) {
   if (!fs.existsSync(filePath)) return 0;
@@ -33,28 +32,25 @@ function run(scriptName, extraArgs = []) {
 }
 
 async function main() {
-  console.log(`=== Echo Pipeline Run: ${new Date().toISOString()} ===`);
+  console.log(`=== Scout Pipeline Run: ${new Date().toISOString()} ===`);
 
-  const beforeAgencies = countRows(AGENCIES_CSV);
-  const beforeBrands = countRows(BRANDS_CSV);
+  const beforeCount = countRows(APOLLO_CSV);
 
-  console.log('\n--- Step 1: Apollo pull (agencies + brands) ---');
-  const apolloStatus = run('echo-apollo-run.js');
+  console.log('\n--- Step 1: Apollo pull ---');
+  const apolloStatus = run('scout-apollo-run.js');
   if (apolloStatus !== 0) {
-    console.error(`\necho-apollo-run.js exited with code ${apolloStatus}`);
+    console.error(`\nscout-apollo-run.js exited with code ${apolloStatus}`);
     process.exit(1);
   }
 
-  const afterAgencies = countRows(AGENCIES_CSV);
-  const afterBrands = countRows(BRANDS_CSV);
-  const newAgencies = afterAgencies - beforeAgencies;
-  const newBrands = afterBrands - beforeBrands;
-  console.log(`\nApollo: +${newAgencies} agency leads, +${newBrands} brand leads`);
+  const afterApolloCount = countRows(APOLLO_CSV);
+  const newLeads = afterApolloCount - beforeCount;
+  console.log(`\nApollo: +${newLeads} new leads`);
 
   console.log('\n--- Step 2: Verify + SmartReach export ---');
-  const verifyStatus = run('verify-studio-leads.js');
+  const verifyStatus = run('verify-small-mid-agencies.js');
   if (verifyStatus !== 0) {
-    console.error(`\nverify-studio-leads.js exited with code ${verifyStatus}`);
+    console.error(`\nverify-small-mid-agencies.js exited with code ${verifyStatus}`);
     process.exit(1);
   }
 
@@ -63,15 +59,15 @@ async function main() {
 
   console.log('\n--- Step 3: Push to SmartReach ---');
   const pushStatus = run('push-smartreach-leads.js', [
-    '--file', path.join('leads', 'studio-smartreach.csv'),
-    '--list', 'Studio Awesome - Brands & Agencies',
+    '--file', path.join('leads', 'select-small-mid-agencies-us-smartreach.csv'),
+    '--list', 'Select - Small Mid Agencies',
   ]);
   if (pushStatus !== 0) {
     console.error(`\npush-smartreach-leads.js exited with code ${pushStatus}`);
     process.exit(1);
   }
 
-  console.log(`\n=== Echo Pipeline complete. New leads: ${newAgencies + newBrands} (+${newAgencies} agency, +${newBrands} brand). SmartReach-ready: ${smartreachCount}. Push done. ===`);
+  console.log(`\n=== Pipeline complete. New leads: ${newLeads}. SmartReach-ready: ${smartreachCount}. Push done. ===`);
   process.exit(0);
 }
 
