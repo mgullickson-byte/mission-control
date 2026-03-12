@@ -47,6 +47,28 @@ function srHeaders(apiKey) {
   return { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' };
 }
 
+// Derive push-state file path from the CSV file path.
+// e.g. leads/studio-smartreach.csv → leads/studio-smartreach-push-state.json
+function statePathFor(filePath) {
+  const dir = path.dirname(filePath);
+  const base = path.basename(filePath, '.csv');
+  return path.join(dir, `${base}-push-state.json`);
+}
+
+function loadPushState(stateFile) {
+  if (!fs.existsSync(stateFile)) return new Set();
+  try {
+    const data = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    return new Set(Array.isArray(data.pushed) ? data.pushed : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function savePushState(stateFile, pushedSet) {
+  fs.writeFileSync(stateFile, JSON.stringify({ pushed: Array.from(pushedSet) }, null, 2));
+}
+
 async function pushAll() {
   const { file, list: listName } = parseArgs();
 
@@ -72,18 +94,27 @@ async function pushAll() {
   const raw = fs.readFileSync(filePath, 'utf8');
   const rows = parse(raw, { columns: true, skip_empty_lines: true });
 
+  // Load push state — skip already-pushed emails so re-runs only push new leads
+  const stateFile = statePathFor(filePath);
+  const alreadyPushed = loadPushState(stateFile);
+
   let skipped = 0;
+  let alreadyDone = 0;
   let pushed = 0;
   let errors = 0;
 
-  console.log(`Pushing ${rows.length} rows from ${path.basename(filePath)} → "${listName}"`);
+  const newRows = rows.filter(r => {
+    const email = (r.email || '').trim().toLowerCase();
+    if (!email) return false;
+    if (alreadyPushed.has(email)) { alreadyDone++; return false; }
+    return true;
+  });
 
-  for (const row of rows) {
+  console.log(`Pushing ${newRows.length} new rows from ${path.basename(filePath)} → "${listName}" (${alreadyDone} already pushed, skipping)`);
+
+  for (const row of newRows) {
     const email = (row.email || '').trim();
-    if (!email) {
-      skipped++;
-      continue;
-    }
+    const emailKey = email.toLowerCase();
 
     const body = {
       list: listName,
@@ -97,6 +128,7 @@ async function pushAll() {
       custom_fields: {},
     };
 
+    let isDuplicate = false;
     try {
       const res = await fetch(`${baseUrl}/api/v1/prospects?team_id=${teamId}`, {
         method: 'POST',
@@ -109,15 +141,18 @@ async function pushAll() {
       try { data = JSON.parse(text); } catch { data = text; }
 
       if (!res.ok || (data && data.status === 'error')) {
-        // 422 duplicate is a soft error — count as skipped not error
+        // 422 duplicate — already in SmartReach, mark as done (no delay needed)
         if (res.status === 422 || (typeof data === 'object' && /duplicate|already exist/i.test(data.message || ''))) {
+          alreadyPushed.add(emailKey);
           skipped++;
+          isDuplicate = true;
         } else {
           errors++;
           console.error(`  Error [${email}] status=${res.status}`, typeof data === 'object' ? data.message || data : data);
         }
       } else {
         pushed++;
+        alreadyPushed.add(emailKey);
         const id = data && data.data && data.data.prospect && data.data.prospect.id;
         console.log(`  Pushed ${email}${id ? ` (id: ${id})` : ''}`);
       }
@@ -126,17 +161,27 @@ async function pushAll() {
       console.error(`  Network error [${email}]`, err.message);
     }
 
-    await sleep(200);
+    // Save state every 25 pushes so partial runs are resumable
+    if ((pushed + skipped) % 25 === 0) {
+      savePushState(stateFile, alreadyPushed);
+    }
+
+    // Only rate-limit on actual pushes (not 422 dupes — no need to delay on those)
+    if (!isDuplicate) await sleep(200);
   }
+
+  // Final state save
+  savePushState(stateFile, alreadyPushed);
 
   console.log('');
   console.log('=== Summary ===');
-  console.log(`  Total rows : ${rows.length}`);
-  console.log(`  Skipped    : ${skipped} (no email)`);
-  console.log(`  Pushed     : ${pushed}`);
-  console.log(`  Errors     : ${errors}`);
+  console.log(`  Total rows     : ${rows.length}`);
+  console.log(`  Already pushed : ${alreadyDone} (skipped)`);
+  console.log(`  No email       : ${skipped}`);
+  console.log(`  Pushed now     : ${pushed}`);
+  console.log(`  Errors         : ${errors}`);
 
-  return { total: rows.length, skipped, pushed, errors };
+  return { total: rows.length, alreadyDone, skipped, pushed, errors };
 }
 
 pushAll().catch((err) => {

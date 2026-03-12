@@ -1,0 +1,308 @@
+name,company,city,type,source,website,contact_name,contact_email,linkedin_url,notes,mv_result,mv_quality,mv_subresult
+,Zambezi,"Los Angeles, CA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Mistress,"Los Angeles, CA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Omelet,"Los Angeles, CA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Kamp Grizzly (LA),"Los Angeles, CA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,OKRP,"Chicago, IL",Agency,Seed small/mid agency list,,,,,,no_email,,
+,The Distillery Project,"Chicago, IL",Agency,Seed small/mid agency list,,,,,,no_email,,
+,"Tom, Dick & Harry Creative","Chicago, IL",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Two by Four,"Chicago, IL",Agency,Seed small/mid agency list,,,,,,no_email,,
+,FIG,"New York, NY",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Johannes Leonardo,"New York, NY",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Mischief @ No Fixed Address,"New York, NY",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Interesting Development,"New York, NY",Agency,Seed small/mid agency list,,,,,,no_email,,
+,mono,"Minneapolis, MN",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Periscope,"Minneapolis, MN",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Colle McVoy,"Minneapolis, MN",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Copacino+Fujikado,"Seattle, WA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,DNA,"Seattle, WA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Hydraulic,"Seattle, WA",Agency,Seed small/mid agency list,,,,,,no_email,,
+,North,"Portland, OR",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Swift,"Portland, OR",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Pollinate,"Portland, OR",Agency,Seed small/mid agency list,,,,,,no_email,,
+,Roundhouse,"Portland, OR",Agency,Seed small/mid agency list,,,,,,no_email,,
+,BVK,"Milwaukee, WI",Agency,Brave search – Milwaukee independents,,,,,,no_email,,
+,Manifesto,Manifesto Agency,"Milwaukee, WI",Agency,Brave search – Milwaukee independents,,,,,no_email,,
+,STIR Advertising,STIR Advertising & Integrated Messaging,"Milwaukee, WI",Agency,Brave search – Milwaukee independents,,,,,no_email,,
+,Yard NYC,Yard NYC,"New York, NY",Agency,Brave search – NYC independents,,,,,no_email,,
+,NoGood,NoGood (Berma LLC),"New York, NY",Agency,Brave search – NYC independents,,,,,no_email,,
+,Known,Known,"New York, NY",Agency,Brave search – NYC independents,,,,,no_email,,
+,Barbarian,Barbarian,"New York, NY",Agency,Brave search – NYC independents,,,,,no_email,,
+,Intempo Health,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Breakthrough Energy,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,EY,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,BlackRock,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Microsoft,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,LinkedIn,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Morstar Inc.,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Thrive Global,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,"Cimcor, Inc.",,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,The Curve,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Dataprana,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Robbins Research International,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,The Third Door,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Endurance,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Pivotal,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Goleman Consulting Group,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,DEEPAK CHOPRA LLC,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Holder Construction,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,University of Houston,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Highspring,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Gretchen Rubin Media,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Human Workplace,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,The New Emotional Intelligence,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,ExpandVA,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+,Tim Tebow Foundation,,Agency,Apollo – small/mid agencies seed,,,,,,no_email,,
+Sramana Mitra,One Million by One Million (1Mby1M),West Menlo Park,Agency,Apollo – contacts (revealed),http://www.1mby1m.com,Sramana Mitra,sramana@1mby1m.com,http://www.linkedin.com/in/sramana-mitra-8833,Founder and CEO,ok,good,ok
+Rob Norman,Knotch,New York,Agency,Apollo – contacts (revealed),http://www.knotch.com,Rob Norman,rob.norman@piano.io,http://www.linkedin.com/in/robnormangroupm,Director,ok,good,ok
+Jennifer Openshaw,Girls With Impact,Greenwich,Agency,Apollo – contacts (revealed),http://www.girlswithimpact.org,Jennifer Openshaw,jen@girlswithimpact.org,http://www.linkedin.com/in/jenopenshaw,"CEO, Girls",ok,good,ok
+Mark Weinberger,J.P. Morgan,New York,Agency,Apollo – contacts (revealed),http://www.jpmorgan.com,Mark Weinberger,mark.weinberger@jpmorgan.com,http://www.linkedin.com/in/markaweinberger,Board Member at JPMorgan,catch_all,risky,ok
+Trish Regan,76research,New York,Agency,Apollo – contacts (revealed),http://www.76research.com,Trish Regan,trish@76research.com,http://www.linkedin.com/in/trish-regan-b7b9b558,"Co-Founder, Executive Editor",ok,good,ok
+Padmasree Warrior,Mars,McLean,Agency,Apollo – contacts (revealed),http://www.mars.com,Padmasree Warrior,padmasree.warrior@effem.com,http://www.linkedin.com/in/padmasree-warrior-9917a26b,Board Advisor,catch_all,risky,ok
+Tom Fishburne,Marketoonist,San Anselmo,Agency,Apollo – contacts (revealed),http://www.marketoonist.com,Tom Fishburne,tom@marketoonist.com,http://www.linkedin.com/in/tomfishburne,Founder & CEO,ok,good,ok
+Nikhil Bhat,Juul Labs,Washington,Agency,Apollo – contacts (revealed),http://www.juullabs.com,Nikhil Bhat,nikhil.bhat@juul.com,http://www.linkedin.com/in/nikhildbhat,Vice President Product & Hardware Engineering,catch_all,risky,ok
+Conan O'Brien,Conan,Burbank,Agency,Apollo – contacts (revealed),http://www.teamcoco.com,Conan O'Brien,conan@teamcoco.com,http://www.linkedin.com/in/conan-o-brien-4b68ab80,CEO,ok,good,ok
+Diego Rodriguez,Harvard Business School,Boston,Agency,Apollo – contacts (revealed),http://www.hbs.edu,Diego Rodriguez,drodriguez@hbs.edu,http://www.linkedin.com/in/diegorodriguez,Executive Fellow,ok,good,ok
+Dan Sanker,TariffNinja,Bentonville,Agency,Apollo – contacts (revealed),http://www.tariffninja.com,Dan Sanker,dan@tariffninja.com,http://www.linkedin.com/in/dansanker,Chief Executive Officer,ok,good,ok
+Jonathan Javier,NetworkAI by Wonsulting,New York,Agency,Apollo – contacts (revealed),,Jonathan Javier,jonathan@wonsulting.com,http://www.linkedin.com/in/jonathan-wonsulting,Co-Founder,ok,good,ok
+Clark Wolf,Clark Wolf Company Inc,New York,Agency,Apollo – contacts (revealed),http://www.clarkwolfcompany.com,Clark Wolf,clarkwolf@clarkwolfcompany.com,http://www.linkedin.com/in/clark-wolf-5b697a10,President,unknown,risky,unknown
+Sal Khan,Khan Academy,Mountain View,Agency,Apollo – contacts (revealed),http://www.khanacademy.org,Sal Khan,skhan@khanacademy.org,http://www.linkedin.com/in/khanacademy,"Founder, CEO",ok,good,ok
+Nick Schacht,SHRM,Alexandria,Agency,Apollo – contacts (revealed),http://www.shrm.org,Nick Schacht,nick.schacht@shrm.org,http://www.linkedin.com/in/nickschacht,Chief Strategy Officer and Chief Global Development Officer,ok,good,ok
+Jerry Lee,Wonsulting,Los Angeles,Agency,Apollo – contacts (revealed),http://www.wonsulting.com,Jerry Lee,jerry@wonsulting.com,http://www.linkedin.com/in/jehakjerrylee,Co-Founder,ok,good,ok
+Shelly Palmer,Metacademy,New York,Agency,Apollo – contacts (revealed),http://www.metacademy.it,Shelly Palmer,shelly@shellypalmer.com,http://www.linkedin.com/in/shellypalmer,Co-Founder,catch_all,risky,ok
+Arnold Schwarzenegger,Zimmer Biomet,Warsaw,Agency,Apollo – contacts (revealed),http://www.zimmerbiomet.com,Arnold Schwarzenegger,arnold.schwarzenegger@zimmerbiomet.com,http://www.linkedin.com/in/arnold-schwarzenegger-921b9b1b3,Chief Movement Officer,ok,good,ok
+Jules Polonetsky,Future of Privacy Forum,Washington,Agency,Apollo – contacts (revealed),http://www.fpf.org,Jules Polonetsky,julespol@fpf.org,http://www.linkedin.com/in/julespolonetsky,CEO,ok,good,ok
+Sam Shank,a16z speedrun,San Francisco,Agency,Apollo – contacts (revealed),,Sam Shank,sshank@a16z.com,http://www.linkedin.com/in/samshank,Visiting Partner,ok,good,ok
+Tomasz Tunguz,Theory Ventures,San Francisco,Agency,Apollo – contacts (revealed),http://www.theoryvc.com,Tomasz Tunguz,tt@theory.ventures,http://www.linkedin.com/in/tomasztunguz,General Partner,catch_all,risky,ok
+Alex Freberg,Analyst Builder,Charleston,Agency,Apollo – contacts (revealed),http://www.analystbuilder.com,Alex Freberg,alex@analystbuilder.com,http://www.linkedin.com/in/alex-freberg,Founder & CEO,ok,good,ok
+Akshay Kothari,Notion,San Francisco,Agency,Apollo – contacts (revealed),http://www.notion.com,Akshay Kothari,akshay@makenotion.com,http://www.linkedin.com/in/akothari,Co-Founder,ok,good,ok
+Quharrison Terry,VNM USA,Madison,Agency,Apollo – contacts (revealed),http://www.vnmusa.com,Quharrison Terry,q@vnmusa.com,http://www.linkedin.com/in/quharrison-terry-728b3a89,Executive Producer of Screens,ok,good,ok
+Francisco D'Souza,RECOGNIZE,New York,Agency,Apollo – contacts (revealed),http://www.recognize.com,Francisco D'Souza,frank@recognize.com,http://www.linkedin.com/in/franciscodsouza,Managing Partner and Co-Founder,catch_all,risky,ok
+Reshma Saujani,Moms First,Columbus,Agency,Apollo – contacts (revealed),http://www.momsfirst.us,Reshma Saujani,reshma@momsfirst.us,http://www.linkedin.com/in/reshma-saujani,Founder and CEO,ok,good,ok
+Snoop Dogg,United States Olympic & Paralympic Committee,Colorado Springs,Agency,Apollo – contacts (revealed),http://www.usopc.org,Snoop Dogg,snoop.d@usopc.org,http://www.linkedin.com/in/snoopdogg,"Coach Snoop, Team USA",catch_all,risky,ok
+Carla Gentry,Analytical-Solution,Orlando,Agency,Apollo – contacts (revealed),http://www.analytical-solution.com,Carla Gentry,carla.gentry@analytical-solution.com,http://www.linkedin.com/in/datanerd13,Data Scientist/ Contractor / Influencer,ok,good,ok
+Alfredo Torres,U.S. Department of Veterans Affairs,Washington,Agency,Apollo – contacts (revealed),http://www.va.gov,Alfredo Torres,alfredo.torres@va.gov,http://www.linkedin.com/in/alfredotorres1,Vocational Rehabilitation Specialist,catch_all,risky,ok
+David Kong,"It's Personal Stories, A Hospitality Podcast",Phoenix,Agency,Apollo – contacts (revealed),http://www.itspersonalstories.com,David Kong,david.kong@deiadvisors.org,http://www.linkedin.com/in/davidkongbw,Founder and Principal,ok,good,ok
+Joshua Miller,JOSHUA MILLER | Executive Leadership Coach,Austin,Agency,Apollo – contacts (revealed),http://www.joshhmiller.com,Joshua Miller,josh@joshhmiller.com,http://www.linkedin.com/in/joshuahmiller,Contributing Writer,ok,good,ok
+Jenna McKnight,Dezeen,London,Agency,Apollo – contacts (revealed),http://www.dezeen.com,Jenna McKnight,jenna@dezeen.com,http://www.linkedin.com/in/jennamcknight,Contributing Editor,catch_all,risky,ok
+Michael Quinn,Tenova LLC,Oakton,Agency,Apollo – contacts (revealed),http://www.tenovallc.com,Michael Quinn,michael.quinn@tenovallc.com,http://www.linkedin.com/in/quinnmi,Founder & Chief Growth Officer,catch_all,risky,ok
+Alexis Ohanian,Seven Seven Six 7️⃣7️⃣6️⃣,San Francisco,Agency,Apollo – contacts (revealed),http://www.sevensevensix.com,Alexis Ohanian,a@sevensevensix.com,http://www.linkedin.com/in/alexisohanian,Founder,catch_all,risky,ok
+Will McTighe,Saywhat,San Francisco,Agency,Apollo – contacts (revealed),,Will McTighe,will@saywhat.ai,http://www.linkedin.com/in/will-mctighe,Co-Founder,ok,good,ok
+Peter Guber,Mandalay Entertainment Group,Los Angeles,Agency,Apollo – contacts (revealed),http://www.mandalay.com,Peter Guber,peterg@mandalay.com,http://www.linkedin.com/in/peterguber,Chairman and CEO,ok,good,ok
+Joe Weisenthal,Bloomberg,New York,Agency,Apollo – contacts (revealed),,Joe Weisenthal,jweisenthal@bloomberg.net,http://www.linkedin.com/in/joe-weisenthal-3a04a23,Editor,ok,good,ok
+Hadi Partovi,Code.org,Seattle,Agency,Apollo – contacts (revealed),http://www.code.org,Hadi Partovi,hadi_partovi@code.org,http://www.linkedin.com/in/hadip,"Founder, Chairman",catch_all,risky,ok
+Bob Phibbs,The Retail Doctor®,Coxsackie,Agency,Apollo – contacts (revealed),http://www.retaildoc.com,Bob Phibbs,bob@retaildoc.com,http://www.linkedin.com/in/bobphibbs,CEO,ok,good,ok
+Gale Crosley,Crosley+Company,Dobson,Agency,Apollo – contacts (revealed),http://www.crosleycompany.com,Gale Crosley,gcrosley@crosleycompany.com,http://www.linkedin.com/in/galecrosley,"CEO, Growth Strategist to CPA Firms, AI, Blockchain, Crypto Companies, PE & ESOP Consultants",ok,good,ok
+Judy Marks,Otis Elevator Co.,Fairfield,Agency,Apollo – contacts (revealed),http://www.otis.com,Judy Marks,judy.marks@otis.com,http://www.linkedin.com/in/judy-marks-otis,"Chair, President & CEO",catch_all,risky,ok
+Mike Bloomberg,Glasgow Financial Alliance for Net Zero (GFANZ),New York,Agency,Apollo – contacts (revealed),http://www.gfanzero.com,Mike Bloomberg,mbloomberg@gfanzero.com,http://www.linkedin.com/in/mikebloomberg,Chair,invalid,bad,no_mailbox
+Jill Konrath,What's Really Possible,Minneapolis,Agency,Apollo – contacts (revealed),http://www.whatsreallypossible.com,Jill Konrath,jill@whatsreallypossible.com,http://www.linkedin.com/in/jillkonrath,Chief Activator,ok,good,ok
+Dara Khosrowshahi,Uber,San Francisco,Agency,Apollo – contacts (revealed),http://www.uber.com,Dara Khosrowshahi,dk@uber.com,http://www.linkedin.com/in/dara-khosrowshahi-70949862,CEO,ok,good,ok
+Ryan Hoover,Weekend Fund,Frisco,Agency,Apollo – contacts (revealed),http://www.weekend.fund,Ryan Hoover,ryan@weekend.fund,http://www.linkedin.com/in/ryanrhoover,Founder & Investor,ok,good,ok
+Dorie Clark,Harvard Business Review,Boston,Agency,Apollo – contacts (revealed),http://www.hbr.org,Dorie Clark,dclark@hbr.org,http://www.linkedin.com/in/doriec,"Author, The Long Game",catch_all,risky,ok
+Terri Ludwig,Ballmer Group,Bellevue,Agency,Apollo – contacts (revealed),http://www.ballmergroup.org,Terri Ludwig,terril@ballmergroup.com,http://www.linkedin.com/in/terriludwig,Chief Executive Officer,ok,good,ok
+Mark Hyman,Hyman Health,Los Angeles,Agency,Apollo – contacts (revealed),http://www.drhyman.com,Mark Hyman,mark@drhyman.com,http://www.linkedin.com/in/drhyman,Founder & Chairman,catch_all,risky,ok
+Marc Randolph,PodiumCraft,Santa Cruz,Agency,Apollo – contacts (revealed),http://www.podiumcraft.com,Marc Randolph,lhotse@therandolphs.com,http://www.linkedin.com/in/marcrandolph,Chief Executive Officer,unknown,risky,unknown
+Nir Eyal,NirAndFar.com,San Francisco,Agency,Apollo – contacts (revealed),http://www.nirandfar.com,Nir Eyal,nir@nirandfar.com,http://www.linkedin.com/in/nireyal,"Author ""Beyond Belief""",catch_all,risky,ok
+Ed Sanchez,Woven Health Collective,New York,Agency,Apollo – contacts (revealed),http://www.wovenhc.com,Ed Sanchez,edmund.sanchez@wovenhc.com,http://www.linkedin.com/in/ed-sanchez-24462a6,VP Creative Director,catch_all,risky,ok
+Roger Fish,Arnold Worldwide,Boston,Agency,Apollo – contacts (revealed),http://www.arn.com,Roger Fish,roger.fish@arn.com,http://www.linkedin.com/in/rogerfish,"VP, Creative Director",ok,good,ok
+Katrina Adamo,21GRAMS,New York,Agency,Apollo – contacts (revealed),http://www.21gramsworld.com,Katrina Adamo,katrina.adamo@21gramsny.com,http://www.linkedin.com/in/khildebrand,"SVP, Creative Director",unknown,risky,greylisted
+Charlotte West,Cheeky,Los Angeles,Agency,Apollo – contacts (revealed),http://www.wearecheeky.agency,Charlotte West,charlotte@wearecheeky.agency,http://www.linkedin.com/in/cwestdesign,"Chief Creative Officer, Co-Founder",ok,good,ok
+Mike Toofer,RallyCry,Los Angeles,Agency,Apollo – contacts (revealed),http://www.rallycry.agency,Mike Toofer,mike@rallycry.agency,http://www.linkedin.com/in/toofer,Founder,catch_all,risky,ok
+Scott Brewer,GSD&M,Austin,Agency,Apollo – contacts (revealed),http://www.gsdm.com,Scott Brewer,scott.brewer@gsdm.com,http://www.linkedin.com/in/brewerscott,Senior Vice President / Creative Director,ok,good,ok
+Kristen Joyce,FCB Health New York,New York,Agency,Apollo – contacts (revealed),http://www.fcbhealthny.com,Kristen Joyce,kristen.joyce@fcb.com,http://www.linkedin.com/in/kristen-joyce-392547100,"VP, Creative Director",catch_all,risky,ok
+Ari Garber,Red Tettemer O'Connell + Partners,Philadelphia,Agency,Apollo – contacts (revealed),http://www.rtop.com,Ari Garber,agarber@rtop.com,http://www.linkedin.com/in/ari-garber-6210475,VP / Creative Director,ok,good,ok
+RJ Erigio,Colorbars Creative Agency,Whittier,Agency,Apollo – contacts (revealed),http://www.colorbars.com,RJ Erigio,rj@colorbars.com,http://www.linkedin.com/in/rj-erigio-131611112,Founder & Creative Director,ok,good,ok
+Mark Forsman,McCANN New York,New York,Agency,Apollo – contacts (revealed),http://www.mccannny.com,Mark Forsman,mark.forsman@mccann.com,http://www.linkedin.com/in/mark-forsman-816305b2,VP Creative Director,catch_all,risky,ok
+Debra Tucker,ColinKurtis Advertising,Rockford,Agency,Apollo – contacts (revealed),http://www.colinkurtis.com,Debra Tucker,debra@colinkurtis.com,http://www.linkedin.com/in/debra-tucker-6b366b3b,"Vice President, Creative Director",ok,good,ok
+Alberto Calva,Deutsch,Los Angeles,Agency,Apollo – contacts (revealed),http://www.deutsch.com,Alberto Calva,alberto.calva@deutsch.com,http://www.linkedin.com/in/albertocalva,"VP, Creative Director",catch_all,risky,ok
+Phuong Nguyen,Day One Agency,New York,Agency,Apollo – contacts (revealed),http://www.d1a.com,Phuong Nguyen,phuong@d1a.com,http://www.linkedin.com/in/pnguye,"VP, Creative Director",ok,good,ok
+Bill Lindsey,FCB Global,New York,Agency,Apollo – contacts (revealed),http://www.fcb.com,Bill Lindsey,blindsey@fcb.com,http://www.linkedin.com/in/bill-lindsey-52809111,V.P./Creative Director,catch_all,risky,ok
+Greg Krupka,AV Squad,Los Angeles,Agency,Apollo – contacts (revealed),http://www.avsquad.com,Greg Krupka,greg.krupka@avsquad.com,http://www.linkedin.com/in/greg-krupka-8bb69a5,Vice President / Creative Director,ok,good,ok
+Xavier Ruffin,Cynosure Creative Agency,West Hollywood,Agency,Apollo – contacts (revealed),http://www.cynosureca.com,Xavier Ruffin,xavier@cynosureca.com,http://www.linkedin.com/in/xavier-ruffin-1a37499,Co-Founder & Creative Director,ok,good,ok
+Geordie Miller,"MillerVolpe, Inc.",Doylestown,Agency,Apollo – contacts (revealed),http://www.millervolpe.com,Geordie Miller,gmiller@millervolpe.com,http://www.linkedin.com/in/geordie-miller-0830b43,"President, Executive Creative Director",ok,good,ok
+Seth Segura,Bigeye,Orlando,Agency,Apollo – contacts (revealed),http://www.bigeyeagency.com,Seth Segura,seth@bigeyeagency.com,http://www.linkedin.com/in/seth-segura-55676515,"VP, Creative Director",ok,good,ok
+Randy Malone,Benchworks,Ambler,Agency,Apollo – contacts (revealed),http://www.benchworks.com,Randy Malone,rmalone@benchworks.com,http://www.linkedin.com/in/randycmalone,VP Creative Director,ok,good,ok
+Steve Sutherland,MANUFACTURE,Minneapolis,Agency,Apollo – contacts (revealed),http://www.wearemanufacture.com,Steve Sutherland,steve@wearemanufacture.com,http://www.linkedin.com/in/ssutherland246,Executive Producer / Founder / Partner,ok,good,ok
+Adam Patten,MINDS + ASSEMBLY,New York,Agency,Apollo – contacts (revealed),http://www.mna.co,Adam Patten,adam.patten@mna.co,http://www.linkedin.com/in/adamjpatten,"VP, Creative Director",ok,good,ok
+Alex Lukacs,22squared,Atlanta,Agency,Apollo – contacts (revealed),http://www.22squared.com,Alex Lukacs,alex.lukacs@22squared.com,http://www.linkedin.com/in/alex-lukacs-9802b216,"VP, Creative Director",ok,good,ok
+Ram Gopalakrishnan,MRM,New York,Agency,Apollo – contacts (revealed),http://www.mrm.com,Ram Gopalakrishnan,ram.gopalakrishnan@mrm.com,http://www.linkedin.com/in/ram-c-gopalakrishnan-b9a6661,"VP, Creative Director",catch_all,risky,ok
+Molly Levine,Create,Los Angeles,Agency,Apollo – contacts (revealed),http://www.createadvertising.com,Molly Levine,molly.levine@createadvertising.com,http://www.linkedin.com/in/molly-levine-0385155b,"Vice President, Creative Director",ok,good,ok
+Gary Serviss,LT,Phoenix,Agency,Apollo – contacts (revealed),http://www.lt.agency,Gary Serviss,gary.serviss@laneterralever.com,http://www.linkedin.com/in/garyserviss,VP/Creative Director,ok,good,ok
+Daryl Anderson,Clark Creative Group,Omaha,Agency,Apollo – contacts (revealed),http://www.clarkcreativegroup.com,Daryl Anderson,daryl@clarkcreativegroup.com,http://www.linkedin.com/in/daryl-anderson-934013a,Vice President of Creative Services/Senior Creative Director,ok,good,ok
+Robert Froedge,Lewis,Nashville,Agency,Apollo – contacts (revealed),http://www.lewiscommunications.com,Robert Froedge,robert@lewiscommunications.com,http://www.linkedin.com/in/robert-froedge-33a566a,Partner / EVP Creative Director,ok,good,ok
+Julie Roehn,Mindset Masters Marketing Agency,Germantown,Agency,Apollo – contacts (revealed),http://www.youbelongstrong.com,Julie Roehn,julie@youbelongstrong.com,http://www.linkedin.com/in/julie-roehn-5817614,President & Chief Creative Officer,invalid,bad,unknown
+Patrick Matzenbacher,Leo Burnett,Chicago,Agency,Apollo – contacts (revealed),http://www.leoburnett.com,Patrick Matzenbacher,patrick.matzenbacher@leoburnett.com,http://www.linkedin.com/in/patrick-matzenbacher-18160b94,"SVP, Creative Director",invalid,bad,unknown
+Michael Mezzanotte,Augustine Agency,Roseville,Agency,Apollo – contacts (revealed),http://www.augustineagency.com,Michael Mezzanotte,mmezzanotte@augustineagency.com,http://www.linkedin.com/in/michael-mezzanotte-b679026,"Vice President, Creative Director",ok,good,ok
+Sarah Santos,Cramer,Norwood,Agency,Apollo – contacts (revealed),http://www.cramer.com,Sarah Santos,ssantos@cramer.com,http://www.linkedin.com/in/sarah-santos-994b8338,"VP, Creative Director",ok,good,ok
+Darren Easton,The Cyphers Agency,Crofton,Agency,Apollo – contacts (revealed),http://www.thecyphersagency.com,Darren Easton,darren@thecyphersagency.com,http://www.linkedin.com/in/darreneaston,VP/Creative Director,ok,good,ok
+Mike Calderwood,FleishmanHillard,St. Louis,Agency,Apollo – contacts (revealed),http://www.fleishmanhillard.com,Mike Calderwood,mike.calderwood@fleishman.com,http://www.linkedin.com/in/mike-calderwood-b2879a8,Vice President/Creative Director,ok,good,ok
+Ava Horigan,TNH Ad Agency,Syracuse,Agency,Apollo – contacts (revealed),http://www.tnhagency.com,Ava Horigan,ava.horigan@tnhagency.com,http://www.linkedin.com/in/ava-horigan,Account Creative Director,invalid,bad,no_mailbox
+Todd Allen,Todd Allen Design,Bristol,Agency,Apollo – contacts (revealed),http://www.tadesign.com,Todd Allen,rta@tadesign.com,http://www.linkedin.com/in/todd-allen-46b93310,"Creative Director, President",ok,good,ok
+Justin Harris,MARTIN*,Richmond,Agency,Apollo – contacts (revealed),http://www.martinagency.com,Justin Harris,justin.harris@martinagency.com,http://www.linkedin.com/in/jharrisartdirector,SVP/Creative Director,catch_all,risky,ok
+Chad Polovick,PROPELLER,Summit,Agency,Apollo – contacts (revealed),http://www.propellercommunicates.com,Chad Polovick,chad.polovick@propeller-com.com,http://www.linkedin.com/in/chad-polovick-34b66b7,"VP, Creative Director",ok,good,ok
+Kristin Clark,BBDO Worldwide,New York,Agency,Apollo – contacts (revealed),http://www.bbdo.com,Kristin Clark,kristin.clark@bbdo.com,http://www.linkedin.com/in/kristinmclark,"SVP, Creative Director",ok,good,ok
+Kieran Fahey,Aura Creative Agency,Boston,Agency,Apollo – contacts (revealed),http://www.auraagncy.com,Kieran Fahey,kieran@auraagncy.com,http://www.linkedin.com/in/kieran-fahey-016849121,Founder | Head of Production,ok,good,ok
+Shelly Young,KHROME,Escondido,Agency,Apollo – contacts (revealed),http://www.khromeagency.com,Shelly Young,shelly@khromeagency.com,http://www.linkedin.com/in/shelly-young-0bb7a66,President + Creative Director,ok,good,ok
+George Brymer,The Creative Block,Sylvania,Agency,Apollo – contacts (revealed),http://www.thecreativeblock.marketing,George Brymer,george@thecreativeblock.marketing,http://www.linkedin.com/in/allsquareinc,President and Chief Creative Officer,ok,good,ok
+Duffy Patten,Campbell Ewald,Detroit,Agency,Apollo – contacts (revealed),http://www.c-e.com,Duffy Patten,duffy.patten@c-e.com,http://www.linkedin.com/in/duffy-patten-6856171a,SVP Creative Director,catch_all,risky,ok
+Amanda Elhaj,Del Sur Creative Agency,Rancho Santa Margarita,Agency,Apollo – contacts (revealed),http://www.delsurcreative.com,Amanda Elhaj,amanda@delsurcreative.com,http://www.linkedin.com/in/amanda-elhaj-564525117,Founder & Chief Creative Officer,ok,good,ok
+Carla Butwin,Doner,Southfield,Agency,Apollo – contacts (revealed),http://www.doner.com,Carla Butwin,cbutwin@doner.com,http://www.linkedin.com/in/carlabutwin,"VP, Creative Director",catch_all,risky,ok
+Brian Halas,Standard Wonder Group,Detroit,Agency,Apollo – contacts (revealed),http://www.standardwonder.com,Brian Halas,brian@standardwonder.com,http://www.linkedin.com/in/brian-halas-a0b4526,Partner/ Creative Director,catch_all,risky,ok
+Melanie Cleary,Digitas North America,Boston,Agency,Apollo – contacts (revealed),http://www.digitas.com,Melanie Cleary,melanie.cleary@digitas.com,http://www.linkedin.com/in/melanie-cleary-6a940442,"VP, Creative Director",invalid,bad,unknown
+Lauren McGrath,Hill Holliday,Boston,Agency,Apollo – contacts (revealed),http://www.hhcc.com,Lauren McGrath,lauren.mcgrath@hhcc.com,http://www.linkedin.com/in/laurenmcgrath527,"VP, Creative Director",ok,good,ok
+Felipe Leite,Publicis Health,New York,Agency,Apollo – contacts (revealed),http://www.publicishealth.com,Felipe Leite,felipe.leite@mccannhealth.com,http://www.linkedin.com/in/felipe-leite-b14a124b,"VP, Creative Director | Art",catch_all,risky,ok
+Annie Oesterle,Blue Bear Creative - Social Media Agency,Denver,Agency,Apollo – contacts (revealed),http://www.bluebearcreative.co,Annie Oesterle,annie@bluebearcreative.co,http://www.linkedin.com/in/annie-oesterle-75ba021a,"Creative Director, Co-Founder",ok,good,ok
+Stephanie Bennett,PRISMATIC,Orlando,Agency,Apollo – contacts (revealed),http://www.helloprismatic.com,Stephanie Bennett,stephanie@helloprismatic.com,http://www.linkedin.com/in/stephaniedardenbennett,President + Chief Creative Officer,ok,good,ok
+Adam Padilla,BrandFire,New York,Agency,Apollo – contacts (revealed),http://www.brandfire.com,Adam Padilla,adam@brandfire.com,http://www.linkedin.com/in/adam-padilla-67970752,President & Chief Creative Officer,ok,good,ok
+Brett Heimann,Marketing Agency,Fort Lauderdale,Agency,Apollo – contacts (revealed),,Brett Heimann,brett@piscesholding.com,http://www.linkedin.com/in/brett-heimann-b0815258,Founder,ok,good,ok
+Carlo Barreto,Team One,Los Angeles,Agency,Apollo – contacts (revealed),http://www.teamone-usa.com,Carlo Barreto,carlo.barreto@teamone-usa.com,http://www.linkedin.com/in/carlo-barreto-a3944620,Creative Director,invalid,bad,unknown
+Samantha Wilco,Yes& Agency,Alexandria,Agency,Apollo – contacts (revealed),http://www.yesandagency.com,Samantha Wilco,swilco@yesandagency.com,http://www.linkedin.com/in/swilco,VP Creative Director,ok,good,ok
+Kevin Simcox,Walton Isaacson,Culver City,Agency,Apollo – contacts (revealed),http://www.waltonisaacson.com,Kevin Simcox,kevin.simcox@waltonisaacson.com,http://www.linkedin.com/in/kevin-simcox-63042534,Vice President Creative Director,ok,good,ok
+Rusty Beckham,The Scott & Miller Group,Saginaw,Agency,Apollo – contacts (revealed),http://www.scottandmiller.com,Rusty Beckham,rusty@scottandmiller.com,http://www.linkedin.com/in/rustybeckham,"President, CEO, Creative Director",ok,good,ok
+Noah Sigman,Drive Advertising,Apopka,Agency,Apollo – contacts (revealed),http://www.driveadvertising.com,Noah Sigman,noah@driveadvertising.com,http://www.linkedin.com/in/noah-sigman-5818b91,President / Chief Creative Officer,ok,good,ok
+Butch Braun,Epoch Advertising Agency,Syracuse,Agency,Apollo – contacts (revealed),http://www.epoch-adv.com,Butch Braun,bbraun@epoch-adv.com,http://www.linkedin.com/in/butch-braun-a114529,Partner/Creative Director,ok,good,ok
+Marco Perugini,ROJEK Consulting,Independence,Agency,Apollo – contacts (revealed),http://www.rojekconsulting.com,Marco Perugini,mperugini@rojekconsulting.com,http://www.linkedin.com/in/marco-perugini-21934941,"VP, Agency Growth",ok,good,ok
+Paul Spinak,The Marketing Machine,Raleigh,Agency,Apollo – contacts (revealed),http://www.themmachine.com,Paul Spinak,paul@themmachine.com,http://www.linkedin.com/in/paul-spinak-80437a12,"Founder, President, Creative Director",ok,good,ok
+Jena Dengrove,LiveWorld,Campbell,Agency,Apollo – contacts (revealed),http://www.liveworld.com,Jena Dengrove,jdengrove@liveworld.com,http://www.linkedin.com/in/jenadengrove,VP Creative Director,ok,good,ok
+Karan Bredenbeck,FCBCURE | An IPG Health Company,Parsippany-Troy Hills,Agency,Apollo – contacts (revealed),http://www.neon-nyc.com,Karan Bredenbeck,karan.bredenbeck@fcbcure.com,http://www.linkedin.com/in/karan-bredenbeck-284b89b,"SVP, Creative Director",catch_all,risky,ok
+Jody Larue,VFX Direct | Creative Agency,Rollinsford,Agency,Apollo – contacts (revealed),http://www.vfxdirect.com,Jody Larue,jody@vfxdirect.com,http://www.linkedin.com/in/jody-larue-a538495,Creative Director/Founder,catch_all,risky,ok
+David Soames,The Shop,Richardson,Agency,Apollo – contacts (revealed),http://www.theshopagency.com,David Soames,david@theshopagency.com,http://www.linkedin.com/in/davidsoames,"Co-Founder, Creative Director",catch_all,risky,ok
+Dan Castro,ICON Creative Agency,Pasadena,Agency,Apollo – contacts (revealed),http://www.iconcreative.agency,Dan Castro,dan@iconcreative.agency,http://www.linkedin.com/in/dan-castro-7147295,Creative Director & Founder,ok,good,ok
+Justin Ahrens,Rule29,Phoenix,Agency,Apollo – contacts (revealed),http://www.rule29.com,Justin Ahrens,justin@rule29.com,http://www.linkedin.com/in/justinahrens,President & Chief Creative Officer,ok,good,ok
+Terry Edeker,"Pixallure Design, LLC",Mobile,Agency,Apollo – contacts (revealed),http://www.pixallure.com,Terry Edeker,tedeker@pixallure.com,http://www.linkedin.com/in/terryedeker,President / Chief Creative Officer,ok,good,ok
+Jono Schaferkotter,THE DISTILLERY | Creative Agency,Santa Cruz,Agency,Apollo – contacts (revealed),http://www.thedistillery.us,Jono Schaferkotter,jono@thedistillery.us,http://www.linkedin.com/in/schaferkotter,Creative Director & Cofounder,invalid,bad,no_mailbox
+Carlos Tornell,Casanova//McCann,Costa Mesa,Agency,Apollo – contacts (revealed),http://www.casanova.com,Carlos Tornell,carlos.tornell@casanova.com,http://www.linkedin.com/in/carlostornell,VP Creative Director,ok,good,ok
+Jordan Larson,Take7 Productions,Milwaukee,Agency,Apollo – contacts (revealed),http://www.take7productions.com,Jordan Larson,jlarson@take7productions.com,http://www.linkedin.com/in/jordanmichaellarson,"Producer, Creative Director",ok,good,ok
+Federico Giraldo,El Puerto Agency®,Miami,Agency,Apollo – contacts (revealed),http://www.elpuertoagency.com,Federico Giraldo,federico@elpuertoagency.com,http://www.linkedin.com/in/federicogiraldo,Partner | Creative Director,ok,good,ok
+Julie Carstairs,ON BRAND Creative Agency,Los Angeles,Agency,Apollo – contacts (revealed),http://www.onbrandca.com,Julie Carstairs,julie@agencyogd.com,http://www.linkedin.com/in/juliecarstairs,Founder & Creative Director,ok,good,ok
+Rob House,Visualeyes,Frisco,Agency,Apollo – contacts (revealed),http://www.visualeyes.agency,Rob House,rob.house@veyes.com,http://www.linkedin.com/in/robhouse,President & Chief Creative Officer,ok,good,ok
+Greg Mike,ABV AGENCY & GALLERY,Atlanta,Agency,Apollo – contacts (revealed),http://www.abvatl.com,Greg Mike,gm@abvatl.com,http://www.linkedin.com/in/gregmike,Founder - President / Creative Director,ok,good,ok
+Cameron Robinson,Colorspace Labs,Philadelphia,Agency,Apollo – contacts (revealed),http://www.colorspacelabs.com,Cameron Robinson,cam@colorspacelabs.com,http://www.linkedin.com/in/cammiguelrobinson,Creative Director/Producer,ok,good,ok
+Dusty Bennett,HangarFour Creative,New York,Agency,Apollo – contacts (revealed),http://www.hangarfour.co,Dusty Bennett,dusty_bennett@hangarfour.co,http://www.linkedin.com/in/dusty-bennett-a6a68427,"Executive Vice President, Creative & Executive Producer",ok,good,ok
+Rafael Rivas,Royal Ink,Las Vegas,Agency,Apollo – contacts (revealed),http://www.royalinkdesign.com,Rafael Rivas,rafael@royalinkdesign.com,http://www.linkedin.com/in/rafael-rivas-1912a731,President and Chief Creative Officer,ok,good,ok
+Liz Centolella,Hoff Studios,New York,Agency,Apollo – contacts (revealed),http://www.hoffstudios.com,Liz Centolella,liz.centolella@hoffstudios.com,http://www.linkedin.com/in/lizcentolella,Creative Director / Creative Producer,ok,good,ok
+Dylan Lamb,Bullseye Media,Minneapolis,Agency,Apollo – contacts (revealed),http://www.bmediallc.com,Dylan Lamb,dylan@bmediallc.com,http://www.linkedin.com/in/dylan-lamb-%f0%9f%8e%af-15690a28,President & Chief Creative Officer,ok,good,ok
+David Wassell,"MGH, Inc.",Cockeysville,Agency,Apollo – contacts (revealed),http://www.mghus.com,David Wassell,dwassell@mghus.com,http://www.linkedin.com/in/david-wassell-5545b63,"President, Chief Creative Officer",ok,good,ok
+Steve McGowan,Brave Berlin,Cincinnati,Agency,Apollo – contacts (revealed),http://www.braveberlin.com,Steve McGowan,steve@braveberlin.com,http://www.linkedin.com/in/steve-mcgowan-46672359,"Co-Founder, Chief Creative Officer",ok,good,ok
+Kyle Reading,Arc Worldwide,Chicago,Agency,Apollo – contacts (revealed),http://www.arcww.com,Kyle Reading,kyle.reading@arcww.com,http://www.linkedin.com/in/kylejamesreading,VP Creative Director,invalid,bad,unknown
+Igor Gasowski,"Boldium, LLC",Berkeley,Agency,Apollo – contacts (revealed),http://www.boldium.com,Igor Gasowski,igor@boldium.com,http://www.linkedin.com/in/igasowski,"President, Chief Creative Officer",catch_all,risky,ok
+David Howlett,Fifth Element,New York,Agency,Apollo – contacts (revealed),http://www.fifthelement.nyc,David Howlett,david.howlett@fifthelement.nyc,http://www.linkedin.com/in/misterhowlett,"SVP, Creative Director",ok,good,ok
+Eleazar Herrera,Ethos Creative Studios,Charlotte,Agency,Apollo – contacts (revealed),http://www.ethosstudios.com,Eleazar Herrera,eleazar@ethosstudios.com,http://www.linkedin.com/in/eleazarherrera,President / Creative Director,ok,good,ok
+Jennie Diemont,Deep Fried Advertising,New Orleans,Agency,Apollo – contacts (revealed),http://www.deepfried.com,Jennie Diemont,jennie@deepfried.com,http://www.linkedin.com/in/jenniediemont,President & Chief Creative Officer,ok,good,ok
+Lauren Shapiro,FARM Marketing Agency,Lancaster,Agency,Apollo – contacts (revealed),http://www.growwithfarm.com,Lauren Shapiro,lshapiro@farmbuffalo.com,http://www.linkedin.com/in/lauren-shapiro-88619414,Creative Director,ok,good,ok
+Chris Adams,Superconductor®,Los Angeles,Agency,Apollo – contacts (revealed),http://www.superconductor.tv,Chris Adams,chris.adams@superconductor.tv,http://www.linkedin.com/in/chriskadams,Co-founder & Chief Creative Officer,ok,good,ok
+Kamo Atanassov,Simply180,Boca Raton,Agency,Apollo – contacts (revealed),http://www.simply180.com,Kamo Atanassov,kamo@simply180.com,http://www.linkedin.com/in/atanassov,VP Executive Creative Director,catch_all,risky,ok
+Terry Mirabella-Moran,"MLC Expert Consulting, LLC | Top Marketing Agency",Charleston,Agency,Apollo – contacts (revealed),http://www.mlcexpert.com,Terry Mirabella-Moran,terry@mlcexpert.com,http://www.linkedin.com/in/terry-mirabella-moran,Chief Creative Officer | President,ok,good,ok
+Chris Cotu,LEROY & ROSE,Santa Monica,Agency,Apollo – contacts (revealed),http://www.leroyandrose.com,Chris Cotu,chris@leroyandrose.com,http://www.linkedin.com/in/chriscotu,Executive Vice President Creative Director,ok,good,ok
+Eva Heinzen,Manifest,New York,Agency,Apollo – contacts (revealed),http://www.manifest.com,Eva Heinzen,eva.heinzen@manifest.com,http://www.linkedin.com/in/evaheinzen,"SVP, Creative Director, Copy",ok,good,ok
+James Talerico,Heartbeat,New York,Agency,Apollo – contacts (revealed),http://www.weareheartbeat.com,James Talerico,james@jamestalerico.com,http://www.linkedin.com/in/jamestalerico,President | Chief Creative Officer,ok,good,ok
+Steve Harrison,FalkHarrison,St. Louis,Agency,Apollo – contacts (revealed),http://www.falkharrison.com,Steve Harrison,sharrison@falkharrison.com,http://www.linkedin.com/in/steve-harrison-64242319,"President, Creative Director",catch_all,risky,ok
+Markus Powell,Markus Drew Creative Agency,Saint Petersburg,Agency,Apollo – contacts (revealed),http://www.markusdrew.com,Markus Powell,markus@markusdrew.com,http://www.linkedin.com/in/markus-drew-powell-8a5104223,Founder & Creative Director,ok,good,ok
+Andrew Shult,TAG Strategies,Austin,Agency,Apollo – contacts (revealed),http://www.tagstrategies.co,Andrew Shult,shult@tagstrategies.co,http://www.linkedin.com/in/andrewshult,Vice President of Creative,ok,good,ok
+Robert Craghead,Ten Stories,San Diego,Agency,Apollo – contacts (revealed),http://www.tenstories.com,Robert Craghead,rob@tenstories.com,http://www.linkedin.com/in/robertcraghead,"Founder, Executive Producer, & Creative Director",ok,good,ok
+Gabriela Pinto,Datalily,Boston,Agency,Apollo – contacts (revealed),http://www.datalily.com,Gabriela Pinto,gabby@datalily.com,http://www.linkedin.com/in/gabrielap93,"Founder, Chief Creative Officer",ok,good,ok
+David Thibodeau,Brilliant Creative Agency,New York,Agency,Apollo – contacts (revealed),http://www.brilliantcreativeagency.com,David Thibodeau,david@brilliantcreativeagency.com,http://www.linkedin.com/in/david-thibodeau,Creative Director | Brand Architect,ok,good,ok
+Stephen Hammond,"The Ad Agency, LLC",Columbia,Agency,Apollo – contacts (revealed),http://www.theadpros.com,Stephen Hammond,stephen@theadpros.com,http://www.linkedin.com/in/stephen-hammond-70723118,Vice President Marketing,ok,good,ok
+Shanna Apitz,Hunt Adkins,Minneapolis,Agency,Apollo – contacts (revealed),http://www.huntadkins.com,Shanna Apitz,sapitz@huntadkins.com,http://www.linkedin.com/in/shannaapitz,President + Chief Creative Officer,ok,good,ok
+Kurt Shore,D4 Creative Group,Philadelphia,Agency,Apollo – contacts (revealed),http://www.d4creative.com,Kurt Shore,shore@d4creative.com,http://www.linkedin.com/in/kurtshore,"President, Chief Creative Officer",ok,good,ok
+Adam Selwyn,M Booth,New York,Agency,Apollo – contacts (revealed),http://www.mbooth.com,Adam Selwyn,adams@mbooth.com,http://www.linkedin.com/in/adam-selwyn-847a325,EVP Creative and Strategy Director,ok,good,ok
+Karen Engen,Practice Builders,Durham,Agency,Apollo – contacts (revealed),http://www.practicebuilders.com,Karen Engen,kengen@practicemn.com,http://www.linkedin.com/in/karen-engen-a4616450,Pres,ok,good,ok
+Brian Ganther,Hold Fast & Co,Milwaukee,Agency,Apollo – contacts (revealed),http://www.holdfast-co.com,Brian Ganther,brian@holdfast-co.com,http://www.linkedin.com/in/brian-ganther-68192721,"Partner, Chief Creative Officer",ok,good,ok
+Chelsea Matthews,TUX,Los Angeles,Agency,Apollo – contacts (revealed),http://www.tux.co,Chelsea Matthews,chelsea@tux.co,http://www.linkedin.com/in/chelseamatthews,"VP, Creative & Partner",ok,good,ok
+Buddy Wyrick,Sawhorse Productions,Los Angeles,Agency,Apollo – contacts (revealed),http://www.sawhorsela.com,Buddy Wyrick,buddy@sawhorsela.com,http://www.linkedin.com/in/buddy-wyrick-3132599,Creative Director & Producer,catch_all,risky,ok
+Melody Roberts,Out of Home Creative,Atlanta,Agency,Apollo – contacts (revealed),http://www.outofhomecreative.com,Melody Roberts,melody@outofhomecreative.com,http://www.linkedin.com/in/melodydroberts,Founder | Chief Creative Officer,ok,good,ok
+Paul Woodard,BlackMatter Creative,Tulsa,Agency,Apollo – contacts (revealed),http://www.blackmattercreative.com,Paul Woodard,paul@blackmattercreative.com,http://www.linkedin.com/in/paul-woodard-3639b158,President & Creative Director,catch_all,risky,ok
+Brent Niemuth,J.Schmid,Prairie Village,Agency,Apollo – contacts (revealed),http://www.jschmid.com,Brent Niemuth,brentn@jschmid.com,http://www.linkedin.com/in/brent-niemuth-522ab36,"President, Chief Creative Officer",ok,good,ok
+Erin Pennington,XPLR.NASH,Nashville,Agency,Apollo – contacts (revealed),http://www.xplrnash.com,Erin Pennington,erin@xplrnash.com,http://www.linkedin.com/in/penningtonerin,Co-Founder and Creative Director,ok,good,ok
+Jason Kaplan,DEVRIES GLOBAL,New York,Agency,Apollo – contacts (revealed),http://www.devriesglobal.com,Jason Kaplan,jkaplan@devriesglobal.com,http://www.linkedin.com/in/jasonmkaplan1,"SVP, Creative Director",catch_all,risky,ok
+Steve Drifka,Shine United,Madison,Agency,Apollo – contacts (revealed),http://www.shineunited.com,Steve Drifka,sdrifka@shineunited.com,http://www.linkedin.com/in/steve-drifka-79259144,Managing Partner/Creative Director,ok,good,ok
+Ivan Merino,Company 8 Ad Group,Las Vegas,Agency,Apollo – contacts (revealed),http://www.company8adgroup.com,Ivan Merino,ivan.fm@company8adgroup.com,http://www.linkedin.com/in/ivan-flores-merino-ab236913,President & Creative Director,catch_all,risky,ok
+Taylor Lucas,EP+Co,Greenville,Agency,Apollo – contacts (revealed),http://www.epandco.com,Taylor Lucas,taylor.lucas@erwinpenland.com,http://www.linkedin.com/in/taylor-lucas-b683583a,"VP, Creative Director | Brand Design",catch_all,risky,ok
+Kayla Olson,Mediaboom Hotel Marketing Agency,Guilford,Agency,Apollo – contacts (revealed),http://www.mediaboom.com,Kayla Olson,kolson@mediaboom.com,http://www.linkedin.com/in/kayla-olson-7617321a,Creative Director,catch_all,risky,ok
+Katie Keating,"Fancy, LLC",New York,Agency,Apollo – contacts (revealed),http://www.fancynyc.com,Katie Keating,katiekeating@fancynyc.com,http://www.linkedin.com/in/katiekeating,Co-Founder / Chief Creative Officer,catch_all,risky,ok
+Jon Teplow,Bread n Butter Content Studio,Atlanta,Agency,Apollo – contacts (revealed),http://www.bnbcontentstudio.com,Jon Teplow,jon@bnbcontentstudio.com,http://www.linkedin.com/in/jon-teplow-2187b61,VP Marketing / Founder,ok,good,ok
+Marcos Macias,Macias Creative,Miami,Agency,Apollo – contacts (revealed),http://www.maciascreative.com,Marcos Macias,marcos@maciascreative.com,http://www.linkedin.com/in/marcos-macias-2bba52144,President & Chief Creative Officer (CCO),ok,good,ok
+Sameer Hai,GNNR,Los Angeles,Agency,Apollo – contacts (revealed),http://www.gnnrcompany.com,Sameer Hai,sameer.hai@gnnrcompany.com,http://www.linkedin.com/in/sameer-hai-378b5912,Founder + Creative Director,ok,good,ok
+Sean Conciatore,Elevate Healthcare Marketing,Blue Bell,Agency,Apollo – contacts (revealed),http://www.elevatehc.com,Sean Conciatore,sconciatore@elevatehc.com,http://www.linkedin.com/in/sean-conciatore,VP Creative Director | Copy,ok,good,ok
+Todd Aftel,Davis Ad Agency,Virginia Beach,Agency,Apollo – contacts (revealed),http://www.davisadagency.com,Todd Aftel,taftel@davisadagency.com,http://www.linkedin.com/in/toddaftel,Creative Director,ok,good,ok
+Jenee Naquin,jSQ CREATIVE AGENCY LLC,Lafayette,Agency,Apollo – contacts (revealed),http://www.jsqcreativeagency.com,Jenee Naquin,jenee@jsqcreativeagency.com,http://www.linkedin.com/in/jeneenaquin,Founder & Creative Director,ok,good,ok
+Jack Larson,The Forge,St. Louis,Agency,Apollo – contacts (revealed),http://www.theforge-media.com,Jack Larson,jack@theforge-media.com,http://www.linkedin.com/in/jack-larson-11817b30,Founder / Creative Director,catch_all,risky,ok
+Mark Crawford,Blood & Chocolate Inc.,Los Angeles,Agency,Apollo – contacts (revealed),http://www.bloodnchocolate.com,Mark Crawford,mark@bloodnchocolate.com,http://www.linkedin.com/in/mark-crawford-223ba796,President/Creative Director,ok,good,ok
+Laura Petruccelli,nice&frank,New York,Agency,Apollo – contacts (revealed),http://www.niceandfrank.com,Laura Petruccelli,laura@niceandfrank.com,http://www.linkedin.com/in/laurapetruccelli,Co-Founder and Chief Creative Officer,ok,good,ok
+Tj Todd,Studio490 Digital Marketing,Huntersville,Agency,Apollo – contacts (revealed),http://www.studio490.com,Tj Todd,tj@studio490.com,http://www.linkedin.com/in/studio490,CEO / Creative Director,ok,good,ok
+Jeff Beaton,345 MARKETING,Fort Collins,Agency,Apollo – contacts (revealed),http://www.mark345.com,Jeff Beaton,jbeaton@mark345.com,http://www.linkedin.com/in/jeff-beaton-00b4bb4,"Creative Director/Owner, President/CMO",invalid,bad,unknown
+Cyp Stephenson,RXMOSAIC,New York,Agency,Apollo – contacts (revealed),http://www.rxmosaic.com,Cyp Stephenson,cyp.stephenson@rxmosaic.com,http://www.linkedin.com/in/cyp-stephenson-38674b3,"SVP, Creative Director & Creative Lead",ok,good,ok
+Jason Elias,Core-Rx Communications,Chicago,Agency,Apollo – contacts (revealed),http://www.core-rx.com,Jason Elias,jelias@core-rx.com,http://www.linkedin.com/in/jasonelias,Chief Creative Officer,catch_all,risky,ok
+Adam Cohen,Triple Threat Communications,Paramus,Agency,Apollo – contacts (revealed),http://www.ttchealth.com,Adam Cohen,acohen@ttchealth.com,http://www.linkedin.com/in/adam-cohen-ab36208,"EVP, Creative Director",catch_all,risky,ok
+Elliott Bedinghaus,SPARK,Tampa,Agency,Apollo – contacts (revealed),http://www.spark.us,Elliott Bedinghaus,elliott@spark.us,http://www.linkedin.com/in/elliott-bedinghaus-750b03b,VP of Creative,ok,good,ok
+Robert Butt,"Marketing Performance, LLC",Columbia,Agency,Apollo – contacts (revealed),http://www.marketingperformance.net,Robert Butt,rlb3@marketingperformance.net,http://www.linkedin.com/in/robertbutt,President & Chief Creative Officer,invalid,bad,no_mailbox
+Dana Satterwhite,Barkley,Kansas City,Agency,Apollo – contacts (revealed),http://www.barkleyokrp.com,Dana Satterwhite,dsatterwhite@barkleyus.com,http://www.linkedin.com/in/dana-satterwhite-75b4362,SVP Creative Director,ok,good,ok
+Guy Bauer,Umault,Oakbrook Terrace,Agency,Apollo – contacts (revealed),http://www.umault.com,Guy Bauer,guy@umault.com,http://www.linkedin.com/in/guybauer,Founder / Creative Director,ok,good,ok
+Anthony Baldino,Normal. (Production Company I Creative Agency),Burbank,Agency,Apollo – contacts (revealed),http://www.normal.tv,Anthony Baldino,anthony@normal.tv,http://www.linkedin.com/in/anthony-baldino-637a7559,Co-Founder / Head of Production,catch_all,risky,ok
+Jared Blitz,Blitz Creative Studio,West Hollywood,Agency,Apollo – contacts (revealed),http://www.blitzcreative.la,Jared Blitz,jb@blitzcreative.la,http://www.linkedin.com/in/jaredblitz,"President, Creative Director",ok,good,ok
+Emily Smeraldo,Brownstein Group,Philadelphia,Agency,Apollo – contacts (revealed),http://www.brownsteingroup.com,Emily Smeraldo,esmeraldo@brownsteingroup.com,http://www.linkedin.com/in/emily-smeraldo-6252667,Creative Director,catch_all,risky,ok
+Ryan Reichert,Porygon Studios LLC,Dublin,Agency,Apollo – contacts (revealed),http://www.porygonstudios.com,Ryan Reichert,r.reichert@porygonstudios.com,http://www.linkedin.com/in/ryan-reichert-5333087a,Chief Creative Officer / Executive Producer,ok,good,ok
+Nate Coonrod,"Ok, Friend.",New York,Agency,Apollo – contacts (revealed),http://www.okfriend.work,Nate Coonrod,nate@okfriend.work,http://www.linkedin.com/in/nate-coonrod-b1451a199,Creative Director and Partner,ok,good,ok
+Christian Ramirez,Grand Union Creative,Chicago,Agency,Apollo – contacts (revealed),http://www.grandunioncreative.com,Christian Ramirez,christian@grandunioncreative.com,http://www.linkedin.com/in/christian-ramirez-77a71332,"Partner, Head of Production",ok,good,ok
+Doug Andel,dvk,Chicago,Agency,Apollo – contacts (revealed),http://www.dvkmarketing.com,Doug Andel,doug@dvkmarketing.com,http://www.linkedin.com/in/dvanandel,Chief Creative Officer | Co-Founder,ok,good,ok
+Victoria Lobos,Scout Digital,New York,Agency,Apollo – contacts (revealed),http://www.scoutdigital.co,Victoria Lobos,victoria@scoutdigital.co,http://www.linkedin.com/in/victoria-lobos-93a0b182,Creative Director,ok,good,ok
+Tuesday Poliak,RP3 Agency,Bethesda,Agency,Apollo – contacts (revealed),http://www.rp3agency.com,Tuesday Poliak,tpoliak@rp3agency.com,http://www.linkedin.com/in/tuesday-poliak-47730116,Chief Creative Officer,ok,good,ok
+Chris Preston,Preston Spire,Minneapolis,Agency,Apollo – contacts (revealed),http://www.prestonspire.com,Chris Preston,cpreston@prestonkelly.com,http://www.linkedin.com/in/chris-preston-5205018,"Partner, Chief Creative Officer",ok,good,ok
+Peter Jacobs,Shark Communications,Burlington,Agency,Apollo – contacts (revealed),http://www.sharkcomm.com,Peter Jacobs,pete@sharkcomm.com,http://www.linkedin.com/in/sharkcreativedirector,President/Creative Director,ok,good,ok
+Rich Davis,ThinkSpark Inc.,Jacksonville,Agency,Apollo – contacts (revealed),http://www.thinksparkinc.com,Rich Davis,rich@thinksparkinc.com,http://www.linkedin.com/in/rich-davis-a891695,Founder & Chief Creative Officer,ok,good,ok
+Dustin Brenton,Brenton Creative,Franklin,Agency,Apollo – contacts (revealed),http://www.brentoncreative.com,Dustin Brenton,dustin@brentoncreative.com,http://www.linkedin.com/in/dustinbrenton,President/Creative Director,ok,good,ok
+Andrew Blunk,The People's Creative Agency,Long Beach,Agency,Apollo – contacts (revealed),http://www.tpcagency.co,Andrew Blunk,andrew@tpcagency.co,http://www.linkedin.com/in/itsblunk,Founder & Creative Director,ok,good,ok
+Alexander Acker,Adventure House,New York,Agency,Apollo – contacts (revealed),http://www.adventurehousenyc.com,Alexander Acker,aa@adventurehousenyc.com,http://www.linkedin.com/in/alexanderacker,"President, Creative Director",ok,good,ok
+Derek Turner,Millennial Marketing Agency,White Plains,Agency,Apollo – contacts (revealed),http://www.millennialmarketingag.com,Derek Turner,derek@millennialmarketingag.com,http://www.linkedin.com/in/derek-turner-3946b241,Vice President of Marketing,ok,good,ok
+Sue Hoffman,Hashtag Creative Co,Saint Petersburg,Agency,Apollo – contacts (revealed),http://www.hashtagcreative.co,Sue Hoffman,sue@hashtagcreative.co,http://www.linkedin.com/in/suehoffman,President/Creative Director,ok,good,ok
+Eric Siemek,Youtech,Lisle,Agency,Apollo – contacts (revealed),http://www.youtechagency.com,Eric Siemek,eric@youtechagency.com,http://www.linkedin.com/in/eric-siemek-0ab4528b,VP of Marketing,ok,good,ok
+Bria Little,Lure Digital,Pasadena,Agency,Apollo – contacts (revealed),http://www.luredigital.com,Bria Little,bria@lure-digital.com,http://www.linkedin.com/in/brialittle,Creative Director & Head of Production,ok,good,ok
+Matt Bull,Kickstand - Marketing and Advertising,Dallas,Agency,Apollo – contacts (revealed),http://www.heykickstand.com,Matt Bull,matt@heykickstand.com,http://www.linkedin.com/in/matt-bull-22b7ab4,Co-founder and Creative Director,ok,good,ok
+Josh Nanberg,Ampersand Strategies,Philadelphia,Agency,Apollo – contacts (revealed),http://www.ampersandstrategies.com,Josh Nanberg,josh@ampersandstrategies.com,http://www.linkedin.com/in/joshnanberg,President and Creative Director,catch_all,risky,ok
+Mason Wilkes,Follow the Leader,New York,Agency,Apollo – contacts (revealed),http://www.followtheleader.work,Mason Wilkes,mason@followtheleader.work,http://www.linkedin.com/in/mason-wilkes-51a7b6ba,Chief Creative Officer,ok,good,ok
+Nick Matarese,The Barn - A Creative Branding Agency,Wilmington,Agency,Apollo – contacts (revealed),http://www.thebarncreative.org,Nick Matarese,nick@thebarncreative.org,http://www.linkedin.com/in/nick-matarese,President / Creative Director,ok,good,ok
+Soyoon Bolton,Havas Life Chelsea,New York,Agency,Apollo – contacts (revealed),http://www.h4bchelsea.com,Soyoon Bolton,soyoon.bolton@havas.com,http://www.linkedin.com/in/soyoonbolton,SVP Creative Director,ok,good,ok
+Brian Oster,OC Creative,DeKalb,Agency,Apollo – contacts (revealed),http://www.occreates.com,Brian Oster,brian@occreates.com,http://www.linkedin.com/in/brianoster,Creative Director & President,ok,good,ok
+Zuleyka Jinks,A2Z Media Group,Martinez,Agency,Apollo – contacts (revealed),http://www.a2zmediagroup.com,Zuleyka Jinks,zjinks@a2zmediagroup.com,http://www.linkedin.com/in/zuleyka-jinks-04468a2a,Chief Creative Officer and Co-Founder,ok,good,ok
+Peter Kim,MKR,Indianapolis,Agency,Apollo – contacts (revealed),http://www.mkragency.com,Peter Kim,pkim@mkragency.com,http://www.linkedin.com/in/thepeterkim,"President, Chief Creative Officer",ok,good,ok
+Alana Moritz,Fresh Tape Media,Denver,Agency,Apollo – contacts (revealed),http://www.freshtapemedia.com,Alana Moritz,alana@freshtapemedia.com,http://www.linkedin.com/in/alanaglennmoritz,VP of Creative,ok,good,ok
+Peter Sayn-Wittgenstein,Big Day the Agency,San Diego,Agency,Apollo – contacts (revealed),http://www.bigdaytheagency.com,Peter Sayn-Wittgenstein,peter@bigdaytheagency.com,http://www.linkedin.com/in/pswprofile,Partner/Executive Creative Director,catch_all,risky,ok
+William Kay,"BNO a creative agency (Baldwin & Obenauf, Inc.)",Somerville,Agency,Apollo – contacts (revealed),http://www.bnoinc.com,William Kay,wkay@bnoinc.com,http://www.linkedin.com/in/bk70,"VP, Creative Director & AI Integration Lead",ok,good,ok
+Brian Marsh,"Substance Media, Inc.",Covina,Agency,Apollo – contacts (revealed),http://www.substance.agency,Brian Marsh,brian@substance.agency,http://www.linkedin.com/in/brianymarsh,Creative Director,ok,good,ok
+Mina Park,Crispy Chicken Social Media Agency,Los Angeles,Agency,Apollo – contacts (revealed),http://www.crispychicken.co,Mina Park,mina@crispychicken.co,http://www.linkedin.com/in/itsminapark,Co-Founder & Chief Creative Officer,ok,good,ok
+Thomas McGuane,Hitch,Austin,Agency,Apollo – contacts (revealed),http://www.hitch.co,Thomas McGuane,thomas@hitch.co,http://www.linkedin.com/in/thomas-mcguane-28aaa116b,Co-Founder / Creative Director,ok,good,ok
+Irene Westcott,AbelsonTaylor Group,Chicago,Agency,Apollo – contacts (revealed),http://www.abelsontaylorgroup.com,Irene Westcott,irene.westcott@abelsontaylorgroup.com,http://www.linkedin.com/in/irenewestcott,VP/Creative Director,ok,good,ok
+Josh Miner,Wildtype Health,New York,Agency,Apollo – contacts (revealed),http://www.wildtypehealth.com,Josh Miner,joshua.miner@wildtypehealth.com,http://www.linkedin.com/in/joshuaminer,"VP, Creative Director",ok,good,ok
+Paul Forsyth,Catbird Creative Agency,Cleveland,Agency,Apollo – contacts (revealed),http://www.hellocatbird.com,Paul Forsyth,pforsyth@hellocatbird.com,http://www.linkedin.com/in/paul-forsyth-a23bb26,Partner + Creative Director,catch_all,risky,ok
+Drew Kearse,Moon Rabbit,New York,Agency,Apollo – contacts (revealed),http://www.wearemoonrabbit.com,Drew Kearse,drew.kearse@wearemoonrabbit.com,http://www.linkedin.com/in/drew-kearse-97727039,"VP, Creative Director",ok,good,ok
+Kerry Broderick,Stephens Direct,Dayton,Agency,Apollo – contacts (revealed),http://www.stephensdirect.com,Kerry Broderick,kerry.broderick@stephensdirect.com,http://www.linkedin.com/in/kerry-broderick-5a62674,VP/Creative Director,catch_all,risky,ok
+Simon Tam,Nice + Company,San Francisco,Agency,Apollo – contacts (revealed),http://www.niceandcompany.com,Simon Tam,simontam@niceandcompany.com,http://www.linkedin.com/in/matnomis,"Vice President, Creative Director",ok,good,ok
+Dan Weston,KNOCK Inc.,Minneapolis,Agency,Apollo – contacts (revealed),http://www.knockinc.com,Dan Weston,dan.weston@knockinc.com,http://www.linkedin.com/in/dan-weston-50967a5,Vice President Creative Director,catch_all,risky,ok
+Paul Knipe,Healthcare Success,Irvine,Agency,Apollo – contacts (revealed),http://www.healthcaresuccess.com,Paul Knipe,pknipe@healthcaresuccess.com,http://www.linkedin.com/in/paul-knipe-a34a176,Senior Account Director,ok,good,ok
+Robert Hatfield,Breakout Creative,Louisville,Agency,Apollo – contacts (revealed),http://www.breakoutcreative.com,Robert Hatfield,robert@breakoutcreative.com,http://www.linkedin.com/in/robert-hatfield-a0232a7,President / Creative Director,ok,good,ok
+Bill Hartman,Taoti Creative,Washington,Agency,Apollo – contacts (revealed),http://www.taoti.com,Bill Hartman,bhartman@taoti.com,http://www.linkedin.com/in/bill-hartman-9662a75,"VP of Creative, Creative Director",ok,good,ok
+Paul Carek,Young & Rubicam,New York,Agency,Apollo – contacts (revealed),http://www.yr.com,Paul Carek,paul.carek@yr.com,http://www.linkedin.com/in/paul-carek-6322096,VP/Creative Director,catch_all,risky,ok
+Bob Kiel,Ferguson,Fort Wayne,Agency,Apollo – contacts (revealed),http://www.theferg.com,Bob Kiel,bob@fai2.com,http://www.linkedin.com/in/bob-kiel-23399013,Vice President - Creative Director,ok,good,ok
+Brian Wall,Tatanka Creative LLC,Oklahoma City,Agency,Apollo – contacts (revealed),http://www.tatankacreative.com,Brian Wall,brian@tatankacreative.com,http://www.linkedin.com/in/brianmwall,President/Creative Director,ok,good,ok
+Christopher Frame,PJA Marketing + Advertising,Cambridge,Agency,Apollo – contacts (revealed),http://www.agencypja.com,Christopher Frame,cframe@agencypja.com,http://www.linkedin.com/in/christopher-frame-23607b4,VP Creative Director,ok,good,ok
+Jason Thomas,"GSW, powered by Syneos Health",Westerville,Agency,Apollo – contacts (revealed),http://www.gsw-w.com,Jason Thomas,jason@gsw-usa.com,http://www.linkedin.com/in/jason-thomas-b84b473,VP / Creative Director,ok,good,ok
+Laura Blackburn,Deep Focus,Tanana,Agency,Apollo – contacts (revealed),http://www.deepfocus.agency,Laura Blackburn,laura.blackburn@deepfocus.agency,http://www.linkedin.com/in/laurawerkheiser,"VP, Creative Director",ok,good,ok
+Ray Colon,CrowdPharm,Kansas City,Agency,Apollo – contacts (revealed),http://www.crowdpharm.com,Ray Colon,raycolon@crowdpharm.com,http://www.linkedin.com/in/ray-colon-5071476,"SVP, Creative Director",ok,good,ok
+David Murdico,SUPERCOOL CREATIVE AGENCY - FUNNY TV AND VIDEO ADS!,Los Angeles,Agency,Apollo – contacts (revealed),http://www.supercoolcreative.com,David Murdico,david@supercoolcreative.com,http://www.linkedin.com/in/davidmurdico,Creative Director & Partner,ok,good,ok
+Abby Fenton,EVERSANA INTOUCH,Overland Park,Agency,Apollo – contacts (revealed),http://www.eversanaintouch.com,Abby Fenton,abby.fenton@eversana.com,http://www.linkedin.com/in/abby-fenton-78781b78,"VP, Creative Director",catch_all,risky,ok
+Justin Peabody,TWINOAKS,Dallas,Agency,Apollo – contacts (revealed),http://www.thetwinoaks.com,Justin Peabody,justin.peabody@thetwinoaks.com,http://www.linkedin.com/in/peabodyj,"VP, Creative Director",invalid,bad,unknown
+Brett Tabolt,Pivot Design,Chicago,Agency,Apollo – contacts (revealed),http://www.pivotdesign.com,Brett Tabolt,brett@pivotdesign.com,http://www.linkedin.com/in/brett-tabolt-29637619a,Vice President & Creative Director,ok,good,ok
+Nick Wakefield,Mob Scene,Los Angeles,Agency,Apollo – contacts (revealed),http://www.mobscene.com,Nick Wakefield,nick.wakefield@mobscene.com,http://www.linkedin.com/in/nick-wakefield-72a5266,"VP, Creative Director",ok,good,ok
+Amy Ogden,The Collective,New York,Agency,Apollo – contacts (revealed),http://www.amyogden.com,Amy Ogden,amy@amyogden.com,http://www.linkedin.com/in/amyogden,Founder,ok,good,ok
+Liz Cordingley,RPA,Santa Monica,Agency,Apollo – contacts (revealed),http://www.rpa.com,Liz Cordingley,lcordingley@rpa.com,http://www.linkedin.com/in/elizabethcordingley,"VP, Creative Director",catch_all,risky,ok
+Michaela Kellogg,(add)ventures,East Providence,Agency,Apollo – contacts (revealed),http://www.addventures.com,Michaela Kellogg,mkellogg@addventures.com,http://www.linkedin.com/in/michaela-kellogg-8a181712,"VP, Creative Strategy and Creative Director",catch_all,risky,ok
+Lauren Milewski,Scribewise,Philadelphia,Agency,Apollo – contacts (revealed),http://www.scribewise.com,Lauren Milewski,lauren@scribewise.com,http://www.linkedin.com/in/laureniscreative,"VP, Creative Director",ok,good,ok
+Catherine Carouge,MH Media Strategies,Annapolis,Agency,Apollo – contacts (revealed),http://www.mhmediastrategies.com,Catherine Carouge,catherine@mhmediastrategies.com,http://www.linkedin.com/in/catherinecounts,"VP, Creative Director",ok,good,ok
+Jared Sapolin,MOCEAN,Los Angeles,Agency,Apollo – contacts (revealed),http://www.moceanla.com,Jared Sapolin,jared.sapolin@moceanla.com,http://www.linkedin.com/in/jared-sapolin-218094105,"VP, Creative Director",ok,good,ok
+Ashley Stuhr,KidGlov,Lincoln,Agency,Apollo – contacts (revealed),http://www.kidglov.com,Ashley Stuhr,ashley.stuhr@kidglov.com,http://www.linkedin.com/in/ashley-stuhr-8a257151,VP Creative Director,catch_all,risky,ok
+Jonathan Hayman,Big Pic,Culver City,Agency,Apollo – contacts (revealed),http://www.bigpic.com,Jonathan Hayman,jhayman@bigpic.com,http://www.linkedin.com/in/jonathan-hayman-9092708,VP/Creative Director,ok,good,ok
+Daphne Peponides,Workshop Creative,Los Angeles,Agency,Apollo – contacts (revealed),http://www.workshopcreative.net,Daphne Peponides,daphne@workshopcreative.net,http://www.linkedin.com/in/daphne-peponides-70b651b,VP / Creative Director,catch_all,risky,ok
+Zach Garster,gira{ph},Midlothian,Agency,Apollo – contacts (revealed),http://www.giraphcu.com,Zach Garster,zach@giraphcu.com,http://www.linkedin.com/in/zach-garster-9626678b,Vice President & Creative Director,ok,good,ok
+Tommy Scalera,Generator Automotive Media,Ventura,Agency,Apollo – contacts (revealed),http://www.generatorautomedia.com,Tommy Scalera,scalera@graphicangels.com,http://www.linkedin.com/in/tommscalera,President / Creative Director,ok,good,ok
+Chris Roys,TINY HERO,Burbank,Agency,Apollo – contacts (revealed),http://www.tinyhero.com,Chris Roys,chris.roys@tinyhero.com,http://www.linkedin.com/in/chris-roys-32101743,"Vice President, Creative Director",ok,good,ok
+Jon Ransom,Jacques,New York,Agency,Apollo – contacts (revealed),http://www.jacques.com,Jon Ransom,jon.ransom@jacques.com,http://www.linkedin.com/in/jon-ransom-67117a64,"SVP, Creative Director",ok,good,ok

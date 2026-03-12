@@ -15,6 +15,8 @@ const SMARTREACH_PATH = path.join(ROOT_DIR, 'leads', 'select-small-mid-agencies-
 
 const CONCURRENCY = 5;
 const BATCH_DELAY_MS = 200;
+const RETRY_ATTEMPTS = 3;
+const RETRY_DELAY_MS = 1000;
 
 function loadEnv() {
   const env = {};
@@ -42,23 +44,62 @@ async function verifyEmail(mvConfig, email) {
   url.searchParams.set('email', email);
   url.searchParams.set('timeout', '10');
 
-  try {
-    const res = await fetch(url.toString(), { method: 'GET' });
-    let data;
+  for (let attempt = 1; attempt <= RETRY_ATTEMPTS; attempt++) {
     try {
-      data = await res.json();
-    } catch {
-      return { result: 'error', quality: '', subresult: 'parse_error' };
+      const res = await fetch(url.toString(), { method: 'GET' });
+      let data;
+      try {
+        data = await res.json();
+      } catch {
+        return { result: 'error', quality: '', subresult: 'parse_error' };
+      }
+
+      return {
+        result: data.result || 'error',
+        quality: String(data.quality ?? ''),
+        subresult: data.subresult || ''
+      };
+    } catch (err) {
+      const isLastAttempt = attempt === RETRY_ATTEMPTS;
+      if (isLastAttempt) {
+        console.warn(`  [warn] MV API error for ${email}: ${err.message}`);
+        return { result: 'error', quality: '', subresult: 'network_error' };
+      }
+      await sleep(RETRY_DELAY_MS * attempt);
     }
-    return {
-      result: data.result || 'error',
-      quality: String(data.quality ?? ''),
-      subresult: data.subresult || ''
-    };
-  } catch (err) {
-    console.warn(`  [warn] MV API error for ${email}: ${err.message}`);
-    return { result: 'error', quality: '', subresult: 'network_error' };
   }
+
+  return { result: 'error', quality: '', subresult: 'network_error' };
+}
+
+function normalizeEmail(email) {
+  return String(email || '').trim().toLowerCase();
+}
+
+function readCsvIfPresent(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+  const raw = fs.readFileSync(filePath, 'utf8');
+  return parse(raw, { columns: true, skip_empty_lines: true, relax_column_count: true });
+}
+
+function buildVerifiedLookup(records) {
+  const lookup = new Map();
+  for (const rec of records) {
+    const email = normalizeEmail(rec.contact_email);
+    if (!email && (!rec.mv_result || rec.mv_result.trim() === '')) continue;
+    lookup.set(email, {
+      mv_result: rec.mv_result || '',
+      mv_quality: rec.mv_quality || '',
+      mv_subresult: rec.mv_subresult || ''
+    });
+  }
+  return lookup;
+}
+
+function applyVerificationResult(rec, verification) {
+  rec.mv_result = verification.mv_result || '';
+  rec.mv_quality = verification.mv_quality || '';
+  rec.mv_subresult = verification.mv_subresult || '';
 }
 
 function buildSmartReachRow(rec) {
@@ -91,46 +132,69 @@ async function main() {
     process.exit(1);
   }
 
-  const raw = fs.readFileSync(INPUT_PATH, 'utf8');
-  const records = parse(raw, { columns: true, skip_empty_lines: true });
+  const records = readCsvIfPresent(INPUT_PATH);
+  const existingVerified = readCsvIfPresent(VERIFIED_PATH);
+  const verifiedLookup = buildVerifiedLookup(existingVerified);
 
   const mvConfig = { apiKey, baseUrl };
 
   let alreadyVerified = 0;
   let newlyVerified = 0;
+  const toVerifyByEmail = new Map();
 
-  const toVerify = records.filter((rec) => {
-    if (rec.mv_result && rec.mv_result.trim() !== '') {
+  for (const rec of records) {
+    const email = normalizeEmail(rec.contact_email);
+    const cached = verifiedLookup.get(email);
+    if (cached) {
+      applyVerificationResult(rec, cached);
       alreadyVerified++;
-      return false;
+      continue;
     }
-    return true;
-  });
 
-  console.log(`Loaded ${records.length} rows. Already verified: ${alreadyVerified}. To verify: ${toVerify.length}`);
+    if (!email) {
+      toVerifyByEmail.set(`__blank__:${toVerifyByEmail.size}`, [rec]);
+      continue;
+    }
+
+    const existing = toVerifyByEmail.get(email);
+    if (existing) {
+      existing.push(rec);
+    } else {
+      toVerifyByEmail.set(email, [rec]);
+    }
+  }
+
+  const toVerify = Array.from(toVerifyByEmail.entries());
+  const rowsToVerify = toVerify.reduce((sum, [, group]) => sum + group.length, 0);
+
+  console.log(`Loaded ${records.length} rows. Already verified: ${alreadyVerified}. To verify: ${rowsToVerify}`);
 
   // Process in batches of CONCURRENCY
   for (let i = 0; i < toVerify.length; i += CONCURRENCY) {
     const batch = toVerify.slice(i, i + CONCURRENCY);
 
     await Promise.all(
-      batch.map(async (rec) => {
-        const email = rec.contact_email || '';
-        if (!email.trim()) {
-          rec.mv_result = 'no_email';
-          rec.mv_quality = '';
-          rec.mv_subresult = '';
+      batch.map(async ([email, group]) => {
+        let verification;
+        if (email.startsWith('__blank__:')) {
+          verification = { mv_result: 'no_email', mv_quality: '', mv_subresult: '' };
         } else {
           const { result, quality, subresult } = await verifyEmail(mvConfig, email);
-          rec.mv_result = result;
-          rec.mv_quality = quality;
-          rec.mv_subresult = subresult;
+          verification = { mv_result: result, mv_quality: quality, mv_subresult: subresult };
         }
-        newlyVerified++;
+        for (const rec of group) {
+          applyVerificationResult(rec, verification);
+          newlyVerified++;
+        }
+        verifiedLookup.set(email.startsWith('__blank__:') ? '' : email, verification);
       })
     );
 
-    console.log(`  Verified ${Math.min(i + CONCURRENCY, toVerify.length)}/${toVerify.length} new rows...`);
+    const processedGroups = Math.min(i + CONCURRENCY, toVerify.length);
+    const processedRows = toVerify
+      .slice(0, processedGroups)
+      .reduce((sum, [, group]) => sum + group.length, 0);
+    console.log(`  Verified ${processedRows}/${rowsToVerify} new rows...`);
 
     if (i + CONCURRENCY < toVerify.length) {
       await sleep(BATCH_DELAY_MS);
@@ -138,7 +202,7 @@ async function main() {
   }
 
   // Write all rows (with MV data) to verified CSV
-  const allColumns = ['name', 'company', 'city', 'type', 'source', 'website', 'contact_name', 'contact_email', 'notes', 'mv_result', 'mv_quality', 'mv_subresult'];
+  const allColumns = ['name', 'company', 'city', 'type', 'source', 'website', 'contact_name', 'contact_email', 'linkedin_url', 'notes', 'mv_result', 'mv_quality', 'mv_subresult'];
   const verifiedCsv = stringify(records, { header: true, columns: allColumns });
   fs.writeFileSync(VERIFIED_PATH, verifiedCsv, 'utf8');
   console.log(`Wrote verified file: ${VERIFIED_PATH}`);

@@ -1,0 +1,580 @@
+first_name,last_name,email,company_name,website,city,title
+Mike,Braham,mike.braham@intempohealth.com,Intempo Health,http://www.intempohealth.com,Columbus,Chief Growth Officer and Board of Directors
+Bill,Gates,be@breakthroughenergy.org,Breakthrough Energy,http://www.breakthroughenergy.org,Kirkland,Founder
+Carol,Snyder,carol.snyder@ey.com,EY,http://www.ey.com,Bloomington,Financial Services Client Director and Client Executive Leader for FSO Central Region
+Satya,Nadella,satyan@microsoft.com,Microsoft,http://www.microsoft.com,Redmond,Chairman and CEO
+Jeff,Weiner,jeff@nextplayventures.com,Next Play Ventures,http://www.nextplayventures.com,West Menlo Park,Founding Partner
+Susanna,Su,susanna@morstar.com,Morstar Inc.,http://www.morstar.com,Livonia,"General Manager, Sales Representative"
+Simon,Sinek,simon@jhu.edu,The Curve,http://www.thecurve.org,New York,Founder
+Arseniy,Grusha,ag@dataprana.io,Dataprana,http://www.dataprana.io,Aventura,Chief Executive Officer
+Alex,Banayan,alex@alexbanayan.com,The Third Door,http://www.thethirddoor.net,Marietta,1 International Bestselling Author
+Jeff,Gilfand,jeff.gilfand@endurancedirect.com,Endurance,http://www.endurancewarranty.com,Tampa,Chief Financial Officer (CFO)
+Melinda,Gates,melinda@pivotalventures.org,Pivotal,http://www.pivotal.com,Seattle,Founder
+Daniel,Goleman,daniel@danielgoleman.info,Goleman Consulting Group,http://www.golemanconsultinggroup.com,Northampton,Senior Consultant
+Deepak,Chopra,nonlocal@deepakchopra.com,DEEPAK CHOPRA LLC,,New York,Founder
+Ruben,Gamboa,rgamboa@holder.com,Holder Construction,http://www.holderconstruction.com,Atlanta,Asst. Superintendent - MEP & Building Technology
+Brene,Brown,tgif@bbearg.com,University of Houston,http://www.uh.edu,Houston,Huffington Endowed Chair + Research Professor
+Danielle,Mason,danielle.mason@highspring.com,Highspring,http://www.highspring.com,Brentwood,Partner
+Gretchen,Rubin,gretchen@gretchenrubin.com,Gretchen Rubin Media,http://www.gretchenrubin.com,New York,Founder
+Liz,Ryan,liz@humanworkplace.com,Human Workplace,http://www.humanworkplace.com,Boulder,Founder and CEO
+Travis,Bradberry,trb@talentsmart.com,The New Emotional Intelligence,,San Diego,Author of The New Emotional Intelligence
+Whitney,Johnson,whitney@thedisruptionadvisors.com,Disruption Advisors,http://www.thedisruptionadvisors.com,Lexington,World Authority on Smart Growth Leadership and Personal Disruption
+Jon,Steinberg,jon.steinberg@lazard.com,Lazard,http://www.lazard.com,New York,Managing Director
+Nicholas,Thompson,nthompson@theatlantic.com,The Atlantic,http://www.theatlantic.com,Washington,CEO
+Barbara,Corcoran,barbara@barbaracorcoran.com,Barbara Corcoran Inc,http://www.barbaracorcoran.com,New York,"Executive Coach, Motivational Speaker, Shark on ABC’s Shark Tank, Author, Founder"
+Ron,Kruszewski,ronk@stifel.com,Stifel Financial Corp.,http://www.stifel.com,St. Louis,
+Rita,King,rita@power-pairs.com,Power Pairs,http://www.power-pairs.com,New York,Founder
+Austin,Belcak,austin@cultivatedculture.com,Cultivated Culture,http://www.cultivatedculture.com,New York,Founder
+Mary,Barra,mary.barra@gm.com,General Motors,http://www.gm.com,Detroit,Chair and Chief Executive Officer
+Elina,Garcia,egarcia@twelvenyc.com,Twelve,http://www.twelvenyc.com,New York,"SVP, Head of Global Operations"
+Daniel,Burrus,tfn@burrus.com,"Burrus Research, Inc.",http://www.burrus.com,Oconomowoc,"Best Selling Author, Keynote Speaker and Strategic Business Consultant"
+Raghuram,Rajan,raghuram.rajan@chicagobooth.edu,The University of Chicago Booth School of Business,http://www.chicagobooth.edu,Chicago,Katherine Dusak Miller Distinguished Service Professor of Finance
+Dharmesh,Shah,dshah@hubspot.com,HubSpot,http://www.hubspot.com,Cambridge,"Founder and CTO, Founder"
+Daniel,Solove,dsolove@gwu.edu,The George Washington University,http://www.gwu.edu,Washington,Eugene L. and Barbara A. Bernard Professor of Intellectual Property and Technology Law
+Jeff,Haden,jhaden@blackbirdinc.com,BlackBird Media,http://www.blackbirdme.com,Dubai,Business Owner
+Sarah,Johnston,sarah@briefcasecoach.com,"Briefcase Coach: Executive Resume Writing, Job Search Strategies and Interview Coaching",http://www.briefcasecoach.com,Chapel Hill,"Keynote Speaker, Webinar & Lunch and Learn Presenter"
+Laszlo,Bock,laszlobock@berkeley.edu,"University of California, Berkeley",http://www.berkeley.edu,Berkeley,Co-Founder and Co-Faculty Director of the Berkeley Transformative CHRO Academy
+Craig,Newmark,craig@craigslist.org,Craig Newmark Philanthropies,http://www.craignewmarkphilanthropies.org,San Francisco,Founder & CSR
+Alex,Xu,alex@bytebytego.com,ByteByteGo,http://www.bytebytego.com,San Francisco,Author & Co-Founder
+Josh,Bersin,jbersin@bersin.com,Galileo by the Josh Bersin Company,http://www.getgalileo.ai,Oakland,Founder and Dean
+Levar,Burton,burton@levarburton.com,LeVar Burton Entertainment,http://www.levarburton.com,Los Angeles,Founder
+David,Katz,dkatz@dietid.com,Diet ID,http://www.dietid.com,Detroit,"Founder, CEO"
+Lisa,Orbe-Austin,lisa@dynamictransitionsllp.com,"Dynamic Transitions Psychological Consulting, LLP",http://www.dynamictransitionsllp.com,New York,Partner
+Kathy,Caprino,kathy@kathycaprino.com,"Kathy Caprino/Kathy Caprino, LLC",http://www.kathycaprino.com,Wilton,Career & Leadership Coach
+Eric,Olander,eric@chinaafricaproject.com,The China Global South Project,http://www.chinaglobalsouth.com,Berkeley,Co-Founder and Editor in Chief
+Ilya,Pozin,ip@telly.com,Telly TV,http://www.telly.com,Los Angeles,"CEO, Founder"
+Carson,Tate,carson@carsontateconsulting.com,Carson Tate,http://www.carsontateconsulting.com,Charlotte,Managing Partner
+Heather,Elias,heather.elias@elmstreet.com,Elm Street,http://www.elmstreet.com,Seattle,Chief Growth Officer
+Betty,Liu,betty@apextreasurycorp.com,Apex Treasury Corporation,http://www.apextreasurycorp.com,New York,Independent Director
+Shay,Rowbottom,shay@shayrowbottom.com,Shay Rowbottom Healing,,Orlando,CEO
+Steve,Faktor,steve@ideafaktory.com,IdeaFaktory,http://www.ideafaktory.com,New York,Managing Director
+Jigar,Shah,jigar@multiplier.expert,*Multiplier,http://www.multiplier.expert,Baltimore,Co-Managing Partner
+DJ,Patil,dpatil@gpv.com,GreatPoint Ventures,http://www.gpv.com,San Francisco,General Partner
+Alex,Hormozi,value@acquisition.com,Acquisition.com,http://www.acquisition.com,Las Vegas,Managing Partner
+Gary,Travis,gary@loomenti.com,Loomenti,http://www.loomenti.com,Chicago,Founder
+Tim,O'Reilly,tim@oreilly.com,O'Reilly AlphaTech Ventures,http://www.oatv.com,San Francisco,Partner
+Mike,Cohn,michael.cohn@arizent.com,Arizent,http://www.arizent.com,New York,"Editor-In-Chief, Accountingtoday.Com"
+Steve,Blank,sblank@stanford.edu,Stanford University,http://www.stanford.edu,Stanford,Adjunct Professor Stanford University
+Chester,Elton,chester@thecultureworks.com,The Culture Works,http://www.thecultureworks.com,New York,"#1 New York Times Bestselling Author, Thinkers 50 Executive Coach, Standing Ovation Keynote Speaker"
+Katie,Couric,katie@katiecouric.com,Katie Couric Media,http://www.katiecouric.com,New York,Co-Founder
+Jeff,Selingo,jeff@selingo.com,EdPlus at Arizona State University,,Scottsdale,Management Committee Member
+Linda,Le,linda.le@rippling.com,Rippling,http://www.rippling.com,San Francisco,Inbound Sourcer-R&D
+Adena,Friedman,adena.friedman@nasdaq.com,Nasdaq,http://www.nasdaq.com,New York,Chair and Chief Executive Officer
+Adam,Karpiak,akarpiak@karpiakconsulting.com,Karpiak Consulting,http://www.karpiakconsulting.com,New York,"Co-Founder, Principal Career Coach, & Lead Recruiter"
+Robert,Downey,robert@happyproducts.com,happy®,http://www.happyproducts.com,Montclair,Co-Founder
+Chris,Do,chris@thefutur.com,The Futur™,http://www.thefutur.com,Santa Monica,"Founder, CEO"
+Rachel,Jones,rjones@nationalpress.org,National Press Foundation,http://www.nationalpress.org,Washington,Director of Journalism Initiatives
+Justin,Els,jels@fairsquare.com,FairSquare,http://www.fairsquare.com,Birmingham,"Vice President, Risk"
+Dennis,Mortensen,dennis@launchbrightly.com,LaunchBrightly,http://www.launchbrightly.com,New York,CEO and Founder
+Clement,Mihailescu,clement@algoexpert.io,AlgoExpert,http://www.algoexpert.io,New York,Co-Founder & CEO
+Atif,Rafiq,atif@ritual.work,Ritual AI,http://www.ritual.work,Chicago,CEO & Co-founder
+Marianne,Cooper,coops@stanford.edu,Lean In,http://www.leanin.org,Palo Alto,"Co-author, Women in the Workplace Reports"
+Yasi,Baiani,yasi@rayaadvisory.com,Raya,http://www.rayaadvisory.com,San Francisco,CEO & Founder
+Abe,Young,ayoung@saprea.org,Utah Valley Chamber of Commerce,http://www.thechamber.org,Provo,"Treasurer, Executive Committee"
+Colin,Coleman,ccoleman@psh.com,Partridge Snow & Hahn LLP,http://www.psh.com,Providence,Business Attorney
+Timothy,McGee,tmcgee@integrated-usa.com,Integrated Insurance Solutions,http://www.integrated-usa.com,Ashburn,Senior Client Relationship Manager
+Bob,McCool,bob@arielitservices.com,Ariel IT Services,http://www.arielitservices.com,Louisville,President & CEO
+Ron,Moody,rmoody@moodywilliams.com,Hotaling Moody & Associates,http://www.moodywilliams.com,Jacksonville,Chief Executive Officer
+Gregg,Peterson,gregg.peterson@dxc.com,DXC Technology,http://www.dxc.com,Ashburn,Executive Digital Sales Leader - Financial Services
+Brent,Hocking,brent@themodselecter.com,Mod Sélection Champagne,http://www.modselectionchampagne.com,West Hollywood,Founder and CEO
+Eddie,Benford,ebenford@outdoorcap.com,Outdoor Cap Company,http://www.outdoorcap.com,Bentonville,"Head of Product: PD&D, Sourcing & Design"
+Ronnie,Nation,rnation@rynfile.com,RYN File,http://www.rynfile.com,Apopka,Co-Founder & CEO
+Rick,Weaver,rick@getmaximpact.com,Max Impact,http://www.getmaximpact.com,Rochester,Head Resume Writer
+Bruce,Sanders,bruces@anchoraudio.com,Anchor Audio,http://www.anchoraudio.com,Carlsbad,Channel Manager
+Mike,Manning,manning@strategicadvicellc.com,Strategic Advice,http://www.strategic-advice.com,Seattle,Board Member | Consultant
+David,Hughes,david.h@rolans.com,Rolan Business Machine Co. Inc,http://www.rolans.com,Rome,Tech
+Dave,Sluberski,dsspph@rit.edu,College of Art and Design at RIT,,Rochester,"Owner of West Rush Media, LLC"
+Jason,Shepherd,jshepherd@dickeys.com,"Dickey's Barbecue Restaurants, Inc.",http://www.dickeys.com,Dallas,Chief Operating Officer
+David,Keenan,dkeenan@bowditch.com,"Bowditch & Dewey, LLP",http://www.bowditch.com,Worcester,of Counsel
+Tracy,Whitlock,tracy.whitlock@volvo.com,Volvo Group,http://www.volvogroup.com,Greensboro,Business Analyst / Business Intelligence - Production Logistics
+Mark,Graban,mark@parrishpartners.com,Parrish Partners Leadership & Management Consulting in Orange County,http://www.parrishpartners.com,San Clemente,Consultant
+Reno,Perry,reno@careerleap.co,Career Leap by Reno Perry,http://www.careerleap.co,Chicago,Founder & CEO
+Rachel,Zoe,rachel@rachelzoe.com,"Rachel Zoe, Inc.",http://www.shoprachelzoe.com,West Hollywood,Designer
+Rafat,Ali,rafat@skift.com,Skift,http://www.skift.com,New York,CEO/Founder
+Toby,Cosgrove,cosgrod@ccf.org,Cleveland Clinic,http://www.clevelandclinic.org,Cleveland,CEO and President
+Andrew,Chen,andrew@a16z.com,Andreessen Horowitz,http://www.a16z.com,Menlo Park,General Partner
+David,Malan,malan@regenttheatre.com,Regent Theatre,http://www.regenttheatre.com,Arlington,Operator
+Erika,Armstrong,erika@aircrewacademy.com,Advanced Aircrew Academy,http://www.aircrewacademy.com,Atlanta,Pilot | Director of Marketing | VP Business Development | Sales
+Josh,Aharonoff,josh@modelwiz.com,Model Wiz,http://www.modelwiz.com,New York,CEO and Co-founder
+Victoria,Repa,vrepa@betterme.world,BetterMe,http://www.betterme.world,Los Angeles,CEO & Founder BetterMe
+Carla,Harris,carla.harris@morganstanley.com,Morgan Stanley,,New York,Senior Client Advisor
+Geoffrey,Garrett,ggarrett@usc.edu,USC Marshall School of Business,http://marshall.usc.edu,Los Angeles,Dean
+Devin,Wenig,devin@symbolic.ai,Symbolic.ai,http://www.symbolic.ai,San Francisco,Co-Founder and CEO
+Loic,Meur,loic@paua.life,PAUA,http://www.paua.life,Paris,Founder & CEO
+Sramana,Mitra,sramana@1mby1m.com,One Million by One Million (1Mby1M),http://www.1mby1m.com,West Menlo Park,Founder and CEO
+Rob,Norman,rob.norman@piano.io,Knotch,http://www.knotch.com,New York,Director
+Jennifer,Openshaw,jen@girlswithimpact.org,Girls With Impact,http://www.girlswithimpact.org,Greenwich,"CEO, Girls"
+Trish,Regan,trish@76research.com,76research,http://www.76research.com,New York,"Co-Founder, Executive Editor"
+Padmasree,Warrior,padmasree.warrior@effem.com,Mars,http://www.mars.com,McLean,Board Advisor
+Tom,Fishburne,tom@marketoonist.com,Marketoonist,http://www.marketoonist.com,San Anselmo,Founder & CEO
+Conan,O'Brien,conan@teamcoco.com,Conan,http://www.teamcoco.com,Burbank,CEO
+Diego,Rodriguez,drodriguez@hbs.edu,Harvard Business School,http://www.hbs.edu,Boston,Executive Fellow
+Dan,Sanker,dan@tariffninja.com,TariffNinja,http://www.tariffninja.com,Bentonville,Chief Executive Officer
+Jonathan,Javier,jonathan@wonsulting.com,NetworkAI by Wonsulting,,New York,Co-Founder
+Sal,Khan,skhan@khanacademy.org,Khan Academy,http://www.khanacademy.org,Mountain View,"Founder, CEO"
+Nick,Schacht,nick.schacht@shrm.org,SHRM,http://www.shrm.org,Alexandria,Chief Strategy Officer and Chief Global Development Officer
+Jerry,Lee,jerry@wonsulting.com,Wonsulting,http://www.wonsulting.com,Los Angeles,Co-Founder
+Arnold,Schwarzenegger,arnold@oakproductions.com,The Schwarzenegger Climate Initiative,http://www.schwarzeneggerclimateinitiative.com,Los Angeles,Chairman
+Jules,Polonetsky,julespol@fpf.org,Future of Privacy Forum,http://www.fpf.org,Washington,CEO
+Alex,Freberg,alex@analystbuilder.com,Analyst Builder,http://www.analystbuilder.com,Charleston,Founder & CEO
+Akshay,Kothari,akshay@makenotion.com,Notion,http://www.notion.com,San Francisco,Co-Founder
+Quharrison,Terry,q@vnmusa.com,VNM USA,http://www.vnmusa.com,Madison,Executive Producer of Screens
+Reshma,Saujani,reshma@momsfirst.us,Moms First,http://www.momsfirst.us,Columbus,Founder and CEO
+Carla,Gentry,carla.gentry@analytical-solution.com,Analytical-Solution,http://www.analytical-solution.com,Orlando,Data Scientist/ Contractor / Influencer
+David,Kong,david.kong@deiadvisors.org,"It's Personal Stories, A Hospitality Podcast",http://www.itspersonalstories.com,Phoenix,Founder and Principal
+Joshua,Miller,josh@joshhmiller.com,JOSHUA MILLER | Executive Leadership Coach,http://www.joshhmiller.com,Austin,Contributing Writer
+Will,McTighe,will@saywhat.ai,Saywhat,,San Francisco,Co-Founder
+Peter,Guber,peterg@mandalay.com,Mandalay Entertainment Group,http://www.mandalay.com,Los Angeles,Chairman and CEO
+Joe,Weisenthal,jweisenthal@bloomberg.net,Bloomberg,,New York,Editor
+Bob,Phibbs,bob@retaildoc.com,The Retail Doctor®,http://www.retaildoc.com,Coxsackie,CEO
+Gale,Crosley,gcrosley@crosleycompany.com,Crosley+Company,http://www.crosleycompany.com,Dobson,"CEO, Growth Strategist to CPA Firms, AI, Blockchain, Crypto Companies, PE & ESOP Consultants"
+Jill,Konrath,jill@whatsreallypossible.com,What's Really Possible,http://www.whatsreallypossible.com,Minneapolis,Chief Activator
+Dara,Khosrowshahi,dk@uber.com,Uber,http://www.uber.com,San Francisco,CEO
+Ryan,Hoover,ryan@weekend.fund,Weekend Fund,http://www.weekend.fund,Frisco,Founder & Investor
+Terri,Ludwig,terril@ballmergroup.com,Ballmer Group,http://www.ballmergroup.org,Bellevue,Chief Executive Officer
+Martha,Stewart,martha1@marthastewart.com,Martha Stewart Living Omnimedia,http://www.marthastewart.com,New York,Founder
+Brian,Haaff,brian.dehaaff@aha.io,Aha!,http://www.aha.io,Los Altos,Co-founder and CEO — The World's #1 Product Development Software
+Mary,Kirby,mary@runwaygirlnetwork.com,Runway Girl Network,http://www.runwaygirlnetwork.com,New Paris,"Founder, Editor and Publisher"
+Andrew,Seaman,aseaman@linkedin.com,LinkedIn,http://www.linkedin.com,Sunnyvale,Editor
+Tai,Tran,tai.tran@airbnb.com,Airbnb,http://www.airbnb.com,San Francisco,Head of Strategy & Operations
+Anand,Chandrasekaran,anand@hioctave.ai,HiO,http://www.hio.ai,San Francisco,Founder
+William,Agne,william.agne@grace.com,W. R. Grace,http://www.grace.com,Columbia,"Chief Financial Officer (CFO), Specialty Catalysts"
+Ryan,Serhant,courses@ryanserhant.com,Business of Influence,,New York,Podcast Host
+Maynard,Webb,maynard@winfunding.com,Webb Investment Network,http://www.winfunding.com,San Francisco,Founder
+Dan,Frommer,dan@newconsumer.com,The New Consumer,http://www.newconsumer.com,Los Angeles,Founder and Editor in Chief
+Brad,Feld,brad@foundry.vc,Foundry,http://www.foundry.vc,Boulder,Partner
+Don,Peppers,don.peppers@menlo.edu,Menlo College,http://www.menlo.edu,Atherton,Adjunct Professor
+Sarah,Mancinho,sarah.mancinho@maveris.com,Maveris,http://www.maveris.com,Martinsburg,Cybersecurity Reporting Lead | Multi-Contract Portfolio Oversight
+John,Hammond,john.hammond@huntresslabs.com,Huntress,http://www.huntress.com,Columbia,Senior Principal Security Researcher
+Tim,Certified,tim@progresscoachingleader.com,Progress Coaching (Training Reinforcement Partner Co.),http://www.progresscoachingleader.com,Cedarburg,Vice President Materials
+Jensen,Huang,jensen@nvidia.com,NVIDIA,http://www.nvidia.com,Santa Clara,"Founder and CEO, Nvidia"
+Jim,Farley,jfarle21@ford.com,Ford Motor Company,http://www.ford.com,Dearborn,CEO
+Vivek,Wadhwa,vivek@wadhwa.com,Vionix Biosciences,http://www.vionix.bio,Belmont,Chief Executive Officer
+Ed,Davidson,edavidson@lfdc.com,Long Foundation Drilling Co.,http://www.lfdc.com,Nashville,Director Health Safety
+Hannah,Morgan,hmorgan@careersherpa.net,Career Sherpa.net,http://www.careersherpa.net,Rochester,Job Search Strategist
+Viktoria,Semaan,viktoria.semaan@databricks.com,Databricks,http://www.databricks.com,San Francisco,Principal AI Evangelist
+Erika,James,erika.james@wharton.upenn.edu,The Wharton School,http://www.upenn.edu,Philadelphia,Dean
+Bill,McDermott,bill.mcdermott@servicenow.com,ServiceNow,http://www.servicenow.com,Santa Clara,"Chairman and CEO, Board Member"
+Yossi,Sheffi,sheffi@mit.edu,MIT Center for Transportation & Logistics,,Cambridge,Director
+Katerine,Sandoval,kate@purrfecthire.com,Purrfect Hire,http://www.purrfecthire.com,London,Founder & CEO
+Daliana,Liu,daliana@dalianaliu.com,Daliana Liu Coaching,http://www.dalianaliu.com,San Francisco,"Founder, Coach to Senior ICs, Tech Execs, Founders"
+Miro,Bada,drmiro@peakprotocol.co,Peak Protocol,http://www.peakprotocol.co,Austin,Writer
+Stacey,Deakins,stacey.deakins@synergy55.com,Composites One,http://www.compositesone.com,Schaumburg,In-House Recruiter
+Tom,Davenport,tdavenport@babson.edu,Babson College,http://www.babson.edu,Waltham,Distinguished Professor
+Pat,Gelsinger,pgelsinger@gloo.us,Gloo,http://www.gloo.com,Boulder,Executive Chair and Head of Technology
+George,Stern,george@leadershipgs.com,Growth That Matters,http://www.leadershipgs.com,Snowmass Village,Author and Speaker
+Lewis,Howes,lewis@schoolofgreatness.com,Greatness Media,http://www.greatness.com,Los Angeles,Founder
+John,Chambers,john@jc2ventures.com,JC2 Ventures,http://www.jc2ventures.com,Palo Alto,CEO
+Rutger,Bregman,rutger@moralambition.org,The School for Moral Ambition,http://www.moralambition.org,New York,Co-Founder
+Michael,Chapman,chapmanm@morganservices.com,Morgan Services,http://www.morganservices.com,Chicago,General Manager
+Richard,Edelman,richard.edelman@edelman.com,Edelman,http://www.edelman.com,New York,President and CEO
+Colin,Shaw,colin.shaw@beyondphilosophy.com,Beyond Philosophy LLC,http://www.beyondphilosophy.com,Sarasota,Founder & CEO
+Kevin,Pho,kevinpho@kevinmd.com,"KevinMD, LLC",http://www.kevinmd.com,Nashua,"Founder and Editor, KevinMD.com"
+Maria,Shriver,missb@mariashriver.com,Shriver Media,http://www.shrivermedia.com,Scottsdale,Founder
+Stan,McChrystal,stan.mcchrystal@mcchrystalgroup.com,McChrystal Group,http://www.mcchrystalgroup.com,Alexandria,CEO and Chairman
+Kristina,Salen,kristina.salen@booksy.com,Booksy,http://www.booksy.com,Poland,Chief Financial Officer
+Chris,Nassetta,chris.nassetta@hilton.com,Hilton,http://www.hilton.com,McLean,
+Amy,Miller,milleros@amazon.com,Amazon,http://www.amazon.com,Seattle,Recruiting Manager
+Kara,Goldin,kara@drinkhint.com,Hint Inc.,http://www.drinkhint.com,San Francisco,"Founder of Hint, Founder and CEO"
+Aaron,Allen,aallen@aaronallen.com,Aaron Allen Capital Partners,http://www.aaronallencp.com,Chicago,"Chairman, Managing Director"
+Chip,Huyen,huyen@stanfordalumni.org,Stealth,http://www.timelyai.com,Phoenix,Building
+Lenny,Rachitsky,lenny@lennyrachitsky.com,Lenny's Newsletter,http://www.lennysnewsletter.com,Dallas,"Author, Lenny’s Newsletter and Lenny’s Podcast"
+Anurag,Harsh,harsh@creatingdentalexcellence.com,Creating Dental Excellence Group,http://www.creatingdentalexcellence.com,Cornwall,Founder and CEO
+Josh,Braun,josh@joshbraun.com,Braun Training,http://www.joshbraun.com,Boca Raton,Host of the Inside Selling Podcast
+Ramon,Laguarta,ramon.laguarta@pepsico.com,PepsiCo,http://www.pepsico.com,Harrison,Chief Executive Officer
+Mark,Suzman,mark.suzman@gatesfoundation.org,Gates Foundation,http://www.gatesfoundation.org,Seattle,Chief Executive Officer
+Kristalina,Georgieva,kgeorgieva@imf.org,International Monetary Fund,http://www.imf.org,Washington,Managing Director
+John,Marty,john@johnraphaelmarty.com,Mindset Reset Podcast,http://www.johnraphaelmarty.com,Seattle,Founder
+Garry,Tan,garry@ycombinator.com,Y Combinator,http://www.ycombinator.com,Mountain View,"President, CEO, and Group Partner"
+Adrian,Gonzalez,adrian@adelantescm.com,Indago,http://www.joinindago.com,Newton,Founder
+Carolyn,Frost,carolyn@healthymindsetliving.com,Healthy Mindset Living,http://www.healthymindsetliving.com,New York,Personal Development Strategist ✨
+Michael,Porter,mporter@hbs.edu,Institute for Strategy and Competitiveness at HBS,,Boston,Director
+Laura,Powers,laura@base10.vc,Reframe Venture,http://www.reframeventure.com,London,Steering Committee Member
+Clarke,Murphy,clarke.murphy@russellreynolds.com,Russell Reynolds Associates,http://www.russellreynolds.com,New York,Board and CEO Leadership Advisor
+Brendan,Rogers,brendan@2amvc.com,2am VC,http://www.2amvc.com,Mumbai,Co-Founder
+Bob,Sutton,bobsut@stanford.edu,"Stanford, Center For Advanced Study in the Behavioral Sciences",,Menlo Park,Faculty Fellow
+Jim,Marous,jmarous@thefinancialbrand.com,Forbes,http://www.forbes.com,Jersey City,Contributor
+Pratik,Thakker,pratik@durity.com,Durity,http://www.durity.com,Dover,Founder & CEO
+Marcus,Samuelsson,marcussamuelsson@samuelssongroup.com,Marcus Samuelsson Group,http://www.marcussamuelssongroup.com,New York,Chef | Restaurateur
+Danielle,Booth,danielle@dimartinobooth.com,QI Research,http://www.quillintelligence.com,Dallas,CEO and Chief Strategist
+Kevin,Naughton,kevin@devlaunch.us,DevLaunch,http://www.devlaunch.us,New York,Co-Founder
+Dan,Schulman,dan.s@verizon.com,Verizon,http://www.verizon.com,Bernards,
+Zachary,Karabell,zkarabell@rivertwice.com,Penguin Publishing Group,http://www.penguin.com,New York,Author
+Niko,Bonatsos,niko@verdictcap.com,Verdict Capital,http://www.verdictcap.com,San Francisco,Founder & Managing Director
+Murray,McAllister,mmcallister@instituteforchronicpain.org,Institute for Chronic Pain,http://www.instituteforchronicpain.org,Saint Paul,"Publisher, Consultant, Keynote Speaker"
+Preksha,Kaparwan,preksha@getsuper.ai,Super AI,http://www.getsuper.ai,San Francisco,Co-Founder
+Sam,Szuchan,sam@soleo.co,Soleo,http://www.soleo.co,Carson,Founder
+Les,Brown,leslie@lesbrown.com,Les Brown International,http://www.hirelesbrown.com,Fort Lauderdale,"CEO, Keynote & Motivational Speaker to National & International Audiences"
+Mellody,Hobson,mhobson@arielinvestments.com,Ariel Investments,http://www.arielinvestments.com,Chicago,Co-CEO & President
+Jess,Ramos,jess@bdeanalytics.com,Big Data Energy Analytics⚡️,,Atlanta,"Founder & Content Creator (Tech, Data, & AI)"
+Ron,Baker,ron@thresholdnow.com,THRESHOLD,,Petaluma,Co-Founder
+Jason,Feifer,jason@cpgfasttrack.com,CPG Fast Track,http://www.cpgfasttrack.com,Rancho Cucamonga,Co-Founder
+Karen,Cator,karen@sparkns.org,SPARK NS,http://www.sparkns.org,Menlo Park,Education Director
+Kim,Stone,kim.p.stone@linkability.us,Moving Forward Newsletter,http://www.movingforwardnewsletter.com,Nampa,Founder
+Zura,Kakushadze,zura@vynance.com,Quantigic®,http://www.quantigic.com,Stamford,"CEO, Quantigic®. Author, ""151 Trading Strategies""."
+Robert,Reich,robert@inequalitymedia.org,Inequality Media,http://www.inequalitymedia.org,Berkeley,Professor of Public Policy
+Richard,Blom,richardvanderblom@justconnecting.nl,RichardvanderBlom.com,http://www.richardvanderblom.com,Orlando,Founder | The Authority Accelerator (VIP Program)
+Katharine,Hayhoe,katharine.hayhoe@ttu.edu,Texas Tech University,http://www.ttu.edu,Lubbock,Paul Whitfield Horn Distinguished Professor
+Nav,Athwal,nav@terraagventures.com,Terra Ag Ventures,http://www.terraagventures.com,San Francisco,Managing Director
+Dan,Primack,dan@axios.com,Axios,http://www.axios.com,Arlington,Business Editor
+Jane,Sarasohn-Kahn,jane@think-health.com,Duke Corporate Education,http://www.dukece.com,Durham,Global Educator
+Hamdi,Ulukaya,hamdi.ulukaya@chobani.com,Chobani,http://www.chobani.com,New Berlin,Founder & CEO | Chobani. La Colombe. Tent Partnership for Refugees. | Let’s #shepherdarevolution
+Elvi,Caperonis,elvicaperonis@reinvent-yourself.org,Reinvent Yourself,http://www.reinvent-yourself.org,Jacksonville,Founder
+Jessica,Hernandez,jessica@greatresumesfast.com,Great Resumes Fast | Executive Resume Writers,http://www.greatresumesfast.com,Jacksonville,Coach & Consultant for Executive Resume Writers
+Shawn,Berg,shawn@smbsalesandmarketing.com,SMB Sales & Marketing,,Saint Johns,Founder
+Krishna,Memani,memanik@lafayette.edu,Lafayette College,http://www.lafayette.edu,Easton,Chief Investment Officer
+Allison,Ruiz,allisonruiz@microsoft.com,Microsoft AI,http://www.microsoft.ai,Redmond,Technical Recruiter - Microsoft AI
+Jeffrey,Sachs,jeffrey.sachs@unsdsn.org,Sustainable Development Solutions Network,http://www.unsdsn.org,New York,President
+Roberta,Matuson,roberta@matusonconsulting.com,Matuson Consulting,http://www.matusonconsulting.com,Boston,President
+Mark,Tercek,mtercek@centerview.com,Centerview Partners,http://www.centerviewpartners.com,New York,Advisory Board Member
+Andrew,Filipowski,andrew.filipowski@flur.ee,Fluree,http://www.flur.ee,Winston-Salem,Co-Chief Executive Officer
+Marissa,Mayer,marissa@dazzle.ai,dazzle ai,http://www.dazzle.ai,Palo Alto,CEO & Founder
+Brian,Burns,brian.burns@b2brevenue.com,The Sales Leadership Show / PodCast revenue management collective,,Cupertino,CEO and Host
+Natalia,Noguera,natalia@pipelineangels.org,Pipeline Angels,http://www.pipelineangels.org,Newark,Founder
+Bernice,King,mbryant@thekingcenter.org,"The Martin Luther King, Jr. Center for Nonviolent Social Change (The King Center)",http://www.thekingcenter.org,Atlanta,Chief Executive Officer
+Lewis,Howes,lewis@sportsnetworker.com,Sports Networker,http://www.sportsnetworker.com,Columbus,COO
+Tunde,Onakoya,tunde@chessinslumsafrica.com,Chess in Slums Africa [CISA],http://www.chessinslumsafrica.com,Lagos,Founder
+Shreyas,Doshi,product-sense@shreyasdoshi.com,High Leverage Labs,http://www.shreyasdoshi.com,San Francisco,Founder
+David,Elkington,delkington@getsignals.ai,Atonom,http://www.atonom.ai,Provo,Founder & CEO
+Nicole,Black,nblack@nicoleblackesq.com,AffiniPay,http://www.affinipay.com,Austin,AI in Law & Legaltech Expert
+Lily,Liu,lilyliu@tesla.com,Tesla,http://www.tesla.com,Austin,Senior Recruiter
+Brian,Burke,brianburke@keyes.com,The Keyes Company,http://www.keyes.com,Miami,Real Estate Agent
+Jefferson,Fisher,jefferson@jeffersonfisher.com,Civility Media,http://www.jeffersonfisher.com,Beaumont,Founder
+Alexis,Kerr,alexis@shiningdiamondmedia.com,Shining Diamond Media Group,http://www.shiningdiamondmedia.com,Atlanta,Founder & CEO
+Sarah,Sisneros,sarah_sisneros@otb.net,OTB,http://www.otb.net,New York,"VP, HR"
+Kevin,Box,kbox@function-4.com,Synergós,http://www.synergós.io,Cypress,Founder
+Brian,Feroldi,brian@brianferoldi.com,Long Term Mindset,http://www.longtermmindset.co,Providence,Founder
+Lorenzo,Simonelli,lorenzo.simonelli@bakerhughes.com,Baker Hughes,http://www.bakerhughes.com,Houston,Chairman & CEO
+Mike,Kunkle,mike.kunkle@sparxiq.com,SPARXiQ,http://www.sparxiq.com,Cleveland,"VP, Sales Effectiveness"
+Chamath,Palihapitiya,chamath@socialcapital.com,Social Capital,http://www.socialcapital.com,West Menlo Park,Founder
+Bridgit,Mendler,bridgit@northwoodspace.io,Northwood,http://www.northwoodspace.io,Los Angeles,CEO and Co-Founder at Northwood
+Glenn,Kelman,glenn.kelman@redfin.com,Redfin,http://www.redfin.com,Seattle,President & CEO
+Jesse,Cole,jesse@thesavannahbananas.com,Savannah Bananas,http://www.thesavannahbananas.com,Savannah,Owner
+Ken,Kuang,kkuang@torreyhillstech.com,"Torrey Hills Technologies, LLC",http://www.torreyhillstech.com,San Diego,President
+Neil,Barofsky,nbarofsky@jenner.com,Jenner & Block,http://www.jenner.com,Chicago,Partner
+Greg,Coquillo,greg-coquillo@amazon.com,Amazon Web Services (AWS),,Seattle,Product Leader
+Julien,Chaumond,julien@huggingface.co,Hugging Face,http://www.huggingface.co,New York,CTO
+Philip,Elmer-Dewitt,philip.e@apple.com,Apple,http://www.apple.com,Cupertino,Editor in Chief
+Michael,Vo,mike@ritual.work,Ritual AI,http://www.ritual.work,Los Angeles,CTO & Co-Founder
+Ralph,McLaughlin,ralph@openbrand.com,OpenBrand,http://www.openbrand.com,New York,Chief Economist
+Justin,Bariso,jbariso@eqapplied.com,EQ Applied LLC,http://www.eqapplied.com,Brewster,Founder
+Andy,Paul,andy@andypaul.com,Sell Without Selling Out,http://www.andypaul.com,San Diego,Author
+Nuseir,Yassin,yassin@nas.io,Nas.io,,New York,CEO
+Neeraj,Arora,narora@generalcatalyst.com,General Catalyst,http://www.generalcatalyst.com,San Francisco,Managing Director
+Heath,Adams,heath.adams@educate360.com,Educate 360,http://www.educate360.com,Boston,"Managing Director, Cybersecurity Services"
+James,Gorman,james.gorman@morganstanley.com,Bucknell University,http://www.bucknell.edu,Lewisburg,
+Patrick,Lencioni,patricklencioni@tablegroup.com,The Table Group,http://www.tablegroup.com,Lafayette,Founder & President
+Matt,Charney,matt@mattcharney.com,Kyle & Co,http://www.kyleandco.com,Boston,Principal Analyst
+Monte,Pedersen,monte@clarifydeployachieve.com,The CDA Group LLC,http://www.clarifydeployachieve.com,Galena,Principal
+Martin,Lindstrom,ml@newsweek.com,Newsweek,http://www.newsweek.com,New York,"Host of ""Why Do We….?"" – a new Global Show on Newsweek – Reveals why we do the Things we do."
+Scilla,Andreen,scilla@impactfulfund.org,Impactful Fund,http://www.impactfulfund.org,Seattle,Founder Impactful Fund
+Nicole,Perlroth,nicole@silverbuckshotvc.com,Silver Buckshot Ventures,http://www.thisishowtheytellmetheworldends.com,San Francisco,Founding Partner
+Charles,Duhigg,charles@charlesduhigg.com,The New Yorker,http://www.newyorker.com,New York,Writer
+Kevin,Systrom,k@systrom.com,Artifact,,San Francisco,CEO
+Will,Gibbons,will@willgibbons.com,Will Gibbons Design LLC,http://www.willgibbons.com,Orange,Content Creator
+Leonard,Lee,leonard.lee@next-curve.com,neXt Curve,http://www.next-curve.com,San Diego,Executive Producer & Podcaster - The neXt Curve reThink Podcast
+Heather,Hartnett,heather@humanventures.co,Human Ventures,http://www.human.vc,New York,CEO & General Partner
+Bashar,Wali,bashar.wali@practicehospitality.com,Practice Hospitality - Lifestyle Hotel Management,http://www.practicehospitality.com,Dallas,Founder + Chief Executive
+Rand,Fishkin,rand@sparktoro.com,SparkToro,http://www.sparktoro.com,Seattle,"Cofounder of SparkToro, Alertmouse, & Snackbar Studio. Author"
+Bonnie,Biafore,bonnie@bonniebiafore.com,"MONTEVISTA SOLUTIONS, INC.",http://www.montevistasolutions.com,Conifer,Project Management Educator and Consultant
+Dave,Gerhardt,dave@exitfive.com,Exit Five,http://www.exitfive.com,Burlington,Founder
+Arslan,Ahmad,arslan@designgurus.org,Design Gurus,http://www.designgurus.io,Redmond,Co-Founder & CEO
+Nick,Singh,nick@datalemur.com,DataLemur 🐵 (Ace the SQL & Data Interview),http://www.datalemur.com,San Francisco,Founder & CEO
+Jan,Rezab,jan@ravineo.com,Ravineo,http://www.ravineo.com,New York,CEO & Co-founder
+Larry,Fitzgerald,larry@trenchescap.com,Trenches Capital,,Phoenix,Partner
+Morgan,Ingram,mji@ampcreative.io,AMP Social,http://www.theampsocial.com,Atlanta,Chief Prospecting Officer
+Matteo,Carbone,matteo.carbone@iotinsobs.com,IoT Insurance Observatory,http://www.iotinsobs.com,Milan,Founder and Director
+Michael,Yan,michael@simplify.jobs,Simplify,http://www.simplify.jobs,San Francisco,Founder & CEO
+Usman,Asif,usman.asif@devsinc.com,Devsinc,http://www.devsinc.com,San Francisco,Founder and CEO
+Kim,Perell,kim@drinkjuni.com,Juni Adaptogenic Sparkling Tea,http://www.drinkjuni.com,Los Angeles,CEO and Co-Founder
+Karen,Webster,karenwebster@pymnts.com,PYMNTS,http://www.pymnts.com,Boston,CEO
+Pejman,Milani,pmilani@ehshouston.org,Milani Creative,http://www.milanicreative.com,Bellaire,Founder
+Mike,Braham,mike.braham@intempohealth.com,Intempo Health,http://www.intempohealth.com,Columbus,Chief Growth Officer and Board of Directors
+Bill,Gates,be@breakthroughenergy.org,Breakthrough Energy,http://www.breakthroughenergy.org,Kirkland,Founder
+Carol,Snyder,carol.snyder@ey.com,EY,http://www.ey.com,Bloomington,Financial Services Client Director and Client Executive Leader for FSO Central Region
+Satya,Nadella,satyan@microsoft.com,Microsoft,http://www.microsoft.com,Redmond,Chairman and CEO
+Jeff,Weiner,jeff@nextplayventures.com,Next Play Ventures,http://www.nextplayventures.com,West Menlo Park,Founding Partner
+Susanna,Su,susanna@morstar.com,Morstar Inc.,http://www.morstar.com,Livonia,"General Manager, Sales Representative"
+Simon,Sinek,simon@jhu.edu,The Curve,http://www.thecurve.org,New York,Founder
+Arseniy,Grusha,ag@dataprana.io,Dataprana,http://www.dataprana.io,Aventura,Chief Executive Officer
+Tony,Robbins,sarah.markopoulos@tonyrobbins.com,Robbins Research International,http://www.tonyrobbins.com,San Diego,Chairman
+Alex,Banayan,alex@alexbanayan.com,The Third Door,http://www.thethirddoor.net,Marietta,1 International Bestselling Author
+Jeff,Gilfand,jeff.gilfand@endurancedirect.com,Endurance,http://www.endurancewarranty.com,Tampa,Chief Financial Officer (CFO)
+Melinda,Gates,melinda@pivotalventures.org,Pivotal,http://www.pivotal.com,Seattle,Founder
+Daniel,Goleman,daniel@danielgoleman.info,Goleman Consulting Group,http://www.golemanconsultinggroup.com,Northampton,Senior Consultant
+Deepak,Chopra,nonlocal@deepakchopra.com,DEEPAK CHOPRA LLC,,New York,Founder
+Ruben,Gamboa,rgamboa@holder.com,Holder Construction,http://www.holderconstruction.com,Atlanta,Asst. Superintendent - MEP & Building Technology
+Brene,Brown,tgif@bbearg.com,University of Houston,http://www.uh.edu,Houston,Huffington Endowed Chair + Research Professor
+Danielle,Mason,danielle.mason@highspring.com,Highspring,http://www.highspring.com,Brentwood,Partner
+Gretchen,Rubin,gretchen@gretchenrubin.com,Gretchen Rubin Media,http://www.gretchenrubin.com,New York,Founder
+Liz,Ryan,liz@humanworkplace.com,Human Workplace,http://www.humanworkplace.com,Boulder,Founder and CEO
+Travis,Bradberry,trb@talentsmart.com,The New Emotional Intelligence,,San Diego,Author of The New Emotional Intelligence
+Whitney,Johnson,whitney@thedisruptionadvisors.com,Disruption Advisors,http://www.thedisruptionadvisors.com,Lexington,World Authority on Smart Growth Leadership and Personal Disruption
+Jon,Steinberg,jon.steinberg@lazard.com,Lazard,http://www.lazard.com,New York,Managing Director
+Barbara,Corcoran,barbara@barbaracorcoran.com,Barbara Corcoran Inc,http://www.barbaracorcoran.com,New York,"Executive Coach, Motivational Speaker, Shark on ABC’s Shark Tank, Author, Founder"
+Ron,Kruszewski,ronk@stifel.com,Stifel Financial Corp.,http://www.stifel.com,St. Louis,
+Rita,King,rita@power-pairs.com,Power Pairs,http://www.power-pairs.com,New York,Founder
+Austin,Belcak,austin@cultivatedculture.com,Cultivated Culture,http://www.cultivatedculture.com,New York,Founder
+Mary,Barra,mary.barra@gm.com,General Motors,http://www.gm.com,Detroit,Chair and Chief Executive Officer
+Elina,Garcia,egarcia@twelvenyc.com,Twelve,http://www.twelvenyc.com,New York,"SVP, Head of Global Operations"
+Daniel,Burrus,tfn@burrus.com,"Burrus Research, Inc.",http://www.burrus.com,Oconomowoc,"Best Selling Author, Keynote Speaker and Strategic Business Consultant"
+Dharmesh,Shah,dshah@hubspot.com,HubSpot,http://www.hubspot.com,Cambridge,"Founder and CTO, Founder"
+Daniel,Solove,dsolove@gwu.edu,The George Washington University,http://www.gwu.edu,Washington,Eugene L. and Barbara A. Bernard Professor of Intellectual Property and Technology Law
+Sarah,Johnston,sarah@briefcasecoach.com,"Briefcase Coach: Executive Resume Writing, Job Search Strategies and Interview Coaching",http://www.briefcasecoach.com,Chapel Hill,"Keynote Speaker, Webinar & Lunch and Learn Presenter"
+Laszlo,Bock,laszlobock@berkeley.edu,"University of California, Berkeley",http://www.berkeley.edu,Berkeley,Co-Founder and Co-Faculty Director of the Berkeley Transformative CHRO Academy
+Craig,Newmark,craig@craigslist.org,Craig Newmark Philanthropies,http://www.craignewmarkphilanthropies.org,San Francisco,Founder & CSR
+Alex,Xu,alex@bytebytego.com,ByteByteGo,http://www.bytebytego.com,San Francisco,Author & Co-Founder
+Josh,Bersin,jbersin@bersin.com,Galileo by the Josh Bersin Company,http://www.getgalileo.ai,Oakland,Founder and Dean
+Suze,Orman,suze@securesave.com,SecureSave,http://www.securesave.com,Kirkland,"Co-Founder, SecureSave"
+Levar,Burton,burton@levarburton.com,LeVar Burton Entertainment,http://www.levarburton.com,Los Angeles,Founder
+David,Katz,dkatz@dietid.com,Diet ID,http://www.dietid.com,Detroit,"Founder, CEO"
+Lisa,Orbe-Austin,lisa@dynamictransitionsllp.com,"Dynamic Transitions Psychological Consulting, LLP",http://www.dynamictransitionsllp.com,New York,Partner
+Kathy,Caprino,kathy@kathycaprino.com,"Kathy Caprino/Kathy Caprino, LLC",http://www.kathycaprino.com,Wilton,Career & Leadership Coach
+Eric,Olander,eric@chinaafricaproject.com,The China Global South Project,http://www.chinaglobalsouth.com,Berkeley,Co-Founder and Editor in Chief
+Ilya,Pozin,ip@telly.com,Telly TV,http://www.telly.com,Los Angeles,"CEO, Founder"
+Carson,Tate,carson@carsontateconsulting.com,Carson Tate,http://www.carsontateconsulting.com,Charlotte,Managing Partner
+Heather,Elias,heather.elias@elmstreet.com,Elm Street,http://www.elmstreet.com,Seattle,Chief Growth Officer
+Jonathan,Becher,jbecher@sjsharks.com,San Jose Sharks,http://www.sjsharks.com,San Jose,President
+Betty,Liu,betty@apextreasurycorp.com,Apex Treasury Corporation,http://www.apextreasurycorp.com,New York,Independent Director
+Shay,Rowbottom,shay@shayrowbottom.com,Shay Rowbottom Healing,,Orlando,CEO
+Steve,Faktor,steve@ideafaktory.com,IdeaFaktory,http://www.ideafaktory.com,New York,Managing Director
+Jigar,Shah,jigar@multiplier.expert,*Multiplier,http://www.multiplier.expert,Baltimore,Co-Managing Partner
+DJ,Patil,dpatil@gpv.com,GreatPoint Ventures,http://www.gpv.com,San Francisco,General Partner
+Alex,Hormozi,value@acquisition.com,Acquisition.com,http://www.acquisition.com,Las Vegas,Managing Partner
+Gary,Travis,gary@loomenti.com,Loomenti,http://www.loomenti.com,Chicago,Founder
+Tim,O'Reilly,tim@oreilly.com,O'Reilly AlphaTech Ventures,http://www.oatv.com,San Francisco,Partner
+Mike,Cohn,michael.cohn@arizent.com,Arizent,http://www.arizent.com,New York,"Editor-In-Chief, Accountingtoday.Com"
+Steve,Blank,sblank@stanford.edu,Stanford University,http://www.stanford.edu,Stanford,Adjunct Professor Stanford University
+Chester,Elton,chester@thecultureworks.com,The Culture Works,http://www.thecultureworks.com,New York,"#1 New York Times Bestselling Author, Thinkers 50 Executive Coach, Standing Ovation Keynote Speaker"
+Katie,Couric,katie@katiecouric.com,Katie Couric Media,http://www.katiecouric.com,New York,Co-Founder
+Jeff,Selingo,jeff@selingo.com,EdPlus at Arizona State University,,Scottsdale,Management Committee Member
+Linda,Le,linda.le@rippling.com,Rippling,http://www.rippling.com,San Francisco,Inbound Sourcer-R&D
+Adena,Friedman,adena.friedman@nasdaq.com,Nasdaq,http://www.nasdaq.com,New York,Chair and Chief Executive Officer
+Adam,Karpiak,akarpiak@karpiakconsulting.com,Karpiak Consulting,http://www.karpiakconsulting.com,New York,"Co-Founder, Principal Career Coach, & Lead Recruiter"
+Robert,Downey,robert@happyproducts.com,happy®,http://www.happyproducts.com,Montclair,Co-Founder
+Chris,Do,chris@thefutur.com,The Futur™,http://www.thefutur.com,Santa Monica,"Founder, CEO"
+Rachel,Jones,rjones@nationalpress.org,National Press Foundation,http://www.nationalpress.org,Washington,Director of Journalism Initiatives
+Jeff,Immelt,jrimmelt@stanford.edu,Stanford University Graduate School of Business,http://gsb.stanford.edu,Stanford,Lecturer in Management
+Justin,Els,jels@fairsquare.com,FairSquare,http://www.fairsquare.com,Birmingham,"Vice President, Risk"
+Dennis,Mortensen,dennis@launchbrightly.com,LaunchBrightly,http://www.launchbrightly.com,New York,CEO and Founder
+Clement,Mihailescu,clement@algoexpert.io,AlgoExpert,http://www.algoexpert.io,New York,Co-Founder & CEO
+Atif,Rafiq,atif@ritual.work,Ritual AI,http://www.ritual.work,Chicago,CEO & Co-founder
+Marianne,Cooper,coops@stanford.edu,Lean In,http://www.leanin.org,Palo Alto,"Co-author, Women in the Workplace Reports"
+Yasi,Baiani,yasi@rayaadvisory.com,Raya,http://www.rayaadvisory.com,San Francisco,CEO & Founder
+Abe,Young,ayoung@saprea.org,Utah Valley Chamber of Commerce,http://www.thechamber.org,Provo,"Treasurer, Executive Committee"
+Colin,Coleman,ccoleman@psh.com,Partridge Snow & Hahn LLP,http://www.psh.com,Providence,Business Attorney
+Timothy,McGee,tmcgee@integrated-usa.com,Integrated Insurance Solutions,http://www.integrated-usa.com,Ashburn,Senior Client Relationship Manager
+Bob,McCool,bob@arielitservices.com,Ariel IT Services,http://www.arielitservices.com,Louisville,President & CEO
+Ron,Moody,rmoody@moodywilliams.com,Hotaling Moody & Associates,http://www.moodywilliams.com,Jacksonville,Chief Executive Officer
+Gregg,Peterson,gregg.peterson@dxc.com,DXC Technology,http://www.dxc.com,Ashburn,Executive Digital Sales Leader - Financial Services
+Brent,Hocking,brent@themodselecter.com,Mod Sélection Champagne,http://www.modselectionchampagne.com,West Hollywood,Founder and CEO
+Eddie,Benford,ebenford@outdoorcap.com,Outdoor Cap Company,http://www.outdoorcap.com,Bentonville,"Head of Product: PD&D, Sourcing & Design"
+Ronnie,Nation,rnation@rynfile.com,RYN File,http://www.rynfile.com,Apopka,Co-Founder & CEO
+Kevin,Leach,kevin.leach@abbvie.com,AbbVie,http://www.abbvie.com,Lake Bluff,Financial Planning & Analysis at AbbVie
+Bruce,Sanders,bruces@anchoraudio.com,Anchor Audio,http://www.anchoraudio.com,Carlsbad,Channel Manager
+Mike,Manning,manning@strategicadvicellc.com,Strategic Advice,http://www.strategic-advice.com,Seattle,Board Member | Consultant
+David,Hughes,david.h@rolans.com,Rolan Business Machine Co. Inc,http://www.rolans.com,Rome,Tech
+Dave,Sluberski,dsspph@rit.edu,College of Art and Design at RIT,,Rochester,"Owner of West Rush Media, LLC"
+Tracy,Whitlock,tracy.whitlock@volvo.com,Volvo Group,http://www.volvogroup.com,Greensboro,Business Analyst / Business Intelligence - Production Logistics
+Mark,Graban,mark@parrishpartners.com,Parrish Partners Leadership & Management Consulting in Orange County,http://www.parrishpartners.com,San Clemente,Consultant
+Reno,Perry,reno@careerleap.co,Career Leap by Reno Perry,http://www.careerleap.co,Chicago,Founder & CEO
+Rachel,Zoe,rachel@rachelzoe.com,"Rachel Zoe, Inc.",http://www.shoprachelzoe.com,West Hollywood,Designer
+Rafat,Ali,rafat@skift.com,Skift,http://www.skift.com,New York,CEO/Founder
+Toby,Cosgrove,cosgrod@ccf.org,Cleveland Clinic,http://www.clevelandclinic.org,Cleveland,CEO and President
+David,Malan,malan@regenttheatre.com,Regent Theatre,http://www.regenttheatre.com,Arlington,Operator
+Erika,Armstrong,erika@aircrewacademy.com,Advanced Aircrew Academy,http://www.aircrewacademy.com,Atlanta,Pilot | Director of Marketing | VP Business Development | Sales
+Josh,Aharonoff,josh@modelwiz.com,Model Wiz,http://www.modelwiz.com,New York,CEO and Co-founder
+Victoria,Repa,vrepa@betterme.world,BetterMe,http://www.betterme.world,Los Angeles,CEO & Founder BetterMe
+Carla,Harris,carla.harris@morganstanley.com,Morgan Stanley,,New York,Senior Client Advisor
+Geoffrey,Garrett,ggarrett@usc.edu,USC Marshall School of Business,http://marshall.usc.edu,Los Angeles,Dean
+Devin,Wenig,devin@symbolic.ai,Symbolic.ai,http://www.symbolic.ai,San Francisco,Co-Founder and CEO
+Loic,Meur,loic@paua.life,PAUA,http://www.paua.life,Paris,Founder & CEO
+Sramana,Mitra,sramana@1mby1m.com,One Million by One Million (1Mby1M),http://www.1mby1m.com,West Menlo Park,Founder and CEO
+Rob,Norman,rob.norman@piano.io,Knotch,http://www.knotch.com,New York,Director
+Jennifer,Openshaw,jen@girlswithimpact.org,Girls With Impact,http://www.girlswithimpact.org,Greenwich,"CEO, Girls"
+Trish,Regan,trish@76research.com,76research,http://www.76research.com,New York,"Co-Founder, Executive Editor"
+Padmasree,Warrior,padmasree.warrior@effem.com,Mars,http://www.mars.com,McLean,Board Advisor
+Tom,Fishburne,tom@marketoonist.com,Marketoonist,http://www.marketoonist.com,San Anselmo,Founder & CEO
+Conan,O'Brien,conan@teamcoco.com,Conan,http://www.teamcoco.com,Burbank,CEO
+Diego,Rodriguez,drodriguez@hbs.edu,Harvard Business School,http://www.hbs.edu,Boston,Executive Fellow
+Dan,Sanker,dan@tariffninja.com,TariffNinja,http://www.tariffninja.com,Bentonville,Chief Executive Officer
+Jonathan,Javier,jonathan@wonsulting.com,NetworkAI by Wonsulting,,New York,Co-Founder
+Sal,Khan,skhan@khanacademy.org,Khan Academy,http://www.khanacademy.org,Mountain View,"Founder, CEO"
+Nick,Schacht,nick.schacht@shrm.org,SHRM,http://www.shrm.org,Alexandria,Chief Strategy Officer and Chief Global Development Officer
+Jerry,Lee,jerry@wonsulting.com,Wonsulting,http://www.wonsulting.com,Los Angeles,Co-Founder
+Arnold,Schwarzenegger,arnold@oakproductions.com,The Schwarzenegger Climate Initiative,http://www.schwarzeneggerclimateinitiative.com,Los Angeles,Chairman
+Jules,Polonetsky,julespol@fpf.org,Future of Privacy Forum,http://www.fpf.org,Washington,CEO
+Sam,Shank,sshank@a16z.com,a16z speedrun,,San Francisco,Visiting Partner
+Alex,Freberg,alex@analystbuilder.com,Analyst Builder,http://www.analystbuilder.com,Charleston,Founder & CEO
+Akshay,Kothari,akshay@makenotion.com,Notion,http://www.notion.com,San Francisco,Co-Founder
+Quharrison,Terry,q@vnmusa.com,VNM USA,http://www.vnmusa.com,Madison,Executive Producer of Screens
+Reshma,Saujani,reshma@momsfirst.us,Moms First,http://www.momsfirst.us,Columbus,Founder and CEO
+Carla,Gentry,carla.gentry@analytical-solution.com,Analytical-Solution,http://www.analytical-solution.com,Orlando,Data Scientist/ Contractor / Influencer
+David,Kong,david.kong@deiadvisors.org,"It's Personal Stories, A Hospitality Podcast",http://www.itspersonalstories.com,Phoenix,Founder and Principal
+Joshua,Miller,josh@joshhmiller.com,JOSHUA MILLER | Executive Leadership Coach,http://www.joshhmiller.com,Austin,Contributing Writer
+Will,McTighe,will@saywhat.ai,Saywhat,,San Francisco,Co-Founder
+Peter,Guber,peterg@mandalay.com,Mandalay Entertainment Group,http://www.mandalay.com,Los Angeles,Chairman and CEO
+Joe,Weisenthal,jweisenthal@bloomberg.net,Bloomberg,,New York,Editor
+Bob,Phibbs,bob@retaildoc.com,The Retail Doctor®,http://www.retaildoc.com,Coxsackie,CEO
+Gale,Crosley,gcrosley@crosleycompany.com,Crosley+Company,http://www.crosleycompany.com,Dobson,"CEO, Growth Strategist to CPA Firms, AI, Blockchain, Crypto Companies, PE & ESOP Consultants"
+Jill,Konrath,jill@whatsreallypossible.com,What's Really Possible,http://www.whatsreallypossible.com,Minneapolis,Chief Activator
+Dara,Khosrowshahi,dk@uber.com,Uber,http://www.uber.com,San Francisco,CEO
+Ryan,Hoover,ryan@weekend.fund,Weekend Fund,http://www.weekend.fund,Frisco,Founder & Investor
+Terri,Ludwig,terril@ballmergroup.com,Ballmer Group,http://www.ballmergroup.org,Bellevue,Chief Executive Officer
+Martha,Stewart,martha1@marthastewart.com,Martha Stewart Living Omnimedia,http://www.marthastewart.com,New York,Founder
+Brian,Haaff,brian.dehaaff@aha.io,Aha!,http://www.aha.io,Los Altos,Co-founder and CEO — The World's #1 Product Development Software
+Mary,Kirby,mary@runwaygirlnetwork.com,Runway Girl Network,http://www.runwaygirlnetwork.com,New Paris,"Founder, Editor and Publisher"
+Andrew,Seaman,aseaman@linkedin.com,LinkedIn,http://www.linkedin.com,Sunnyvale,Editor
+Tai,Tran,tai.tran@airbnb.com,Airbnb,http://www.airbnb.com,San Francisco,Head of Strategy & Operations
+Anand,Chandrasekaran,anand@hioctave.ai,HiO,http://www.hio.ai,San Francisco,Founder
+William,Agne,william.agne@grace.com,W. R. Grace,http://www.grace.com,Columbia,"Chief Financial Officer (CFO), Specialty Catalysts"
+Ryan,Serhant,courses@ryanserhant.com,Business of Influence,,New York,Podcast Host
+Maynard,Webb,maynard@winfunding.com,Webb Investment Network,http://www.winfunding.com,San Francisco,Founder
+Dan,Frommer,dan@newconsumer.com,The New Consumer,http://www.newconsumer.com,Los Angeles,Founder and Editor in Chief
+Brad,Feld,brad@foundry.vc,Foundry,http://www.foundry.vc,Boulder,Partner
+Don,Norman,dnorman@ucsd.edu,UC San Diego,http://www.ucsd.edu,San Diego,Professor Emeritus of Cognitive Science & Psychology
+Don,Peppers,don.peppers@menlo.edu,Menlo College,http://www.menlo.edu,Atherton,Adjunct Professor
+Sarah,Mancinho,sarah.mancinho@maveris.com,Maveris,http://www.maveris.com,Martinsburg,Cybersecurity Reporting Lead | Multi-Contract Portfolio Oversight
+John,Hammond,john.hammond@huntresslabs.com,Huntress,http://www.huntress.com,Columbia,Senior Principal Security Researcher
+Tim,Certified,tim@progresscoachingleader.com,Progress Coaching (Training Reinforcement Partner Co.),http://www.progresscoachingleader.com,Cedarburg,Vice President Materials
+Jensen,Huang,jensen@nvidia.com,NVIDIA,http://www.nvidia.com,Santa Clara,"Founder and CEO, Nvidia"
+Jim,Farley,jfarle21@ford.com,Ford Motor Company,http://www.ford.com,Dearborn,CEO
+Vivek,Wadhwa,vivek@wadhwa.com,Vionix Biosciences,http://www.vionix.bio,Belmont,Chief Executive Officer
+Ed,Davidson,edavidson@lfdc.com,Long Foundation Drilling Co.,http://www.lfdc.com,Nashville,Director Health Safety
+Hannah,Morgan,hmorgan@careersherpa.net,Career Sherpa.net,http://www.careersherpa.net,Rochester,Job Search Strategist
+Viktoria,Semaan,viktoria.semaan@databricks.com,Databricks,http://www.databricks.com,San Francisco,Principal AI Evangelist
+Erika,James,erika.james@wharton.upenn.edu,The Wharton School,http://www.upenn.edu,Philadelphia,Dean
+Bill,McDermott,bill.mcdermott@servicenow.com,ServiceNow,http://www.servicenow.com,Santa Clara,"Chairman and CEO, Board Member"
+Yossi,Sheffi,sheffi@mit.edu,MIT Center for Transportation & Logistics,,Cambridge,Director
+Katerine,Sandoval,kate@purrfecthire.com,Purrfect Hire,http://www.purrfecthire.com,London,Founder & CEO
+Daliana,Liu,daliana@dalianaliu.com,Daliana Liu Coaching,http://www.dalianaliu.com,San Francisco,"Founder, Coach to Senior ICs, Tech Execs, Founders"
+Miro,Bada,drmiro@peakprotocol.co,Peak Protocol,http://www.peakprotocol.co,Austin,Writer
+Stacey,Deakins,stacey.deakins@synergy55.com,Composites One,http://www.compositesone.com,Schaumburg,In-House Recruiter
+Tom,Davenport,tdavenport@babson.edu,Babson College,http://www.babson.edu,Waltham,Distinguished Professor
+Pat,Gelsinger,pgelsinger@gloo.us,Gloo,http://www.gloo.com,Boulder,Executive Chair and Head of Technology
+George,Stern,george@leadershipgs.com,Growth That Matters,http://www.leadershipgs.com,Snowmass Village,Author and Speaker
+Lewis,Howes,lewis@schoolofgreatness.com,Greatness Media,http://www.greatness.com,Los Angeles,Founder
+John,Chambers,john@jc2ventures.com,JC2 Ventures,http://www.jc2ventures.com,Palo Alto,CEO
+Rutger,Bregman,rutger@moralambition.org,The School for Moral Ambition,http://www.moralambition.org,New York,Co-Founder
+Michael,Chapman,chapmanm@morganservices.com,Morgan Services,http://www.morganservices.com,Chicago,General Manager
+Richard,Edelman,richard.edelman@edelman.com,Edelman,http://www.edelman.com,New York,President and CEO
+Colin,Shaw,colin.shaw@beyondphilosophy.com,Beyond Philosophy LLC,http://www.beyondphilosophy.com,Sarasota,Founder & CEO
+Kevin,Pho,kevinpho@kevinmd.com,"KevinMD, LLC",http://www.kevinmd.com,Nashua,"Founder and Editor, KevinMD.com"
+Maria,Shriver,missb@mariashriver.com,Shriver Media,http://www.shrivermedia.com,Scottsdale,Founder
+Stan,McChrystal,stan.mcchrystal@mcchrystalgroup.com,McChrystal Group,http://www.mcchrystalgroup.com,Alexandria,CEO and Chairman
+Kristina,Salen,kristina.salen@booksy.com,Booksy,http://www.booksy.com,Poland,Chief Financial Officer
+Chris,Nassetta,chris.nassetta@hilton.com,Hilton,http://www.hilton.com,McLean,
+Amy,Miller,milleros@amazon.com,Amazon,http://www.amazon.com,Seattle,Recruiting Manager
+Kara,Goldin,kara@drinkhint.com,Hint Inc.,http://www.drinkhint.com,San Francisco,"Founder of Hint, Founder and CEO"
+Aaron,Allen,aallen@aaronallen.com,Aaron Allen Capital Partners,http://www.aaronallencp.com,Chicago,"Chairman, Managing Director"
+Chip,Huyen,huyen@stanfordalumni.org,Stealth,http://www.timelyai.com,Phoenix,Building
+Lenny,Rachitsky,lenny@lennyrachitsky.com,Lenny's Newsletter,http://www.lennysnewsletter.com,Dallas,"Author, Lenny’s Newsletter and Lenny’s Podcast"
+Anurag,Harsh,harsh@creatingdentalexcellence.com,Creating Dental Excellence Group,http://www.creatingdentalexcellence.com,Cornwall,Founder and CEO
+Josh,Braun,josh@joshbraun.com,Braun Training,http://www.joshbraun.com,Boca Raton,Host of the Inside Selling Podcast
+Ramon,Laguarta,ramon.laguarta@pepsico.com,PepsiCo,http://www.pepsico.com,Harrison,Chief Executive Officer
+Mark,Suzman,mark.suzman@gatesfoundation.org,Gates Foundation,http://www.gatesfoundation.org,Seattle,Chief Executive Officer
+Kristalina,Georgieva,kgeorgieva@imf.org,International Monetary Fund,http://www.imf.org,Washington,Managing Director
+John,Marty,john@johnraphaelmarty.com,Mindset Reset Podcast,http://www.johnraphaelmarty.com,Seattle,Founder
+Garry,Tan,garry@ycombinator.com,Y Combinator,http://www.ycombinator.com,Mountain View,"President, CEO, and Group Partner"
+Adrian,Gonzalez,adrian@adelantescm.com,Indago,http://www.joinindago.com,Newton,Founder
+Carolyn,Frost,carolyn@healthymindsetliving.com,Healthy Mindset Living,http://www.healthymindsetliving.com,New York,Personal Development Strategist ✨
+Michael,Porter,mporter@hbs.edu,Institute for Strategy and Competitiveness at HBS,,Boston,Director
+Laura,Powers,laura@base10.vc,Reframe Venture,http://www.reframeventure.com,London,Steering Committee Member
+Clarke,Murphy,clarke.murphy@russellreynolds.com,Russell Reynolds Associates,http://www.russellreynolds.com,New York,Board and CEO Leadership Advisor
+Brendan,Rogers,brendan@2amvc.com,2am VC,http://www.2amvc.com,Mumbai,Co-Founder
+Bob,Sutton,bobsut@stanford.edu,"Stanford, Center For Advanced Study in the Behavioral Sciences",,Menlo Park,Faculty Fellow
+Jim,Marous,jmarous@thefinancialbrand.com,Forbes,http://www.forbes.com,Jersey City,Contributor
+Pratik,Thakker,pratik@durity.com,Durity,http://www.durity.com,Dover,Founder & CEO
+Marcus,Samuelsson,marcussamuelsson@samuelssongroup.com,Marcus Samuelsson Group,http://www.marcussamuelssongroup.com,New York,Chef | Restaurateur
+Danielle,Booth,danielle@dimartinobooth.com,QI Research,http://www.quillintelligence.com,Dallas,CEO and Chief Strategist
+Kevin,Naughton,kevin@devlaunch.us,DevLaunch,http://www.devlaunch.us,New York,Co-Founder
+Dan,Schulman,dan.s@verizon.com,Verizon,http://www.verizon.com,Bernards,
+Zachary,Karabell,zkarabell@rivertwice.com,Penguin Publishing Group,http://www.penguin.com,New York,Author
+Niko,Bonatsos,niko@verdictcap.com,Verdict Capital,http://www.verdictcap.com,San Francisco,Founder & Managing Director
+Murray,McAllister,mmcallister@instituteforchronicpain.org,Institute for Chronic Pain,http://www.instituteforchronicpain.org,Saint Paul,"Publisher, Consultant, Keynote Speaker"
+Preksha,Kaparwan,preksha@getsuper.ai,Super AI,http://www.getsuper.ai,San Francisco,Co-Founder
+Sam,Szuchan,sam@soleo.co,Soleo,http://www.soleo.co,Carson,Founder
+Les,Brown,leslie@lesbrown.com,Les Brown International,http://www.hirelesbrown.com,Fort Lauderdale,"CEO, Keynote & Motivational Speaker to National & International Audiences"
+Mellody,Hobson,mhobson@arielinvestments.com,Ariel Investments,http://www.arielinvestments.com,Chicago,Co-CEO & President
+Jess,Ramos,jess@bdeanalytics.com,Big Data Energy Analytics⚡️,,Atlanta,"Founder & Content Creator (Tech, Data, & AI)"
+Ron,Baker,ron@thresholdnow.com,THRESHOLD,,Petaluma,Co-Founder
+Jason,Feifer,jason@cpgfasttrack.com,CPG Fast Track,http://www.cpgfasttrack.com,Rancho Cucamonga,Co-Founder
+Karen,Cator,karen@sparkns.org,SPARK NS,http://www.sparkns.org,Menlo Park,Education Director
+Kim,Stone,kim.p.stone@linkability.us,Moving Forward Newsletter,http://www.movingforwardnewsletter.com,Nampa,Founder
+Zura,Kakushadze,zura@vynance.com,Quantigic®,http://www.quantigic.com,Stamford,"CEO, Quantigic®. Author, ""151 Trading Strategies""."
+Robert,Reich,robert@inequalitymedia.org,Inequality Media,http://www.inequalitymedia.org,Berkeley,Professor of Public Policy
+Richard,Blom,richardvanderblom@justconnecting.nl,RichardvanderBlom.com,http://www.richardvanderblom.com,Orlando,Founder | The Authority Accelerator (VIP Program)
+Katharine,Hayhoe,katharine.hayhoe@ttu.edu,Texas Tech University,http://www.ttu.edu,Lubbock,Paul Whitfield Horn Distinguished Professor
+Nav,Athwal,nav@terraagventures.com,Terra Ag Ventures,http://www.terraagventures.com,San Francisco,Managing Director
+Dan,Primack,dan@axios.com,Axios,http://www.axios.com,Arlington,Business Editor
+Jane,Sarasohn-Kahn,jane@think-health.com,Duke Corporate Education,http://www.dukece.com,Durham,Global Educator
+Hamdi,Ulukaya,hamdi.ulukaya@chobani.com,Chobani,http://www.chobani.com,New Berlin,Founder & CEO | Chobani. La Colombe. Tent Partnership for Refugees. | Let’s #shepherdarevolution
+Elvi,Caperonis,elvicaperonis@reinvent-yourself.org,Reinvent Yourself,http://www.reinvent-yourself.org,Jacksonville,Founder
+Jessica,Hernandez,jessica@greatresumesfast.com,Great Resumes Fast | Executive Resume Writers,http://www.greatresumesfast.com,Jacksonville,Coach & Consultant for Executive Resume Writers
+Shawn,Berg,shawn@smbsalesandmarketing.com,SMB Sales & Marketing,,Saint Johns,Founder
+Krishna,Memani,memanik@lafayette.edu,Lafayette College,http://www.lafayette.edu,Easton,Chief Investment Officer
+Allison,Ruiz,allisonruiz@microsoft.com,Microsoft AI,http://www.microsoft.ai,Redmond,Technical Recruiter - Microsoft AI
+Jeffrey,Sachs,jeffrey.sachs@unsdsn.org,Sustainable Development Solutions Network,http://www.unsdsn.org,New York,President
+Roberta,Matuson,roberta@matusonconsulting.com,Matuson Consulting,http://www.matusonconsulting.com,Boston,President
+Mark,Tercek,mtercek@centerview.com,Centerview Partners,http://www.centerviewpartners.com,New York,Advisory Board Member
+Andrew,Filipowski,andrew.filipowski@flur.ee,Fluree,http://www.flur.ee,Winston-Salem,Co-Chief Executive Officer
+Marissa,Mayer,marissa@dazzle.ai,dazzle ai,http://www.dazzle.ai,Palo Alto,CEO & Founder
+Brian,Burns,brian.burns@b2brevenue.com,The Sales Leadership Show / PodCast revenue management collective,,Cupertino,CEO and Host
+Natalia,Noguera,natalia@pipelineangels.org,Pipeline Angels,http://www.pipelineangels.org,Newark,Founder
+Bernice,King,mbryant@thekingcenter.org,"The Martin Luther King, Jr. Center for Nonviolent Social Change (The King Center)",http://www.thekingcenter.org,Atlanta,Chief Executive Officer
+Lewis,Howes,lewis@sportsnetworker.com,Sports Networker,http://www.sportsnetworker.com,Columbus,COO
+Tunde,Onakoya,tunde@chessinslumsafrica.com,Chess in Slums Africa [CISA],http://www.chessinslumsafrica.com,Lagos,Founder
+Shreyas,Doshi,product-sense@shreyasdoshi.com,High Leverage Labs,http://www.shreyasdoshi.com,San Francisco,Founder
+David,Elkington,delkington@getsignals.ai,Atonom,http://www.atonom.ai,Provo,Founder & CEO
+Nicole,Black,nblack@nicoleblackesq.com,AffiniPay,http://www.affinipay.com,Austin,AI in Law & Legaltech Expert
+Lily,Liu,lilyliu@tesla.com,Tesla,http://www.tesla.com,Austin,Senior Recruiter
+Brian,Burke,brianburke@keyes.com,The Keyes Company,http://www.keyes.com,Miami,Real Estate Agent
+Alexis,Kerr,alexis@shiningdiamondmedia.com,Shining Diamond Media Group,http://www.shiningdiamondmedia.com,Atlanta,Founder & CEO
+Sarah,Sisneros,sarah_sisneros@otb.net,OTB,http://www.otb.net,New York,"VP, HR"
+Kevin,Box,kbox@function-4.com,Synergós,http://www.synergós.io,Cypress,Founder
+Brian,Feroldi,brian@brianferoldi.com,Long Term Mindset,http://www.longtermmindset.co,Providence,Founder
+Lorenzo,Simonelli,lorenzo.simonelli@bakerhughes.com,Baker Hughes,http://www.bakerhughes.com,Houston,Chairman & CEO
+Mike,Kunkle,mike.kunkle@sparxiq.com,SPARXiQ,http://www.sparxiq.com,Cleveland,"VP, Sales Effectiveness"
+Chamath,Palihapitiya,chamath@socialcapital.com,Social Capital,http://www.socialcapital.com,West Menlo Park,Founder
+Bridgit,Mendler,bridgit@northwoodspace.io,Northwood,http://www.northwoodspace.io,Los Angeles,CEO and Co-Founder at Northwood
+Glenn,Kelman,glenn.kelman@redfin.com,Redfin,http://www.redfin.com,Seattle,President & CEO
+Neil,Blumenthal,neil@warbyparker.com,Warby Parker,http://www.warbyparker.com,New York,Co-Founder and Co-CEO
+Jesse,Cole,jesse@thesavannahbananas.com,Savannah Bananas,http://www.thesavannahbananas.com,Savannah,Owner
+Ken,Kuang,kkuang@torreyhillstech.com,"Torrey Hills Technologies, LLC",http://www.torreyhillstech.com,San Diego,President
+Neil,Barofsky,nbarofsky@jenner.com,Jenner & Block,http://www.jenner.com,Chicago,Partner
+Julien,Chaumond,julien@huggingface.co,Hugging Face,http://www.huggingface.co,New York,CTO
+Philip,Elmer-Dewitt,philip.e@apple.com,Apple,http://www.apple.com,Cupertino,Editor in Chief
+Michael,Vo,mike@ritual.work,Ritual AI,http://www.ritual.work,Los Angeles,CTO & Co-Founder
+Ralph,McLaughlin,ralph@openbrand.com,OpenBrand,http://www.openbrand.com,New York,Chief Economist
+Justin,Bariso,jbariso@eqapplied.com,EQ Applied LLC,http://www.eqapplied.com,Brewster,Founder
+Andy,Paul,andy@andypaul.com,Sell Without Selling Out,http://www.andypaul.com,San Diego,Author
+Nuseir,Yassin,yassin@nas.io,Nas.io,,New York,CEO
+Neeraj,Arora,narora@generalcatalyst.com,General Catalyst,http://www.generalcatalyst.com,San Francisco,Managing Director
+Heath,Adams,heath.adams@educate360.com,Educate 360,http://www.educate360.com,Boston,"Managing Director, Cybersecurity Services"
+James,Gorman,james.gorman@morganstanley.com,Bucknell University,http://www.bucknell.edu,Lewisburg,
+Patrick,Lencioni,patricklencioni@tablegroup.com,The Table Group,http://www.tablegroup.com,Lafayette,Founder & President
+Matt,Charney,matt@mattcharney.com,Kyle & Co,http://www.kyleandco.com,Boston,Principal Analyst
+Monte,Pedersen,monte@clarifydeployachieve.com,The CDA Group LLC,http://www.clarifydeployachieve.com,Galena,Principal
+Martin,Lindstrom,ml@newsweek.com,Newsweek,http://www.newsweek.com,New York,"Host of ""Why Do We….?"" – a new Global Show on Newsweek – Reveals why we do the Things we do."
+Scilla,Andreen,scilla@impactfulfund.org,Impactful Fund,http://www.impactfulfund.org,Seattle,Founder Impactful Fund
+Nicole,Perlroth,nicole@silverbuckshotvc.com,Silver Buckshot Ventures,http://www.thisishowtheytellmetheworldends.com,San Francisco,Founding Partner
+Charles,Duhigg,charles@charlesduhigg.com,The New Yorker,http://www.newyorker.com,New York,Writer
+Kevin,Systrom,k@systrom.com,Artifact,,San Francisco,CEO
+Will,Gibbons,will@willgibbons.com,Will Gibbons Design LLC,http://www.willgibbons.com,Orange,Content Creator
+Leonard,Lee,leonard.lee@next-curve.com,neXt Curve,http://www.next-curve.com,San Diego,Executive Producer & Podcaster - The neXt Curve reThink Podcast
+Heather,Hartnett,heather@humanventures.co,Human Ventures,http://www.human.vc,New York,CEO & General Partner
+Bashar,Wali,bashar.wali@practicehospitality.com,Practice Hospitality - Lifestyle Hotel Management,http://www.practicehospitality.com,Dallas,Founder + Chief Executive
+Rand,Fishkin,rand@sparktoro.com,SparkToro,http://www.sparktoro.com,Seattle,"Cofounder of SparkToro, Alertmouse, & Snackbar Studio. Author"
+Bonnie,Biafore,bonnie@bonniebiafore.com,"MONTEVISTA SOLUTIONS, INC.",http://www.montevistasolutions.com,Conifer,Project Management Educator and Consultant
+Dave,Gerhardt,dave@exitfive.com,Exit Five,http://www.exitfive.com,Burlington,Founder
+Arslan,Ahmad,arslan@designgurus.org,Design Gurus,http://www.designgurus.io,Redmond,Co-Founder & CEO
+Nick,Singh,nick@datalemur.com,DataLemur 🐵 (Ace the SQL & Data Interview),http://www.datalemur.com,San Francisco,Founder & CEO
+Jan,Rezab,jan@ravineo.com,Ravineo,http://www.ravineo.com,New York,CEO & Co-founder
+Larry,Fitzgerald,larry@trenchescap.com,Trenches Capital,,Phoenix,Partner
+Morgan,Ingram,mji@ampcreative.io,AMP Social,http://www.theampsocial.com,Atlanta,Chief Prospecting Officer
+Matteo,Carbone,matteo.carbone@iotinsobs.com,IoT Insurance Observatory,http://www.iotinsobs.com,Milan,Founder and Director
+Michael,Yan,michael@simplify.jobs,Simplify,http://www.simplify.jobs,San Francisco,Founder & CEO
+Usman,Asif,usman.asif@devsinc.com,Devsinc,http://www.devsinc.com,San Francisco,Founder and CEO
+Kim,Perell,kim@drinkjuni.com,Juni Adaptogenic Sparkling Tea,http://www.drinkjuni.com,Los Angeles,CEO and Co-Founder
+Karen,Webster,karenwebster@pymnts.com,PYMNTS,http://www.pymnts.com,Boston,CEO
+Pejman,Milani,pmilani@ehshouston.org,Milani Creative,http://www.milanicreative.com,Bellaire,Founder

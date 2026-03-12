@@ -42,9 +42,17 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function normalizeEmail(email) {
+  return String(email || '').trim().toLowerCase();
+}
+
+function writeCsv(filePath, records, columns) {
+  fs.writeFileSync(filePath, stringify(records, { header: true, columns }), 'utf8');
+}
+
 async function verifyEmail(mvConfig, email) {
   const { apiKey, baseUrl } = mvConfig;
-  const base = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
+  const base = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   const url = new URL('v3/', base);
   url.searchParams.set('api', apiKey);
   url.searchParams.set('email', email);
@@ -52,19 +60,33 @@ async function verifyEmail(mvConfig, email) {
 
   try {
     const res = await fetch(url.toString(), { method: 'GET' });
-    let data;
+    const text = await res.text();
+    let data = null;
+
     try {
-      data = await res.json();
+      data = text ? JSON.parse(text) : null;
     } catch {
+      if (!res.ok) {
+        console.warn(`  [warn] MV API HTTP ${res.status} for ${email}`);
+        return { result: 'error', quality: '', subresult: `http_${res.status}` };
+      }
+      console.warn(`  [warn] MV response parse error for ${email}`);
       return { result: 'error', quality: '', subresult: 'parse_error' };
     }
+
+    if (!res.ok) {
+      const errorCode = data?.subresult || data?.error_code || data?.code || `http_${res.status}`;
+      console.warn(`  [warn] MV API HTTP ${res.status} for ${email}: ${errorCode}`);
+      return { result: 'error', quality: '', subresult: String(errorCode) };
+    }
+
     return {
-      result: data.result || 'error',
-      quality: String(data.quality ?? ''),
-      subresult: data.subresult || ''
+      result: data?.result || 'error',
+      quality: String(data?.quality ?? ''),
+      subresult: data?.subresult || ''
     };
   } catch (err) {
-    console.warn(`  [warn] MV API error for ${email}: ${err.message}`);
+    console.warn(`  [warn] MV API network error for ${email}: ${err.message}`);
     return { result: 'error', quality: '', subresult: 'network_error' };
   }
 }
@@ -84,49 +106,121 @@ function buildSmartReachRow(rec) {
   };
 }
 
-async function verifyRecords(records, label, mvConfig) {
-  let alreadyVerified = 0;
-
-  const toVerify = records.filter((rec) => {
-    if (!rec.contact_email || !rec.contact_email.trim()) return false;
-    if (rec.mv_result && rec.mv_result.trim() !== '') {
-      alreadyVerified++;
-      return false;
-    }
-    return true;
-  });
-
-  console.log(`[${label}] Loaded ${records.length} rows. Already verified: ${alreadyVerified}. To verify: ${toVerify.length}`);
-
-  for (let i = 0; i < toVerify.length; i += CONCURRENCY) {
-    const batch = toVerify.slice(i, i + CONCURRENCY);
-
-    await Promise.all(
-      batch.map(async (rec) => {
-        const { result, quality, subresult } = await verifyEmail(mvConfig, rec.contact_email.trim());
-        rec.mv_result = result;
-        rec.mv_quality = quality;
-        rec.mv_subresult = subresult;
-      })
-    );
-
-    console.log(`  [${label}] Verified ${Math.min(i + CONCURRENCY, toVerify.length)}/${toVerify.length}...`);
-
-    if (i + CONCURRENCY < toVerify.length) {
-      await sleep(BATCH_DELAY_MS);
-    }
-  }
-
-  return toVerify.length;
-}
-
-function loadCsv(filePath, label) {
+function loadCsv(filePath, label, options = {}) {
+  const { warnIfMissing = true } = options;
   if (!fs.existsSync(filePath)) {
-    console.warn(`[warn] ${label} CSV not found: ${filePath} — skipping`);
+    if (warnIfMissing) {
+      console.warn(`[warn] ${label} CSV not found: ${filePath} — skipping`);
+    }
     return [];
   }
   const raw = fs.readFileSync(filePath, 'utf8');
   return parse(raw, { columns: true, skip_empty_lines: true, relax_column_count: true });
+}
+
+function buildVerifiedIndex(records) {
+  const index = new Map();
+  for (const rec of records) {
+    const email = normalizeEmail(rec.contact_email);
+    if (!email) continue;
+    const result = String(rec.mv_result || '').trim();
+    if (!result) continue;
+    index.set(email, {
+      mv_result: result,
+      mv_quality: String(rec.mv_quality || ''),
+      mv_subresult: String(rec.mv_subresult || '')
+    });
+  }
+  return index;
+}
+
+function mergeExistingVerification(records, verifiedIndex) {
+  let alreadyVerified = 0;
+
+  for (const rec of records) {
+    const email = normalizeEmail(rec.contact_email);
+    if (!email) continue;
+    const existing = verifiedIndex.get(email);
+    if (!existing) continue;
+    rec.mv_result = existing.mv_result;
+    rec.mv_quality = existing.mv_quality;
+    rec.mv_subresult = existing.mv_subresult;
+    alreadyVerified++;
+  }
+
+  return alreadyVerified;
+}
+
+async function verifyRecords(records, label, mvConfig, outputPath, stats) {
+  const groupedByEmail = new Map();
+
+  for (const rec of records) {
+    const email = normalizeEmail(rec.contact_email);
+    if (!email) continue;
+    if (String(rec.mv_result || '').trim()) continue;
+    if (!groupedByEmail.has(email)) groupedByEmail.set(email, []);
+    groupedByEmail.get(email).push(rec);
+  }
+
+  const emailsToVerify = Array.from(groupedByEmail.keys());
+  let newlyVerifiedRows = 0;
+
+  console.log(`[${label}] Total rows: ${stats.totalRows}. Already verified: ${stats.alreadyVerifiedRows}. Newly verifying: ${stats.pendingRows} rows across ${stats.pendingEmails} emails.`);
+
+  for (let i = 0; i < emailsToVerify.length; i += CONCURRENCY) {
+    const batch = emailsToVerify.slice(i, i + CONCURRENCY);
+
+    await Promise.all(
+      batch.map(async (email) => {
+        const verification = await verifyEmail(mvConfig, email);
+        const matchingRows = groupedByEmail.get(email) || [];
+        for (const rec of matchingRows) {
+          rec.mv_result = verification.result;
+          rec.mv_quality = verification.quality;
+          rec.mv_subresult = verification.subresult;
+          newlyVerifiedRows++;
+        }
+      })
+    );
+
+    writeCsv(outputPath, records, ALL_COLUMNS);
+    console.log(`  [${label}] Verified ${Math.min(i + CONCURRENCY, emailsToVerify.length)}/${emailsToVerify.length} emails...`);
+
+    if (i + CONCURRENCY < emailsToVerify.length) {
+      await sleep(BATCH_DELAY_MS);
+    }
+  }
+
+  return {
+    newlyVerifiedRows,
+    newlyVerifiedEmails: emailsToVerify.length
+  };
+}
+
+function buildDataset(inputPath, verifiedPath, label) {
+  const inputRecords = loadCsv(inputPath, label);
+  const verifiedRecords = loadCsv(verifiedPath, `${label} verified`, { warnIfMissing: false });
+  const verifiedIndex = buildVerifiedIndex(verifiedRecords);
+  const alreadyVerified = mergeExistingVerification(inputRecords, verifiedIndex);
+  let pendingRows = 0;
+  const pendingEmails = new Set();
+
+  for (const rec of inputRecords) {
+    const email = normalizeEmail(rec.contact_email);
+    if (!email || String(rec.mv_result || '').trim()) continue;
+    pendingRows++;
+    pendingEmails.add(email);
+  }
+
+  return {
+    records: inputRecords,
+    stats: {
+      totalRows: inputRecords.length,
+      alreadyVerifiedRows: alreadyVerified,
+      pendingRows,
+      pendingEmails: pendingEmails.size
+    }
+  };
 }
 
 async function main() {
@@ -141,39 +235,37 @@ async function main() {
 
   const mvConfig = { apiKey, baseUrl };
 
-  const agencyRecords = loadCsv(AGENCIES_INPUT, 'studio-agencies');
-  const brandRecords = loadCsv(BRANDS_INPUT, 'studio-brands');
+  const agencies = buildDataset(AGENCIES_INPUT, AGENCIES_VERIFIED, 'studio-agencies');
+  const brands = buildDataset(BRANDS_INPUT, BRANDS_VERIFIED, 'studio-brands');
 
-  const agenciesNewlyVerified = await verifyRecords(agencyRecords, 'agencies', mvConfig);
-  const brandsNewlyVerified = await verifyRecords(brandRecords, 'brands', mvConfig);
+  const agencyVerifyStats = await verifyRecords(agencies.records, 'agencies', mvConfig, AGENCIES_VERIFIED, agencies.stats);
+  const brandVerifyStats = await verifyRecords(brands.records, 'brands', mvConfig, BRANDS_VERIFIED, brands.stats);
 
-  // Write verified files
-  fs.writeFileSync(AGENCIES_VERIFIED, stringify(agencyRecords, { header: true, columns: ALL_COLUMNS }), 'utf8');
+  writeCsv(AGENCIES_VERIFIED, agencies.records, ALL_COLUMNS);
   console.log(`Wrote verified file: ${AGENCIES_VERIFIED}`);
 
-  fs.writeFileSync(BRANDS_VERIFIED, stringify(brandRecords, { header: true, columns: ALL_COLUMNS }), 'utf8');
+  writeCsv(BRANDS_VERIFIED, brands.records, ALL_COLUMNS);
   console.log(`Wrote verified file: ${BRANDS_VERIFIED}`);
 
-  // Build combined SmartReach export: mv_result === "ok" AND mv_quality !== "risky"
   const isSmartReachReady = (rec) =>
-    rec.mv_result === 'ok' && (rec.mv_quality || '').toLowerCase() !== 'risky';
+    rec.mv_result === 'ok' && !(rec.mv_subresult || '').toLowerCase().includes('catchall');
 
   const smartReachRows = [
-    ...agencyRecords.filter(isSmartReachReady),
-    ...brandRecords.filter(isSmartReachReady)
+    ...agencies.records.filter(isSmartReachReady),
+    ...brands.records.filter(isSmartReachReady)
   ].map(buildSmartReachRow);
 
-  fs.writeFileSync(
-    SMARTREACH_PATH,
-    stringify(smartReachRows, { header: true, columns: SMARTREACH_COLUMNS }),
-    'utf8'
-  );
+  writeCsv(SMARTREACH_PATH, smartReachRows, SMARTREACH_COLUMNS);
   console.log(`Wrote SmartReach file: ${SMARTREACH_PATH}`);
 
   console.log('\n--- Summary ---');
-  console.log(`Agencies verified:       ${agenciesNewlyVerified} new  (${agencyRecords.length} total rows)`);
-  console.log(`Brands verified:         ${brandsNewlyVerified} new  (${brandRecords.length} total rows)`);
-  console.log(`SmartReach-ready leads:  ${smartReachRows.length} exported`);
+  console.log(`Agencies total rows:      ${agencies.stats.totalRows}`);
+  console.log(`Agencies already verified:${String(agencies.stats.alreadyVerifiedRows).padStart(4, ' ')}`);
+  console.log(`Agencies newly verified:  ${agencyVerifyStats.newlyVerifiedRows} rows (${agencyVerifyStats.newlyVerifiedEmails} emails)`);
+  console.log(`Brands total rows:        ${brands.stats.totalRows}`);
+  console.log(`Brands already verified:  ${brands.stats.alreadyVerifiedRows}`);
+  console.log(`Brands newly verified:    ${brandVerifyStats.newlyVerifiedRows} rows (${brandVerifyStats.newlyVerifiedEmails} emails)`);
+  console.log(`SmartReach-ready leads:   ${smartReachRows.length} exported`);
 }
 
 main().catch((err) => {

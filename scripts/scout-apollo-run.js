@@ -17,9 +17,72 @@ const ROOT_DIR = process.cwd();
 const LEADS_DIR = path.join(ROOT_DIR, 'leads');
 const CSV_PATH = path.join(LEADS_DIR, 'select-small-mid-agencies-us.csv');
 const PAGE_STATE_PATH = path.join(LEADS_DIR, 'scout-apollo-page-state.json');
+const QUERY_STATE_PATH = path.join(LEADS_DIR, 'scout-apollo-query-state.json');
 const ENV_PATH = path.join(ROOT_DIR, '.env.local');
 const DEFAULT_REVEAL_DELAY_MS = 750;
 const MAX_PAGE = 20;
+
+// Query rotation: each 20-page cycle uses a different set of keyword + title filters
+// to expand the addressable pool beyond the first 500 people on any given query.
+const QUERY_VARIANTS = [
+  {
+    name: 'Creative & Advertising Agencies — Executive/Director titles',
+    q_organization_keyword_tags: [
+      'advertising agency', 'creative agency', 'marketing agency', 'brand agency',
+      'digital agency', 'PR agency', 'media agency', 'content agency',
+      'social media agency', 'integrated agency', 'ad agency'
+    ],
+    person_titles: [
+      'Executive Creative Director', 'Creative Director', 'Chief Creative Officer',
+      'Managing Director', 'VP Creative', 'VP Marketing', 'Head of Production',
+      'Executive Producer', 'Producer', 'Founder', 'Partner', 'President',
+      'Account Director', 'Strategy Director', 'Brand Director'
+    ]
+  },
+  {
+    name: 'Brand & Design Studios — Senior IC titles',
+    q_organization_keyword_tags: [
+      'brand studio', 'design studio', 'creative studio', 'production studio',
+      'motion studio', 'video production', 'content studio', 'editorial studio',
+      'in-house agency', 'creative collective'
+    ],
+    person_titles: [
+      'Senior Art Director', 'Art Director', 'Senior Designer', 'Design Director',
+      'Senior Copywriter', 'Copy Director', 'Senior Strategist', 'Senior Producer',
+      'Senior Account Manager', 'Creative Lead', 'Brand Lead', 'Creative Manager',
+      'Content Director', 'Campaign Director'
+    ]
+  },
+  {
+    name: 'PR & Communications Agencies — Dept Head titles',
+    q_organization_keyword_tags: [
+      'public relations', 'PR firm', 'communications agency', 'media relations',
+      'brand communications', 'integrated communications', 'reputation management',
+      'influencer marketing', 'experiential marketing', 'events agency'
+    ],
+    person_titles: [
+      'Chief Marketing Officer', 'Chief Communications Officer', 'VP of Communications',
+      'VP of Brand', 'Head of Creative', 'Head of Brand', 'Head of Content',
+      'Head of Strategy', 'Head of Marketing', 'Global Creative Director',
+      'Group Creative Director', 'SVP Creative', 'SVP Marketing'
+    ]
+  },
+  {
+    name: 'Boutique & Independent Agencies — Owner/Founder titles',
+    q_organization_keyword_tags: [
+      'boutique agency', 'independent agency', 'creative consultancy',
+      'marketing consultancy', 'brand consultancy', 'growth agency',
+      'performance agency', 'influencer agency', 'media consultancy',
+      'strategic communications'
+    ],
+    person_titles: [
+      'Owner', 'Co-Founder', 'Founder', 'Managing Partner', 'Principal',
+      'Creative Principal', 'Executive Director', 'Agency Principal',
+      'CEO', 'COO', 'Chief Strategy Officer', 'Chief Brand Officer',
+      'Chief Content Officer', 'Director'
+    ]
+  }
+];
 
 function loadPageState() {
   if (!fs.existsSync(PAGE_STATE_PATH)) return { nextPage: 1 };
@@ -32,6 +95,19 @@ function loadPageState() {
 
 function savePageState(nextPage) {
   fs.writeFileSync(PAGE_STATE_PATH, JSON.stringify({ nextPage }, null, 2), 'utf8');
+}
+
+function loadQueryState() {
+  if (!fs.existsSync(QUERY_STATE_PATH)) return { queryIndex: 0 };
+  try {
+    return JSON.parse(fs.readFileSync(QUERY_STATE_PATH, 'utf8'));
+  } catch {
+    return { queryIndex: 0 };
+  }
+}
+
+function saveQueryState(queryIndex) {
+  fs.writeFileSync(QUERY_STATE_PATH, JSON.stringify({ queryIndex }, null, 2), 'utf8');
 }
 
 function loadEnv() {
@@ -163,10 +239,17 @@ async function run() {
   const base = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
 
   const { nextPage: currentPage } = loadPageState();
-  const page2 = currentPage + 1;
-  const nextRunPage = page2 + 1 > MAX_PAGE ? 1 : page2 + 1;
+  const { queryIndex } = loadQueryState();
+  const variant = QUERY_VARIANTS[queryIndex % QUERY_VARIANTS.length];
 
-  console.log(`Fetching Apollo pages ${currentPage} and ${page2} (next run will start at ${nextRunPage})`);
+  console.log(`Using query variant ${queryIndex % QUERY_VARIANTS.length + 1} of ${QUERY_VARIANTS.length}: ${variant.name}`);
+
+  const page2 = currentPage + 1;
+  const isWrapping = page2 + 1 > MAX_PAGE;
+  const nextRunPage = isWrapping ? 1 : page2 + 1;
+  const nextQueryIndex = isWrapping ? (queryIndex + 1) % QUERY_VARIANTS.length : queryIndex;
+
+  console.log(`Fetching Apollo pages ${currentPage} and ${page2} (next run will start at ${nextRunPage}${isWrapping ? `, advancing to variant ${nextQueryIndex + 1}` : ''})`);
 
   async function fetchPage(page) {
     const url = new URL('mixed_people/api_search', base);
@@ -185,36 +268,8 @@ async function run() {
       body: JSON.stringify({
         q_organization_types: ['agency'],
         organization_num_employees_ranges: ['11-50', '51-200', '201-500'],
-        q_organization_keyword_tags: [
-          'advertising agency',
-          'creative agency',
-          'marketing agency',
-          'brand agency',
-          'digital agency',
-          'PR agency',
-          'media agency',
-          'content agency',
-          'social media agency',
-          'integrated agency',
-          'ad agency'
-        ],
-        person_titles: [
-          'Executive Creative Director',
-          'Creative Director',
-          'Chief Creative Officer',
-          'Managing Director',
-          'VP Creative',
-          'VP Marketing',
-          'Head of Production',
-          'Executive Producer',
-          'Producer',
-          'Founder',
-          'Partner',
-          'President',
-          'Account Director',
-          'Strategy Director',
-          'Brand Director'
-        ]
+        q_organization_keyword_tags: variant.q_organization_keyword_tags,
+        person_titles: variant.person_titles
       })
     });
 
@@ -238,6 +293,7 @@ async function run() {
   const people = [...peoplePage1, ...peoplePage2];
 
   savePageState(nextRunPage);
+  if (isWrapping) saveQueryState(nextQueryIndex);
 
   console.log(`Apollo people returned: ${peoplePage1.length} (page ${currentPage}) + ${peoplePage2.length} (page ${page2}) = ${people.length} total`);
 
