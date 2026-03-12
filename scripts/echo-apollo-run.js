@@ -22,6 +22,7 @@ const PAGE_STATE_PATH = path.join(LEADS_DIR, 'echo-apollo-page-state.json');
 const QUERY_STATE_PATH = path.join(LEADS_DIR, 'echo-apollo-query-state.json');
 const DEFAULT_REVEAL_DELAY_MS = 750;
 const MAX_PAGE = 20;
+const EARLY_ROTATE_THRESHOLD = 5;
 
 // Query rotation: each 20-page cycle uses a different keyword/title set to
 // prevent Apollo from returning the same people on every cycle reset.
@@ -438,8 +439,19 @@ async function run() {
   const agenciesAdded = await runSearch(agenciesConfig, base, apiKey, effectiveDelay, startPage);
   const brandsAdded = await runSearch(brandsConfig, base, apiKey, effectiveDelay, startPage);
 
-  saveEchoPageState(nextRunPage);
-  if (isWrapping) saveQueryState(nextQueryIndex);
+  const totalNewLeads = agenciesAdded + brandsAdded;
+  const didEarlyRotate = !isWrapping && totalNewLeads < EARLY_ROTATE_THRESHOLD;
+  const finalNextPage = (isWrapping || didEarlyRotate) ? 1 : nextRunPage;
+  const finalNextQueryIndex = (isWrapping || didEarlyRotate) ? (queryIndex + 1) % AGENCIES_QUERY_VARIANTS.length : queryIndex;
+
+  saveEchoPageState(finalNextPage);
+  saveQueryState(finalNextQueryIndex);
+
+  if (didEarlyRotate) {
+    console.log(`[early-rotate] Only ${totalNewLeads} new leads (< ${EARLY_ROTATE_THRESHOLD}) — rotating to query variant ${finalNextQueryIndex + 1} of ${AGENCIES_QUERY_VARIANTS.length} for next run.`);
+  } else if (isWrapping) {
+    console.log(`Cycle complete — advancing to query variant ${finalNextQueryIndex + 1} of ${AGENCIES_QUERY_VARIANTS.length} for next run.`);
+  }
 
   console.log('\n=== Echo Apollo Run Complete ===');
   console.log(`Agency leads added:  ${agenciesAdded}`);

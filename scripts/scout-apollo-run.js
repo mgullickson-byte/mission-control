@@ -21,6 +21,7 @@ const QUERY_STATE_PATH = path.join(LEADS_DIR, 'scout-apollo-query-state.json');
 const ENV_PATH = path.join(ROOT_DIR, '.env.local');
 const DEFAULT_REVEAL_DELAY_MS = 750;
 const MAX_PAGE = 20;
+const EARLY_ROTATE_THRESHOLD = 5;
 
 // Query rotation: each 20-page cycle uses a different set of keyword + title filters
 // to expand the addressable pool beyond the first 500 people on any given query.
@@ -292,9 +293,6 @@ async function run() {
   const [peoplePage1, peoplePage2] = await Promise.all([fetchPage(currentPage), fetchPage(page2)]);
   const people = [...peoplePage1, ...peoplePage2];
 
-  savePageState(nextRunPage);
-  if (isWrapping) saveQueryState(nextQueryIndex);
-
   console.log(`Apollo people returned: ${peoplePage1.length} (page ${currentPage}) + ${peoplePage2.length} (page ${page2}) = ${people.length} total`);
 
   if (people.length > 0) {
@@ -363,6 +361,19 @@ async function run() {
     if (isDuplicateLead(row, leadIndex)) continue;
     newRows.push(row);
     addLeadToIndex(row, leadIndex);
+  }
+
+  const didEarlyRotate = !isWrapping && newRows.length < EARLY_ROTATE_THRESHOLD;
+  const finalNextPage = (isWrapping || didEarlyRotate) ? 1 : nextRunPage;
+  const finalNextQueryIndex = (isWrapping || didEarlyRotate) ? (queryIndex + 1) % QUERY_VARIANTS.length : queryIndex;
+
+  savePageState(finalNextPage);
+  saveQueryState(finalNextQueryIndex);
+
+  if (didEarlyRotate) {
+    console.log(`[early-rotate] Only ${newRows.length} new leads (< ${EARLY_ROTATE_THRESHOLD}) — rotating to query variant ${finalNextQueryIndex + 1} of ${QUERY_VARIANTS.length} for next run.`);
+  } else if (isWrapping) {
+    console.log(`Cycle complete — advancing to query variant ${finalNextQueryIndex + 1} of ${QUERY_VARIANTS.length} for next run.`);
   }
 
   if (newRows.length === 0) {
