@@ -126,7 +126,7 @@ function loadCsv(filePath, label) {
     return [];
   }
   const raw = fs.readFileSync(filePath, 'utf8');
-  return parse(raw, { columns: true, skip_empty_lines: true });
+  return parse(raw, { columns: true, skip_empty_lines: true, relax_column_count: true });
 }
 
 async function main() {
