@@ -1,0 +1,96 @@
+first_name,last_name,email,company_name,website,city,title,mv_result,mv_quality,mv_subresult
+Evelina,Trapani,evelina.iaconis@hoffstudios.com,Hoff Studios,http://www.hoffstudios.com,New York,Head of Production / Executive In Charge of Production,ok,good,ok
+Meredith,Bennett,bennett@radicalmedia.com,RadicalMedia,http://www.radicalmedia.com,New York,Executive in Charge of Production / Executive Producer,ok,good,ok
+Tommy,Wilson,tommy@humanaut.is,HUMANAUT,http://www.humanaut.is,Chattanooga,Head of Production / Executive Producer,ok,good,ok
+Alison,Hill,alison.hill@translationllc.com,Translation,http://www.translationllc.com,New York,Head of Integrated Production,ok,good,ok
+Chantay,Smith,chantay@williebstudios.com,Willie B. Studios,http://www.williebstudios.com,New York,Executive In Charge of Production,ok,good,ok
+Estela,Duce,estela.duce@vccp.com,VCCP US,http://www.vccp-us.com,New York,Executive Producer,ok,good,ok
+Lindsey,Neyman,lneyman@stationfilm.com,Station Film,http://www.stationfilm.com,New York,Executive Producer,unknown,risky,ip_blocked
+Stephanie,Hodge,stephanie@imperial.tv,IMPERIAL WOODPECKER,http://www.imperial.tv,New York,Executive Producer,catch_all,risky,ok
+Charlie,Ferraye,charlie.ferraye@camp-king.com,Camp + King,http://www.camp-king.com,San Francisco,Executive Producer,ok,good,ok
+Julio,Pedroza,julio.pedroza@pluralhub.io,PLURAL DOERS HUB,http://www.pluralhub.io,Miami,Head of Integrated Production & Director of Operations,ok,good,ok
+Helen,Powlette,helen.powlette@sky.uk,SKY Creative Agency,http://www.theskycreative.com,Tacoma,Executive Producer,invalid,bad,no_mailbox
+Alexandra,Keech,alexandra.keech@gpj.com,George P Johnson Experience Marketing,http://www.gpj.com,Auburn Hills,"Vice President, Head of Integrated Production",catch_all,risky,ok
+Isabel,Chattas,isabelc@wearebmf.com,We Are BMF,http://www.wearebmf.com,New York,SVP Production & Executive Producer,ok,good,ok
+Darryl,Manuel,darryl@thespinartist.com,Spin Artist,http://www.thespinartist.com,Chicago,Executive Producer,ok,good,ok
+James,Toth,james@fanciful-fox.com,Fox Den,http://www.foxden.tv,Los Angeles,Executive Producer,ok,good,ok
+Richard,Tortora,rich@luxcreative.us,LUX Creative Agency,http://www.luxcreative.us,Tampa,Executive Producer,ok,good,ok
+Gene,Lee,gene@calico.la,CALICO,http://www.calico.la,Los Angeles,Executive in Charge of Production,ok,good,ok
+Phil,Hessler,phil@thinkless.com,Think Less,http://www.thinkless.com,Salt Lake City,Executive Producer / Head of Production,ok,good,ok
+Kim,Alexander,kimalexander@plottwist.com,Plot Twist Creativity,http://www.plottwist.com,Dallas,Director of Production,ok,good,ok
+Roya,Zangoui,rz@sn37agency.com,SN37,http://www.sn37agency.com,New York,Executive Producer,catch_all,risky,ok
+Adam,Becht,adam@arcadeedit.com,Arcade Edit,http://www.arcadeedit.com,Santa Monica,Executive Producer,ok,good,ok
+Zoe,Gent,zoe.gent@craftww.com,Craft Worldwide,http://www.craftww.com,New York,Head of Content Production,catch_all,risky,ok
+Cameron,Freeman,cameron@goodbyepictures.com,Goodbye Pictures,http://www.goodbyepictures.com,Los Angeles,Executive in Charge of Production,ok,good,ok
+Alicia,Martinez,alicia@nativecontent.com,Wild Gift Content,http://www.wildgiftcontent.com,Los Angeles,Executive Producer,ok,good,ok
+Sean,Blair,sblair@nativecontent.com,Native Content,http://www.nativecontent.com,Los Angeles,Executive Producer,ok,good,ok
+Hayley,Bryant,hayley.baldwin@bbdo.com,BBDO New York,http://www.bbdo.nyc,New York,"Executive Producer, Experiential",ok,good,ok
+Nicole,Saccardi,nicole@blacksmith.tv,Blacksmith VFX,http://www.blacksmith.tv,New York,Executive Producer,ok,good,ok
+Nicolette,Spencer,nspencer@innoceanusa.com,INNOCEAN USA,http://www.innoceanusa.com,Huntington Beach,"SVP, Head of Integrated Production",catch_all,risky,ok
+Hannah,Rome,hannah@contagiousla.com,ContagiousLA,http://www.contagiousla.com,Culver City,Head of Production,ok,good,ok
+Vanessa,Tomasello,vanessa@thedistillery.us,THE DISTILLERY | Creative Agency,http://www.thedistillery.us,Santa Cruz,Executive Producer,ok,good,ok
+Adrienne,Daniel,adrienne.daniel@artsandletters.xyz,Arts & Letters Creative Co.,http://www.artsandletters.xyz,Richmond,Executive Producer,ok,good,ok
+Laurie,Malaga,laurie@thecommunityus.com,the community,http://www.thecommunityagency.com,Miami,"EVP, Head of Integrated Production",invalid,bad,unknown
+Gary,Ianuzzi,gianuzzi@forcemajeure.design,forceMajeure Creative Agency,http://www.forcemajeure.design,New York,Head of Production,ok,good,ok
+Sara,Ventetuolo,sara.ventetuolo@partnersandnapier.com,Partners + Napier,http://www.partnersandnapier.com,Rochester,Executive Producer,catch_all,risky,ok
+Charlaine,Caley,charlaine.caley@tencue.com,TENCUE,http://www.tencue.com,Emeryville,Executive Producer,catch_all,risky,ok
+Morgan,Keller,morgan.keller@saatchi.com,Saatchi US,http://www.wearesaatchi.com,El Segundo,Executive Producer,ok,good,ok
+Raisa,Machado,raisa@noroadsproductions.com,"No Roads Productions, Inc.",http://www.noroadsproductions.com,Los Angeles,VP + Head of Production,ok,good,ok
+Amy,Appleton,amy.appleton@coppergiants.com,Copper Giants,http://www.coppergiants.com,Waltham,Executive Producer,ok,good,ok
+Coleman,Sweeney,coleman@mischiefusa.com,Mischief @ No Fixed Address,http://www.mischiefusa.com,New York,Executive Producer,ok,good,ok
+Manos,Magoulas,manos.magoulas@makemarks.com,Marks,http://www.makemarks.com,Chicago,Head of Content Production Europe,ok,good,ok
+Kyle,Scott,kyle@deimediagroup.com,DEI Media Group,http://www.deimediagroup.com,Los Angeles,Head of Production / Executive Producer,ok,good,ok
+Elisha,Gustafson,elisha@sanctuarycontent.com,Sanctuary Content,http://www.sanctuarycontent.com,Los Angeles,Executive Producer/ Head of Production,ok,good,ok
+Mary,Verrusio,mary.verrusio@hudsonrouge.com,Hudson Rouge,http://www.hudsonrouge.com,New York,"SVP, Head of Integrated Production",catch_all,risky,ok
+Lauren,Avinoam,lauren@cortino.com,Cortino,http://www.cortino.com,Beverly Hills,"Executive Producer, Head of Production",ok,good,ok
+Sloane,Skala,sloane@ww7.tv,World War Seven,http://www.ww7.tv,Los Angeles,Partner / Executive Producer,ok,good,ok
+Eric,Showalter,eshowalter@tdhcreative.com,"Tom, Dick & Harry",http://www.tdhcreative.com,Chicago,"Head of Production, Content",ok,good,ok
+John,Gray,jgray@liquidmedia.gg,LIQUID MEDIA,http://www.liquidmedia.gg,Santa Monica,Global Head of Content & Production,ok,good,ok
+Romila,Sanassy,romila@yourethegoods.com,You're the Goods,http://www.yourethegoods.com,New York,Executive Producer,ok,good,ok
+Roma,Soodeen,romas@l7pic.com,L7 Pictures,http://www.l7pic.com,Fort Lauderdale,Executive Producer,catch_all,risky,ok
+Nicholas,Hill,nik@monar.ch,Monarch Content,http://www.monar.ch,Austin,Executive Producer | Principal,ok,good,ok
+Beth,George,beth@muttfilm.com,Mutt Film,http://www.muttfilm.com,Los Angeles,Owner/Executive Producer,ok,good,ok
+Matt,Floryan,mfloryan@agencyx.io,Agency X,http://www.agencyx.io,Irvine,Executive Producer,ok,good,ok
+Ben,Piety,ben@freenjoy.com,freenjoy,http://www.freenjoy.com,Los Angeles,Executive Producer / Head of Production,ok,good,ok
+Justin,Haacke,justin@sweetspotmedia.tv,Sweet Spot Media,http://www.wearesweetspot.com,El Segundo,Head of Production,ok,good,ok
+Kate,Smith,kate.smith@flavor.tv,Flavor Design,http://www.flavor.tv,Chicago,Executive Producer,ok,good,ok
+Taylor,Powers,taylor@easymondays.tv,Easy Mondays,http://www.easymondays.tv,New York,Executive Producer,ok,good,ok
+Andrew,Fairbank,a@megamediaent.com,"M.E.G.A. Media Entertainment, Inc.",http://www.megamediaent.com,West Hollywood,Executive Producer,ok,good,ok
+Rachel,Foley,rachel.foley@tbwa.com,TBWA\Worldwide,http://www.tbwa.com,New York,Head of Integrated Production at TBWA Melbourne,ok,good,ok
+Marco,Vidalis,marco.vidalis@batteryagency.com,Battery,http://www.batteryagency.com,Los Angeles,Director Head of Production,ok,good,ok
+Brian,Gibson,brian.gibson@teamone-usa.com,Team One,http://www.teamone-usa.com,Los Angeles,Executive Producer,invalid,bad,unknown
+Damon,Vinyard,damon@teamcornett.com,Cornett,http://www.teamcornett.com,Lexington,Head of Production,catch_all,risky,ok
+Alex,Blackmon,alex@elevatedmediaproductions.com,Elevated Media Productions,http://www.elevatedmediaproductions.com,Westlake Village,Co-Founder & Executive Producer,ok,good,ok
+Brent,Madison,brent.madison@teamwinstudios.com,Team Win Studios,http://www.teamwinstudios.com,Los Angeles,"Executive Producer, Head of Production",ok,good,ok
+Peter,Noon,petern@earnedswagger.com,Swagger Marketing,http://www.earnedswagger.com,Lombard,Executive Producer,ok,good,ok
+Chris,Spencer,christopher.spencer@mekanism.com,Mekanism,http://www.mekanism.com,San Francisco,Head of Production,ok,good,ok
+Lori,Layton,loril@bachrachgroup.com,TBG | The Bachrach Group,http://www.bachrachgroup.com,New York,"Senior Vice President, Production",catch_all,risky,ok
+Aldo,Hertz,aldo.hertz@fallon.com,Fallon,http://www.fallon.com,Minneapolis,Executive Producer,invalid,bad,unknown
+Andy,Ritter,andy@thewelldelivers.com,The Well Creative Productions,http://www.thewelldelivers.com,Dallas,VP/Head of Production,ok,good,ok
+Eduardo,Moreno,emoreno@121corp.com,121,http://www.121corp.com,New York,Head of Production,ok,good,ok
+Brynne,Copping,brynne@tomorrow.tv,Tomorrow,http://www.tomorrow.tv,Los Angeles,Executive Producer | Head of Production,ok,good,ok
+Jose,Cruz,jose@truest1.com,"Truest., LLC",http://www.truest1.com,Burbank,Senior Art Director & Head of Production,ok,good,ok
+Jill,Rothman,jill.rothman@vice.com,VIRTUE Worldwide,http://www.virtueworldwide.com,New York,Head of Production,catch_all,risky,ok
+Phoebe,Dubay,phoebe@editbar.com,EDITBAR,http://www.editbar.com,Boston,Executive Producer,ok,good,ok
+Gina,Fallon,gina@wearetigerlily.com,TigerLily,http://www.wearetigerlily.com,Jacksonville,SVP of Production,ok,good,ok
+Gerry,Bruno,gerry@centerrockadvertising.com,CenterRock Advertising,http://www.centerrockadvertising.com,Little Rock,Creative Director / Head of Production / Executive Producer,ok,good,ok
+Megan,Ball,megan.ball@herdofshepherds.com,Herd of Shepherds,http://www.herdofshepherds.com,Seattle,Executive Producer | Partner,ok,good,ok
+James,Shaughnessy,james@paragoncreativeagency.com,Paragon Creative Agency,http://www.paragoncreativeagency.com,Burbank,Founder/Executive Producer Digital,ok,good,ok
+Alexander,Gangi,alex@soundsfun.co,SOUNDS⁕ℲUN,http://www.soundsfun.co,New York,Partner / COO / Head of Production,ok,good,ok
+Kieran,Fahey,kieran@auraagncy.com,Aura Creative Agency,http://www.auraagncy.com,Boston,Founder | Head of Production,ok,good,ok
+Zoey,Pressey,zoey@rdpictures.com,Radiance Pictures,http://www.rdpictures.com,Los Angeles,Head of Production,ok,good,ok
+Nicole,Lederman,nicole.lederman@martinagency.com,MARTIN*,http://www.martinagency.com,Richmond,Executive Producer,catch_all,risky,ok
+Mike,Repasch-Nieves,mike@yondercontent.com,Yonder,http://www.yondercontent.com,Bozeman,Executive Producer,ok,good,ok
+Christina,Meunier,christina@tux.co,TUX,http://www.tux.co,Los Angeles,Executive Producer,ok,good,ok
+Jason,Botkin,jason@freshface.tv,A Fresh Face in Hell,http://www.freshface.tv,Los Angeles,Studio Head / Executive Producer / Owner,ok,good,ok
+George,Sholley,george.sholley@figagency.com,FIG,http://www.figagency.com,New York,Executive Producer,invalid,bad,no_mailbox
+William,Moore,wmoore@theevokegroup.com,The Evoke Group,http://www.theevokegroup.com,Columbia,Executive Producer,ok,good,ok
+Alison,Howlett,ahowlett@theviaagency.com,VIA,http://www.theviaagency.com,Portland,Executive Producer,ok,good,ok
+Jacob,Marmer,jmarmer@radiant3.com,RADIANT3,http://www.radiant3.com,Smyrna,Executive Producer / Head of Production,catch_all,risky,ok
+Justin,Sweidel,justin@timberpictures.com,Timber Pictures,http://www.timberpictures.com,Spring,Executive Producer / Post-Producer,ok,good,ok
+Jodi,Goren-Rode,jodi@rodehousemedia.com,Rodehouse Media,http://www.rodehousemedia.com,Villanova,Executive Producer,ok,good,ok
+Jay,Wakefield,jay@furlined.com,Furlined,http://www.furlined.com,Santa Monica,Executive Producer & Director of Production,ok,good,ok
+Scott,Hamilton,scott@artsandlabor.co,Arts+Labor,http://www.artsandlabor.co,Austin,Executive Producer,catch_all,risky,ok
+Chelsea,Greenwood,chelsea@byt.nyc,Bryght Young Things,http://www.byt.nyc,New York,Executive Producer,ok,good,ok
+Raghavendra,Anna,ranna@v6.media,V6 Media,http://www.v6.media,Vernal,Executive Producer,invalid,bad,no_mailbox
+Roan,Bibby,roan@panopticafilms.com,PANOPTICA,http://www.panopticafilms.com,New York,Executive Producer,catch_all,risky,ok
