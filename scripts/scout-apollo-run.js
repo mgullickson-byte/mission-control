@@ -16,8 +16,23 @@ const {
 const ROOT_DIR = process.cwd();
 const LEADS_DIR = path.join(ROOT_DIR, 'leads');
 const CSV_PATH = path.join(LEADS_DIR, 'select-small-mid-agencies-us.csv');
+const PAGE_STATE_PATH = path.join(LEADS_DIR, 'scout-apollo-page-state.json');
 const ENV_PATH = path.join(ROOT_DIR, '.env.local');
 const DEFAULT_REVEAL_DELAY_MS = 750;
+const MAX_PAGE = 20;
+
+function loadPageState() {
+  if (!fs.existsSync(PAGE_STATE_PATH)) return { nextPage: 1 };
+  try {
+    return JSON.parse(fs.readFileSync(PAGE_STATE_PATH, 'utf8'));
+  } catch {
+    return { nextPage: 1 };
+  }
+}
+
+function savePageState(nextPage) {
+  fs.writeFileSync(PAGE_STATE_PATH, JSON.stringify({ nextPage }, null, 2), 'utf8');
+}
 
 function loadEnv() {
   const env = {};
@@ -80,13 +95,21 @@ function getPersonEmail(person) {
 async function revealPerson(base, apiKey, person, delayMs) {
   const organizationName = getOrganizationName(person);
   const firstName = person?.first_name || '';
-  const lastName = person?.last_name || '';
+  // Apollo search results return last_name_obfuscated on limited plans; use it as fallback
+  const lastName = person?.last_name || person?.last_name_obfuscated || '';
+  const personId = person?.id || '';
 
-  if (!firstName || !lastName || !organizationName) {
+  if (!personId && (!firstName || !organizationName)) {
     return null;
   }
 
   const url = new URL('people/match', base);
+
+  // Build body: prefer ID-based lookup (most reliable), fall back to name+org
+  const matchBody = personId
+    ? { id: personId, reveal_personal_emails: false, reveal_phone_number: false }
+    : { first_name: firstName, last_name: lastName, organization_name: organizationName };
+
   const res = await fetch(url.toString(), {
     method: 'POST',
     headers: {
@@ -94,11 +117,7 @@ async function revealPerson(base, apiKey, person, delayMs) {
       'Cache-Control': 'no-cache',
       'X-Api-Key': apiKey
     },
-    body: JSON.stringify({
-      first_name: firstName,
-      last_name: lastName,
-      organization_name: organizationName
-    })
+    body: JSON.stringify(matchBody)
   });
 
   const text = await res.text();
@@ -142,43 +161,85 @@ async function run() {
   }
 
   const base = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
-  const url = new URL('mixed_people/api_search', base);
-  url.searchParams.set('person_locations[]', 'United States');
-  url.searchParams.set('page', '1');
-  url.searchParams.set('per_page', '25');
 
-  console.log('Calling Apollo at', url.toString());
+  const { nextPage: currentPage } = loadPageState();
+  const page2 = currentPage + 1;
+  const nextRunPage = page2 + 1 > MAX_PAGE ? 1 : page2 + 1;
 
-  const res = await fetch(url.toString(), {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': 'no-cache',
-      'X-Api-Key': apiKey
-    },
-    body: JSON.stringify({
-      q_organization_types: ['agency'],
-      organization_num_employees_ranges: ['11-50', '51-200', '201-500']
-    })
-  });
+  console.log(`Fetching Apollo pages ${currentPage} and ${page2} (next run will start at ${nextRunPage})`);
 
-  const text = await res.text();
-  let data = text;
-  try {
-    data = JSON.parse(text);
-  } catch {
-    // leave as raw text
+  async function fetchPage(page) {
+    const url = new URL('mixed_people/api_search', base);
+    url.searchParams.set('person_locations[]', 'United States');
+    url.searchParams.set('organization_locations[]', 'United States');
+    url.searchParams.set('page', String(page));
+    url.searchParams.set('per_page', '25');
+
+    const res = await fetch(url.toString(), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache',
+        'X-Api-Key': apiKey
+      },
+      body: JSON.stringify({
+        q_organization_types: ['agency'],
+        organization_num_employees_ranges: ['11-50', '51-200', '201-500'],
+        q_organization_keyword_tags: [
+          'advertising agency',
+          'creative agency',
+          'marketing agency',
+          'brand agency',
+          'digital agency',
+          'PR agency',
+          'media agency',
+          'content agency',
+          'social media agency',
+          'integrated agency',
+          'ad agency'
+        ],
+        person_titles: [
+          'Executive Creative Director',
+          'Creative Director',
+          'Chief Creative Officer',
+          'Managing Director',
+          'VP Creative',
+          'VP Marketing',
+          'Head of Production',
+          'Executive Producer',
+          'Producer',
+          'Founder',
+          'Partner',
+          'President',
+          'Account Director',
+          'Strategy Director',
+          'Brand Director'
+        ]
+      })
+    });
+
+    const text = await res.text();
+    let data = text;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      // leave as raw text
+    }
+
+    if (!res.ok) {
+      console.error(`Apollo API error on page ${page}`, res.status, data);
+      process.exit(1);
+    }
+
+    return Array.isArray(data?.people) ? data.people : [];
   }
 
-  if (!res.ok) {
-    console.error('Apollo API error', res.status, data);
-    process.exit(1);
-  }
+  const [peoplePage1, peoplePage2] = await Promise.all([fetchPage(currentPage), fetchPage(page2)]);
+  const people = [...peoplePage1, ...peoplePage2];
 
-  // mixed_people/api_search returns people; each person has an organization.
-  const people = Array.isArray(data?.people) ? data.people : [];
+  savePageState(nextRunPage);
 
-  console.log('Apollo people returned:', people.length);
+  console.log(`Apollo people returned: ${peoplePage1.length} (page ${currentPage}) + ${peoplePage2.length} (page ${page2}) = ${people.length} total`);
 
   if (people.length > 0) {
     console.log('Sample person keys:', Object.keys(people[0]));
@@ -189,12 +250,9 @@ async function run() {
 
   const revealCandidates = people.filter((p) => {
     const organizationName = getOrganizationName(p);
-    return Boolean(
-      organizationName &&
-        p?.first_name &&
-        p?.last_name &&
-        (p?.has_email === true || getPersonEmail(p))
-    );
+    // Accept obfuscated last names (last_name_obfuscated) — reveal will unlock full data
+    const hasName = Boolean(p?.first_name && (p?.last_name || p?.last_name_obfuscated));
+    return Boolean(organizationName && hasName);
   });
 
   console.log('People eligible for reveal:', revealCandidates.length);
@@ -209,7 +267,13 @@ async function run() {
     const merged = matchedPerson && typeof matchedPerson === 'object'
       ? { ...person, ...matchedPerson, organization: matchedPerson.organization || person.organization }
       : person;
-    if (getPersonEmail(merged)) {
+    const email = getPersonEmail(merged);
+    if (index === 0) {
+      // Debug first reveal to see what Apollo actually returns
+      console.log(`  [debug] reveal keys: ${Object.keys(merged || {}).join(', ')}`);
+      console.log(`  [debug] email found: ${email || '(none)'}`);
+    }
+    if (email) {
       revealedPeople.push(merged);
     }
   }
@@ -230,6 +294,7 @@ async function run() {
       website: orgWebsite,
       contact_name: name,
       contact_email: email,
+      linkedin_url: p.linkedin_url || '',
       notes: p.title || ''
     };
   });
@@ -268,6 +333,7 @@ async function run() {
         'website',
         'contact_name',
         'contact_email',
+        'linkedin_url',
         'notes'
       ]
     });
