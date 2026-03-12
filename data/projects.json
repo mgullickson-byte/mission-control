@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "id": "mission-control-v1",
+      "name": "Mission Control v1",
+      "company": "Both",
+      "description": "Stand up Mission Control as the operating system for Select Casting and Studio Awesome: leads, tasks, tools, calendar, memory, docs, and team.",
+      "status": "In Progress",
+      "progress": 70,
+      "tags": ["mission control", "internal", "infrastructure"]
+    },
+    {
+      "id": "studio-awesome-website",
+      "name": "Studio Awesome Website",
+      "company": "Studio Awesome",
+      "description": "Design and launch a focused Studio Awesome website that clearly explains services (mix, ADR, creative), showcases work, and supports lead capture.",
+      "status": "In Progress",
+      "progress": 80,
+      "tags": ["studio awesome", "website", "brand"]
+    },
+    {
+      "id": "studio-awesome-mix-booking",
+      "name": "Studio Awesome Mix Booking App",
+      "company": "Studio Awesome",
+      "description": "Build and ship the Studio Awesome Mix booking app so clients can easily view availability and book sessions.",
+      "status": "In Progress",
+      "progress": 75,
+      "tags": ["studio awesome", "mix", "product", "booking"]
+    },
+    {
+      "id": "select-casting-lead-gen-smb-agencies",
+      "name": "Select Casting Lead Gen - Small/Mid Agencies",
+      "company": "Select Casting",
+      "description": "Design and implement a repeatable lead gen system for Select Casting focused on small and mid-sized ad agencies (ICP, lists, outreach, and tracking).",
+      "status": "In Progress",
+      "progress": 65,
+      "tags": ["select casting", "leads", "outbound", "agencies", "system"]
+    },
+    {
+      "id": "studio-awesome-adr-radius-leads",
+      "name": "ADR Leads - 2-Mile Radius of 1608 Argyle",
+      "company": "Studio Awesome",
+      "description": "Build a lightweight system to identify and engage companies within ~2 miles of 1608 Argyle Ave that need ADR/audio post, and create a steady pipeline of local leads.",
+      "status": "In Progress",
+      "progress": 35,
+      "tags": ["studio awesome", "ADR", "leads", "local", "system"]
+    },
+    {
+      "id": "fractional-advertising-rail",
+      "name": "Fractional Advertising Model",
+      "company": "Both",
+      "description": "Design and validate a fractional advertising service that brings brand strategy, creative, production, post, and business affairs together in a single app/service.",
+      "status": "In Progress",
+      "progress": 20,
+      "tags": ["fractional", "advertising", "rails", "audio-first"]
+    },
+    {
+      "id": "select-casting-blog-posts",
+      "name": "Select Casting Blog Posts",
+      "company": "Select Casting",
+      "description": "Plan and produce a series of SEO-focused blog posts for Select Casting to drive organic traffic around casting, production, and advertising topics.",
+      "status": "In Progress",
+      "progress": 40,
+      "tags": ["select casting", "blog", "SEO", "content"]
+    },
+    {
+      "id": "lead-gen-integrations-apollo-mv-smartreach",
+      "name": "Lead Gen Integrations - Apollo / MillionVerifier / SmartReach",
+      "company": "Both",
+      "description": "Wire Scout and Echo to find, verify, and route leads from Apollo into Mission Control, MillionVerifier, and SmartReach campaigns.",
+      "status": "In Progress",
+      "progress": 75,
+      "tags": [
+        "select casting",
+        "studio awesome",
+        "leads",
+        "apollo",
+        "millionverifier",
+        "smartreach",
+        "automation"
+      ]
+    },
+    {
+      "id": "mikegullickson-author-site",
+      "name": "MikeGullickson.com Author Site",
+      "company": "Both",
+      "description": "Design, build, and deploy a dedicated author site for Mike (mikegullickson.com) that showcases The Northern Star trilogy, The Seethe, world art, reviews, and an updated author bio.",
+      "status": "In Progress",
+      "progress": 55,
+      "tags": ["author", "website", "books", "worldbuilding"]
+    }
+  ,
+    {
+      "id": "the-promise-novel",
+      "name": "The Promise (Novel)",
+      "company": "Both",
+      "description": "Editorial development of Mike's finished fantasy/apocalyptic novel. Protagonist: Amal (they/them), a genetically engineered soldier — 'amalgamate' — navigating identity and survival at the end of the world. Key decisions: commit to Amal/they-them throughout, shed 'Adam' as the state-assigned name. Title: The Promise (God's rainbow covenant, inverted). 107k words. Next: editorial pass chapter by chapter — pronoun/name consistency, prose tightening, structural notes.",
+      "status": "In Progress",
+      "progress": 10,
+      "tags": ["novel", "editorial", "writing", "the-promise", "amal"]
+    }
+  ]
+}

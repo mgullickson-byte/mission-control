@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 
-const baseDir = path.join(process.env.HOME || '', '.openclaw', 'workspace', 'mission-control');
+const baseDir = path.join(process.cwd(), 'data');
 const projectsFile = path.join(baseDir, 'projects.json');
 
 export type ProjectStatus = 'Planning' | 'In Progress' | 'Review' | 'Complete';

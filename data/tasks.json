@@ -1,0 +1,296 @@
+{
+  "tasks": [
+    {
+      "id": "task-seed-1",
+      "title": "Draft Mission Control spec",
+      "description": "Capture the first version of what Mission Control should be.",
+      "assignee": "Mike",
+      "column": "Review",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-seed-2",
+      "title": "Wire up initial tools shell",
+      "description": "Create Linear-style tools UI in Next.js and add a couple of starter tools.",
+      "assignee": "Forge",
+      "column": "In Progress",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-select-leads-weekly-enrich",
+      "title": "Weekly: enrich small/mid agency leads",
+      "description": "Find and enrich a small batch of new small/mid-sized agency leads for Select Casting (names, emails, key facts).",
+      "assignee": "Scout",
+      "column": "Recurring",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-select-leads-weekly-outbound",
+      "title": "Weekly: outbound to new agencies",
+      "description": "Prepare and log a small set of outbound touches (email or call prep) to high-fit agencies from the Select Casting lead list.",
+      "assignee": "Scout",
+      "column": "Recurring",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-adr-radius-weekly-prospects",
+      "title": "Weekly: identify ADR prospects within 2 miles",
+      "description": "Add a few new potential ADR/audio post clients within ~2 miles of 1608 Argyle to the local leads list.",
+      "assignee": "Echo",
+      "column": "Recurring",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-adr-radius-weekly-outreach",
+      "title": "Weekly: outreach to local ADR prospects",
+      "description": "Plan and log outreach to a small number of local ADR prospects (email, intro script, or contact prep).",
+      "assignee": "Echo",
+      "column": "Recurring",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "task-leadgen-scout-apollo-pipeline",
+      "title": "Scout: Apollo lead pipeline for small/mid agencies",
+      "description": "Build the Scout pipeline that uses Apollo to find new small/mid-sized ad agency leads, appends de-duplicated rows into select-small-mid-agencies-us.csv, and prepares them for email verification and SmartReach export.",
+      "assignee": "Scout",
+      "column": "In Progress",
+      "createdAt": "2026-03-09 09:40 PT",
+      "lastUpdate": "2026-03-12 12:00 PT",
+      "notes": "LIVE & RUNNING. Pages 11-12 pulled 8:36 PM PT (Mar 11): +22 new leads, 156 total CSV rows, 69 verified/ok, 69 SmartReach-ready. Page pointer now at 15. 9:43 PM PT (Mar 11): Built push-smartreach-leads.js + push-all-pipeline-leads.js (commit 3358652) — SmartReach push now wired. 2026-03-12 00:00 PT (Scout cron): Wired SmartReach push as Step 3 in run-scout-pipeline.js (commit bdc0aa6). Pipeline now fully autonomous: Apollo → dedupe → MV verify → SmartReach push, no manual step needed. 2026-03-12 01:00 PT (Scout cron): Pages 15-16 pulled via run-scout-pipeline.js (+20 new leads, 201 total rows). MillionVerifier re-verified all rows (102 valid/ok, 102 SmartReach-ready). Fixed SmartReach API integration in scripts/push-smartreach-leads.js to use X-API-KEY + /api/v1/prospects and pushed all 102 leads into 'Select - Small Mid Agencies' list (commit 4ce7d9e). Page pointer now at 17. 2026-03-12 02:13 PT (Scout cron): Pages 17-18 pulled (+40 new leads). select-small-mid-agencies-us.csv now 241 rows. MV verified all 241 rows: 130 valid/ok. All 130 pushed to SmartReach 'Select - Small Mid Agencies'. Page pointer now at 19. 2026-03-12 03:21 PT (Scout cron w/ Codex): Made MillionVerifier verification for small/mid agencies incremental in scripts/verify-small-mid-agencies.js — it now loads the cached verified CSV, skips already-verified emails, dedupes repeated emails per run, and only calls MV for new leads (270 rows, 270 already verified, 0 new, 155 valid/ok, 155 SmartReach-ready). 2026-03-12 04:34 PT (Scout cron): Pages 1-2 (new cycle) pulled: +19 new leads. select-small-mid-agencies-us.csv now 289 rows. MV incremental: 19 new verified. 170 valid/ok, 170 SmartReach-ready. 45 new leads pushed to SmartReach. Page pointer now at 3. 2026-03-12 05:43 PT (Scout cron): Pages 3-4 pulled: +18 new leads (Leo Burnett, BBDO, SUPERCOOL, Team One, etc). select-small-mid-agencies-us.csv now 307 rows. MV: 18 new verified, 182 valid/ok. 12 new leads pushed to SmartReach. Page pointer now at 5. BUILT: Apollo query rotation (commit 41c0ef0) — 4 query variants added to scout-apollo-run.js, queryIndex auto-advances each 20-page cycle to prevent re-fetching same 500-person pool. 2026-03-12 06:00 PT (Morning cron): Pages 5-6 pulled: +28 new leads (MARTIN Agency, MediaVision Creative, Tom Dick & Harry, FARM Marketing, Leverage Creative Agency, Carpool Creative, Brick City Greenhouse, Tombras, Brighton Agency, 71 West, FWD People, Zeax Creative, Percival & Associates, Leap Group, CJRW, B-Y, BBQ Agency, Rightmind Advertising, redGiant Creative, Crowley Webb, Midnight Oil, Capital A, etc). select-small-mid-agencies-us.csv: 335 rows. MV: 28 new verified, 205 valid/ok. 23 new leads pushed to SmartReach. Page pointer now at 7. 2026-03-12 06:50 PT (Scout cron): Pages 7-8 pulled: +10 new leads (Team One, TriVision, Wright Group, Bon Aperture, Biddyco, Invert Agency, Deutsch, DDB, Red Tettemer, 21GRAMS). select-small-mid-agencies-us.csv: 345 rows. MV: 212 valid/ok. 7 new pushed to SmartReach. Page pointer now at 9. 2026-03-12 07:57 PT (Scout cron): Pages 9-10 pulled: +4 new leads (21GRAMS, GYK Antler, Littlefield Agency, CenterRock Advertising). select-small-mid-agencies-us.csv: 349 rows. MV: 216 valid/ok. 4 new pushed to SmartReach. Page pointer now at 11. 2026-03-12 09:02 PT (Scout cron): Pages 11-12 pulled: +2 new leads (Lavidge, Toilet Paper Agency). select-small-mid-agencies-us.csv: 351 rows. MV: 218 valid/ok. 2 new pushed to SmartReach. Page pointer now at 13. EARLY ROTATION TRIGGERED NEXT RUN: Only 2 new leads < threshold of 5 — pipeline will auto-rotate to query variant 2 and reset page to 1 on next run. BUILT: Early query rotation (commit b4c74a5) — both Scout and Echo scripts now auto-rotate to next query variant and reset page pointer to 1 when a run yields < 5 new leads, preventing API waste on exhausted query pools. 2026-03-12 10:12 PT (Scout cron): Pages 13-14 pulled: +4 new leads (Veneer Studio, 31000 FT Ad Agency). select-small-mid-agencies-us.csv: 355 rows. MV: 220 valid/ok. 2 new pushed to SmartReach. Early rotation triggered — query variant rotated to 2 (Brand & Design Studios) for next run, page resets to 1. 2026-03-12 11:17 PT (Scout cron): Query variant 2 (Brand & Design Studios) pages 1-2: +22 new leads. select-small-mid-agencies-us.csv: 377 rows. MV: 22 new verified, 234 valid/ok. 14 new leads pushed to SmartReach (superbloomhouse, carousel.co, cartel.tv, rhubarb, mallard, etc). Page pointer → 3. 2026-03-12 12:00 PT (Scout cron): Variant 2 pages 3-4 pulled: +18 new leads (MARTIN*, Born In June Creative, Swanson Studio, Real Original, Team Win Studios, Fresh Tape Media, Kern Collective, Planet Super Studios, Boom Crate, Trailer Park Group, StackCommerce, GrandSon Creative, Carousel, IHEARTCOMIX, SARANKCO, Two Fresh Creative, Process Creative, Tension Division, Ilona Creative Studio, Signal Factory, First Media US, Gameday Creative, Blitz Creative). select-small-mid-agencies-us.csv: 395 rows. MV: 249 valid/ok. 15 new leads pushed to SmartReach. Page pointer → 5."
+    },
+    {
+      "id": "task-leadgen-echo-apollo-pipeline",
+      "title": "Echo: Apollo lead pipeline for Studio Awesome segments",
+      "description": "Build the Echo pipeline that uses Apollo to find new Studio Awesome brand/agency leads, appends de-duplicated rows into studio-brands.csv and studio-agencies.csv, and prepares them for email verification and SmartReach export.",
+      "assignee": "Echo",
+      "column": "In Progress",
+      "createdAt": "2026-03-09 09:40 PT",
+      "lastUpdate": "2026-03-12 12:00 PT",
+      "notes": "LIVE & RUNNING. Pages 3-4 pulled + verified 8:38 PM PT (Mar 11): +49 agency leads, +49 brand leads. studio-agencies.csv: 197 rows, studio-brands.csv: 197 rows. MV verification complete. studio-smartreach.csv: 135 SmartReach-ready leads. Page pointer now at 9. 2026-03-12 00:00 PT (Scout cron): Wired SmartReach push as Step 3 in run-echo-pipeline.js (commit bdc0aa6). Echo pipeline now fully autonomous: Apollo → dedupe → MV verify → SmartReach push. 2026-03-12 01:00 PT (Scout cron): Echo run-echo-pipeline.js fetched pages 9-10 (+44 agency, +44 brand leads; studio-agencies.csv + studio-brands.csv now 240 rows each). MillionVerifier verified 141 new emails per file and refreshed studio-smartreach.csv (318 SmartReach-ready leads total). SmartReach push succeeded for all 318 leads into 'Studio Awesome - Brands & Agencies'. Page pointer now at 11. 2026-03-12 02:13 PT (Scout cron): Pages 11-12 pulled (+45 agency, +45 brand leads). studio-agencies.csv + studio-brands.csv now 285 rows each. MV verified new rows. studio-smartreach.csv: 378 SmartReach-ready leads. Push partially completed (SIGTERM hit timeout, ~220/378 pushed). Page pointer now at 13. 2026-03-12 04:34 PT (Scout cron): Fixed 02:13 partial push — re-pushed all 452 Echo SmartReach leads (209 newly pushed, 243 skipped). Pages 15-16 pulled (+46 agency, +46 brand leads). studio-agencies.csv + studio-brands.csv now 376 rows each. MV incremental: 46 new verified each. studio-smartreach.csv: 519 SmartReach-ready leads. All 519 pushed to SmartReach 'Studio Awesome - Brands & Agencies'. Page pointer now at 17. 2026-03-12 05:43 PT (Scout cron): Pages 17-18 pulled (+47 agency, +47 brand leads). studio-agencies.csv + studio-brands.csv now 423 rows each. MV: 47 new verified each, 579 SmartReach-ready. 60 new leads pushed. Page pointer now at 19 (2 pages left before cycle reset). 2026-03-12 06:00 PT (Morning cron): Pages 19-20 pulled (cycle complete, pointer resets to 1): +45 agency + +45 brand leads. studio-agencies.csv + studio-brands.csv: 468 rows each. MV: agencies 5 new verified (incremental), brands 45 new verified. studio-smartreach.csv: 642 SmartReach-ready. 63 new leads pushed to SmartReach. Echo page pointer reset to 1. 2026-03-12 06:50 PT (Scout cron): Echo cycle 2 page 1-2 returned 0 new leads (all dupes from cycle 1 — same Apollo result set). ROOT CAUSE: q_organization_types filter too broad. FIXED (commit 881fedc): Added 3 AGENCIES_QUERY_VARIANTS (Production Companies, Post-Production & Audio, Ad Agency Production) + 3 BRANDS_QUERY_VARIANTS (Gaming & Entertainment, Consumer Brands/Media, Tech/Software), each using q_organization_keyword_tags + organization_locations: US. Query rotation now mirrors Scout pattern — queryIndex advances each 20-page cycle. 2026-03-12 07:57 PT (Scout cron): Echo cycle 2 pages 3-4 pulled with new variants (Production Companies + Gaming & Entertainment). +25 agency leads (Bowstring Studios, Matchstick Productions, Campfire Studios, Tyler Perry Studios, Mob Scene, 44 Blue Productions, Citizen Pictures, Pantheon Media Group, etc) + +22 brand leads (Striking Distance Studios, Fortis Games, Wizards of the Coast, Warner Bros, Infinity Ward, Bungie, Annapurna, Zynga, Certain Affinity). studio-agencies.csv: 493 rows, studio-brands.csv: 490 rows. MV: 670 SmartReach-ready. 28 new leads pushed. Page pointer now at 5. 2026-03-12 09:02 PT (Scout cron): Pages 5-6 pulled: +27 agency + +23 brand leads (B&B Content Studio, The Hideaway, Ample Ent, Trifilm, Filmcry, Clockwork9, Chromahouse, Radical Media, Lighthouse Films, WeAreAris, Second Story Films, Ruffian, KiKi, Resolve Media Group, EchoBend, bhprod, Sunshine Edit, Disney, Squanch Games, Azra Games, Riot Games, EA, AdHoc LA, Warner Bros Discovery, Series AI, Mad Tale Games, Fuzzy Bot, Second Dinner, Outer Loop Games, Uncle Toads, Penhaus Media, Shiver, Hasbro, Nerd Ninjas, 343 Industries). studio-agencies.csv: 520 rows, studio-brands.csv: 513 rows. MV: 708 SmartReach-ready. 38 new pushed to SmartReach. Page pointer now at 7. BUILT: Early query rotation (commit b4c74a5) — both Scout and Echo now auto-rotate to next query variant and reset page to 1 when a run yields < 5 new leads, preventing API waste on exhausted query pools. 2026-03-12 10:12 PT (Scout cron): Pages 7-8 pulled (Echo). +27 agency + +11 brand leads (Paper Street Pictures, Bunim Murray Productions, Vinyl Foote Productions, NFocus Productions, Rock Shrimp Productions, Junket Productions, Renegade 83, Original Productions, Campfire Studios, Dirty Robber, Wide Awake Films, Supply&Demand; brands: Zynga, Nerd Ninjas, Wizards of the Coast, Riot Games, thatgamecompany, Starz, Paladin Media Group). studio-agencies.csv: 547 rows, studio-brands.csv: 524 rows. MV: 731 SmartReach-ready. 23 new pushed. Page pointer now at 9. 2026-03-12 11:17 PT (Scout cron): Echo pages 9-10 pulled: +33 agency + +10 brand leads. studio-agencies.csv: 578 rows, studio-brands.csv: 534 rows. MV: 761 SmartReach-ready. 30 new leads pushed to SmartReach (Alpen Pictures, BrandStar, Stick Figure Productions, Alkemy X, Remedy Editorial, Miramax, Magical Elves, Jackbox Games, etc). Page pointer → 11. 2026-03-12 12:00 PT (Scout cron): Echo pages 11-12 pulled: +28 agency (Showrunner Productions, Huffman Creative, Hello Sunshine, Motion Creativ, Hoff Studios, Kingdom Reign Ent, Bow+Arrow, FranchiseFilming, Retrospec Films, Painless Productions, dPost, Blind Nil, Shed Media, Delirio Films, Media Res Studio, Honor Society Films, Departure Films, LUXHAMMER, Prime Content, Big Spring Media, Fulwell Ent, North of Now, Magilla Ent, Citizen Jones, Archetype Pictures, Pie Town Productions, Amasia Ent, All3Media America) + +16 brand leads (EA, 2K, Disney, Starz, Warner Bros, Windup Minds, Activision, Theorycraft Games, Sony Interactive, Retro Studios, ViacomCBS, Blind Squirrel Games, Riot Games, Wizards of the Coast, Obsidian, Treyarch, ZeniMax, B17 Entertainment, Company 3, Sound Lounge). studio-agencies.csv: 608 rows, studio-brands.csv: 550 rows. MV: 796 SmartReach-ready. 35 new leads pushed to SmartReach. Page pointer → 13."
+    },
+    {
+      "id": "task-leadgen-approval-ui",
+      "title": "Leads UI: Pending / Approved / Rejected with checkboxes",
+      "description": "Extend the Mission Control Leads page so new leads from Scout/Echo arrive in a Pending state with checkbox-based Approve/Reject controls, and ensure SmartReach CSV export includes only Approved leads.",
+      "assignee": "Forge",
+      "column": "Done",
+      "createdAt": "2026-03-09 09:40 PT",
+      "lastUpdate": "2026-03-11 13:05 PT",
+      "notes": "Built by Scout via Claude Code (1:05 PM PT). lib/approval-store.ts (reads/writes leads/approval-state.json), app/api/leads/approve/route.ts (POST bulk approve/reject), app/page.tsx updated with checkbox column, approval pill, filter tabs (All/Pending/Approved/Rejected with counts), bulk action bar. SmartReach export now filtered to approved-only leads. Committed to main."
+    },
+    {
+      "id": "task-select-blog-casting-brief",
+      "title": "Blog: How to write a voiceover casting brief (template for producers)",
+      "description": "Draft and publish an SEO-focused anchor post for producers on how to write a voiceover casting brief: structure, template, examples, and common pitfalls.",
+      "assignee": "Quill",
+      "column": "Review",
+      "createdAt": "2026-03-09 10:00 PT",
+      "lastUpdate": "2026-03-12 08:02 PT",
+      "notes": "Draft written by Quill 2026-03-12. Saved to select-casting-blog-drafts/how-to-write-a-voiceover-casting-brief.md. ~1,500 words. Covers: why briefs matter, 7 things every brief should answer, copy-paste template, and common pitfalls. SEO target: 'voiceover casting brief'."
+    },
+    {
+      "id": "task-select-blog-nonunion-social-rates",
+      "title": "Blog: Non-union voiceover rates for social & digital campaigns",
+      "description": "Draft and publish a 1,200–2,000 word support post for producers on how to structure non-union VO rates for social/digital campaigns, including examples and common pitfalls.",
+      "assignee": "Quill",
+      "column": "Review",
+      "createdAt": "2026-03-09 08:00 PT"
+    },
+    {
+      "id": "task-sa-website-structure",
+      "title": "Studio Awesome website structure & messaging brief",
+      "description": "Define the page structure, core messaging, and primary calls-to-action for the Studio Awesome website, based on current services and target clients.",
+      "assignee": "Raimey",
+      "column": "In Progress",
+      "createdAt": "2026-03-09 13:00 PT"
+    },
+    {
+      "id": "task-sa-mix-spec",
+      "title": "Mix booking app v1 spec & user flows",
+      "description": "Draft the v1 spec and user flows for the Studio Awesome mix booking app, covering availability display, request flow, and basic admin controls.",
+      "assignee": "Forge",
+      "column": "Review",
+      "createdAt": "2026-03-09 13:00 PT",
+      "lastUpdate": "2026-03-11 13:05 PT",
+      "notes": "v1 built: booking form, studio info, and contact pages complete. Ready for Mike to review."
+    },
+    {
+      "id": "task-fractional-model-spec",
+      "title": "Fractional advertising model v1 concept memo",
+      "description": "Write a concept memo outlining the fractional advertising model: who it serves, what problems it solves, example client journeys, and how it connects Select Casting and Studio Awesome.",
+      "assignee": "Raimey",
+      "column": "In Progress",
+      "createdAt": "2026-03-09 13:00 PT"
+    },
+    {
+      "id": "task-forge-mike-site-2026-03-08",
+      "title": "Redesign mikegullickson.com (sci-fi author site)",
+      "description": "Forge to design and implement a clean, simple, sci-fi-ish author site for Mike (home, books, about/contact).",
+      "assignee": "Forge",
+      "column": "In Progress",
+      "createdAt": "2026-03-08 17:14 PT"
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-seed-1",
+      "message": "Seeded Mission Control tasks board.",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "activity-seed-2",
+      "message": "Added recurring tasks for Select Casting lead gen and ADR radius leads.",
+      "createdAt": "Seeded in Mission Control"
+    },
+    {
+      "id": "activity-2026-03-08-test-leads",
+      "message": "Created test lead gen tasks for Scout (small/mid agencies) and Echo (Studio Awesome ADR leads).",
+      "createdAt": "2026-03-08 16:10 PT"
+    },
+    {
+      "id": "activity-2026-03-08-forge-site",
+      "message": "Queued Forge task to redesign mikegullickson.com.",
+      "createdAt": "2026-03-08 17:14 PT"
+    },
+    {
+      "id": "activity-2026-03-11-subagents",
+      "message": "Raimey (main agent) restructured crons and tasks around named sub-agents: Scout (lead gen), Echo (local ADR leads), Forge (coding/building), Quill (content writing). Crons now spawn real work instead of just reporting.",
+      "createdAt": "2026-03-11 08:01 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-apollo-reveal",
+      "message": "Scout used Codex to update scripts/scout-apollo-run.js so Apollo mixed_people/api_search results are treated as discovery, then emails are revealed via people/match with throttling and normalized into select-small-mid-agencies-us.csv.",
+      "createdAt": "2026-03-11 09:00 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-apollo-dedupe",
+      "message": "Scout used Codex to extract scripts/apollo-dedupe-helpers.js and refactor scripts/scout-apollo-run.js so new Apollo leads are de-duplicated by lowercase contact_email and company::city before being appended into leads/select-small-mid-agencies-us.csv.",
+      "createdAt": "2026-03-11 10:00 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-mv-verify",
+      "message": "Scout used Claude Code to build scripts/verify-small-mid-agencies.js — the MillionVerifier step for the Scout pipeline. Reads select-small-mid-agencies-us.csv, calls MV API v3 per contact_email (concurrency 5, re-run safe, graceful error handling), writes select-small-mid-agencies-us-verified.csv (all rows + mv_result/mv_quality/mv_subresult), and exports select-small-mid-agencies-us-smartreach.csv (mv_result=ok only, no catchall, mapped to SmartReach columns). Node syntax check passes. Pipeline is now fully wired end-to-end; final step is live run with real API keys.",
+      "createdAt": "2026-03-11 11:00 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-mv-smartreach",
+      "message": "Scout built scripts/verify-small-mid-agencies.js: takes new rows from select-small-mid-agencies-us.csv, runs emails through MillionVerifier, and exports verified/approved leads as a SmartReach-ready CSV. Full Scout pipeline (Apollo → dedupe → MV verify → SmartReach export) is now wired end-to-end.",
+      "createdAt": "2026-03-11 11:02 PT"
+    },
+    {
+      "id": "activity-2026-03-11-sa-mix-booking-v1",
+      "message": "Forge built Studio Awesome Mix Booking App v1: booking form, studio info, and contact pages complete. Task moved to Review. Project progress updated to 75%.",
+      "createdAt": "2026-03-11 13:05 PT"
+    },
+    {
+      "id": "activity-2026-03-11-echo-apollo-pipeline",
+      "message": "Scout used Claude Code to build the full Echo Apollo pipeline for Studio Awesome. Built scripts/echo-apollo-run.js (Apollo discovery for agencies [production_company/media_entertainment] and brands [consumer_goods/retail/gaming/media], 2 pages × 25 each, email reveal, dedupe into studio-agencies.csv and studio-brands.csv) and scripts/verify-studio-leads.js (MillionVerifier for both files, exports studio-agencies-verified.csv, studio-brands-verified.csv, and studio-smartreach.csv). Both files pass node --check. Full Echo pipeline now mirrors Scout pipeline end-to-end.",
+      "createdAt": "2026-03-11 12:00 PT"
+    },
+    {
+      "id": "activity-2026-03-11-approval-ui",
+      "message": "Scout used Claude Code to build the Leads Approval UI. Added lib/approval-store.ts (reads/writes leads/approval-state.json, keyed by company::city::contact_email), app/api/leads/approve/route.ts (POST bulk approve/reject), updated app/page.tsx with checkbox column, approval pill (pending/approved/rejected), filter tabs with counts, and bulk action bar. SmartReach export now filters to approved-only leads. task-leadgen-approval-ui moved to Done.",
+      "createdAt": "2026-03-11 13:05 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-orchestrator",
+      "message": "Scout built scripts/run-scout-pipeline.js — single orchestrator that runs the full Scout pipeline end-to-end: Apollo discovery → email reveal → dedupe → MillionVerifier → SmartReach export. Scout pipeline is now fully operational pending live API key run.",
+      "createdAt": "2026-03-11 14:16 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-pipeline-orchestrator",
+      "message": "Scout built scripts/run-scout-pipeline.js — a single-command orchestrator that chains scout-apollo-run.js (Apollo discovery + reveal + dedupe) → verify-small-mid-agencies.js (MillionVerifier + SmartReach export). Run with: node scripts/run-scout-pipeline.js from project root. Syntax verified, ready to fire with live API keys.",
+      "createdAt": "2026-03-11 14:16 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-page-advance",
+      "message": "Scout added page-advance tracking to scripts/scout-apollo-run.js. Now reads/writes leads/scout-apollo-page-state.json to remember which Apollo pages have been fetched. Each cron run fetches 2 pages (50 candidates) and advances the pointer — no more re-fetching page 1 on every run. Resets to page 1 after page 20. Syntax verified.",
+      "createdAt": "2026-03-11 15:17 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-first-live-run",
+      "message": "Scout ran the Apollo pipeline live for the first time (4:20 PM PT). Fixed 3 bugs: (1) CSV header missing linkedin_url → added it, (2) Apollo filter rejected obfuscated last names → loosened filter to accept last_name_obfuscated, (3) revealPerson bailed early when last_name null → now uses person id for match API. 50 new contacts revealed + appended to select-small-mid-agencies-us.csv (104 rows total). MillionVerifier processed all 104 rows: 30 valid (ok), 30 exported to select-small-mid-agencies-us-smartreach.csv. Pipeline is now fully operational and running on cron.",
+      "createdAt": "2026-03-11 16:20 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-pages-9-10",
+      "message": "Scout ran Apollo pipeline (pages 9-10) at 6:28 PM PT. +30 new leads appended (dedupe'd), 134 total CSV rows. MillionVerifier ran on all 134 rows: 52 valid/ok, 52 SmartReach-ready (was 30). Page pointer advances to 11 for next cron run.",
+      "createdAt": "2026-03-11 18:28 PT"
+    },
+    {
+      "id": "activity-2026-03-11-echo-first-live-run",
+      "message": "Scout fixed echo-apollo-run.js (3 bugs: obfuscated last_name filter, ID-based Apollo reveal, page-state tracking) and ran first live Echo pipeline at 7:30 PM PT. Results: +48 agency leads (studio-agencies.csv: 50 rows), +48 brand leads (studio-brands.csv: 50 rows). 96 total Studio Awesome leads in one run. Page pointer set to 3. Committed as 8220846. Next: run verify-studio-leads.js to MillionVerifier-verify and produce SmartReach export.",
+      "createdAt": "2026-03-11 19:30 PT"
+    },
+    {
+      "id": "activity-2026-03-11-smartreach-push-scripts",
+      "message": "Scout (9:43 PM PT cron) identified missing SmartReach push step for new pipeline CSVs. Built scripts/push-smartreach-leads.js (--file + --list args, finds/creates SR list, POSTs each row with 200ms rate-limit delay, skips missing emails, prints summary) and scripts/push-all-pipeline-leads.js (chains both pipelines: select-small-mid-agencies-us-smartreach.csv → 'Select - Small Mid Agencies' + studio-smartreach.csv → 'Studio Awesome - Brands & Agencies'). Committed as 3358652. Pipeline is now end-to-end: Apollo → dedupe → MV verify → SmartReach push.",
+      "createdAt": "2026-03-11 21:43 PT"
+    },
+    {
+      "id": "activity-2026-03-11-echo-verification-orchestrator",
+      "message": "Scout (8:36 PM PT cron) built run-echo-pipeline.js orchestrator (commit 78fa076), fixed CSV relax_column_count bug in verify-studio-leads.js, and ran full Echo pipeline: pages 3-4 → +49 agency + +49 brand leads, then MV verified all 194 rows (97 agencies + 97 brands). studio-smartreach.csv: 135 SmartReach-ready Studio Awesome leads. Also ran Scout pages 11-12: +22 new leads, 156 total CSV rows, 69 SmartReach-ready.",
+      "createdAt": "2026-03-11 20:36 PT"
+    },
+    {
+      "id": "activity-2026-03-11-scout-query-refinement",
+      "message": "Scout refined Apollo search query in scripts/scout-apollo-run.js (commit 479e9ff). Added q_organization_keyword_tags (11 keywords: advertising agency, creative agency, marketing agency, brand agency, digital agency, PR agency, media agency, content agency, social media agency, integrated agency, ad agency) + person_titles (15 titles: ECD, CD, CCO, MD, VP Creative, VP Marketing, Head of Production, EP, Producer, Founder, Partner, President, Account Director, Strategy Director, Brand Director) + organization_locations[] US. Narrows out VC, staffing, edu noise — pipeline will now surface real ad/creative agency contacts.",
+      "createdAt": "2026-03-11 17:25 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-pages-15-16-smartreach",
+      "message": "Scout (1:00 AM PT cron) ran run-scout-pipeline.js for pages 15-16: +20 new small/mid agency leads appended (select-small-mid-agencies-us.csv: 201 rows). MillionVerifier re-verified all rows (102 valid/ok) and select-small-mid-agencies-us-smartreach.csv now has 102 SmartReach-ready leads. Fixed SmartReach API integration in scripts/push-smartreach-leads.js to use X-API-KEY + /api/v1/prospects, then pushed all 102 leads into SmartReach list \"Select - Small Mid Agencies\" (commit 4ce7d9e). Scout Apollo page pointer advanced to 17.",
+      "createdAt": "2026-03-12 01:00 PT"
+    },
+    {
+      "id": "activity-2026-03-12-echo-pages-9-10-smartreach",
+      "message": "Scout (1:00 AM PT cron) ran run-echo-pipeline.js for Echo pages 9-10: +44 new agency leads and +44 new brand leads appended (studio-agencies.csv + studio-brands.csv now 240 rows each). MillionVerifier verified 141 new rows per file and refreshed studio-smartreach.csv (318 SmartReach-ready Studio Awesome leads). SmartReach push succeeded for all 318 leads into list \"Studio Awesome - Brands & Agencies\". Echo Apollo page pointer advanced to 11.",
+      "createdAt": "2026-03-12 01:00 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-pages-17-18",
+      "message": "Scout (2:13 AM PT cron) ran run-scout-pipeline.js for pages 17-18: +40 new small/mid agency leads (select-small-mid-agencies-us.csv: 241 rows). MV verified all 241 rows (130 valid/ok). All 130 leads pushed to SmartReach 'Select - Small Mid Agencies'. Page pointer advanced to 19.",
+      "createdAt": "2026-03-12 02:13 PT"
+    },
+    {
+      "id": "activity-2026-03-12-echo-pages-11-12",
+      "message": "Scout (2:13 AM PT cron) ran run-echo-pipeline.js for pages 11-12: +45 agency + +45 brand leads (studio-agencies.csv + studio-brands.csv: 285 rows each). MV verified new rows. studio-smartreach.csv: 378 SmartReach-ready leads. SmartReach push partially completed (~220/378 before timeout SIGTERM). Page pointer advanced to 13.",
+      "createdAt": "2026-03-12 02:13 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-mv-incremental",
+      "message": "Scout (3:21 AM PT cron) used Codex to make the MillionVerifier step for small/mid agencies incremental. verify-small-mid-agencies.js now loads the cached verified CSV, skips already-verified emails, dedupes repeated emails within a run, and only calls MV for new leads. On this run it reported 270 total rows, 270 already verified, 0 new, 155 valid/ok, 155 SmartReach-ready.",
+      "createdAt": "2026-03-12 03:21 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-query-rotation",
+      "message": "Scout (5:43 AM PT cron) built Apollo query rotation (commit 41c0ef0): added QUERY_VARIANTS array (4 variants: Creative/Ad Agencies, Brand/Design Studios, PR/Comms Agencies, Boutique/Independent) to scout-apollo-run.js + new leads/scout-apollo-query-state.json. QueryIndex auto-advances on each 20-page cycle reset — prevents pulling same 500-person pool repeatedly. Scout pages 3-4: +18 leads (307 total, 182 SmartReach-ready, 12 new pushed). Echo pages 17-18: +94 leads (423 rows each, 579 SmartReach-ready, 60 new pushed). Combined pipeline now: 1,288 total leads, 761 SmartReach-ready.",
+      "createdAt": "2026-03-12 05:43 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-pages-7-8",
+      "message": "Scout (6:50 AM PT cron): Pages 7-8 pulled via run-scout-pipeline.js. +10 new Select Casting leads (Team One, TriVision, Wright Group, Bon Aperture Productions, Biddyco, Invert Agency, DDB, Deutsch, Red Tettemer O'Connell + Partners, 21GRAMS). select-small-mid-agencies-us.csv: 345 rows. MV incremental: 212 valid/ok. 7 new leads pushed to SmartReach 'Select - Small Mid Agencies'. Page pointer → 9.",
+      "createdAt": "2026-03-12 06:50 PT"
+    },
+    {
+      "id": "activity-2026-03-12-echo-query-rotation-fix",
+      "message": "Scout (6:50 AM PT cron) fixed Echo Apollo query via Claude Code (commit 881fedc). Problem: Echo reset to page 1 of cycle 2 and returned 0 new leads — same 49 people pulled (Deepak Chopra, Satya Nadella, life coaches). Root cause: q_organization_types filter too broad. Fix: Added AGENCIES_QUERY_VARIANTS (Production Companies / Post-Production & Audio / Ad Agency Production) and BRANDS_QUERY_VARIANTS (Gaming & Entertainment / Consumer Brands/Media / Tech/Software) using q_organization_keyword_tags for precise targeting. Added organization_locations: ['United States'] to all variants. queryIndex advances on each 20-page cycle reset, mirroring Scout rotation pattern. echo-apollo-query-state.json created at queryIndex=0.",
+      "createdAt": "2026-03-12 06:50 PT"
+    },
+    {
+      "id": "activity-2026-03-12-morning-cron-0600",
+      "message": "Morning lead gen cron (6:00 AM PT): Scout pages 5-6 → +28 new Select Casting leads (MARTIN Agency, MediaVision Creative, Tombras, Crowley Webb, Midnight Oil, Capital A, etc). select-small-mid-agencies-us.csv: 335 rows. MV: 205 valid/ok. 23 new leads pushed to SmartReach 'Select - Small Mid Agencies'. Page pointer → 7. Echo pages 19-20 (cycle complete, resets to 1) → +45 agency + +45 brand Studio Awesome leads. studio-agencies.csv + studio-brands.csv: 468 rows each. MV: 642 SmartReach-ready. 63 new leads pushed to SmartReach 'Studio Awesome - Brands & Agencies'.",
+      "createdAt": "2026-03-12 06:00 PT"
+    },
+    {
+      "id": "activity-2026-03-12-echo-push-fix-pages-15-16",
+      "message": "Scout (4:34 AM PT cron) fixed Echo partial push from 2:13 AM: re-pushed all 452 leads to SmartReach 'Studio Awesome - Brands & Agencies' (209 newly pushed, 243 skipped, 0 errors). Then ran Scout pipeline pages 1-2 (new 20-page cycle): +19 new agency leads, select-small-mid-agencies-us.csv now 289 rows, 170 valid/ok, 45 new leads pushed to SmartReach 'Select - Small Mid Agencies', page pointer at 3. Then ran Echo pipeline pages 15-16: +46 agency + +46 brand leads, studio-agencies.csv + studio-brands.csv now 376 rows each, studio-smartreach.csv now 519 SmartReach-ready leads, all 519 pushed successfully, Echo page pointer at 17. Combined pipeline now at ~1,041 leads.",
+      "createdAt": "2026-03-12 04:34 PT"
+    },
+    {
+      "id": "activity-2026-03-12-scout-1012",
+      "message": "Scout (10:12 AM PT cron): Scout pages 13-14 → +4 new leads (query variant 1 exhausted, early rotation to variant 2 triggered). select-small-mid-agencies-us.csv: 355 rows, 220 valid/ok, 2 new pushed to SmartReach (220 total). Echo pages 7-8 → +27 agency + +11 brand leads. studio-agencies.csv: 547 rows, studio-brands.csv: 524 rows. MV: 731 SmartReach-ready leads. 23 new pushed to SmartReach (731 total). Combined pipeline: 951 SmartReach-ready leads across both products. Approaching 1,000 milestone.",
+      "createdAt": "2026-03-12 10:12 PT"
+    }
+  ]
+}

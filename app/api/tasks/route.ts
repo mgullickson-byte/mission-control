@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 
-const baseDir = path.join(process.env.HOME || '', '.openclaw', 'workspace', 'mission-control');
+const baseDir = path.join(process.cwd(), 'data');
 const tasksFile = path.join(baseDir, 'tasks.json');
 
 export type ColumnKey = 'Recurring' | 'Backlog' | 'In Progress' | 'Review' | 'Live Activity';
