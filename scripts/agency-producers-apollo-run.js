@@ -58,6 +58,19 @@ const QUERY_VARIANTS = [
       'Creative Producer', 'Director of Production', 'Line Producer',
       'Managing Director'
     ]
+  },
+  {
+    name: 'TV Networks & Streaming — Audio/Music',
+    q_organization_keyword_tags: [
+      'television network', 'streaming platform', 'entertainment company',
+      'broadcast network', 'streaming service', 'media entertainment'
+    ],
+    person_titles: [
+      'Music Supervisor', 'Supervising Sound Editor', 'Sound Supervisor',
+      'Audio Director', 'Head of Audio', 'Director of Post Production',
+      'VP Post Production', 'Post Production Supervisor', 'ADR Supervisor',
+      'Sound Designer'
+    ]
   }
 ];
 
