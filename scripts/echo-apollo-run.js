@@ -18,7 +18,22 @@ const LEADS_DIR = path.join(ROOT_DIR, 'leads');
 const AGENCIES_CSV = path.join(LEADS_DIR, 'studio-agencies.csv');
 const BRANDS_CSV = path.join(LEADS_DIR, 'studio-brands.csv');
 const ENV_PATH = path.join(ROOT_DIR, '.env.local');
+const PAGE_STATE_PATH = path.join(LEADS_DIR, 'echo-apollo-page-state.json');
 const DEFAULT_REVEAL_DELAY_MS = 750;
+const MAX_PAGE = 20;
+
+function loadEchoPageState() {
+  if (!fs.existsSync(PAGE_STATE_PATH)) return { nextPage: 1 };
+  try {
+    return JSON.parse(fs.readFileSync(PAGE_STATE_PATH, 'utf8'));
+  } catch {
+    return { nextPage: 1 };
+  }
+}
+
+function saveEchoPageState(nextPage) {
+  fs.writeFileSync(PAGE_STATE_PATH, JSON.stringify({ nextPage }, null, 2), 'utf8');
+}
 
 const CSV_COLUMNS = ['name', 'company', 'city', 'type', 'source', 'website', 'contact_name', 'contact_email', 'notes'];
 
@@ -123,13 +138,20 @@ function getPersonEmail(person) {
 async function revealPerson(base, apiKey, person, delayMs) {
   const organizationName = getOrganizationName(person);
   const firstName = person?.first_name || '';
-  const lastName = person?.last_name || '';
+  const lastName = person?.last_name || person?.last_name_obfuscated || '';
+  const personId = person?.id || '';
 
-  if (!firstName || !lastName || !organizationName) {
+  if (!personId && (!firstName || !organizationName)) {
     return null;
   }
 
   const url = new URL('people/match', base);
+
+  // Build body: prefer ID-based lookup (most reliable), fall back to name+org
+  const matchBody = personId
+    ? { id: personId, reveal_personal_emails: false, reveal_phone_number: false }
+    : { first_name: firstName, last_name: lastName, organization_name: organizationName };
+
   const res = await fetch(url.toString(), {
     method: 'POST',
     headers: {
@@ -137,11 +159,7 @@ async function revealPerson(base, apiKey, person, delayMs) {
       'Cache-Control': 'no-cache',
       'X-Api-Key': apiKey
     },
-    body: JSON.stringify({
-      first_name: firstName,
-      last_name: lastName,
-      organization_name: organizationName
-    })
+    body: JSON.stringify(matchBody)
   });
 
   const text = await res.text();
@@ -203,13 +221,13 @@ async function fetchPage(base, apiKey, searchBody, page) {
   return Array.isArray(data?.people) ? data.people : [];
 }
 
-async function runSearch(config, base, apiKey, revealDelayMs) {
+async function runSearch(config, base, apiKey, revealDelayMs, startPage) {
   const { label, csvPath, type, source, body } = config;
   console.log(`\n=== Running ${label} search ===`);
 
-  // Fetch 2 pages
+  // Fetch 2 pages starting at startPage
   const allPeople = [];
-  for (let page = 1; page <= 2; page++) {
+  for (let page = startPage; page <= startPage + 1; page++) {
     const people = await fetchPage(base, apiKey, body, page);
     console.log(`  Page ${page}: ${people.length} people returned`);
     allPeople.push(...people);
@@ -222,7 +240,7 @@ async function runSearch(config, base, apiKey, revealDelayMs) {
     return Boolean(
       orgName &&
         p?.first_name &&
-        p?.last_name &&
+        (p?.last_name || p?.last_name_obfuscated) &&
         (p?.has_email === true || getPersonEmail(p))
     );
   });
@@ -305,8 +323,15 @@ async function run() {
 
   const base = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
 
-  const agenciesAdded = await runSearch(AGENCIES_SEARCH, base, apiKey, effectiveDelay);
-  const brandsAdded = await runSearch(BRANDS_SEARCH, base, apiKey, effectiveDelay);
+  const { nextPage: startPage } = loadEchoPageState();
+  const endPage = startPage + 1;
+  const nextRunPage = endPage + 1 > MAX_PAGE ? 1 : endPage + 1;
+  console.log(`Fetching Echo Apollo pages ${startPage} and ${endPage} (next run will start at ${nextRunPage})`);
+
+  const agenciesAdded = await runSearch(AGENCIES_SEARCH, base, apiKey, effectiveDelay, startPage);
+  const brandsAdded = await runSearch(BRANDS_SEARCH, base, apiKey, effectiveDelay, startPage);
+
+  saveEchoPageState(nextRunPage);
 
   console.log('\n=== Echo Apollo Run Complete ===');
   console.log(`Agency leads added:  ${agenciesAdded}`);
