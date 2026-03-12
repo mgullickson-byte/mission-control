@@ -34,6 +34,9 @@ export default function RootLayout({
               <Link href="/" className="mc-nav-link">
                 Leads
               </Link>
+              <Link href="/adr-leads" className="mc-nav-link">
+                ADR Leads
+              </Link>
               <Link href="/memory" className="mc-nav-link">
                 Memory
               </Link>

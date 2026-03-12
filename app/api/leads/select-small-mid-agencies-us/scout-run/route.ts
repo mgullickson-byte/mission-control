@@ -30,6 +30,8 @@ function normalizeApolloToLead(row: any) {
   };
 }
 
+type ScoutLeadRow = ReturnType<typeof normalizeApolloToLead>;
+
 function loadExistingCompanies(): Set<string> {
   if (!fs.existsSync(CSV_PATH)) return new Set();
 
@@ -92,10 +94,10 @@ export async function POST() {
     }
 
     const records = Array.isArray(data?.organizations) ? data.organizations : [];
-    const normalized = records.map(normalizeApolloToLead);
+    const normalized: ScoutLeadRow[] = records.map(normalizeApolloToLead);
 
     const existingKeys = loadExistingCompanies();
-    const newRows = normalized.filter((row) => {
+    const newRows = normalized.filter((row: ScoutLeadRow) => {
       const key = `${row.company || ''}::${row.city || ''}`.toLowerCase();
       return row.company && !existingKeys.has(key);
     });

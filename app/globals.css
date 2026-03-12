@@ -907,6 +907,214 @@ tr:last-child td {
   color: #9ca3af;
 }
 
+/* ADR Leads */
+
+.adr-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.adr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.adr-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.adr-stat-card {
+  border-radius: 14px;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background: radial-gradient(circle at top left, rgba(17, 24, 39, 0.95), rgba(2, 6, 23, 0.95));
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.adr-stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+}
+
+.adr-stat-value {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.adr-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.adr-filter-tab {
+  background: rgba(15, 23, 42, 0.65);
+}
+
+.adr-filter-tab-active {
+  border-color: #6366f1;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(15, 23, 42, 0.95));
+}
+
+.adr-board {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.adr-add-card,
+.adr-detail-card {
+  border-radius: 16px;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background: radial-gradient(circle at top left, #111827 0, #020617 75%, #000 100%);
+  padding: 16px;
+}
+
+.adr-add-actions,
+.adr-inline-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.adr-table-wrap {
+  border-color: rgba(55, 65, 81, 0.95);
+}
+
+.adr-row {
+  cursor: pointer;
+}
+
+.adr-row:hover td {
+  background: rgba(15, 23, 42, 0.78);
+}
+
+.adr-row-expanded td {
+  background: rgba(15, 23, 42, 0.92);
+}
+
+.adr-company-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.adr-company-added {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.adr-status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.adr-status-new {
+  border-color: rgba(148, 163, 184, 0.75);
+  color: #cbd5e1;
+}
+
+.adr-status-contacted {
+  border-color: rgba(59, 130, 246, 0.85);
+  color: #93c5fd;
+}
+
+.adr-status-replied {
+  border-color: rgba(245, 158, 11, 0.85);
+  color: #fcd34d;
+}
+
+.adr-status-meeting {
+  border-color: rgba(168, 85, 247, 0.85);
+  color: #d8b4fe;
+}
+
+.adr-status-won {
+  border-color: rgba(34, 197, 94, 0.85);
+  color: #86efac;
+}
+
+.adr-status-lost {
+  border-color: rgba(239, 68, 68, 0.85);
+  color: #fca5a5;
+}
+
+.adr-detail-row td {
+  padding: 0;
+  background: rgba(2, 6, 23, 0.92);
+}
+
+.adr-detail-card {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid rgba(31, 41, 55, 0.95);
+}
+
+.adr-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.adr-detail-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.adr-link {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.adr-link:hover {
+  text-decoration: underline;
+}
+
+.adr-notes-input {
+  min-height: 96px;
+}
+
+.adr-empty-cell {
+  color: #9ca3af;
+  text-align: center;
+  padding: 28px 12px;
+}
+
+@media (max-width: 1100px) {
+  .adr-stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .adr-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .adr-stats-grid,
+  .adr-detail-meta,
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    padding: 18px 16px 24px;
+  }
+}
+
 .tasks-detail-header {
   display: flex;
   align-items: flex-start;
