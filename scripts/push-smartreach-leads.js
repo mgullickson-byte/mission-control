@@ -40,39 +40,11 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function findOrCreateList(baseUrl, apiKey, teamId, listName) {
-  const url = `${baseUrl}/api/v1/listProspects?teamId=${teamId}`;
-  const res = await fetch(url, {
-    headers: { Authorization: `Bearer ${apiKey}` }
-  });
-  if (!res.ok) {
-    throw new Error(`Failed to fetch prospect lists: ${res.status} ${await res.text()}`);
-  }
-  const data = await res.json();
-  const lists = (data.data && data.data.lists) || [];
-  const existing = lists.find((l) => l.name === listName);
-  if (existing) {
-    console.log(`Found existing list "${listName}" (id: ${existing.id})`);
-    return existing.id;
-  }
-
-  // Create new list
-  const createRes = await fetch(`${baseUrl}/api/v1/createProspectList`, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ teamId, name: listName })
-  });
-  if (!createRes.ok) {
-    throw new Error(`Failed to create list "${listName}": ${createRes.status} ${await createRes.text()}`);
-  }
-  const created = await createRes.json();
-  const newId = created.data && created.data.list && created.data.list.id;
-  if (!newId) throw new Error(`Create list response missing id: ${JSON.stringify(created)}`);
-  console.log(`Created new list "${listName}" (id: ${newId})`);
-  return newId;
+// SmartReach v1 API uses X-API-KEY header + team_id query param.
+// Prospects are added via POST /api/v1/prospects?team_id=<id>
+// with "list" field in the body — no separate list-create step needed.
+function srHeaders(apiKey) {
+  return { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' };
 }
 
 async function pushAll() {
@@ -100,8 +72,6 @@ async function pushAll() {
   const raw = fs.readFileSync(filePath, 'utf8');
   const rows = parse(raw, { columns: true, skip_empty_lines: true });
 
-  const listId = await findOrCreateList(baseUrl, apiKey, teamId, listName);
-
   let skipped = 0;
   let pushed = 0;
   let errors = 0;
@@ -116,24 +86,21 @@ async function pushAll() {
     }
 
     const body = {
-      teamId,
-      listId,
-      firstName: (row.first_name || '').trim(),
-      lastName: (row.last_name || '').trim(),
+      list: listName,
+      first_name: (row.first_name || '').trim(),
+      last_name: (row.last_name || '').trim(),
       email,
-      companyName: (row.company_name || '').trim(),
+      company: (row.company_name || '').trim(),
       website: (row.website || '').trim(),
       city: (row.city || '').trim(),
-      designation: (row.title || '').trim()
+      job_title: (row.title || '').trim(),
+      custom_fields: {},
     };
 
     try {
-      const res = await fetch(`${baseUrl}/api/v1/addProspect`, {
+      const res = await fetch(`${baseUrl}/api/v1/prospects?team_id=${teamId}`, {
         method: 'POST',
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        },
+        headers: srHeaders(apiKey),
         body: JSON.stringify(body)
       });
 
@@ -142,8 +109,13 @@ async function pushAll() {
       try { data = JSON.parse(text); } catch { data = text; }
 
       if (!res.ok || (data && data.status === 'error')) {
-        errors++;
-        console.error(`  Error [${email}] status=${res.status}`, typeof data === 'object' ? data.message || data : data);
+        // 422 duplicate is a soft error — count as skipped not error
+        if (res.status === 422 || (typeof data === 'object' && /duplicate|already exist/i.test(data.message || ''))) {
+          skipped++;
+        } else {
+          errors++;
+          console.error(`  Error [${email}] status=${res.status}`, typeof data === 'object' ? data.message || data : data);
+        }
       } else {
         pushed++;
         const id = data && data.data && data.data.prospect && data.data.prospect.id;
