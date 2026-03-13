@@ -14,6 +14,14 @@ type Project = {
   tags: string[];
 };
 
+type Comment = {
+  id: string;
+  projectId: string;
+  author: string;
+  text: string;
+  createdAt: string;
+};
+
 const projectsSeed: Project[] = [
   {
     id: "mission-control",
@@ -49,10 +57,16 @@ const projectsSeed: Project[] = [
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<Project[]>(projectsSeed);
+  const [comments, setComments] = useState<Comment[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(
     projectsSeed[0]?.id ?? null
   );
   const [filter, setFilter] = useState<"All" | "Select" | "Studio">("All");
+  const [author, setAuthor] = useState("Raimey");
+  const [text, setText] = useState("");
+  const [commentsLoading, setCommentsLoading] = useState(false);
+  const [commentsError, setCommentsError] = useState<string | null>(null);
+  const [isPostingComment, setIsPostingComment] = useState(false);
 
   // Load projects from API on mount so they stay in sync with Mission Control.
   useEffect(() => {
@@ -97,6 +111,39 @@ export default function ProjectsPage() {
       filteredProjects.find((p) => p.id === selectedId) ?? filteredProjects[0] ?? null,
     [filteredProjects, selectedId]
   );
+  const activeProjectId = selected?.id ?? null;
+
+  useEffect(() => {
+    if (!activeProjectId) {
+      setComments([]);
+      return;
+    }
+
+    const loadComments = async () => {
+      setCommentsLoading(true);
+      setCommentsError(null);
+
+      try {
+        const res = await fetch(
+          `/api/comments?projectId=${encodeURIComponent(activeProjectId)}`
+        );
+        if (!res.ok) {
+          throw new Error("Failed to load comments");
+        }
+
+        const data = (await res.json()) as { comments: Comment[] };
+        setComments(data.comments);
+      } catch {
+        setComments([]);
+        setCommentsError("Could not load comments.");
+      } finally {
+        setCommentsLoading(false);
+      }
+    };
+
+    setText("");
+    void loadComments();
+  }, [activeProjectId]);
 
   const handleStatusChange = (project: Project, status: ProjectStatus) => {
     const next = projects.map((p) =>
@@ -112,6 +159,50 @@ export default function ProjectsPage() {
     );
     persistProjects(next);
   };
+
+  const handleCommentSubmit = async () => {
+    if (!selected) return;
+
+    const trimmedAuthor = author.trim();
+    const trimmedText = text.trim();
+    if (!trimmedAuthor || !trimmedText) return;
+
+    setIsPostingComment(true);
+    setCommentsError(null);
+
+    try {
+      const res = await fetch("/api/comments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          projectId: selected.id,
+          author: trimmedAuthor,
+          text: trimmedText
+        })
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to post comment");
+      }
+
+      const data = (await res.json()) as { comment: Comment };
+      setComments((current) => [...current, data.comment]);
+      setText("");
+    } catch {
+      setCommentsError("Could not post comment.");
+    } finally {
+      setIsPostingComment(false);
+    }
+  };
+
+  const formatCommentTimestamp = (createdAt: string) =>
+    new Intl.DateTimeFormat("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit"
+    }).format(new Date(createdAt));
 
   return (
     <main className="page-shell">
@@ -258,6 +349,94 @@ export default function ProjectsPage() {
                     </span>
                   ))}
                 </div>
+
+                <section className="projects-comments">
+                  <div className="projects-comments-header">
+                    <div>
+                      <h3 className="projects-comments-title">Comments</h3>
+                      <p className="projects-comments-subtitle">
+                        Thread for project-specific updates and decisions.
+                      </p>
+                    </div>
+                    <span className="pill pill-soft">{comments.length}</span>
+                  </div>
+
+                  <div className="projects-comments-list">
+                    {commentsLoading ? (
+                      <p className="projects-comments-empty">Loading comments...</p>
+                    ) : comments.length ? (
+                      comments.map((comment) => {
+                        const isRaimey =
+                          comment.author.trim().toLowerCase() === "raimey";
+
+                        return (
+                          <article key={comment.id} className="projects-comment-card">
+                            <div className="projects-comment-meta">
+                              <strong
+                                className={`projects-comment-author${
+                                  isRaimey ? " projects-comment-author-accent" : ""
+                                }`}
+                              >
+                                {comment.author}
+                              </strong>
+                              <time
+                                className="projects-comment-timestamp"
+                                dateTime={comment.createdAt}
+                              >
+                                {formatCommentTimestamp(comment.createdAt)}
+                              </time>
+                            </div>
+                            <p className="projects-comment-text">{comment.text}</p>
+                          </article>
+                        );
+                      })
+                    ) : (
+                      <p className="projects-comments-empty">
+                        No comments yet. Start the thread below.
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="projects-comment-form">
+                    <label className="field">
+                      <span className="field-label">Author</span>
+                      <input
+                        className="field-input"
+                        type="text"
+                        value={author}
+                        onChange={(e) => setAuthor(e.target.value)}
+                        placeholder="Raimey"
+                      />
+                    </label>
+                    <label className="field projects-comment-message-field">
+                      <span className="field-label">Message</span>
+                      <textarea
+                        className="field-input projects-comment-textarea"
+                        value={text}
+                        onChange={(e) => setText(e.target.value)}
+                        placeholder="Add a project update, question, or decision..."
+                        rows={4}
+                      />
+                    </label>
+                    <div className="projects-comment-form-footer">
+                      {commentsError ? (
+                        <p className="projects-comments-error">{commentsError}</p>
+                      ) : (
+                        <span className="projects-comments-hint">
+                          Default author is Raimey, but Josiah can post with his name.
+                        </span>
+                      )}
+                      <button
+                        type="button"
+                        className="projects-comment-send"
+                        onClick={handleCommentSubmit}
+                        disabled={isPostingComment}
+                      >
+                        {isPostingComment ? "Sending..." : "Send"}
+                      </button>
+                    </div>
+                  </div>
+                </section>
 
                 <p className="section-help">
                   Later we can link each project directly into relevant Memories

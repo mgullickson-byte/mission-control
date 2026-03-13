@@ -1,0 +1,23 @@
+[
+  {
+    "id": "b1c2d3e4-f5a6-4789-9abc-1234567890ab",
+    "projectId": "ai-mix-platform",
+    "author": "Raimey",
+    "text": "Captured the full end-to-end workflow and engineer handoff spec. Next pass should break this into milestone slices we can estimate cleanly.",
+    "createdAt": "2026-03-13T15:10:00.000Z"
+  },
+  {
+    "id": "c2d3e4f5-a6b7-4890-abcd-2345678901bc",
+    "projectId": "ai-mix-platform",
+    "author": "Josiah",
+    "text": "Engineer handoff package needs to stay explicit: 48kHz/24-bit WAV stems, source assets, and notes on processing decisions.",
+    "createdAt": "2026-03-13T16:00:00.000Z"
+  },
+  {
+    "id": "d3e4f5a6-b7c8-4901-bcde-3456789012cd",
+    "projectId": "mission-control-v1",
+    "author": "Raimey",
+    "text": "Comments thread should live directly in the project detail card so status, scope, and discussion stay together.",
+    "createdAt": "2026-03-13T16:20:00.000Z"
+  }
+]
