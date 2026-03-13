@@ -99,5 +99,15 @@
       "progress": 10,
       "tags": ["novel", "editorial", "writing", "the-promise", "amal"]
     }
+  ,
+    {
+      "id": "ai-mix-platform",
+      "name": "AI Mix Platform",
+      "company": "Studio Awesome",
+      "description": "Build a web-based (PWA) audio production platform where clients can upload session takes, select and comp takes, get an AI-powered mix (via Dolby.io + Claude), give natural language feedback, and receive broadcast-ready deliverables. Engineer handoff for complex jobs. Powered by Studio Awesome + Select Casting. Phase 1: core pipeline + portal. Phase 2: natural language chat + comping. Phase 3: full booking + session workflow integration.",
+      "status": "Planning",
+      "progress": 5,
+      "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product"]
+    }
   ]
 }
