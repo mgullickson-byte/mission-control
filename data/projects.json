@@ -109,5 +109,15 @@
       "progress": 5,
       "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product"]
     }
+  ,
+    {
+      "id": "select-casting-ai-chat-rate-calculator",
+      "name": "Select Casting AI Chat + Rate Calculator",
+      "company": "Select Casting",
+      "description": "Embed an AI chat assistant on selectcasting.com that handles client questions, intake, and includes a natural language rate calculator for SAG-AFTRA and GVAA non-union rates. Client types job details (union type, market, run length, spot length) and gets an instant rate quote including H&R contributions and optional casting/session fees.",
+      "status": "Planning",
+      "progress": 0,
+      "tags": ["select casting", "AI", "chat", "rate calculator", "SAG", "GVAA", "website"]
+    }
   ]
 }
