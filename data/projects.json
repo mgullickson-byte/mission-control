@@ -104,10 +104,10 @@
       "id": "ai-mix-platform",
       "name": "AI Mix Platform",
       "company": "Studio Awesome",
-      "description": "Build a web-based (PWA) audio production platform where clients can upload session takes, select and comp takes, get an AI-powered mix (via Dolby.io + Claude), give natural language feedback, and receive broadcast-ready deliverables. Engineer handoff for complex jobs. Powered by Studio Awesome + Select Casting. Phase 1: core pipeline + portal. Phase 2: natural language chat + comping. Phase 3: full booking + session workflow integration.",
+      "description": "End-to-end commercial audio production platform. Two tiers: full-service (Studio Awesome runs it) and self-serve (client runs it, SA available for QC). Full workflow: (1) Script timing analysis — AI predicts clock time from script text, flags if spot will run long before session is booked; (2) Spec + script upload; (3) Select Casting integration — builds casting brief directly, usage/term answers auto-populate rate calculator; (4) Casting via Select Casting; (5) Recording — live at Studio Awesome, remote via Source Connect/Audiomovers, or self-recorded; (6) Video upload (locked picture) — AI analyzes visual cues (cuts, scene changes, product reveals) to suggest music and SFX placement at timecodes; (7) Licensed music + SFX library (Artlist/Epidemic Sound/Musicbed via API) — AI surfaces 5 context-matched options based on script tone and visual cues; (8) AI mix — automated mix to picture, Dolby.io processing, natural language feedback loop; (9) Engineer handoff package if AI mix needs human touch: WAV stems at 48kHz/24-bit (Voice, SFX, Music separate), all source assets, notes doc (EQ, processing decisions); (10) Engineer exports approved mix back into platform; (11) AI versioning — one approved mix generates hundreds of market versions (swap tags, same mix); (12) QC + delivery. Moat: SA owns the casting platform (Select Casting) + the studio (1608 Argyle) — no one else has the closed loop. Josiah (SA business partner) confirmed engineer handoff spec 2026-03-13.",
       "status": "Planning",
-      "progress": 5,
-      "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product"]
+      "progress": 10,
+      "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product", "video", "select-casting", "versioning"]
     }
   ,
     {
