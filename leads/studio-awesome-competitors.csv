@@ -1,0 +1,11 @@
+id,name,type,address,distance_miles,website,contact,notes,addedAt
+formosa-group-hollywood,Formosa Group Hollywood,audio post house,"959 Seward St, Suite 101, Los Angeles, CA 90038",1.0,https://formosagroup.com/hollywood/,Matt Reale,"Major post-sound operator in the Media District. Scrape their credits page for client intel.",2026-03-14T00:00:00.000Z
+levels-audio,Levels Audio,audio post house,"1026 N Highland Ave, Los Angeles, CA 90038",1.1,https://www.levelsaudio.com/,Front Desk,"Local post facility: mixing, ADR, Foley, audio editorial.",2026-03-14T00:00:00.000Z
+transported-audio,Transported Audio,audio post studio,"Hollywood, CA",1.5,https://transportedaudio.com/,info@transportedaudio.com,"ADR stage + Atmos mix. Clients: Prime, Netflix, Hulu, FX, NFL Network, EA, PlayStation.",2026-03-14T00:00:00.000Z
+margarita-mix-hollywood,Margarita Mix Hollywood,audio post house,"6363 Sunset Blvd, Hollywood, CA 90028",,https://margaritamix.com/,,"Hollywood audio post facility.",2026-03-14T00:00:00.000Z
+outloud-audio,Outloud Audio,audio post studio,"Burbank, CA",,https://www.outloudaudio.com/,,"ADR, animation dialogue, VO recording in LA/Burbank.",2026-03-14T00:00:00.000Z
+la-studios-fotokem,LA Studios (FotoKem),audio post studio,"Universal City, CA",,https://fotokem.com/lastudios/,,"Major ADR facility — LucasFilm Animation 20-year client.",2026-03-14T00:00:00.000Z
+technicolor-paramount,Technicolor at Paramount,audio post house,"5555 Melrose Ave, Hollywood, CA 90038",,https://www.technicolor.com/,,"3 ADR stages + 8 re-recording theatres on Paramount lot.",2026-03-14T00:00:00.000Z
+salami-studios,Salami Studios,audio post studio,"North Hollywood, CA",,https://www.salamistudios.com/,,"ADR, animation, VO, Foley post production.",2026-03-14T00:00:00.000Z
+invisible-studios,The Invisible Studios,audio post studio,"7325 Santa Monica Blvd, West Hollywood, CA 90046",,https://www.theinvisiblestudios.com/,,"ADR, animation, VO, music recording, post production.",2026-03-14T00:00:00.000Z
+smart-post-sound,Smart Post Sound,audio post studio,"919 N Hollywood Way, Burbank, CA 91505",,https://www.smartpostsound.com/,,"Award-winning ADR, Foley, Dolby Atmos. Multiple stages in Burbank, Santa Monica, Vancouver, Atlanta. Major competitor.",2026-03-14T00:00:00.000Z

@@ -1,0 +1,887 @@
+status,name,email,company,category,message_count,last_seen,mv_result
+Pending,Janet Anderson,janet.anderson@teamone-usa.com,Team One,Ad Agency,24,"Fri, 27 Sep 2024 15:20:58 +0000",invalid
+Pending,Topher Cochrane,topher_cochrane@gspsf.com,Goodby Silverstein & Partners,Ad Agency,15,"Mon, 08 Feb 2021 11:11:24 -0800",invalid
+Pending,Robin Rossi,robin.rossi@omc.com,Omnicom,Ad Agency,12,"Mon, 30 Sep 2024 08:54:25 -0700",invalid
+Pending,Erika McKay,erika.mckay@omc.com,Omnicom,Ad Agency,12,"Mon, 30 Sep 2024 22:10:24 +0000",invalid
+Pending,Tien Dang,tdang@anomaly.com,Anomaly,Ad Agency,11,"Fri, 17 Jan 2025 21:15:38 +0000",invalid
+Pending,Brandon Kusher,brandon.kusher@saatchi.com,Saatchi & Saatchi,Ad Agency,11,"Tue, 07 Jan 2025 20:39:44 +0000",invalid
+Pending,Emily Wold,emily.wold@teamone-usa.com,Team One,Ad Agency,11,"Tue, 06 Aug 2024 21:45:51 +0000",invalid
+Pending,Jenny Valladares,jenny.valladares@teamone-usa.com,Team One,Ad Agency,11,"Mon, 01 Mar 2021 09:26:11 -0800",invalid
+Pending,Ellen Kuratnik,ellen.kuratnik@annexexp.com,Annexexp,Ad Agency,10,"Tue, 04 Feb 2025 18:44:41 +0000",invalid
+Pending,Jon Buss,jon.buss@mcj.co,McGarrah Jessee,Ad Agency,10,"Thu, 08 Aug 2024 17:49:45 +0000",invalid
+Pending,Jaye Sevcik,jaye.sevcik@pxpstudios.com,PXP Studios,Ad Agency,10,"Wed, 07 Aug 2024 17:45:47 +0000",invalid
+Pending,Jessica Piele,jessica_piele@gspsf.com,Goodby Silverstein & Partners,Ad Agency,9,"Thu, 08 Aug 2024 19:06:13 +0000",invalid
+Pending,Erick Sosa,erick.sosa@teamone-usa.com,Team One,Ad Agency,9,"Thu, 26 Sep 2024 21:40:56 +0000",invalid
+Pending,Sarah Athas,sarah.athas@dng.com,David & Goliath,Ad Agency,8,"Wed, 21 Aug 2024 10:43:11 -0700",invalid
+Pending,Derrick Hawkins,derrick.hawkins@pxpstudios.com,PXP Studios,Ad Agency,8,"Wed, 05 Feb 2025 16:21:49 +0000",invalid
+Pending,Erin Simle,erin.simle@fallon.com,Fallon,Ad Agency,8,"Fri, 27 Sep 2024 19:49:34 +0000",invalid
+Pending,Stephen Estrada,stephen.estrada@saatchi.com,Saatchi & Saatchi,Ad Agency,8,"Wed, 07 Aug 2024 17:40:17 +0000",invalid
+Pending,Janae David,janae.david@teamone-usa.com,Team One,Ad Agency,8,"Thu, 26 Sep 2024 23:24:30 +0000",invalid
+Pending,Dave Hanneken,dhanneken@hoffmanyork.com,Hoffmanyork,Other / Unknown,8,"Wed, 08 Jan 2025 00:36:09 +0000",invalid
+Pending,Lindsay Swift,lindsay.swift@pxpstudios.com,PXP Studios,Ad Agency,7,"Wed, 05 Feb 2025 16:21:49 +0000",invalid
+Pending,Kelly Lenthe,kelly.lenthe@omc.com,Omnicom,Ad Agency,7,"Tue, 29 Oct 2024 12:18:44 -0700",invalid
+Pending,Josiah,josiah@studioawesome.com,Studioawesome,Other / Unknown,7,"Tue, 07 Jan 2025 08:36:06 -0800",invalid
+Pending,Amy Gershwin,amy.gershwin@teamone-usa.com,Team One,Ad Agency,7,"Tue, 07 Jan 2025 20:25:04 +0000",invalid
+Pending,Brian Vecchione,brian.vecchione@ddb.com,DDB,Ad Agency,7,"Thu, 08 Aug 2024 19:56:36 +0000",invalid
+Pending,,accounts.payable_us@publicisresources.com,Publicisresources,Other / Unknown,7,"Thu, 05 Sep 2024 16:47:55 +0000",invalid
+Pending,Natalia Celis,natalia.celis@dng.com,David & Goliath,Ad Agency,7,"Fri, 12 Mar 2021 10:02:06 -0800",invalid
+Pending,Jason Slesinski,jason.slesinski@pxpproduction.com,PXP Production,Ad Agency,6,"Wed, 08 Jan 2025 18:24:57 +0000",invalid
+Pending,Rob Lee,rob.lee@pxpstudios.com,PXP Studios,Ad Agency,6,"Wed, 08 Jan 2025 17:33:23 +0000",invalid
+Pending,Joel Caceres,joel.caceres@digitas.com,Digitas,Ad Agency,6,"Thu, 10 Apr 2025 18:38:05 +0000",invalid
+Pending,Valentina Dostal,valentina.dostal@conill.com,Conill,Other / Unknown,6,"Fri, 09 Aug 2024 18:44:43 +0000",invalid
+Pending,Sean Hannaway,sean.hannaway@leoburnett.com,Leoburnett,Other / Unknown,6,"Fri, 09 Aug 2024 17:18:44 +0000",invalid
+Pending,Diana Bagley,dbagley@hoffmanyork.com,Hoffmanyork,Other / Unknown,6,"Fri, 09 Aug 2024 16:16:31 +0000",invalid
+Pending,Jessica Nugent,jessica.nugent@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,6,"Thu, 08 Aug 2024 17:42:38 +0000",invalid
+Pending,Abby Hinojosa,abby.hinojosa@mcj.co,McGarrah Jessee,Ad Agency,6,"Tue, 07 Jan 2025 09:48:34 -0800",invalid
+Pending,Brendan Lawrence,brendan.lawrence@fallon.com,Fallon,Ad Agency,6,"Wed, 08 Jan 2025 16:04:57 +0000",invalid
+Pending,Natalia Celis,natalia.celis@9thwonder.com,9Thwonder,Other / Unknown,6,"Thu, 26 Sep 2024 00:15:02 +0000",invalid
+Pending,Jake Cameron,jake.cameron@omc.com,Omnicom,Ad Agency,5,"Tue, 15 Oct 2024 21:31:46 +0000",invalid
+Pending,Ashanna Molokwu,ashanna.molokwu@batteryagency.com,Battery,Ad Agency,5,"Fri, 27 Sep 2024 20:28:37 +0000",invalid
+Pending,Paul Amelchenko,paul.amelchenko@publicis.com,Publicis,Ad Agency,5,"Thu, 08 Aug 2024 19:11:04 +0000",invalid
+Pending,Brian Morgan,brian.morgan@saatchi.com,Saatchi & Saatchi,Ad Agency,5,"Wed, 07 Aug 2024 17:33:53 +0000",invalid
+Pending,Wendy Appelle,wendy.appelle@pxpstudios.com,PXP Studios,Ad Agency,5,"Wed, 07 Aug 2024 19:25:21 +0000",invalid
+Pending,Lindsay Vetter,steven.armstead@highdiveus.com,Highdive,Ad Agency,5,"Fri, 09 Aug 2024 16:50:03 +0000",invalid
+Pending,Jacob Guenther,jacob.guenther@martinwilliams.com,Martinwilliams,Other / Unknown,5,"Thu, 08 Aug 2024 23:24:45 +0000",invalid
+Pending,Brittaney Kelly,brittaney@wearecolossus.com,Colossus,Ad Agency,5,"Wed, 07 Aug 2024 23:05:21 +0000",invalid
+Pending,Mariah Dominguez,mariah.dominguez@mcj.co,McGarrah Jessee,Ad Agency,5,"Fri, 13 Sep 2024 18:03:11 +0000",invalid
+Pending,Agnieszka Palarz,agnieszka.palarz@razorfish.com,Razorfish,Ad Agency,5,"Tue, 06 Aug 2024 21:51:21 +0000",invalid
+Pending,Sean Healey,shealey@pmhadv.com,Pmhadv,Other / Unknown,5,"Tue, 25 Feb 2025 16:36:39 +0000",invalid
+Pending,Becca Sita,becca.sita@1986studios.com,1986,Other / Unknown,5,"Fri, 09 Aug 2024 17:04:24 +0000",invalid
+Pending,Jeanette Sanchez,jeanette.sanchez@hhcc.com,Hhcc,Other / Unknown,5,"Wed, 03 Mar 2021 10:04:11 -0800",invalid
+Pending,Whitney Bogosian,whitney.bogosian@hhcc.com,Hhcc,Other / Unknown,5,"Wed, 03 Mar 2021 10:03:56 -0800",invalid
+Pending,Jeri Low,jeri.low@saatchi.com,Saatchi & Saatchi,Ad Agency,5,"Tue, 19 Jan 2021 10:24:26 -0800",invalid
+Pending,Lindsay Swift,lindsay.swift@publicisproduction.com,Publicisproduction,Other / Unknown,4,"Thu, 19 Feb 2026 09:29:13 -0800",invalid
+Pending,Jake Weis,jake.weis@digitashealth.com,Digitas Health,Ad Agency,4,"Fri, 21 Feb 2025 18:16:13 +0000",invalid
+Pending,Autumn Childress,autumn@qualitymeatscreative.com,Qualitymeats,Other / Unknown,4,"Tue, 25 Feb 2025 11:36:09 -0800",invalid
+Pending,Jessica Wiley,jessica.wiley@omc.com,Omnicom,Ad Agency,4,"Tue, 08 Oct 2024 10:02:54 -0700",invalid
+Pending,Deborah McCauley-Ellis,deborah.mccauley-ellis@martinretail.com,Martinretail,Other / Unknown,4,"Tue, 07 Jan 2025 21:21:57 +0000",invalid
+Pending,Anna Haynes,annahaynes@magnolia.com,Magnolia,Other / Unknown,4,"Wed, 08 Jan 2025 16:45:32 +0000",invalid
+Pending,Roger Reid,roger.reid@leoburnett.com,Leoburnett,Other / Unknown,4,"Wed, 08 Jan 2025 16:01:43 +0000",invalid
+Pending,Nadine Ekrek,nadine.ekrek@aspendental.com,Aspendental,Other / Unknown,4,"Tue, 07 Jan 2025 19:46:50 +0000",invalid
+Pending,Maya Roberts,maya.roberts@teamone-usa.com,Team One,Ad Agency,4,"Tue, 07 Jan 2025 17:21:22 +0000",invalid
+Pending,Gavin Milner,gavin.milner@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,4,"Tue, 07 Jan 2025 17:15:52 +0000",invalid
+Pending,Courtney Reistad,courtney.reistad@pxpstudios.com,PXP Studios,Ad Agency,4,"Wed, 07 Aug 2024 16:28:53 +0000",invalid
+Pending,Curt O'Brien,curt.obrien@dng.com,David & Goliath,Ad Agency,4,"Wed, 07 Aug 2024 22:43:50 +0000",invalid
+Pending,Sara Martin,sara.martin@pxpstudios.com,PXP Studios,Ad Agency,4,"Fri, 09 Aug 2024 20:49:06 +0000",invalid
+Pending,Doreen Jones,doreen.jones@leoburnett.com,Leoburnett,Other / Unknown,4,"Wed, 04 Sep 2024 18:12:30 +0000",invalid
+Pending,Chelsea Gold,chelseagold@rosewoodcreative.com,Rosewood,Other / Unknown,4,"Wed, 30 Oct 2024 19:54:42 +0000",invalid
+Pending,Shane Smith,shane.smith@mcj.co,McGarrah Jessee,Ad Agency,4,"Fri, 09 Aug 2024 20:46:37 +0000",invalid
+Pending,Mary Kuper,mary.kuper@cape-agency.com,Cape,Other / Unknown,4,"Tue, 12 Nov 2024 12:34:32 -0800",invalid
+Pending,Natalia Celis,natalia.celis@gravityglobal.com,Gravity Global,Ad Agency,4,"Tue, 24 Sep 2024 11:26:16 -0700",invalid
+Pending,Kanisha Garrett,kanisha.garrett@teamone-usa.com,Team One,Ad Agency,4,"Fri, 27 Sep 2024 20:34:01 +0000",invalid
+Pending,Erin Kirby,erin.kirby@fallon.com,Fallon,Ad Agency,4,"Fri, 27 Sep 2024 16:44:29 +0000",invalid
+Pending,Rock Darlington,rock.darlington@leoburnett.com,Leoburnett,Other / Unknown,4,"Tue, 06 Aug 2024 21:43:47 +0000",invalid
+Pending,Dana Taji,dana.taji@22squared.com,22Squared,Other / Unknown,4,"Thu, 27 Feb 2025 18:21:12 +0000",invalid
+Pending,Eunice Pang,eunice.pang@wk.com,Wieden+Kennedy,Ad Agency,4,"Tue, 07 Jan 2025 23:36:20 +0000",invalid
+Pending,Paul Watson,paul@cactusinc.com,Cactus,Ad Agency,4,"Thu, 08 Aug 2024 21:12:59 +0000",invalid
+Pending,Ian Osselaer,ian.osselaer@180la.com,180La,Other / Unknown,4,"Tue, 06 Aug 2024 20:47:19 +0000",invalid
+Pending,Sventetuolo,sventetuolo@mmb580.com,Mmb580,Other / Unknown,4,"Wed, 03 Mar 2021 10:06:39 -0800",invalid
+Pending,Jmambro,jmambro@mmb580.com,Mmb580,Other / Unknown,4,"Wed, 03 Mar 2021 10:06:20 -0800",invalid
+Pending,Mmcgrath,mmcgrath@hubspot.com,Hubspot,Other / Unknown,4,"Wed, 03 Mar 2021 10:06:03 -0800",invalid
+Pending,Jennifer Villone,jennifer.villone@hhcc.com,Hhcc,Other / Unknown,4,"Wed, 03 Mar 2021 10:05:47 -0800",invalid
+Pending,Liz Soble,liz.soble@hhcc.com,Hhcc,Other / Unknown,4,"Wed, 03 Mar 2021 10:04:38 -0800",invalid
+Pending,Dan Yurko,dan.yurko@hhcc.com,Hhcc,Other / Unknown,4,"Wed, 03 Mar 2021 10:04:23 -0800",invalid
+Pending,Rae Brady,rae.brady@hhcc.com,Hhcc,Other / Unknown,4,"Wed, 03 Mar 2021 10:03:38 -0800",invalid
+Pending,Mwiedel,mwiedel@boomideanet.com,Boomideanet,Other / Unknown,4,"Fri, 23 Oct 2020 08:33:52 -0700",invalid
+Pending,Danielle Ivicic,divicic@arn.com,Arn,Other / Unknown,4,"Tue, 02 Feb 2021 13:26:26 -0800",invalid
+Pending,Faulkner,faulkner@dunn-co.com,Dunn Co,Other / Unknown,4,"Thu, 22 Oct 2020 09:07:12 -0700",invalid
+Pending,Jnacey,jnacey@levlane.com,Levlane,Other / Unknown,4,"Thu, 22 Oct 2020 09:01:49 -0700",invalid
+Pending,Julio,julio@thecommunityus.com,Thecommunityus,Other / Unknown,4,"Thu, 22 Oct 2020 08:53:07 -0700",invalid
+Pending,Jay Rivera,jay.rivera@almaad.com,Almaad,Other / Unknown,4,"Thu, 22 Oct 2020 08:49:11 -0700",invalid
+Pending,Stephanie Singleton,stephanie.singleton@moxieusa.com,Moxieusa,Other / Unknown,4,"Wed, 03 Mar 2021 09:39:20 -0800",invalid
+Pending,Fodea,fodea@bssp.com,Bssp,Other / Unknown,4,"Thu, 28 Jan 2021 18:59:17 +0000",invalid
+Pending,Amy Bretz,abretz@vsapartners.com,Vsapartners,Other / Unknown,4,"Tue, 09 Jun 2020 09:24:31 -0700",invalid
+Pending,Jessie Glenn,jessie.glenn@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,4,"Thu, 11 Feb 2021 11:56:46 -0800",invalid
+Pending,Kate,kate.chartier@proof-advertising.com,Proof,Other / Unknown,4,"Tue, 23 Feb 2021 09:42:31 -0800",invalid
+Pending,Scott Terry,scott.terry@havas.com,Havas,Ad Agency,4,"Tue, 09 Jun 2020 09:23:38 -0700",invalid
+Pending,Lauren Boyle,lauren.boyle@harborpicturecompany.com,Harborpicturecompany,Other / Unknown,4,"Tue, 02 Feb 2021 14:40:56 -0800",invalid
+Pending,Dogan Dattilo,dogan.dattilo@saatchi.com,Saatchi & Saatchi,Ad Agency,3,"Tue, 01 Jul 2025 09:09:26 -0700",invalid
+Pending,Charonese Wilder,charonese.wilder@pxpstudios.com,PXP Studios,Ad Agency,3,"Wed, 19 Feb 2025 18:22:12 +0000",invalid
+Pending,Mary Ellen Farrar,maryellen.farrar@mcj.co,McGarrah Jessee,Ad Agency,3,"Mon, 23 Jun 2025 09:47:18 -0700",invalid
+Pending,Danny Cullen,danny@wondermedia.com,Wonder,Other / Unknown,3,"Thu, 08 May 2025 17:28:38 +0000",invalid
+Pending,Amanda Weidel,amanda.weidel@wearerobotproof.com,Wearerobotproof,Other / Unknown,3,"Wed, 30 Apr 2025 18:45:00 +0000",invalid
+Pending,Mariana Suarez,mari.suarez@themill.com,Themill,Other / Unknown,3,"Mon, 05 May 2025 22:02:43 +0000",invalid
+Pending,Sam Millare,sam.millare@mediaartslab.com,Mediaartslab,Other / Unknown,3,"Mon, 28 Apr 2025 23:31:55 +0000",invalid
+Pending,Andrea Rosenfeld,andrea.rosenfeld@dng.com,David & Goliath,Ad Agency,3,"Tue, 29 Apr 2025 23:50:07 +0000",invalid
+Pending,Nadia Black,nadia.black@iris-worldwide.com,Iris,Other / Unknown,3,"Tue, 22 Apr 2025 17:38:27 +0000",invalid
+Pending,Leilani Solomon,leilani@snowballpm.com,Snowballpm,Other / Unknown,3,"Tue, 29 Apr 2025 16:20:40 +0000",invalid
+Pending,Gavin Brook,gavin.brook@hicompadre.com,Hicompadre,Other / Unknown,3,"Mon, 28 Apr 2025 16:08:56 +0000",invalid
+Pending,Sarah Schaeffer,sarahs@legioncreative.us,Legion,Other / Unknown,3,"Mon, 28 Apr 2025 17:56:40 +0000",invalid
+Pending,Lydia Sullivan,lydia.sullivan@mediaartslab.com,Mediaartslab,Other / Unknown,3,"Tue, 22 Apr 2025 21:46:56 +0000",invalid
+Pending,Denise Brown,denise.brown@themill.com,Themill,Other / Unknown,3,"Thu, 24 Apr 2025 23:32:44 +0000",invalid
+Pending,Alex Desantis,alex.desantis@wonderful.com,Wonderful,Other / Unknown,3,"Fri, 25 Apr 2025 15:01:36 +0000",invalid
+Pending,Nancy Tsuno,nancy.tsuno@wonderful.com,Wonderful,Other / Unknown,3,"Thu, 24 Apr 2025 15:16:53 +0000",invalid
+Pending,Elizabeth Dow,elizabeth.dow@leoburnett.com,Leoburnett,Other / Unknown,3,"Thu, 20 Mar 2025 09:26:06 -0500",invalid
+Pending,Inez Smith,ismith@burrell.com,Burrell,Other / Unknown,3,"Thu, 26 Sep 2024 23:28:09 +0000",invalid
+Pending,Lauren,lauren.gilbert@bondbl.com,Bondbl,Other / Unknown,3,"Wed, 26 Mar 2025 11:11:43 -0700",invalid
+Pending,Courtney Reistad,courtney.reistad@fallon.com,Fallon,Ad Agency,3,"Fri, 21 Feb 2025 19:52:05 +0000",invalid
+Pending,Audrey Goss,audrey.goss@abelsontaylorgroup.com,Abelson Taylor,Ad Agency,3,"Tue, 25 Feb 2025 14:28:50 -0800",invalid
+Pending,Diana Schroeder,diana.schroeder@omc.com,Omnicom,Ad Agency,3,"Tue, 08 Oct 2024 15:26:06 -0700",invalid
+Pending,Jessica Piele,jessica.piele@omc.com,Omnicom,Ad Agency,3,"Mon, 27 Jan 2025 09:46:35 -0800",invalid
+Pending,Ruba Abuomar,ruba.abuomar@gmail.com,Gmail,Personal / Unknown,3,"Sat, 28 Sep 2024 00:36:45 +0000",invalid
+Pending,Kacey Klonsky,kacey.klonsky@wk.com,Wieden+Kennedy,Ad Agency,3,"Fri, 27 Sep 2024 20:34:41 +0000",invalid
+Pending,Rich Forzano,richard_forzano@gspsf.com,Goodby Silverstein & Partners,Ad Agency,3,"Thu, 26 Sep 2024 19:20:38 +0000",invalid
+Pending,Adam Crouch,acrouch@anomaly.com,Anomaly,Ad Agency,3,"Wed, 25 Sep 2024 20:28:54 +0000",invalid
+Pending,Linda Yuen,linda.yuen@leoburnett.com,Leoburnett,Other / Unknown,3,"Wed, 08 Jan 2025 16:56:57 +0000",invalid
+Pending,Maddie Jones,madelyn.jones@thepubproductions.com,Thepub,Other / Unknown,3,"Wed, 07 Aug 2024 23:54:49 +0000",invalid
+Pending,Jon Lueken,jon.lueken@leoburnett.com,Leoburnett,Other / Unknown,3,"Thu, 08 Aug 2024 23:50:46 +0000",invalid
+Pending,Bill Smallacombe,bsmallacombe@markarch.com,Markarch,Other / Unknown,3,"Thu, 10 Oct 2024 19:20:13 +0000",invalid
+Pending,Joshua Indenbaum,joshua@planafilms.com,Plana,Other / Unknown,3,"Wed, 28 Aug 2024 17:36:02 +0000",invalid
+Pending,Andrea Nelson,andrea@mothandflamevr.com,Mothandflamevr,Other / Unknown,3,"Wed, 25 Sep 2024 19:36:54 +0000",invalid
+Pending,Tatyana Burtman,tatyana.burtman@vmlyr.com.test.com,Vmlyr,Other / Unknown,3,"Thu, 19 Sep 2024 12:18:35 -0700",invalid
+Pending,Kendra Giacona,kendra.giacona@leoburnett.com,Leoburnett,Other / Unknown,3,"Wed, 04 Sep 2024 22:07:56 +0000",invalid
+Pending,Lindsay Cohen,lindsay.cohen@frida.com,Frida,Other / Unknown,3,"Wed, 07 Aug 2024 09:14:51 -0700",invalid
+Pending,Allie Friedman,allie.friedman@digitashealth.com,Digitas Health,Ad Agency,3,"Fri, 21 Feb 2025 19:33:42 +0000",invalid
+Pending,Hadley Swaggert,hadley.swaggert@fallon.com,Fallon,Ad Agency,3,"Thu, 20 Feb 2025 17:11:25 +0000",invalid
+Pending,Tyler Divine,tylerdivine@preacher.co,Preacher,Other / Unknown,3,"Tue, 07 Jan 2025 23:28:25 +0000",invalid
+Pending,Rob Lee,rob.lee@fallon.com,Fallon,Ad Agency,3,"Tue, 07 Jan 2025 21:41:35 +0000",invalid
+Pending,Alexander Roundtree,alex.roundtree@fallon.com,Fallon,Ad Agency,3,"Fri, 09 Aug 2024 17:13:57 +0000",invalid
+Pending,Brian Culp,brian.culp@highdiveus.com,Highdive,Ad Agency,3,"Thu, 08 Aug 2024 19:51:44 +0000",invalid
+Pending,Jim Stephens,jim.stephens@wellsfargo.com,Wellsfargo,Brand / Direct Client,3,"Tue, 06 Aug 2024 22:43:47 +0000",invalid
+Pending,Kara Finley,kara.finley@leoburnett.com,Leoburnett,Other / Unknown,3,"Tue, 06 Aug 2024 22:38:14 +0000",invalid
+Pending,Patrick Gantert,patrick.gantert@fallon.com,Fallon,Ad Agency,3,"Tue, 06 Aug 2024 21:31:55 +0000",invalid
+Pending,Christine Claussen,christine.claussen@begrizzlee.com,Begrizzlee,Other / Unknown,3,"Thu, 06 Feb 2025 17:38:29 +0000",invalid
+Pending,Colette Tasker Steele,csteele@burrell.com,Burrell,Other / Unknown,3,"Tue, 06 Aug 2024 20:34:36 +0000",invalid
+Pending,Stuart Moutrie,stuart.moutrie@leoburnett.com,Leoburnett,Other / Unknown,3,"Mon, 04 Oct 2021 10:48:08 -0700",invalid
+Pending,Ellen ODonnell,eodonnell@themarketingarm.com,The Marketing Arm,Ad Agency,3,"Wed, 15 Dec 2021 09:59:44 -0800",invalid
+Pending,Cassie Edwards,cassie_edwards@gspsf.com,Goodby Silverstein & Partners,Ad Agency,3,"Thu, 11 Mar 2021 13:46:10 -0800",invalid
+Pending,Aslotkin,aslotkin@launchagency.com,Launch,Other / Unknown,3,"Fri, 05 Mar 2021 10:10:35 -0800",invalid
+Pending,Plederer,plederer@mmb580.com,Mmb580,Other / Unknown,3,"Wed, 03 Mar 2021 10:06:56 -0800",invalid
+Pending,Jtoto,jtoto@arn.com,Arn,Other / Unknown,3,"Wed, 03 Mar 2021 10:02:44 -0800",invalid
+Pending,Yeyo Marquez,yeyo.marquez@almaad.com,Almaad,Other / Unknown,3,"Thu, 22 Oct 2020 08:49:45 -0700",invalid
+Pending,Allan Rivera,allan.rivera@almaad.com,Almaad,Other / Unknown,3,"Thu, 22 Oct 2020 08:49:27 -0700",invalid
+Pending,Janet,janet@stgregory.com,Stgregory,Other / Unknown,3,"Thu, 22 Oct 2020 08:47:45 -0700",invalid
+Pending,Gscheiner,gscheiner@cdmprinceton.com,Cdmprinceton,Other / Unknown,3,"Wed, 03 Mar 2021 11:49:15 -0800",invalid
+Pending,Jengland,jengland@cdmprinceton.com,Cdmprinceton,Other / Unknown,3,"Wed, 03 Mar 2021 11:48:58 -0800",invalid
+Pending,Andrew Stargel,andrew.stargel@moxieusa.com,Moxieusa,Other / Unknown,3,"Wed, 03 Mar 2021 09:39:36 -0800",invalid
+Pending,Jessica White,jessica.white@moxieusa.com,Moxieusa,Other / Unknown,3,"Wed, 03 Mar 2021 09:38:10 -0800",invalid
+Pending,Kelly Duff,kellyduff@integer.com,Integer,Other / Unknown,3,"Mon, 04 Apr 2022 23:39:18 +0000",invalid
+Pending,Christopher Cau,christopher.cau@ketchum.com,Ketchum,Other / Unknown,3,"Tue, 27 Oct 2020 09:33:07 -0700",invalid
+Pending,Paige Goudey,paige.goudey@ketchum.com,Ketchum,Other / Unknown,3,"Tue, 27 Oct 2020 09:32:55 -0700",invalid
+Pending,Ari Pomerantz,ari.pomerantz@edelman.com,Edelman,Ad Agency,3,"Tue, 27 Oct 2020 09:21:03 -0700",invalid
+Pending,Michelle Price,michelle.price@digitas.com,Digitas,Ad Agency,3,"Tue, 27 Oct 2020 09:15:38 -0700",invalid
+Pending,Dana Thompson,dana.thompson@digitas.com,Digitas,Ad Agency,3,"Tue, 27 Oct 2020 09:15:14 -0700",invalid
+Pending,Jasmine Ginyard,jasmine.ginyard@definition6.com,Definition6,Other / Unknown,3,"Thu, 23 Jul 2020 15:51:41 +0000",invalid
+Pending,Curtis Schick,curtis.schick@definition6.com,Definition6,Other / Unknown,3,"Tue, 27 Oct 2020 09:12:03 -0700",invalid
+Pending,Abonin,abonin@anomaly.com,Anomaly,Ad Agency,3,"Tue, 27 Oct 2020 08:59:01 -0700",invalid
+Pending,Adamcoffia,adamcoffia@aka.nyc,Aka,Other / Unknown,3,"Tue, 16 Mar 2021 08:59:18 -0700",invalid
+Pending,Jason Lau,jason.lau@giantspoon.com,Giantspoon,Other / Unknown,3,"Fri, 12 Mar 2021 10:07:18 -0800",invalid
+Pending,Daniel Roversi,daniel.roversi@thisisheat.com,Thisisheat,Other / Unknown,3,"Thu, 11 Mar 2021 13:49:25 -0800",invalid
+Pending,Debbie Chin,debbie.chin@evb.com,Evb,Other / Unknown,3,"Thu, 11 Mar 2021 13:28:43 -0800",invalid
+Pending,Doug,doug@corecreative.com,Core,Other / Unknown,3,"Thu, 11 Jun 2020 17:04:01 +0000",invalid
+Pending,Adam,adam@magnuspearson.com,Magnuspearson,Other / Unknown,3,"Fri, 23 Oct 2020 08:25:07 -0700",invalid
+Pending,Mike Huntley,mike_huntley@gspsf.com,Goodby Silverstein & Partners,Ad Agency,3,"Tue, 30 Nov 2021 15:51:12 -0800",invalid
+Pending,Tamara Treu,ttreu@panayfilms.com,Panay,Other / Unknown,3,"Tue, 25 May 2021 15:53:46 -0700",invalid
+Pending,Antonio Burnett,antonio.burnett@wk.com,Wieden+Kennedy,Ad Agency,3,"Tue, 27 Oct 2020 10:42:23 -0700",invalid
+Pending,Matthew Flaherty,matthew.flaherty@translationllc.com,Translationllc,Other / Unknown,3,"Tue, 27 Oct 2020 10:40:04 -0700",invalid
+Pending,Jewel Chandler,jewel.chandler@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,3,"Thu, 23 Jul 2020 16:59:46 +0000",invalid
+Pending,Wendy Buske,wendy.buske@rodgerstownsend.com,Rodgerstownsend,Other / Unknown,3,"Thu, 22 Oct 2020 08:42:36 -0700",invalid
+Pending,Liz Ross,lross@mering.com,Mering,Other / Unknown,3,"Wed, 03 Feb 2021 14:32:48 -0800",invalid
+Pending,Cammie Mcgarry,cammie@harborpicturecompany.com,Harborpicturecompany,Other / Unknown,3,"Tue, 02 Feb 2021 14:40:56 -0800",invalid
+Pending,Microsoft Billing Failure,subscription@manage.microsoft.com,Manage,Other / Unknown,2,"Thu, 28 Aug 2025 15:46:59 +0000",invalid
+Pending,Michelle Clifton,michelle.clifton@publicis.com,Publicis,Ad Agency,2,"Fri, 22 Aug 2025 10:01:20 -0700",invalid
+Pending,Jason Ryan,jason.ryan@pxpstudios.com,PXP Studios,Ad Agency,2,"Wed, 25 Jun 2025 09:27:59 -0700",invalid
+Pending,Freddie Richards,freddie.richards@riseandshinepartners.com,Riseandshinepartners,Other / Unknown,2,"Thu, 29 May 2025 08:47:46 -0700",invalid
+Pending,Lisee Garza,lgarza@unreasonablestudios.com,Unreasonable,Other / Unknown,2,"Mon, 02 Jun 2025 16:41:38 +0000",invalid
+Pending,Omar,omar@lilystalent.com,Lilystalent,Other / Unknown,2,"Fri, 27 Sep 2024 22:03:37 +0000",invalid
+Pending,Brida Brando,brida.brando@townhouseww.com,Townhouseww,Other / Unknown,2,"Thu, 24 Apr 2025 17:52:57 +0000",invalid
+Pending,Mimi Cossio,mimi.cossio@almaad.com,Almaad,Other / Unknown,2,"Mon, 21 Apr 2025 16:41:35 +0000",invalid
+Pending,Jasmine Greene,jasmine@tja.agency,Tja,Other / Unknown,2,"Fri, 27 Sep 2024 15:01:56 +0000",invalid
+Pending,Matias,matias@castingland.net,Castingland,Other / Unknown,2,"Wed, 09 Apr 2025 10:44:28 -0700",invalid
+Pending,Maria,maria@castingland.net,Castingland,Other / Unknown,2,"Wed, 09 Apr 2025 10:44:28 -0700",invalid
+Pending,Germaine Meyer,germaine.meyer@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 14 Mar 2025 15:59:43 +0000",invalid
+Pending,Bill Knowland,bill@directimages.com,Directimages,Other / Unknown,2,"Thu, 13 Mar 2025 18:43:38 +0000",invalid
+Pending,Charlles Osorio,charlles.osorio@teamone-usa.com,Team One,Ad Agency,2,"Thu, 13 Mar 2025 17:27:05 +0000",invalid
+Pending,Collyn Dixon,collyn.dixon@artsandletters.xyz,Arts & Letters,Ad Agency,2,"Thu, 13 Mar 2025 17:21:17 +0000",invalid
+Pending,Christina Gonzalez,cgonzalez@republicahavas.com,Republicahavas,Other / Unknown,2,"Wed, 12 Mar 2025 19:24:43 +0000",invalid
+Pending,Anna Young,anna.young@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 12 Mar 2025 18:31:51 +0000",invalid
+Pending,Shobin Mathew,shobin.mathew@omc.com,Omnicom,Ad Agency,2,"Mon, 10 Mar 2025 10:02:20 -0700",invalid
+Pending,Melissa Berg,melissa.berg@razorfish.com,Razorfish,Ad Agency,2,"Wed, 12 Mar 2025 18:14:08 +0000",invalid
+Pending,Godgift Emesi,godgift.emesi@ignitioncreative.com,Ignition,Other / Unknown,2,"Wed, 12 Mar 2025 16:45:53 +0000",invalid
+Pending,Carlos Diaz,cdiaz@univision.net,Univision,Other / Unknown,2,"Wed, 12 Mar 2025 19:36:34 +0000",invalid
+Pending,Mike Hernandez,mike@motherlondon.com,Motherlondon,Other / Unknown,2,"Tue, 11 Mar 2025 18:39:27 +0000",invalid
+Pending,Kristin Fennell,kristin.fennell@digitashealth.com,Digitas Health,Ad Agency,2,"Tue, 11 Mar 2025 18:20:05 +0000",invalid
+Pending,Corey Pittman,corey.pittman@leoburnett.com,Leoburnett,Other / Unknown,2,"Tue, 11 Mar 2025 17:17:25 +0000",invalid
+Pending,Heather Greaux,hgreaux@digitas.com,Digitas,Ad Agency,2,"Tue, 11 Mar 2025 16:34:13 +0000",invalid
+Pending,Doreen Lessenich,doreen.lessenich@studio71.com,Studio71,Other / Unknown,2,"Fri, 07 Mar 2025 20:48:14 +0000",invalid
+Pending,Sydney Coutts,sydney.coutts@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 07 Mar 2025 20:29:55 +0000",invalid
+Pending,Georgia Morris,georgia.morris@leoburnett.co.uk,Leoburnett,Other / Unknown,2,"Fri, 07 Mar 2025 18:21:45 +0000",invalid
+Pending,Keri Owen,keri@liquidadvertising.com,Liquid,Other / Unknown,2,"Fri, 07 Mar 2025 18:28:56 +0000",invalid
+Pending,Latifah Williams,latifah@gravitywellstudio.com,Gravitywell,Other / Unknown,2,"Fri, 07 Mar 2025 17:50:41 +0000",invalid
+Pending,Christophe Charre,christophe.charre@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Fri, 07 Mar 2025 17:28:13 +0000",invalid
+Pending,Terry Theofilactidis,terry.theofilactidis@publicisna.com,Publicisna,Other / Unknown,2,"Fri, 07 Mar 2025 17:00:17 +0000",invalid
+Pending,Janaé Putman,janae.putman@pxpstudios.com,PXP Studios,Ad Agency,2,"Thu, 06 Mar 2025 20:29:21 +0000",invalid
+Pending,Isabelle Haranczyk,isabelle.haranczyk@teamone-usa.com,Team One,Ad Agency,2,"Fri, 07 Mar 2025 16:00:07 +0000",invalid
+Pending,Dan Tiffany,dan@bravenewmedia.la,Bravenew,Other / Unknown,2,"Thu, 06 Mar 2025 17:47:36 +0000",invalid
+Pending,Ellie Moonen,ellie.moonen@fallon.com,Fallon,Ad Agency,2,"Fri, 07 Mar 2025 19:36:43 +0000",invalid
+Pending,Alyssa Gabriele,alyssa.gabriele@arcww.com,Arcww,Other / Unknown,2,"Fri, 07 Mar 2025 19:12:40 +0000",invalid
+Pending,Ellie Forman,ellie.forman@gmmb.com,Gmmb,Ad Agency,2,"Fri, 07 Mar 2025 18:34:44 +0000",invalid
+Pending,Abby Smith,abby@loveadv.com,Loveadv,Other / Unknown,2,"Fri, 07 Mar 2025 17:41:27 +0000",invalid
+Pending,Jilliana Sliby,jsliby@cramer.com,Cramer,Other / Unknown,2,"Fri, 07 Mar 2025 17:04:40 +0000",invalid
+Pending,Emily Kramer,emily.kramer@therefinerycreative.com,Therefinery,Other / Unknown,2,"Thu, 06 Mar 2025 17:40:06 +0000",invalid
+Pending,Cameron Hussein,chussein@anomaly.com,Anomaly,Ad Agency,2,"Thu, 06 Mar 2025 16:58:50 +0000",invalid
+Pending,Eisuke Arai,eisuke.arai@wk.com,Wieden+Kennedy,Ad Agency,2,"Fri, 07 Mar 2025 17:56:23 +0000",invalid
+Pending,Annalyse Solitario,annalyse.solitario@digitashealth.com,Digitas Health,Ad Agency,2,"Thu, 06 Mar 2025 17:55:07 +0000",invalid
+Pending,Philip Holmes,philip@passthesalt.com,Passthesalt,Other / Unknown,2,"Fri, 07 Mar 2025 18:13:30 +0000",invalid
+Pending,Elizabeth Ritten,elizabeth.ritten@leoburnett.com,Leoburnett,Other / Unknown,2,"Thu, 06 Mar 2025 17:18:46 +0000",invalid
+Pending,Kirk Steppe,ksteppe@rainforgrowth.com,Rainforgrowth,Other / Unknown,2,"Fri, 07 Mar 2025 17:18:16 +0000",invalid
+Pending,Bree Hovan,bree.hovan@unfoldagency.com,Unfold,Other / Unknown,2,"Thu, 06 Mar 2025 16:54:52 +0000",invalid
+Pending,Kristen Fielder,kristen@accenture.com,Accenture,Ad Agency,2,"Thu, 06 Mar 2025 16:09:27 +0000",invalid
+Pending,Vicki Hesser,vhesser@epiccreative.com,Epic,Other / Unknown,2,"Wed, 05 Mar 2025 19:55:22 +0000",invalid
+Pending,Hannah Hamermesh,hannahh@mirroredmedia.com,Mirrored,Other / Unknown,2,"Wed, 05 Mar 2025 19:15:52 +0000",invalid
+Pending,Louis André,louis.andre@digitas.com,Digitas,Ad Agency,2,"Wed, 05 Mar 2025 20:12:57 +0000",invalid
+Pending,Sharen Jarzembowski,sharen.jarzembowski@razorfish.com,Razorfish,Ad Agency,2,"Wed, 05 Mar 2025 20:36:29 +0000",invalid
+Pending,Cathy Antoniello,cantoniello@burrell.com,Burrell,Other / Unknown,2,"Thu, 06 Mar 2025 17:10:41 +0000",invalid
+Pending,Haley Jones,haley@chamber.media,Chamber,Other / Unknown,2,"Wed, 05 Mar 2025 19:02:27 +0000",invalid
+Pending,Sean Riojas,sean.riojas@artsandletters.xyz,Arts & Letters,Ad Agency,2,"Wed, 05 Mar 2025 18:33:01 +0000",invalid
+Pending,Francesca Campbell,francesca.campbell@ignitioncreative.com,Ignition,Other / Unknown,2,"Wed, 05 Mar 2025 19:39:33 +0000",invalid
+Pending,Noel Pattani,noel.pattani@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 05 Mar 2025 19:27:42 +0000",invalid
+Pending,Robert Dwyer,robert.dwyer@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 05 Mar 2025 18:15:18 +0000",invalid
+Pending,Rebekah Koerbel,rebekah@verytruestory.com,Verytruestory,Other / Unknown,2,"Wed, 05 Mar 2025 18:22:56 +0000",invalid
+Pending,Marcella Miller,mmiller@coolfire.com,Coolfire,Other / Unknown,2,"Wed, 05 Mar 2025 19:32:07 +0000",invalid
+Pending,Lily Zangari,lily.zangari@pxpstudios.com,PXP Studios,Ad Agency,2,"Wed, 05 Mar 2025 17:18:23 +0000",invalid
+Pending,Clare Stukel,clare@stinkstudios.com,Stink,Other / Unknown,2,"Wed, 05 Mar 2025 19:43:37 +0000",invalid
+Pending,Emily Kappas,emily.kappas@teamone-usa.com,Team One,Ad Agency,2,"Wed, 05 Mar 2025 16:58:50 +0000",invalid
+Pending,Fritha Dickie,fritha.dickie@wk.com,Wieden+Kennedy,Ad Agency,2,"Wed, 05 Mar 2025 19:14:13 +0000",invalid
+Pending,Patrick Mcquaid,patrick.mcquaid@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 05 Mar 2025 18:03:36 +0000",invalid
+Pending,Predencia Sajous,predencia.sajous@pxpstudios.com,PXP Studios,Ad Agency,2,"Tue, 04 Mar 2025 20:38:24 +0000",invalid
+Pending,Jerald Roberts,jroberts@thevariable.com,Thevariable,Other / Unknown,2,"Tue, 04 Mar 2025 20:24:43 +0000",invalid
+Pending,Janet Cohen,janet.cohen@arcww.com,Arcww,Other / Unknown,2,"Tue, 04 Mar 2025 19:14:16 +0000",invalid
+Pending,Martin Fernandez,mafernandez@univision.net,Univision,Other / Unknown,2,"Tue, 04 Mar 2025 18:44:45 +0000",invalid
+Pending,Lizzy Auwaerter,lizzy.auwaerter@vccp.com,Vccp,Other / Unknown,2,"Tue, 04 Mar 2025 18:35:12 +0000",invalid
+Pending,Dave Rawolle,dave@aximcreative.com,Axim,Other / Unknown,2,"Tue, 04 Mar 2025 18:18:18 +0000",invalid
+Pending,Shelby Leisinger,shelby.leisinger@arcww.com,Arcww,Other / Unknown,2,"Tue, 04 Mar 2025 17:47:48 +0000",invalid
+Pending,Catherine Gurry,catherine.gurry@therefinerycreative.com,Therefinery,Other / Unknown,2,"Tue, 04 Mar 2025 17:37:55 +0000",invalid
+Pending,Sarah Handler,sarah@liquidadvertising.com,Liquid,Other / Unknown,2,"Tue, 04 Mar 2025 17:10:36 +0000",invalid
+Pending,Jennifer Fewster,jennifer.fewster@leoburnett.co.uk,Leoburnett,Other / Unknown,2,"Tue, 04 Mar 2025 16:21:40 +0000",invalid
+Pending,Krista Dillane,kdillane@cramer.com,Cramer,Other / Unknown,2,"Tue, 04 Mar 2025 16:19:24 +0000",invalid
+Pending,Liz Maupin,lmaupin@moagency.com,Mo,Other / Unknown,2,"Tue, 04 Mar 2025 16:09:59 +0000",invalid
+Pending,Michelle Rand,michelle.rand@publicisna.com,Publicisna,Other / Unknown,2,"Mon, 03 Mar 2025 20:44:50 +0000",invalid
+Pending,Gabriella Calabresi,gabriella.calabresi@razorfish.com,Razorfish,Ad Agency,2,"Mon, 03 Mar 2025 19:48:24 +0000",invalid
+Pending,Faith Cox,faith.cox@pxpstudios.com,PXP Studios,Ad Agency,2,"Mon, 03 Mar 2025 19:40:32 +0000",invalid
+Pending,Rachel Lian,rachel.lian@lionandlion.com,Lionandlion,Other / Unknown,2,"Mon, 03 Mar 2025 19:08:15 +0000",invalid
+Pending,Francine D'Amico,francine.damico@arcww.com,Arcww,Other / Unknown,2,"Mon, 03 Mar 2025 19:00:43 +0000",invalid
+Pending,Maggie Janco,maggie.janco@digitashealth.com,Digitas Health,Ad Agency,2,"Mon, 03 Mar 2025 18:35:56 +0000",invalid
+Pending,Matthew Robinson,matthew@mvsm.com,Mvsm,Other / Unknown,2,"Mon, 03 Mar 2025 18:23:52 +0000",invalid
+Pending,Nader Moussa,nader.moussa@leoburnett.com,Leoburnett,Other / Unknown,2,"Fri, 28 Feb 2025 23:39:12 +0000",invalid
+Pending,Caleb Ely,caleb@bonfirered.com,Bonfirered,Other / Unknown,2,"Fri, 28 Feb 2025 01:36:34 +0000",invalid
+Pending,Benjamin Famiglietti,bfamiglietti@chrlx.com,Chrlx,Other / Unknown,2,"Thu, 27 Feb 2025 22:40:25 +0000",invalid
+Pending,Rey Velez,rey.velez@digitashealth.com,Digitas Health,Ad Agency,2,"Thu, 27 Feb 2025 19:08:20 +0000",invalid
+Pending,Natasha Vieira,natasha.vieira@thesis.agency,Thesis,Other / Unknown,2,"Thu, 27 Feb 2025 18:32:58 +0000",invalid
+Pending,Nicole Pung,nicole.pung@digitashealth.com,Digitas Health,Ad Agency,2,"Thu, 27 Feb 2025 00:37:44 +0000",invalid
+Pending,Krystie Obrien,krystie.obrien@hyperquake.com,Hyperquake,Other / Unknown,2,"Thu, 27 Feb 2025 17:34:14 +0000",invalid
+Pending,Kendall Rossi,kendall.rossi@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 26 Feb 2025 20:54:13 +0000",invalid
+Pending,Ruth Cagara,ruth.cagara@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Wed, 26 Feb 2025 20:39:46 +0000",invalid
+Pending,Sascha Peuckert,sascha.peuckert@teamone-usa.com,Team One,Ad Agency,2,"Wed, 26 Feb 2025 19:20:35 +0000",invalid
+Pending,Simón Rubalcava,simon.rubalcava@almaad.com,Almaad,Other / Unknown,2,"Wed, 26 Feb 2025 18:56:53 +0000",invalid
+Pending,Candy Carter,candy@uncommon.london,Uncommon,Other / Unknown,2,"Wed, 26 Feb 2025 22:28:20 +0000",invalid
+Pending,Elliot Hinds,elliot.hinds@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Wed, 26 Feb 2025 18:33:05 +0000",invalid
+Pending,Jodi Katz,jodi.katz@arcww.com,Arcww,Other / Unknown,2,"Wed, 26 Feb 2025 18:15:12 +0000",invalid
+Pending,Mikko Suomi,mikko.suomi@tapaus.fi,Tapaus,Other / Unknown,2,"Wed, 26 Feb 2025 17:09:25 +0000",invalid
+Pending,Hanna Järvi,hanna.jarvi@tapaus.fi,Tapaus,Other / Unknown,2,"Wed, 26 Feb 2025 16:06:50 +0000",invalid
+Pending,Juan Chacoff,jchacoff@univision.net,Univision,Other / Unknown,2,"Wed, 26 Feb 2025 21:29:29 +0000",invalid
+Pending,Shayne Ballinger,shayne.ballinger@digitashealth.com,Digitas Health,Ad Agency,2,"Wed, 26 Feb 2025 00:02:29 +0000",invalid
+Pending,Ashleigh Allam,ashleigh.allam@razorfish.com,Razorfish,Ad Agency,2,"Tue, 25 Feb 2025 23:50:59 +0000",invalid
+Pending,Loren August,loren.august@mcsaatchi.com.au,Mcsaatchi,Other / Unknown,2,"Tue, 25 Feb 2025 23:48:52 +0000",invalid
+Pending,Pia Rizzo-Wittlin,prizzowittlin@madwell.com,Madwell,Other / Unknown,2,"Tue, 25 Feb 2025 22:41:37 +0000",invalid
+Pending,Ailey Kinefuchi,ailey.kinefuchi@digitashealth.com,Digitas Health,Ad Agency,2,"Tue, 25 Feb 2025 22:05:13 +0000",invalid
+Pending,Andrew Gorzalski,agorzalski@baderrutter.com,Baderrutter,Other / Unknown,2,"Tue, 25 Feb 2025 21:51:29 +0000",invalid
+Pending,Taru Suokas,taru.suokas@tapaus.fi,Tapaus,Other / Unknown,2,"Tue, 25 Feb 2025 21:27:35 +0000",invalid
+Pending,Calleen Colburn,calleen.colburn@artsandletters.xyz,Arts & Letters,Ad Agency,2,"Tue, 25 Feb 2025 21:20:19 +0000",invalid
+Pending,Emma Liuski,emma.liuski@tapaus.fi,Tapaus,Other / Unknown,2,"Tue, 25 Feb 2025 21:17:58 +0000",invalid
+Pending,Mikette Miller,mikette.miller@teamone-usa.com,Team One,Ad Agency,2,"Tue, 25 Feb 2025 20:37:23 +0000",invalid
+Pending,Matt Mitchell,matt.mitchell@teamone-usa.com,Team One,Ad Agency,2,"Tue, 25 Feb 2025 20:18:11 +0000",invalid
+Pending,Vanessa Majdalani,vanessa.majdalani@leoburnett.com,Leoburnett,Other / Unknown,2,"Tue, 25 Feb 2025 20:08:06 +0000",invalid
+Pending,Sofia Hagan,sofia.hagan@tapaus.fi,Tapaus,Other / Unknown,2,"Tue, 25 Feb 2025 19:42:24 +0000",invalid
+Pending,Jenna Gartland,jenna.gartland@havas.com,Havas,Ad Agency,2,"Tue, 25 Feb 2025 19:04:04 +0000",invalid
+Pending,Johannes Emenike,johannes.emenike@tapaus.fi,Tapaus,Other / Unknown,2,"Tue, 25 Feb 2025 19:10:21 +0000",invalid
+Pending,Egor Gorbunov,egor.gorbunov@prodigious.com,Prodigious,Other / Unknown,2,"Tue, 25 Feb 2025 18:55:07 +0000",invalid
+Pending,Corey Budro,corey@chrlx.com,Chrlx,Other / Unknown,2,"Tue, 25 Feb 2025 18:39:35 +0000",invalid
+Pending,Adam Walker,adam.walker@saatchi.co.uk,Saatchi,Other / Unknown,2,"Tue, 25 Feb 2025 18:16:37 +0000",invalid
+Pending,Taryn Battram,tbattram@industria-creative.com,Industria,Other / Unknown,2,"Tue, 25 Feb 2025 18:04:41 +0000",invalid
+Pending,Jeri Slater,jeri.slater@saatchiwellness.com,Saatchiwellness,Other / Unknown,2,"Tue, 25 Feb 2025 17:36:12 +0000",invalid
+Pending,Candice Medenica,cmedenica@industria-creative.com,Industria,Other / Unknown,2,"Tue, 25 Feb 2025 17:17:18 +0000",invalid
+Pending,Leanne Diamond,leanne.diamond@razorfish.com,Razorfish,Ad Agency,2,"Tue, 25 Feb 2025 16:44:16 +0000",invalid
+Pending,Michael Pelham,michael.pelham@tagww.com,Tagww,Other / Unknown,2,"Tue, 25 Feb 2025 16:26:46 +0000",invalid
+Pending,Diana Trajanovski,diana@wearesandpit.com,Wearesandpit,Other / Unknown,2,"Tue, 25 Feb 2025 16:00:02 +0000",invalid
+Pending,Ivan Gonzalez,ivan.gonzalez@ddbcol.com.co,Ddbcol,Other / Unknown,2,"Tue, 25 Feb 2025 01:53:03 +0000",invalid
+Pending,Stacey Krafchin,stacey.krafchin@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 19:47:01 +0000",invalid
+Pending,Daniel Corkery,daniel.corkery@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 19:23:41 +0000",invalid
+Pending,Nicole Reilly,nicole.reilly@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 19:08:16 +0000",invalid
+Pending,Ashley Brown,ashley.brown@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 19:03:48 +0000",invalid
+Pending,Brigid Campbell,brigid.campbell@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 19:06:12 +0000",invalid
+Pending,Alexandria DiSanto,alexandria.disanto@digitashealth.com,Digitas Health,Ad Agency,2,"Fri, 21 Feb 2025 17:29:11 +0000",invalid
+Pending,Natalie Parish,natalie.parish@180la.com,180La,Other / Unknown,2,"Thu, 20 Feb 2025 20:48:40 +0000",invalid
+Pending,Stephanie Murdoch,stephanie.murdoch@omc.com,Omnicom,Ad Agency,2,"Thu, 20 Feb 2025 20:46:30 +0000",invalid
+Pending,Nicola Westermann,nicola@alldayeveryday.com,Alldayeveryday,Other / Unknown,2,"Thu, 20 Feb 2025 17:42:16 +0000",invalid
+Pending,Danielle Halferty,danielle.halferty@imaginaryforces.com,Imaginaryforces,Other / Unknown,2,"Thu, 20 Feb 2025 19:53:08 +0000",invalid
+Pending,James Butler,jbutler@brayleinoevents.com,Brayleinoevents,Other / Unknown,2,"Thu, 20 Feb 2025 17:07:10 +0000",invalid
+Pending,Jonah Grotz,jonah.grotz@seismicdigital.com,Seismic,Other / Unknown,2,"Thu, 20 Feb 2025 22:07:14 +0000",invalid
+Pending,Maria Xerogianes,maria.xerogianes@abelsontaylor.com,Abelson Taylor,Ad Agency,2,"Wed, 08 Jan 2025 00:21:18 +0000",invalid
+Pending,Aldo Hertz,aldo.hertz@fallon.com,Fallon,Ad Agency,2,"Tue, 07 Jan 2025 19:17:38 +0000",invalid
+Pending,Paul Rainey,paul.rainey@colmarbrunton.co.nz,Colmarbrunton,Other / Unknown,2,"Tue, 10 Dec 2024 14:17:29 -0800",invalid
+Pending,Noelle Nimrichter,noelle.nimrichter@pxpstudios.com,PXP Studios,Ad Agency,2,"Wed, 07 Aug 2024 20:04:04 +0000",invalid
+Pending,Brigette Whisnant,brigette.whisnant@highdiveus.com,Highdive,Ad Agency,2,"Fri, 09 Aug 2024 16:18:59 +0000",invalid
+Pending,Roni Yosko,roni@omuk.com,Omuk,Other / Unknown,2,"Thu, 08 Aug 2024 23:07:48 +0000",invalid
+Pending,Immanuel Baldwin,immanuel.baldwin@bvk.com,Bvk,Other / Unknown,2,"Wed, 07 Aug 2024 23:38:54 +0000",invalid
+Pending,Brittany Dorshak-Parsons,brittany.dorshak@pxpstudios.com,PXP Studios,Ad Agency,2,"Wed, 07 Aug 2024 16:14:53 +0000",invalid
+Pending,Brittany Dorshak-Parsons,brittany.dorshakparsons@pxpstudios.com,PXP Studios,Ad Agency,2,"Wed, 07 Aug 2024 16:12:34 +0000",invalid
+Pending,Victor Mims,victor.mims@amillionads.com,Amillionads,Other / Unknown,2,"Wed, 07 Aug 2024 15:59:51 +0000",invalid
+Pending,Brian Adkins,brian@voiceversestudios.com,Voiceverse,Other / Unknown,2,"Wed, 07 Aug 2024 15:17:06 +0000",invalid
+Pending,Brynn Hausmann,brynn.hausmann@begrizzlee.com,Begrizzlee,Other / Unknown,2,"Wed, 07 Aug 2024 00:45:05 +0000",invalid
+Pending,Raymond Stevenson,raymondstevenson546@gmail.com,Gmail,Personal / Unknown,2,"Tue, 06 Aug 2024 23:52:15 +0000",invalid
+Pending,Anna Crane,anna.crane@mcj.co,McGarrah Jessee,Ad Agency,2,"Tue, 06 Aug 2024 23:46:06 +0000",invalid
+Pending,Robert Holeman,robert.holeman@teamone-usa.com,Team One,Ad Agency,2,"Tue, 06 Aug 2024 22:49:42 +0000",invalid
+Pending,Trish Damon,trish.damon@publicis.com,Publicis,Ad Agency,2,"Tue, 06 Aug 2024 21:49:28 +0000",invalid
+Pending,Tiffany Dillon,tiffany.dillon@hawkeyeagency.com,Hawkeye,Other / Unknown,2,"Tue, 06 Aug 2024 21:40:09 +0000",invalid
+Pending,Chris Yousif,chris.yousif@leoburnett.com,Leoburnett,Other / Unknown,2,"Tue, 06 Aug 2024 19:42:45 +0000",invalid
+Pending,Ericcvg,ericcvg@centralvoicegroup.com,Centralvoice,Other / Unknown,2,"Tue, 06 May 2025 09:56:29 -0700",invalid
+Pending,Ruba Abuomar,ruba.abuomar@gsdm.com,GSD&M,Ad Agency,2,"Thu, 26 Sep 2024 21:22:06 +0000",invalid
+Pending,Sophie Borris,sophie.borris@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 06 Aug 2024 21:53:09 +0000",invalid
+Pending,Brandon Loftin,brandon.loftin@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 06 Aug 2024 21:17:32 +0000",invalid
+Pending,Daks Palm,dormocaraamos@gmail.com,Gmail,Personal / Unknown,2,"Tue, 06 Aug 2024 21:03:30 +0000",invalid
+Pending,Carole McCarty,carole@allyourten6.com,Allyourten6,Other / Unknown,2,"Tue, 06 Aug 2024 20:12:03 +0000",invalid
+Pending,Chas,chas@sternadvertising.com,Stern,Other / Unknown,2,"Tue, 10 Jan 2023 11:46:28 -0800",invalid
+Pending,Claire Allman,claire.allman@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 10 Jan 2023 11:52:31 -0800",invalid
+Pending,Austin Arnold,austin@theescapepodagency.com,The Escape Pod,Ad Agency,2,"Tue, 10 Jan 2023 11:15:38 -0800",invalid
+Pending,Alicia Holshouser,alicia.holshouser@ivieinc.com,Ivieinc,Other / Unknown,2,"Fri, 05 Mar 2021 10:10:07 -0800",invalid
+Pending,Llandry,llandry@arn.com,Arn,Other / Unknown,2,"Wed, 03 Mar 2021 10:02:24 -0800",invalid
+Pending,Tnelson,tnelson@brodeur.com,Brodeur,Other / Unknown,2,"Wed, 03 Mar 2021 11:40:28 -0800",invalid
+Pending,Taylor,taylor@tacotruckcreative.com,Tacotruck,Other / Unknown,2,"Wed, 03 Mar 2021 11:45:06 -0800",invalid
+Pending,Jsorensen,jsorensen@rs-e.com,Rs E,Other / Unknown,2,"Wed, 03 Mar 2021 11:42:46 -0800",invalid
+Pending,Jon Serna,jon.serna@artsandletters.xyz,Arts & Letters,Ad Agency,2,"Wed, 16 Mar 2022 09:54:25 -0700",invalid
+Pending,Marissa Hardison,marissa.hardison@artsandletters.xyz,Arts & Letters,Ad Agency,2,"Wed, 16 Mar 2022 09:52:06 -0700",invalid
+Pending,Wendy Wheless,wendy.wheless@moxieusa.com,Moxieusa,Other / Unknown,2,"Wed, 03 Mar 2021 09:37:56 -0800",invalid
+Pending,JBrandon Allen,jbrandon.allen@leoburnett.com,Leoburnett,Other / Unknown,2,"Wed, 18 May 2022 13:59:03 -0700",invalid
+Pending,Vendor Relations LB_ARC_LEO_US,vendorrelationslb_arc@leoburnett.com,Leoburnett,Other / Unknown,2,"Wed, 18 May 2022 13:59:03 -0700",invalid
+Pending,Brandon Kusher,brandon.kusher@dng.com,David & Goliath,Ad Agency,2,"Fri, 12 Mar 2021 10:01:07 -0800",invalid
+Pending,Mary Crosse,mary.crosse@mekanism.com,Mekanism,Ad Agency,2,"Tue, 15 Feb 2022 10:45:17 -0800",invalid
+Pending,Jim Fennelly,jim.fennelly@ketchum.com,Ketchum,Other / Unknown,2,"Tue, 27 Oct 2020 09:33:28 -0700",invalid
+Pending,Tarynw,tarynw@johannesleonardo.com,Johannesleonardo,Other / Unknown,2,"Tue, 21 Sep 2021 16:45:53 +0000",invalid
+Pending,Anna Franklin,anna.franklin@edelman.com,Edelman,Ad Agency,2,"Tue, 27 Oct 2020 09:20:51 -0700",invalid
+Pending,Scott Goodfriend,scott.goodfriend@edelman.com,Edelman,Ad Agency,2,"Tue, 27 Oct 2020 09:20:17 -0700",invalid
+Pending,Hcopeland,hcopeland@droga5.com,Droga5,Other / Unknown,2,"Tue, 27 Oct 2020 09:19:41 -0700",invalid
+Pending,Acashman,acashman@droga5.com,Droga5,Other / Unknown,2,"Tue, 27 Oct 2020 09:18:00 -0700",invalid
+Pending,Spaton,spaton@droga5.com,Droga5,Other / Unknown,2,"Tue, 27 Oct 2020 09:17:27 -0700",invalid
+Pending,Lvega,lvega@droga5.com,Droga5,Other / Unknown,2,"Tue, 27 Oct 2020 09:16:39 -0700",invalid
+Pending,Rrazuri,rrazuri@dex-p.com,Dex P,Other / Unknown,2,"Tue, 27 Oct 2020 09:10:32 -0700",invalid
+Pending,Nislam,nislam@cdmny.com,Cdmny,Other / Unknown,2,"Tue, 27 Oct 2020 09:06:48 -0700",invalid
+Pending,Maria,maria@burnsgroupnyc.com,Burnsgroupnyc,Other / Unknown,2,"Tue, 27 Oct 2020 09:05:52 -0700",invalid
+Pending,Ahernandez,ahernandez@wearebarbarian.com,Wearebarbarian,Other / Unknown,2,"Tue, 27 Oct 2020 09:02:08 -0700",invalid
+Pending,Sachin Arora,sachin.arora@b-reel.com,B Reel,Other / Unknown,2,"Tue, 27 Oct 2020 09:00:52 -0700",invalid
+Pending,Blonsdale,blonsdale@anomaly.com,Anomaly,Ad Agency,2,"Tue, 27 Oct 2020 08:59:34 -0700",invalid
+Pending,Jruske,jruske@anomaly.com,Anomaly,Ad Agency,2,"Tue, 16 Mar 2021 09:03:25 -0700",invalid
+Pending,Abowles,abowles@ampagency.com,Amp,Other / Unknown,2,"Tue, 16 Mar 2021 09:02:49 -0700",invalid
+Pending,Lynn,lynn@unioneditorial.com,Unioneditorial,Other / Unknown,2,"Fri, 12 Mar 2021 10:42:57 -0800",invalid
+Pending,Dani,dani@unioneditorial.com,Unioneditorial,Other / Unknown,2,"Fri, 12 Mar 2021 10:42:01 -0800",invalid
+Pending,Nancy Gwilliam,nancy.gwilliam@traffikonline.com,Traffikonline,Other / Unknown,2,"Fri, 12 Mar 2021 10:41:30 -0800",invalid
+Pending,Dave Horowitz,dave.horowitz@themany.com,The Many,Ad Agency,2,"Tue, 15 Feb 2022 10:17:11 -0800",invalid
+Pending,Bryan,bryan@seismicproductions.com,Seismic,Other / Unknown,2,"Fri, 12 Mar 2021 10:31:22 -0800",invalid
+Pending,Megan,megan@secretweapon.net,Secretweapon,Other / Unknown,2,"Fri, 12 Mar 2021 10:30:44 -0800",invalid
+Pending,Stephanie Dziczek,stephanie.dziczek@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Fri, 12 Mar 2021 10:30:17 -0800",invalid
+Pending,Shawna Wilson,shawna.wilson@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Fri, 12 Mar 2021 10:30:03 -0800",invalid
+Pending,Jennifer Vogtmann,jennifer.vogtmann@saatchila.com,Saatchila,Other / Unknown,2,"Fri, 12 Mar 2021 10:29:19 -0800",invalid
+Pending,Cpeterson,cpeterson@phenomenon.com,Phenomenon,Other / Unknown,2,"Fri, 12 Mar 2021 10:27:08 -0800",invalid
+Pending,Ccorbeira,ccorbeira@orci.com,Orci,Other / Unknown,2,"Fri, 12 Mar 2021 10:26:49 -0800",invalid
+Pending,Lperozo,lperozo@orci.com,Orci,Other / Unknown,2,"Fri, 12 Mar 2021 10:26:34 -0800",invalid
+Pending,Diana,diana@museusa.com,Museusa,Other / Unknown,2,"Fri, 12 Mar 2021 10:23:44 -0800",invalid
+Pending,Supston,supston@kovelfuller.com,Kovelfuller,Other / Unknown,2,"Fri, 12 Mar 2021 10:18:59 -0800",invalid
+Pending,Sean Maekawa,sean.maekawa@byhook.com,Byhook,Other / Unknown,2,"Fri, 12 Mar 2021 10:13:33 -0800",invalid
+Pending,Kayla Hacohen,kayla.hacohen@byhook.com,Byhook,Other / Unknown,2,"Fri, 12 Mar 2021 10:13:18 -0800",invalid
+Pending,Peter Smith,peter.smith@garageteammazda.com,Garageteammazda,Other / Unknown,2,"Fri, 12 Mar 2021 10:06:47 -0800",invalid
+Pending,Agermain,agermain@gallegosunited.com,Gallegosunited,Other / Unknown,2,"Fri, 12 Mar 2021 10:06:35 -0800",invalid
+Pending,Bschneider,bschneider@gallegosunited.com,Gallegosunited,Other / Unknown,2,"Fri, 12 Mar 2021 10:06:20 -0800",invalid
+Pending,Lisa Matthews,lisa.matthews@designory.com,Designory,Other / Unknown,2,"Fri, 12 Mar 2021 09:58:36 -0800",invalid
+Pending,Chesarehardy,chesarehardy@daviselen.com,Davis Elen,Ad Agency,2,"Fri, 12 Mar 2021 09:56:19 -0800",invalid
+Pending,Llee,llee@daileyla.com,Daileyla,Other / Unknown,2,"Fri, 12 Mar 2021 09:55:25 -0800",invalid
+Pending,Juribe,juribe@daileyla.com,Daileyla,Other / Unknown,2,"Fri, 12 Mar 2021 09:55:02 -0800",invalid
+Pending,Pierre,pierre@createadvertising.com,Create,Other / Unknown,2,"Fri, 12 Mar 2021 09:53:10 -0800",invalid
+Pending,Whitney Husnik,whitney.husnik@bbdo.com,BBDO,Ad Agency,2,"Fri, 12 Mar 2021 09:32:08 -0800",invalid
+Pending,Rustie Burris,rustie.burris@bbdo.com,BBDO,Ad Agency,2,"Fri, 12 Mar 2021 09:31:51 -0800",invalid
+Pending,Julie Collins,julie.collins@bbdo.com,BBDO,Ad Agency,2,"Fri, 12 Mar 2021 09:31:38 -0800",invalid
+Pending,Katie Porter,katie.porter@bbdo.com,BBDO,Ad Agency,2,"Fri, 12 Mar 2021 09:31:08 -0800",invalid
+Pending,Jeremy,jeremy@baru-ad.com,Baru Ad,Other / Unknown,2,"Fri, 12 Mar 2021 09:30:38 -0800",invalid
+Pending,Gema,gema@baru-ad.com,Baru Ad,Other / Unknown,2,"Fri, 12 Mar 2021 09:30:26 -0800",invalid
+Pending,Etienne,etienne@andcompany.com,Andcompany,Other / Unknown,2,"Fri, 12 Mar 2021 09:30:03 -0800",invalid
+Pending,Mariana,mariana@andcompany.com,Andcompany,Other / Unknown,2,"Fri, 12 Mar 2021 09:29:48 -0800",invalid
+Pending,Charlotte,charlotte@andcompany.com,Andcompany,Other / Unknown,2,"Fri, 12 Mar 2021 09:29:24 -0800",invalid
+Pending,Junho,junho@godfreydadich.com,Godfreydadich,Other / Unknown,2,"Thu, 11 Mar 2021 13:42:45 -0800",invalid
+Pending,Ben,ben@howfunworks.com,Howfunworks,Other / Unknown,2,"Thu, 11 Mar 2021 13:42:14 -0800",invalid
+Pending,Kevin,kevin@howfunworks.com,Howfunworks,Other / Unknown,2,"Thu, 11 Mar 2021 13:41:50 -0800",invalid
+Pending,Tess Rockers,tess.rockers@evb.com,Evb,Other / Unknown,2,"Thu, 11 Mar 2021 13:28:28 -0800",invalid
+Pending,Chloeingber,chloeingber@eleveninc.com,Eleveninc,Other / Unknown,2,"Thu, 11 Mar 2021 13:28:01 -0800",invalid
+Pending,Lorijoseph,lorijoseph@eleveninc.com,Eleveninc,Other / Unknown,2,"Thu, 11 Mar 2021 13:27:33 -0800",invalid
+Pending,Esarale,esarale@duncanchannon.com,Duncanchannon,Other / Unknown,2,"Thu, 11 Mar 2021 13:26:33 -0800",invalid
+Pending,Brooke Hopkins,brooke.hopkins@cutwatersf.com,Cutwatersf,Other / Unknown,2,"Thu, 11 Mar 2021 13:25:23 -0800",invalid
+Pending,Glazarus,glazarus@bssp.com,Bssp,Other / Unknown,2,"Thu, 11 Mar 2021 13:23:02 -0800",invalid
+Pending,Jon,jon@popdotmarketing.com,Popdot,Other / Unknown,2,"Thu, 11 Mar 2021 10:36:52 -0800",invalid
+Pending,Justinninneman,justinninneman@marglemedia.com,Margle,Other / Unknown,2,"Thu, 11 Mar 2021 10:28:49 -0800",invalid
+Pending,Cnygren,cnygren@laughlin.com,Laughlin,Other / Unknown,2,"Thu, 11 Mar 2021 10:10:48 -0800",invalid
+Pending,Repperson,repperson@bader-rutter.com,Bader Rutter,Other / Unknown,2,"Thu, 11 Mar 2021 10:05:46 -0800",invalid
+Pending,Kduffy,kduffy@bader-rutter.com,Bader Rutter,Other / Unknown,2,"Thu, 11 Mar 2021 10:03:53 -0800",invalid
+Pending,Kfalk,kfalk@williamswhittle.com,Williamswhittle,Other / Unknown,2,"Fri, 23 Oct 2020 08:30:08 -0700",invalid
+Pending,Scarlett,scarlett@smithgifford.com,Smithgifford,Other / Unknown,2,"Fri, 23 Oct 2020 08:28:37 -0700",invalid
+Pending,Anne,anne@lctm.biz,Lctm,Other / Unknown,2,"Fri, 23 Oct 2020 08:23:50 -0700",invalid
+Pending,Delacey,delacey@eskstrategies.com,Eskstrategies,Other / Unknown,2,"Fri, 23 Oct 2020 08:19:17 -0700",invalid
+Pending,Emily,emily@dixondavismedia.com,Dixondavis,Other / Unknown,2,"Fri, 23 Oct 2020 08:18:47 -0700",invalid
+Pending,Mhuff,mhuff@copacino.com,Copacino,Other / Unknown,2,"Wed, 10 Mar 2021 11:10:08 -0800",invalid
+Pending,Jared Earnhart,jared.earnhart@ckmk.com,Ckmk,Other / Unknown,2,"Thu, 04 Mar 2021 10:41:52 -0800",invalid
+Pending,Kevin King,kevin.king@ckmk.com,Ckmk,Other / Unknown,2,"Thu, 04 Mar 2021 10:41:38 -0800",invalid
+Pending,Melinda Barni,melinda.barni@ckmk.com,Ckmk,Other / Unknown,2,"Thu, 04 Mar 2021 10:41:27 -0800",invalid
+Pending,Jrefkin,jrefkin@meadsdurket.com,Meadsdurket,Other / Unknown,2,"Wed, 03 Mar 2021 11:44:48 -0800",invalid
+Pending,Sacha,sacha@cincodesign.com,Cincodesign,Other / Unknown,2,"Tue, 09 Mar 2021 10:53:27 -0800",invalid
+Pending,Terence,terence@cincodesign.com,Cincodesign,Other / Unknown,2,"Tue, 09 Mar 2021 10:52:47 -0800",invalid
+Pending,Ababb,ababb@theleegroupmarketing.com,Theleegroup,Other / Unknown,2,"Tue, 15 Feb 2022 10:07:24 -0800",invalid
+Pending,Virginia Burchell,virginia.burchell@tracylocke.com,Tracylocke,Other / Unknown,2,"Fri, 05 Mar 2021 10:17:17 -0800",invalid
+Pending,Molly Brewer,molly.brewer@tracylocke.com,Tracylocke,Other / Unknown,2,"Fri, 05 Mar 2021 10:16:26 -0800",invalid
+Pending,Emily Bills,emily.bills@tracylocke.com,Tracylocke,Other / Unknown,2,"Fri, 05 Mar 2021 10:16:10 -0800",invalid
+Pending,Nicole Thayer,nicole.thayer@publicishawkeye.com,Publicishawkeye,Other / Unknown,2,"Fri, 05 Mar 2021 10:12:14 -0800",invalid
+Pending,Npham,npham@smz.com,Smz,Other / Unknown,2,"Fri, 23 Oct 2020 08:44:37 -0700",invalid
+Pending,Keith Hamilton,keith.hamilton@agency720.com,Agency720,Other / Unknown,2,"Fri, 23 Oct 2020 08:38:47 -0700",invalid
+Pending,Kathy Ferrey,kathy.ferrey@bbdo.com,BBDO,Ad Agency,2,"Wed, 10 Mar 2021 10:00:14 -0800",invalid
+Pending,Heather Salkin,heather.salkin@rapp.com,Rapp,Other / Unknown,2,"Tue, 16 Mar 2021 10:16:24 -0700",invalid
+Pending,Anthony Garetti,anthony.garetti@publicisna.com,Publicisna,Other / Unknown,2,"Tue, 27 Oct 2020 09:59:53 -0700",invalid
+Pending,Nikki Brancati,nikki.brancati@publicisna.com,Publicisna,Other / Unknown,2,"Tue, 27 Oct 2020 09:59:40 -0700",invalid
+Pending,Alisa Cohen,alisa.cohen@publicisna.com,Publicisna,Other / Unknown,2,"Tue, 27 Oct 2020 09:58:18 -0700",invalid
+Pending,Travis,travis@mothernewyork.com,Mothernewyork,Other / Unknown,2,"Tue, 27 Oct 2020 09:44:18 -0700",invalid
+Pending,James Young,james.young@bbdo.com,BBDO,Ad Agency,2,"Tue, 27 Oct 2020 09:04:29 -0700",invalid
+Pending,Marsha Trainer,marsha.trainer@generalmills.com,Generalmills,Other / Unknown,2,"Wed, 10 Mar 2021 10:27:41 -0800",invalid
+Pending,Hayley Linsenbard,hayley.linsenbard@byhook.com,Byhook,Other / Unknown,2,"Fri, 12 Mar 2021 10:12:57 -0800",invalid
+Pending,Kyndal Thomas,kyndal.thomas@realm.fm,Realm,Other / Unknown,2,"Fri, 03 Dec 2021 13:26:49 -0800",invalid
+Pending,Polly Poulos,polly.poulos@ddb.com,DDB,Ad Agency,2,"Tue, 09 Jun 2020 09:27:32 -0700",invalid
+Pending,Maggie Harasyn,maggie.harasyn@wk.com,Wieden+Kennedy,Ad Agency,2,"Tue, 09 Mar 2021 11:49:08 -0800",invalid
+Pending,Rylee Millerd,rylee.millerd@wk.com,Wieden+Kennedy,Ad Agency,2,"Tue, 09 Mar 2021 12:05:58 -0800",invalid
+Pending,Jamie Gerich,jamie.gerich@leoburnett.com,Leoburnett,Other / Unknown,2,"Mon, 04 Oct 2021 10:48:08 -0700",invalid
+Pending,Roger Okamoto,rokamoto@hothouseinc.com,Hothouseinc,Other / Unknown,2,"Wed, 31 Mar 2021 09:07:12 -0700",invalid
+Pending,Kevin Fermini,kfermini@hothouseinc.com,Hothouseinc,Other / Unknown,2,"Wed, 31 Mar 2021 09:07:12 -0700",invalid
+Pending,Keri Catanzano,keri.catanzano@wk.com,Wieden+Kennedy,Ad Agency,2,"Tue, 27 Oct 2020 10:43:20 -0700",invalid
+Pending,Alexey Novikov,alexey.novikov@wk.com,Wieden+Kennedy,Ad Agency,2,"Tue, 27 Oct 2020 10:42:44 -0700",invalid
+Pending,Tania Sanchez,tania.sanchez@wk.com,Wieden+Kennedy,Ad Agency,2,"Tue, 27 Oct 2020 10:42:33 -0700",invalid
+Pending,Dsmith,dsmith@uwginc.com,Uwginc,Other / Unknown,2,"Thu, 24 Sep 2020 19:24:48 +0000",invalid
+Pending,Suzanne Crowe,suzanne.crowe@translationllc.com,Translationllc,Other / Unknown,2,"Tue, 27 Oct 2020 10:40:41 -0700",invalid
+Pending,Kelsey Longo,kelsey.longo@townhouseww.com,Townhouseww,Other / Unknown,2,"Tue, 27 Oct 2020 10:39:03 -0700",invalid
+Pending,Natalie Zeller,natalie.zeller@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:37:36 -0700",invalid
+Pending,Sean Riojas,sean.riojas@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:37:24 -0700",invalid
+Pending,Alise Bellina,alise.bellina@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:37:11 -0700",invalid
+Pending,Jessica Fiore,jessica.fiore@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:36:59 -0700",invalid
+Pending,Steven Kreuch,steven.kreuch@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:36:38 -0700",invalid
+Pending,Rick Segal,rick.segal@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:36:27 -0700",invalid
+Pending,Kyla Bridge,kyla.bridge@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:36:16 -0700",invalid
+Pending,Amanda Revere,amanda.revere@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:35:43 -0700",invalid
+Pending,Regan Wallace,regan.wallace@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:35:31 -0700",invalid
+Pending,Jen Vladimirsky,jen.vladimirsky@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:35:21 -0700",invalid
+Pending,Marisa Bursteen,marisa.bursteen@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,2,"Tue, 27 Oct 2020 10:35:02 -0700",invalid
+Pending,Liz Sloane,liz.sloane@saatchi.com,Saatchi & Saatchi,Ad Agency,2,"Tue, 27 Oct 2020 10:32:54 -0700",invalid
+Pending,Elisa,elisa.moore@thisisheat.com,Thisisheat,Other / Unknown,2,"Thu, 30 Jul 2020 15:44:29 +0000",invalid
+Pending,Tess Kenner,tess_kenner@gspsf.com,Goodby Silverstein & Partners,Ad Agency,2,"Thu, 20 Aug 2020 18:58:19 +0000",invalid
+Pending,Lchatman,lchatman@bssp.com,Bssp,Other / Unknown,2,"Thu, 20 Aug 2020 18:53:17 +0000",invalid
+Pending,Kathy Rottach,kathy.rottach@publicis.com,Publicis,Ad Agency,2,"Thu, 11 Mar 2021 10:46:43 -0800",invalid
+Pending,Olivia,olivia@jwdcreative.com,Jwd,Other / Unknown,2,"Fri, 08 Jan 2021 17:39:44 +0000",invalid
+Pending,Shuya Yuan,syuan@cplusc.com,Cplusc,Other / Unknown,2,"Wed, 10 Jun 2020 17:05:37 +0000",invalid
+Pending,Kris,kris@leebranding.com,Leebranding,Other / Unknown,2,"Thu, 23 Jul 2020 18:48:55 +0000",invalid
+Pending,Evelyn Loomis,evelyn.loomis@wk.com,Wieden+Kennedy,Ad Agency,2,"Mon, 08 Jun 2020 18:39:57 +0000",invalid
+Pending,Maureen Doyle,maureen.doyle@wk.com,Wieden+Kennedy,Ad Agency,2,"Thu, 20 Aug 2020 17:21:10 +0000",invalid
+Pending,Amy Smith,amy.smith@publicishawkeye.com,Publicishawkeye,Other / Unknown,2,"Thu, 23 Jul 2020 17:33:30 +0000",invalid
+Pending,Ali,ali@rw2productions.com,Rw2,Other / Unknown,2,"Fri, 23 Oct 2020 08:34:55 -0700",invalid
+Pending,Sara Haun,sara.haun@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:06:58 -0700",invalid
+Pending,Kate Perles,kate.perles@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:06:40 -0700",invalid
+Pending,Karen Burke,karen.burke@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:06:09 -0700",invalid
+Pending,Dana Wahlbeck,dana.wahlbeck@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:05:56 -0700",invalid
+Pending,Lori Lawery,lori.lawery@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:05:38 -0700",invalid
+Pending,Emily Cabral,emily.cabral@22squared.com,22Squared,Other / Unknown,2,"Thu, 22 Oct 2020 09:05:16 -0700",invalid
+Pending,Monique,monique@thecommunityus.com,Thecommunityus,Other / Unknown,2,"Thu, 22 Oct 2020 08:53:20 -0700",invalid
+Pending,Enajera,enajera@republicahavas.com,Republicahavas,Other / Unknown,2,"Thu, 22 Oct 2020 08:52:35 -0700",invalid
+Pending,Jjones,jjones@sapient.com,Sapient,Ad Agency,2,"Thu, 22 Oct 2020 08:51:50 -0700",invalid
+Pending,Victoria Marichal,victoria.marichal@almaad.com,Almaad,Other / Unknown,2,"Thu, 22 Oct 2020 08:49:58 -0700",invalid
+Pending,Monica Oconnor,monica.oconnor@rodgerstownsend.com,Rodgerstownsend,Other / Unknown,2,"Thu, 22 Oct 2020 08:42:48 -0700",invalid
+Pending,Patty Ivey,patty.ivey@rodgerstownsend.com,Rodgerstownsend,Other / Unknown,2,"Thu, 22 Oct 2020 08:42:16 -0700",invalid
+Pending,Emily Puricelli,emily.puricelli@ckmk.com,Ckmk,Other / Unknown,2,"Thu, 22 Oct 2020 08:41:10 -0700",invalid
+Pending,Katrina Politte,katrina.politte@ckmk.com,Ckmk,Other / Unknown,2,"Thu, 22 Oct 2020 08:40:59 -0700",invalid
+Pending,Justin Dioneda,justin.dioneda@moosylvania.com,Moosylvania,Other / Unknown,2,"Thu, 22 Oct 2020 08:40:47 -0700",invalid
+Pending,Smeserve,smeserve@theviaagency.com,Thevia,Other / Unknown,2,"Thu, 22 Oct 2020 09:01:01 -0700",invalid
+Pending,Speisner,speisner@theviaagency.com,Thevia,Other / Unknown,2,"Thu, 22 Oct 2020 09:00:49 -0700",invalid
+Pending,Bwolford,bwolford@theviaagency.com,Thevia,Other / Unknown,2,"Thu, 22 Oct 2020 09:00:09 -0700",invalid
+Pending,Tyler,tanderson@hoffmanyork.com,Hoffmanyork,Other / Unknown,2,"Thu, 04 Feb 2021 15:03:34 -0800",invalid
+Pending,Kayla Phungglan,kayla@limestudios.tv,Lime,Other / Unknown,2,"Thu, 04 Feb 2021 13:43:09 -0800",invalid
+Pending,Sam Sotomura,samantha@limestudios.tv,Lime,Other / Unknown,2,"Thu, 04 Feb 2021 13:43:09 -0800",invalid
+Pending,Ekaterina Acosta,ekaterina.acosta@dragons-group.com,Dragons,Other / Unknown,2,"Thu, 04 Feb 2021 10:18:41 -0800",invalid
+Pending,Marcos de Fortuny,marcos.defortuny@dragons-group.com,Dragons,Other / Unknown,2,"Thu, 04 Feb 2021 10:18:41 -0800",invalid
+Pending,Pat McNaney-Soldovere,psoldovere@burrell.com,Burrell,Other / Unknown,1,"Wed, 29 Oct 2025 12:14:13 -0700",invalid
+Pending,Nicolette Steele,nicolette@artsandletters.xyz,Arts & Letters,Ad Agency,1,"Mon, 18 Aug 2025 08:12:00 -0700",invalid
+Pending,Brent Holt,brent.holt@mcj.co,McGarrah Jessee,Ad Agency,1,"Thu, 03 Jul 2025 10:57:48 -0700",invalid
+Pending,Tyler Rochwerg,tyler.rochwerg@neutrogena.com,Neutrogena,Other / Unknown,1,"Tue, 24 Jun 2025 10:48:35 -0700",invalid
+Pending,David Adametz,david.adametz@tesla.com,Tesla,Other / Unknown,1,"Tue, 24 Jun 2025 09:59:27 -0700",invalid
+Pending,Peter Martin,peter.martin@gm.com,Gm,Other / Unknown,1,"Tue, 24 Jun 2025 09:36:52 -0700",invalid
+Pending,William Hasler,william.hasler@ford.com,Ford,Other / Unknown,1,"Tue, 24 Jun 2025 09:00:26 -0700",invalid
+Pending,Microsoft Billing Services,customer.73946948@admin.microsoft.com,Admin,Other / Unknown,1,"Mon, 23 Jun 2025 14:33:02 +0000",invalid
+Pending,Koleary,koleary@bettyagency.com,Betty,Other / Unknown,1,"Thu, 12 Jun 2025 07:33:36 -0700",invalid
+Pending,Microsoft Billing !,msa-billing-zsz42@email0.ms-microsoft.com,Email0,Other / Unknown,1,"Wed, 28 May 2025 15:24:13 +0000",invalid
+Pending,Nikki O'Toole,nikki@mediaartslab.com,Mediaartslab,Other / Unknown,1,"Wed, 07 May 2025 23:39:17 +0000",invalid
+Pending,Rodrigo Galavis,rgalavis@petrolad.com,Petrolad,Other / Unknown,1,"Mon, 05 May 2025 18:16:27 +0000",invalid
+Pending,Andrew Gilson,andrew.gilson@themill.com,Themill,Other / Unknown,1,"Thu, 01 May 2025 18:09:40 +0000",invalid
+Pending,Vartuhi Oganesyan,voganesyan@first.media,First,Other / Unknown,1,"Tue, 29 Apr 2025 21:07:30 +0000",invalid
+Pending,Eric Psihoules,eric.psihoules@annexexp.com,Annexexp,Ad Agency,1,"Wed, 16 Apr 2025 21:14:19 +0000",invalid
+Pending,Lauren Gilbert,lauren.gilbert@bondbrandloyalty.com,Bondbrandloyalty,Other / Unknown,1,"Fri, 11 Apr 2025 10:15:07 -0700",invalid
+Pending,Zvalakazi,zvalakazi@burrell.com,Burrell,Other / Unknown,1,"Mon, 17 Mar 2025 12:42:26 -0700",invalid
+Pending,Sportee,sportee@burrell.com,Burrell,Other / Unknown,1,"Mon, 17 Mar 2025 12:37:43 -0700",invalid
+Pending,Kash Blagrove,kash@joancreative.com,JOAN Creative,Ad Agency,1,"Thu, 13 Mar 2025 17:38:55 +0000",invalid
+Pending,Jasmine Willson,jasmine.willson@iris-worldwide.com,Iris,Other / Unknown,1,"Tue, 11 Mar 2025 19:07:04 +0000",invalid
+Pending,Shobin Matthew,shobin.matthew@omc.com,Omnicom,Ad Agency,1,"Mon, 10 Mar 2025 10:00:46 -0700",invalid
+Pending,Jeff Davis,jeff.davis@omc.com,Omnicom,Ad Agency,1,"Mon, 10 Mar 2025 09:28:01 -0700",invalid
+Pending,Blindsay,blindsay@twoxfour.com,Twoxfour,Other / Unknown,1,"Mon, 10 Mar 2025 09:01:41 -0700",invalid
+Pending,Lyndsey Phillips,lphillips@sbcadvertising.com,Sbc,Other / Unknown,1,"Thu, 06 Mar 2025 17:52:59 +0000",invalid
+Pending,Cooper Gwaltney,cgwaltney@rauxa.com,Rauxa,Other / Unknown,1,"Wed, 05 Mar 2025 17:28:19 +0000",invalid
+Pending,Karen Smith,karen.smith@omc.com,Omnicom,Ad Agency,1,"Tue, 04 Mar 2025 09:24:36 -0800",invalid
+Pending,Austin Neely,austin.neely@legacymarketing.com,Legacy,Other / Unknown,1,"Tue, 04 Mar 2025 16:41:48 +0000",invalid
+Pending,Oliver Rushton,oliver.rushton@iris-worldwide.com,Iris,Other / Unknown,1,"Fri, 28 Feb 2025 23:04:36 +0000",invalid
+Pending,Caitlin Perz,caitlin.perz@howatsonco.com.au,Howatsonco,Other / Unknown,1,"Thu, 27 Feb 2025 01:13:02 +0000",invalid
+Pending,Stephanie Arroyo,stephanie.arroyo@springstudios.com,Spring,Other / Unknown,1,"Wed, 26 Feb 2025 23:38:54 +0000",invalid
+Pending,David Roberts,david.roberts@bellmedia.ca,Bell,Other / Unknown,1,"Wed, 26 Feb 2025 19:44:28 +0000",invalid
+Pending,Ted Knutson,ted.knutson@fallon.com,Fallon,Ad Agency,1,"Tue, 25 Feb 2025 22:51:31 +0000",invalid
+Pending,Agneta Gabalyte,agneta.gabalyte@elitaz.lt,Elitaz,Other / Unknown,1,"Tue, 25 Feb 2025 21:39:32 +0000",invalid
+Pending,Sarah Johnson,sarah.johnson@ficommpartners.com,Ficommpartners,Other / Unknown,1,"Fri, 21 Feb 2025 20:22:17 +0000",invalid
+Pending,Kate Talbott,kate.talbott@fallon.com,Fallon,Ad Agency,1,"Fri, 21 Feb 2025 19:56:30 +0000",invalid
+Pending,Dom Griffith,dom.griffith@digitashealth.com,Digitas Health,Ad Agency,1,"Fri, 21 Feb 2025 19:25:25 +0000",invalid
+Pending,Adam Seely,adam.seely@digitashealth.com,Digitas Health,Ad Agency,1,"Fri, 21 Feb 2025 17:21:02 +0000",invalid
+Pending,Dawn Colon,dawn.colon@digitashealth.com,Digitas Health,Ad Agency,1,"Fri, 21 Feb 2025 17:17:05 +0000",invalid
+Pending,Eddie Morden,eddie.morden@conill.com,Conill,Other / Unknown,1,"Fri, 21 Feb 2025 16:00:06 +0000",invalid
+Pending,Carlos Barciela,carlos.barciela@conill.com,Conill,Other / Unknown,1,"Thu, 20 Feb 2025 21:28:01 +0000",invalid
+Pending,Rachel Yang,rachel@artsandletters.xyz,Arts & Letters,Ad Agency,1,"Thu, 20 Feb 2025 20:51:55 +0000",invalid
+Pending,Brad Goldthwaite,bradg@foochain.com,Foochain,Other / Unknown,1,"Thu, 20 Feb 2025 19:29:27 +0000",invalid
+Pending,Mike,mike@studioaweome.la,Studioaweome,Other / Unknown,1,"Thu, 20 Feb 2025 15:15:49 +0000",invalid
+Pending,Scorcoran,scorcoran@curiousplot.agency,Curiousplot,Other / Unknown,1,"Thu, 13 Feb 2025 17:18:13 +0000",invalid
+Pending,Rene,rene@fortwest.com,Fortwest,Other / Unknown,1,"Wed, 12 Feb 2025 20:23:44 +0000",invalid
+Pending,Geneva,geneva@whoisowenjones.com,Whoisowenjones,Other / Unknown,1,"Wed, 12 Feb 2025 09:07:49 -0800",invalid
+Pending,Archana,archana@whoisowenjones.com,Whoisowenjones,Other / Unknown,1,"Wed, 12 Feb 2025 09:07:08 -0800",invalid
+Pending,Ian,ian@whoisowenjones.com,Whoisowenjones,Other / Unknown,1,"Wed, 12 Feb 2025 09:06:30 -0800",invalid
+Pending,Skarakas,skarakas@nonboxpdx.com,Nonboxpdx,Other / Unknown,1,"Tue, 11 Feb 2025 23:46:38 +0000",invalid
+Pending,Moconnor,moconnor@industry.global,Industry,Other / Unknown,1,"Tue, 11 Feb 2025 15:19:29 -0800",invalid
+Pending,Kaitlyn,kaitlyn@murmorcreative.com,Murmor,Other / Unknown,1,"Tue, 11 Feb 2025 22:41:38 +0000",invalid
+Pending,Molly Anzalone,molly.anzalone@thesis.agency,Thesis,Other / Unknown,1,"Tue, 11 Feb 2025 11:28:43 -0800",invalid
+Pending,Jim Ryan,jim.ryan@thesis.agency,Thesis,Other / Unknown,1,"Tue, 11 Feb 2025 11:24:54 -0800",invalid
+Pending,Bherman,bherman@madfishdigital.com,Madfish,Other / Unknown,1,"Tue, 11 Feb 2025 10:17:03 -0800",invalid
+Pending,Alex Gianni,alex.gianni@bbdo.com,BBDO,Ad Agency,1,"Thu, 06 Feb 2025 17:54:49 +0000",invalid
+Pending,Zamile Vilakazi,zamile.vilakazi@22squared.com,22Squared,Other / Unknown,1,"Thu, 06 Feb 2025 17:15:15 +0000",invalid
+Pending,Natalie Marcrum,natalie.marcrum@pxpstudios.com,PXP Studios,Ad Agency,1,"Wed, 05 Feb 2025 08:26:25 -0800",invalid
+Pending,Effie Protopapadakis,effie.proto@pxpstudios.com,PXP Studios,Ad Agency,1,"Wed, 05 Feb 2025 08:26:25 -0800",invalid
+Pending,Doreen Jones,doreen.jones@pxpstudios.com,PXP Studios,Ad Agency,1,"Wed, 05 Feb 2025 16:15:15 +0000",invalid
+Pending,Rachel Saxon,rachel.saxon@omc.com,Omnicom,Ad Agency,1,"Tue, 04 Feb 2025 21:34:34 +0000",invalid
+Pending,Nhughlett,nhughlett@mmb580.com,Mmb580,Other / Unknown,1,"Mon, 03 Feb 2025 21:36:00 +0000",invalid
+Pending,Laura Beck,laura.beck@specialgroup.com,Special,Other / Unknown,1,"Mon, 03 Feb 2025 12:56:46 -0800",invalid
+Pending,Celestina Lucero,celestina.lucero@omc.com,Omnicom,Ad Agency,1,"Thu, 23 Jan 2025 09:59:07 -0800",invalid
+Pending,Will Yates,will.yates@gravityglobal.com,Gravity Global,Ad Agency,1,"Wed, 22 Jan 2025 16:59:01 +0000",invalid
+Pending,Kathy,kathy@eplustalent.com,Eplustalent,Other / Unknown,1,"Wed, 15 Jan 2025 09:34:17 -0800",invalid
+Pending,Amanda,amanda@rsatalent.net,RSA Talent,Talent Agency / Casting,1,"Mon, 09 Dec 2024 16:17:07 -0800",invalid
+Pending,Debbie McIlhany,debbie.mcilhany@omc.com,Omnicom,Ad Agency,1,"Tue, 15 Oct 2024 21:31:46 +0000",invalid
+Pending,Mary Kay O'Connor,marykay@nvtalent.com,Nvtalent,Other / Unknown,1,"Tue, 01 Oct 2024 19:30:41 +0000",invalid
+Pending,Lara Drew,lara.drew@globalservs.com,Globalservs,Other / Unknown,1,"Fri, 27 Sep 2024 20:52:19 +0000",invalid
+Pending,Mary Cheney,mary.cheney@highdiveus.com,Highdive,Ad Agency,1,"Fri, 27 Sep 2024 18:14:25 +0000",invalid
+Pending,Samantha,samantha@beartists.com,Beartists,Talent Agency / Casting,1,"Thu, 26 Sep 2024 21:28:57 +0000",invalid
+Pending,Jazmin,jazmin@eristalentagency.com,Eristalent,Talent Agency / Casting,1,"Thu, 26 Sep 2024 20:41:24 +0000",invalid
+Pending,Suzanne Kohler,suzanne.kohler@ddb.com,DDB,Ad Agency,1,"Thu, 26 Sep 2024 09:25:06 -0700",invalid
+Pending,Jonathan Wachala,jonathan.wachala@gsdm.com,GSD&M,Ad Agency,1,"Thu, 26 Sep 2024 15:00:09 +0000",invalid
+Pending,Craig Clark,cclark@c-k.com,Cramer-Krasselt,Ad Agency,1,"Wed, 25 Sep 2024 23:50:58 +0000",invalid
+Pending,Fredric Altman,faltman@us.square-enix.com,Us,Other / Unknown,1,"Wed, 25 Sep 2024 20:49:12 +0000",invalid
+Pending,Zoe Quadflieg,zoe.quadflieg@pxpstudios.com,PXP Studios,Ad Agency,1,"Wed, 25 Sep 2024 19:51:37 +0000",invalid
+Pending,Allison Fasano,allison.fasano@omc.com,Omnicom,Ad Agency,1,"Tue, 24 Sep 2024 22:00:10 +0000",invalid
+Pending,Annie Medina,annie@movieworknow.com,Movieworknow,Other / Unknown,1,"Tue, 13 Aug 2024 00:05:21 +0000",invalid
+Pending,Jonny Weiss,jonny.weiss@adamandevenyc.com,Adamandevenyc,Other / Unknown,1,"Thu, 08 Aug 2024 16:40:24 +0000",invalid
+Pending,Elayna Lyon,elayna.lyon@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 22:46:12 +0000",invalid
+Pending,Jack Cutler,jack.cutler@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 21:59:00 +0000",invalid
+Pending,Max Watkins,max.watkins@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 20:49:01 +0000",invalid
+Pending,Parker Barnum,parker@allyourten6.com,Allyourten6,Other / Unknown,1,"Tue, 06 Aug 2024 20:38:41 +0000",invalid
+Pending,Vienna Maglio,vienna.maglio@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 20:02:33 +0000",invalid
+Pending,Andy Truong,andy.truong@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 19:58:32 +0000",invalid
+Pending,Linnea Goodman,linnea.goodman@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 19:54:26 +0000",invalid
+Pending,Juan Davila Morris,juan.davilamorris@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 06 Aug 2024 19:48:19 +0000",invalid
+Pending,Lea Hamilton,lea_hamilton@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Tue, 06 Aug 2024 19:38:33 +0000",invalid
+Pending,Tanille Day-Walker,tanille.day@mcj.co,McGarrah Jessee,Ad Agency,1,"Wed, 31 Jul 2024 10:11:29 -0700",invalid
+Pending,Stanton Hill,stanton.hill@batteryagency.com,Battery,Ad Agency,1,"Tue, 25 Jun 2024 09:14:27 -0700",invalid
+Pending,David Wong,david.wong@saatchi.com,Saatchi & Saatchi,Ad Agency,1,"Tue, 25 Jun 2024 08:56:02 -0700",invalid
+Pending,Maryam Ohebsion,maryam.ohebsion@saatchi.com,Saatchi & Saatchi,Ad Agency,1,"Tue, 25 Jun 2024 08:55:13 -0700",invalid
+Pending,Amanda Chau,amanda.chau@mcj.co,McGarrah Jessee,Ad Agency,1,"Tue, 25 Jun 2024 04:10:34 +0000",invalid
+Pending,Tara Westberg,twestberg@dieste.com,Dieste,Other / Unknown,1,"Thu, 25 Apr 2024 21:27:25 +0000",invalid
+Pending,Danielle Steck,danielle.steck@readysetrocket.com,Readysetrocket,Other / Unknown,1,"Mon, 25 Mar 2024 18:32:42 +0000",invalid
+Pending,Betsy Lugo,betsy@muros.co,Muros,Other / Unknown,1,"Mon, 25 Mar 2024 18:28:16 +0000",invalid
+Pending,Ivan Porras,iporras@wcia.com,Wcia,Other / Unknown,1,"Mon, 25 Mar 2024 18:15:52 +0000",invalid
+Pending,Serena Lignel,serena.lignel@energybbdo.com,Energybbdo,Ad Agency,1,"Mon, 25 Mar 2024 18:00:08 +0000",invalid
+Pending,Joan DiSalvo,joan.disalvo@leoburnett.com,Leoburnett,Other / Unknown,1,"Fri, 22 Mar 2024 23:45:31 +0000",invalid
+Pending,Valentina Proietti,valentina.proietti@wongdoody.com,WongDoody,Ad Agency,1,"Fri, 22 Mar 2024 23:19:30 +0000",invalid
+Pending,Rj Dralle,rj@theescapepodagency.com,The Escape Pod,Ad Agency,1,"Fri, 22 Mar 2024 22:27:38 +0000",invalid
+Pending,Patricia Gaglioni,patricia.gaglioni@wk.com,Wieden+Kennedy,Ad Agency,1,"Thu, 21 Mar 2024 18:10:48 +0000",invalid
+Pending,Andrea Ogunbadejo,andreaogunbadejo@eleveninc.com,Eleveninc,Other / Unknown,1,"Thu, 21 Mar 2024 18:03:24 +0000",invalid
+Pending,Colton Soref,colton@wearegradient.com,Wearegradient,Other / Unknown,1,"Thu, 21 Mar 2024 17:51:36 +0000",invalid
+Pending,Nicole Parara,nicole.parara@struck.com,Struck,Other / Unknown,1,"Thu, 21 Mar 2024 17:49:42 +0000",invalid
+Pending,Alex Kim,alex.kim@begrizzlee.com,Begrizzlee,Other / Unknown,1,"Tue, 09 Jan 2024 18:08:02 +0000",invalid
+Pending,Brian,brian.mallory@directv.com,DirecTV,Brand / Direct Client,1,"Fri, 17 Mar 2023 14:04:36 +0000",invalid
+Pending,Cesar Rodriguez,cesar_rodriguez@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Tue, 10 Jan 2023 11:41:33 -0800",invalid
+Pending,Caroline Cetner,caroline.cetner@ddb.com,DDB,Ad Agency,1,"Tue, 10 Jan 2023 11:37:36 -0800",invalid
+Pending,Caitlin Fenno,caitlin.fenno@wellsfargo.com,Wellsfargo,Brand / Direct Client,1,"Tue, 10 Jan 2023 11:33:08 -0800",invalid
+Pending,Brian,brian@theescapepodagency.com,The Escape Pod,Ad Agency,1,"Tue, 10 Jan 2023 11:23:47 -0800",invalid
+Pending,Danielle Ivicic,danielle.ivicic@22squared.com,22Squared,Other / Unknown,1,"Tue, 14 Jun 2022 10:07:19 -0700",invalid
+Pending,,v.ortiz@latinworks.com,Latinworks,Other / Unknown,1,"Mon, 13 Jun 2022 09:43:52 -0700",invalid
+Pending,Dana Willis,dana.willis@leoburnett.com,Leoburnett,Other / Unknown,1,"Thu, 02 Jun 2022 12:36:40 -0700",invalid
+Pending,Yvette Gomez,yvette.gomez@razorfish.com,Razorfish,Ad Agency,1,"Mon, 02 May 2022 11:05:16 -0700",invalid
+Pending,Liz Nault,lnault@closerlook.com,Closerlook,Other / Unknown,1,"Thu, 24 Mar 2022 12:55:54 -0700",invalid
+Pending,Joey Jeter,joey.jeter@mekanism.com,Mekanism,Ad Agency,1,"Thu, 24 Mar 2022 11:12:09 -0700",invalid
+Pending,Felix Messina,felix.messina@mekanism.com,Mekanism,Ad Agency,1,"Thu, 24 Mar 2022 11:11:42 -0700",invalid
+Pending,Tianw,tianw@johannesleonardo.com,Johannesleonardo,Other / Unknown,1,"Thu, 24 Mar 2022 10:59:53 -0700",invalid
+Pending,Gracek,gracek@johannesleonardo.com,Johannesleonardo,Other / Unknown,1,"Thu, 24 Mar 2022 10:59:41 -0700",invalid
+Pending,Andreaj,andreaj@johannesleonardo.com,Johannesleonardo,Other / Unknown,1,"Thu, 24 Mar 2022 10:59:30 -0700",invalid
+Pending,Haleyh,haleyh@johannesleonardo.com,Johannesleonardo,Other / Unknown,1,"Thu, 24 Mar 2022 10:59:03 -0700",invalid
+Pending,Brittany Mcdonald,brittany.mcdonald@jayww.com,Jayww,Other / Unknown,1,"Thu, 24 Mar 2022 10:58:41 -0700",invalid
+Pending,Ethan,ethan@goodbrother.nyc,Goodbrother,Other / Unknown,1,"Thu, 24 Mar 2022 10:47:16 -0700",invalid
+Pending,Robert Valdes,robert.valdes@figagency.com,Fig,Other / Unknown,1,"Thu, 24 Mar 2022 10:41:32 -0700",invalid
+Pending,Ben Grube,ben.grube@figagency.com,Fig,Other / Unknown,1,"Thu, 24 Mar 2022 10:41:15 -0700",invalid
+Pending,Ross Fletcher,ross.fletcher@figagency.com,Fig,Other / Unknown,1,"Thu, 24 Mar 2022 10:41:01 -0700",invalid
+Pending,Pieterjan,pieterjan@chandeliercreative.com,Chandelier,Other / Unknown,1,"Thu, 24 Mar 2022 10:20:36 -0700",invalid
+Pending,Jpace,jpace@brodeur.com,Brodeur,Other / Unknown,1,"Thu, 24 Mar 2022 10:19:49 -0700",invalid
+Pending,Peter Derby,peter.derby@b-reel.com,B Reel,Other / Unknown,1,"Thu, 24 Mar 2022 10:17:01 -0700",invalid
+Pending,Magda Tomaszewski,magda.tomaszewski@b-reel.com,B Reel,Other / Unknown,1,"Thu, 24 Mar 2022 10:16:51 -0700",invalid
+Pending,Rey Martinez,rey.martinez@atmosphereproximity.com,Atmosphereproximity,Other / Unknown,1,"Thu, 24 Mar 2022 10:15:15 -0700",invalid
+Pending,Dtorre,dtorre@arn.com,Arn,Other / Unknown,1,"Thu, 24 Mar 2022 10:13:32 -0700",invalid
+Pending,Mconner,mconner@arn.com,Arn,Other / Unknown,1,"Thu, 24 Mar 2022 10:13:16 -0700",invalid
+Pending,Lvasquez,lvasquez@anomaly.com,Anomaly,Ad Agency,1,"Thu, 24 Mar 2022 10:11:20 -0700",invalid
+Pending,Cutsch,cutsch@anomaly.com,Anomaly,Ad Agency,1,"Thu, 24 Mar 2022 10:10:43 -0700",invalid
+Pending,Maria,maria@velocityagency.com,Velocity,Other / Unknown,1,"Wed, 23 Mar 2022 12:04:21 -0700",invalid
+Pending,Lauren Stupin,lauren.stupin@wearetraffik.com,Wearetraffik,Other / Unknown,1,"Wed, 23 Mar 2022 12:02:19 -0700",invalid
+Pending,Marce Sellas,marce.sellas@wearetraffik.com,Wearetraffik,Other / Unknown,1,"Wed, 23 Mar 2022 12:02:05 -0700",invalid
+Pending,,anne-maried@stuncreative.com,Stun,Other / Unknown,1,"Wed, 23 Mar 2022 12:00:11 -0700",invalid
+Pending,Codycrawford,codycrawford@davisellen.com,Davisellen,Other / Unknown,1,"Wed, 23 Mar 2022 11:30:44 -0700",invalid
+Pending,Sana Bawania,sana.bawania@blk-ops.com,Blk Ops,Other / Unknown,1,"Wed, 23 Mar 2022 11:25:01 -0700",invalid
+Pending,Patti Bott,patti.bott@bbdo.com,BBDO,Ad Agency,1,"Wed, 23 Mar 2022 10:48:59 -0700",invalid
+Pending,Amy Finn Welch,amy.finn-welch@mekanism.com,Mekanism,Ad Agency,1,"Tue, 22 Mar 2022 10:31:09 -0700",invalid
+Pending,Cshipman,cshipman@clsstrategies.com,Clsstrategies,Other / Unknown,1,"Tue, 22 Mar 2022 09:18:20 -0700",invalid
+Pending,Sydney,sydney@cactusinc.com,Cactus,Ad Agency,1,"Wed, 02 Mar 2022 10:01:40 -0800",invalid
+Pending,Mariap,mariap@johannesleonardo.com,Johannesleonardo,Other / Unknown,1,"Tue, 15 Feb 2022 10:43:35 -0800",invalid
+Pending,Jpennington,jpennington@anomaly.com,Anomaly,Ad Agency,1,"Tue, 15 Feb 2022 10:29:27 -0800",invalid
+Pending,Bberg,bberg@periscope.com,Periscope,Other / Unknown,1,"Tue, 15 Feb 2022 10:25:52 -0800",invalid
+Pending,Kmoss,kmoss@periscope.com,Periscope,Other / Unknown,1,"Tue, 15 Feb 2022 10:25:33 -0800",invalid
+Pending,Humberto Rodriguez,humberto.rodriguez@casanova.com,Casanova,Other / Unknown,1,"Tue, 15 Feb 2022 10:09:43 -0800",invalid
+Pending,Shiva,shiva@soundcircus.nl,Soundcircus,Other / Unknown,1,"Mon, 24 Jan 2022 17:52:35 +0000",invalid
+Pending,Christine,christine@artsandletters.xyz,Arts & Letters,Ad Agency,1,"Wed, 12 Jan 2022 17:37:05 +0000",invalid
+Pending,Bryan Haney,bhaney@vsapartners.com,Vsapartners,Other / Unknown,1,"Mon, 08 Nov 2021 21:28:07 +0000",invalid
+Pending,Josh Peterson,jpeterson@vsapartners.com,Vsapartners,Other / Unknown,1,"Mon, 08 Nov 2021 21:28:07 +0000",invalid
+Pending,Taylor Cairns,tcairns@vsapartners.com,Vsapartners,Other / Unknown,1,"Mon, 08 Nov 2021 21:28:07 +0000",invalid
+Pending,Mlutz,mlutz@specialartists.com,Specialartists,Other / Unknown,1,"Wed, 03 Nov 2021 10:43:54 -0700",invalid
+Pending,Deborah McCauley-Ellis,deborah.mccauley-ellis@leoburnett.com,Leoburnett,Other / Unknown,1,"Mon, 04 Oct 2021 11:07:29 -0700",invalid
+Pending,Amy Hurt,amy.hurt@gsdm.com,GSD&M,Ad Agency,1,"Wed, 21 Jul 2021 08:02:00 -0700",invalid
+Pending,Julia,julia.2.hinman@sprint.com,Sprint,Other / Unknown,1,"Tue, 06 Jul 2021 12:43:46 -0400",invalid
+Pending,Kevin,kevin.2.porter@sprint.com,Sprint,Other / Unknown,1,"Tue, 06 Jul 2021 12:43:46 -0400",invalid
+Pending,Matt Cervantes,matt.cervantes@gsdm.com,GSD&M,Ad Agency,1,"Mon, 07 Jun 2021 11:03:28 -0700",invalid
+Pending,Taylor Walters,twalters@tombras.com,Tombras,Other / Unknown,1,"Thu, 29 Apr 2021 10:05:05 -0700",invalid
+Pending,Erin Garai,erin@k2ocreative.com,K2O,Other / Unknown,1,"Wed, 31 Mar 2021 09:07:12 -0700",invalid
+Pending,Bailey Hayman,bailey@ddoagency.com,DDO Artists,Talent Agency / Casting,1,"Tue, 30 Mar 2021 15:09:49 -0700",invalid
+Pending,Klenthe,klenthe@themarketingarm.com,The Marketing Arm,Ad Agency,1,"Thu, 25 Mar 2021 12:04:25 -0700",invalid
+Pending,Keegan Monti-Kewley,keegan.monti-kewley@a3artistsagency.com,A3Artists,Other / Unknown,1,"Thu, 25 Mar 2021 11:58:30 -0700",invalid
+Pending,John arlenethornton,john@arlenethornton.com,Arlenethornton,Talent Agency / Casting,1,"Tue, 23 Mar 2021 17:27:44 -0700",invalid
+Pending,Luanne,luanne@tgmdtalent.com,Tgmdtalent,Other / Unknown,1,"Wed, 17 Mar 2021 10:09:47 -0700",invalid
+Pending,Ccooper,ccooper@spotnyc.com,Spotnyc,Other / Unknown,1,"Tue, 16 Mar 2021 10:17:19 -0700",invalid
+Pending,Pbillman,pbillman@anomaly.com,Anomaly,Ad Agency,1,"Tue, 16 Mar 2021 09:03:16 -0700",invalid
+Pending,James Murray,james.murray@a3artistsagency.com,A3Artists,Other / Unknown,1,"Mon, 15 Mar 2021 13:59:30 -0700",invalid
+Pending,Ryan Sierra,ryan.sierra@teamone-usa.com,Team One,Ad Agency,1,"Fri, 12 Mar 2021 10:40:09 -0800",invalid
+Pending,Lizette Mazon,lizette.mazon@teamone-usa.com,Team One,Ad Agency,1,"Fri, 12 Mar 2021 10:39:43 -0800",invalid
+Pending,Jorge Acosta,jorge.acosta@teamone-usa.com,Team One,Ad Agency,1,"Fri, 12 Mar 2021 10:39:27 -0800",invalid
+Pending,Claire Allman,claire.allman@teamone-usa.com,Team One,Ad Agency,1,"Fri, 12 Mar 2021 10:38:29 -0800",invalid
+Pending,Jim Brattin,jim.brattin@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Fri, 12 Mar 2021 10:37:56 -0800",invalid
+Pending,Kaitlin Moore,kaitlin.moore@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Fri, 12 Mar 2021 10:36:31 -0800",invalid
+Pending,Erika Buder,erika.buder@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Fri, 12 Mar 2021 10:36:12 -0800",invalid
+Pending,Alex Desantis,alex.desantis@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Fri, 12 Mar 2021 10:35:57 -0800",invalid
+Pending,Joe Hemp,joe.hemp@siltanen.com,Siltanen,Other / Unknown,1,"Fri, 12 Mar 2021 10:35:40 -0800",invalid
+Pending,Kenia Calderon,kenia.calderon@siltanen.com,Siltanen,Other / Unknown,1,"Fri, 12 Mar 2021 10:35:29 -0800",invalid
+Pending,Marina Korzon,marina.korzon@saatchila.com,Saatchila,Other / Unknown,1,"Fri, 12 Mar 2021 10:29:33 -0800",invalid
+Pending,Tiffany Lam,tiffany.lam@omelet.com,Omelet,Other / Unknown,1,"Fri, 12 Mar 2021 10:25:37 -0800",invalid
+Pending,Brianna Lohr,brianna.lohr@omelet.com,Omelet,Other / Unknown,1,"Fri, 12 Mar 2021 10:24:50 -0800",invalid
+Pending,Joshua Smutko,joshua.smutko@omelet.com,Omelet,Other / Unknown,1,"Fri, 12 Mar 2021 10:24:27 -0800",invalid
+Pending,Brianna Mandell,brianna.mandell@konnectpr.com,Konnectpr,Other / Unknown,1,"Fri, 12 Mar 2021 10:17:40 -0800",invalid
+Pending,Amanda Daucher,amanda.daucher@konnectpr.com,Konnectpr,Other / Unknown,1,"Fri, 12 Mar 2021 10:17:23 -0800",invalid
+Pending,Jarrett Faris,jarrett.faris@wearehwh.com,Wearehwh,Other / Unknown,1,"Fri, 12 Mar 2021 10:10:53 -0800",invalid
+Pending,Mike,mike@helpgood.com,Helpgood,Ad Agency,1,"Fri, 12 Mar 2021 10:09:30 -0800",invalid
+Pending,Daniela Ruiz,daniela.ruiz@giantspoon.com,Giantspoon,Other / Unknown,1,"Fri, 12 Mar 2021 10:07:06 -0800",invalid
+Pending,Kbecsi,kbecsi@gallegosunited.com,Gallegosunited,Other / Unknown,1,"Fri, 12 Mar 2021 10:05:45 -0800",invalid
+Pending,Kevans,kevans@ehy.com,Ehy,Other / Unknown,1,"Fri, 12 Mar 2021 10:04:24 -0800",invalid
+Pending,Justine Kleeman,justine.kleeman@dng.com,David & Goliath,Ad Agency,1,"Fri, 12 Mar 2021 10:02:53 -0800",invalid
+Pending,Kara Pierce,kara.pierce@dng.com,David & Goliath,Ad Agency,1,"Fri, 12 Mar 2021 10:02:36 -0800",invalid
+Pending,Danielle Watchman,danielle.watchman@dng.com,David & Goliath,Ad Agency,1,"Fri, 12 Mar 2021 10:01:24 -0800",invalid
+Pending,Emily Hoskins,emily.hoskins@designory.com,Designory,Other / Unknown,1,"Fri, 12 Mar 2021 09:57:43 -0800",invalid
+Pending,Dianna,dianna@createadvertising.com,Create,Other / Unknown,1,"Fri, 12 Mar 2021 09:52:41 -0800",invalid
+Pending,Monika Torres,monika.torres@conill.com,Conill,Other / Unknown,1,"Fri, 12 Mar 2021 09:52:18 -0800",invalid
+Pending,Tricia Barreiro,tricia.barreiro@conill.com,Conill,Other / Unknown,1,"Fri, 12 Mar 2021 09:51:58 -0800",invalid
+Pending,Karina Illescas,karina.illescas@conill.com,Conill,Other / Unknown,1,"Fri, 12 Mar 2021 09:51:40 -0800",invalid
+Pending,Danny Nouri,danny.nouri@bartleboglehegarty.com,Bartleboglehegarty,Other / Unknown,1,"Fri, 12 Mar 2021 09:32:32 -0800",invalid
+Pending,Marissa Mackel,marissa.mackel@180la.com,180La,Other / Unknown,1,"Fri, 12 Mar 2021 09:23:51 -0800",invalid
+Pending,Connery Obeng,connery.obeng@wk.com,Wieden+Kennedy,Ad Agency,1,"Thu, 11 Mar 2021 13:56:01 -0800",invalid
+Pending,Sasha White,sasha.white@venablesbell.com,Venablesbell,Other / Unknown,1,"Thu, 11 Mar 2021 13:54:36 -0800",invalid
+Pending,Reginald,reginald@storefrontpolitical.com,Storefrontpolitical,Other / Unknown,1,"Thu, 11 Mar 2021 13:53:08 -0800",invalid
+Pending,Aimee Bosley,aimee.bosley@thisisheat.com,Thisisheat,Other / Unknown,1,"Thu, 11 Mar 2021 13:49:12 -0800",invalid
+Pending,Kimberly Bicknell,kimberly.bicknell@havas.com,Havas,Ad Agency,1,"Thu, 11 Mar 2021 13:48:50 -0800",invalid
+Pending,Rhanks,rhanks@handlepartners.com,Handlepartners,Other / Unknown,1,"Thu, 11 Mar 2021 13:47:24 -0800",invalid
+Pending,Samantha Tarde,samantha_tarde@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Thu, 11 Mar 2021 13:45:54 -0800",invalid
+Pending,Dominique Farrell,dominique_farrell@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Thu, 11 Mar 2021 13:45:22 -0800",invalid
+Pending,Charlotte Mcconnell,charlotte_mcconnell@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Thu, 11 Mar 2021 13:43:56 -0800",invalid
+Pending,Olaitan Oladipo,olaitan_oladipo@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Thu, 11 Mar 2021 13:43:27 -0800",invalid
+Pending,Heather Bernard,heather.bernard@ddb.com,DDB,Ad Agency,1,"Thu, 11 Mar 2021 13:26:07 -0800",invalid
+Pending,Sam Petersson,sam.petersson@ddb.com,DDB,Ad Agency,1,"Thu, 11 Mar 2021 13:25:53 -0800",invalid
+Pending,Michael Huntley,michael.huntley@cutwatersf.com,Cutwatersf,Other / Unknown,1,"Thu, 11 Mar 2021 13:25:06 -0800",invalid
+Pending,Teresa,teresa@vivemarketing.com,Vive,Other / Unknown,1,"Thu, 11 Mar 2021 10:38:18 -0800",invalid
+Pending,Kkempen,kkempen@writingbydesignllc.com,Writingbydesignllc,Other / Unknown,1,"Thu, 11 Mar 2021 10:36:36 -0800",invalid
+Pending,,dickinson-hilary@trefoilgroup.com,Trefoil,Other / Unknown,1,"Thu, 11 Mar 2021 10:34:00 -0800",invalid
+Pending,,schroeder-jill@trefoilgroup.com,Trefoil,Other / Unknown,1,"Thu, 11 Mar 2021 10:33:48 -0800",invalid
+Pending,,abadie-nicholas@trefoilgroup.com,Trefoil,Other / Unknown,1,"Thu, 11 Mar 2021 10:33:35 -0800",invalid
+Pending,Dtonneas,dtonneas@epiccreative.com,Epic,Other / Unknown,1,"Thu, 11 Mar 2021 10:32:13 -0800",invalid
+Pending,Awhite,awhite@planetpropaganda.com,Planetpropaganda,Other / Unknown,1,"Thu, 11 Mar 2021 10:30:30 -0800",invalid
+Pending,Bdelphey,bdelphey@planetpropaganda.com,Planetpropaganda,Other / Unknown,1,"Thu, 11 Mar 2021 10:30:14 -0800",invalid
+Pending,Jerry,jerry@cmredge.com,Cmredge,Other / Unknown,1,"Thu, 11 Mar 2021 10:28:04 -0800",invalid
+Pending,Klax,klax@imaginasium.com,Imaginasium,Other / Unknown,1,"Thu, 11 Mar 2021 10:26:46 -0800",invalid
+Pending,Mbarnett,mbarnett@mkr.agency,Mkr,Other / Unknown,1,"Thu, 11 Mar 2021 10:20:07 -0800",invalid
+Pending,Johnwf,johnwf@stirstuff.com,Stirstuff,Other / Unknown,1,"Thu, 11 Mar 2021 10:11:53 -0800",invalid
+Pending,Sclementi,sclementi@jigsawllc.com,Jigsawllc,Other / Unknown,1,"Thu, 11 Mar 2021 10:10:33 -0800",invalid
+Pending,Loreta Dilaveri,loreta.dilaveri@bvk.com,Bvk,Other / Unknown,1,"Thu, 11 Mar 2021 10:08:11 -0800",invalid
+Pending,Cbeckwith,cbeckwith@bader-rutter.com,Bader Rutter,Other / Unknown,1,"Thu, 11 Mar 2021 10:04:37 -0800",invalid
+Pending,Lisa Gildehaus,lisa.gildehaus@t-mobile.com,T-Mobile,Brand / Direct Client,1,"Wed, 10 Mar 2021 11:16:08 -0800",invalid
+Pending,Joel Jeffords,joel.jeffords@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:14:21 -0800",invalid
+Pending,Tom Goodale,tom.goodale@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:14:04 -0800",invalid
+Pending,Melanie Eckert,melanie.eckert@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:13:51 -0800",invalid
+Pending,Lisa Buckley,lisa.buckley@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:13:30 -0800",invalid
+Pending,Kasey Ferlic,kasey.ferlic@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:13:13 -0800",invalid
+Pending,Tariq Williams,tariq.williams@publicisna.com,Publicisna,Other / Unknown,1,"Wed, 10 Mar 2021 11:12:57 -0800",invalid
+Pending,Jjohnson,jjohnson@copacino.com,Copacino,Other / Unknown,1,"Wed, 10 Mar 2021 11:10:34 -0800",invalid
+Pending,Aoliver,aoliver@copacino.com,Copacino,Other / Unknown,1,"Wed, 10 Mar 2021 11:10:21 -0800",invalid
+Pending,Aball,aball@cplusc.com,Cplusc,Other / Unknown,1,"Wed, 10 Mar 2021 11:09:14 -0800",invalid
+Pending,Ablunt,ablunt@periscope.com,Periscope,Other / Unknown,1,"Wed, 10 Mar 2021 10:44:31 -0800",invalid
+Pending,Taleah Perfetti,taleah.perfetti@space150.com,Space150,Other / Unknown,1,"Wed, 10 Mar 2021 10:38:54 -0800",invalid
+Pending,Apeterson,apeterson@prestonkelly.com,Prestonkelly,Other / Unknown,1,"Wed, 10 Mar 2021 10:35:41 -0800",invalid
+Pending,Eric,eric@leebranding.com,Leebranding,Other / Unknown,1,"Wed, 10 Mar 2021 10:30:58 -0800",invalid
+Pending,Kolter Ridge,kolter.ridge@fallon.com,Fallon,Ad Agency,1,"Wed, 10 Mar 2021 10:15:36 -0800",invalid
+Pending,Jbjorgen,jbjorgen@broadheadco.com,Broadheadco,Other / Unknown,1,"Wed, 10 Mar 2021 10:01:08 -0800",invalid
+Pending,Matt Hughes,matt.hughes@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 12:06:12 -0800",invalid
+Pending,Sarah Sweeney,sarah.sweeney@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 12:03:04 -0800",invalid
+Pending,Amanda Claire,amanda.claire@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 12:02:44 -0800",invalid
+Pending,Katie Mccain,katie.mccain@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:52:34 -0800",invalid
+Pending,Amy Berriochoa,amy.berriochoa@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:52:12 -0800",invalid
+Pending,Austin Shore,austin.shore@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:51:35 -0800",invalid
+Pending,Cole Davenport,cole.davenport@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:50:13 -0800",invalid
+Pending,Brian Cook,brian.cook@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:49:58 -0800",invalid
+Pending,Emily Kahn,emily.kahn@wk.com,Wieden+Kennedy,Ad Agency,1,"Tue, 09 Mar 2021 11:49:28 -0800",invalid
+Pending,Jklumas,jklumas@theviaagency.com,Thevia,Other / Unknown,1,"Tue, 09 Mar 2021 11:17:44 -0800",invalid
+Pending,Rob Rosenthal,rob.rosenthal@pollinate.com,Pollinate,Other / Unknown,1,"Tue, 09 Mar 2021 11:15:26 -0800",invalid
+Pending,Bob Vandehey,bob.vandehey@pollinate.com,Pollinate,Other / Unknown,1,"Tue, 09 Mar 2021 11:15:08 -0800",invalid
+Pending,Molly,molly@leoketel.com,Leoketel,Other / Unknown,1,"Tue, 09 Mar 2021 11:13:23 -0800",invalid
+Pending,Jerry,jerry@leoketel.com,Leoketel,Other / Unknown,1,"Tue, 09 Mar 2021 11:13:05 -0800",invalid
+Pending,Shelby,shelby@coateskokes.com,Coateskokes,Other / Unknown,1,"Tue, 09 Mar 2021 10:55:53 -0800",invalid
+Pending,Mikki,mikki@cincodesign.com,Cincodesign,Other / Unknown,1,"Tue, 09 Mar 2021 10:53:04 -0800",invalid
+Pending,Araynak,araynak@bpninc.com,Bpninc,Other / Unknown,1,"Tue, 09 Mar 2021 10:51:56 -0800",invalid
+Pending,Rthompson,rthompson@srg.com,Srg,Other / Unknown,1,"Fri, 05 Mar 2021 10:23:33 -0800",invalid
+Pending,Acampbell,acampbell@heymade.com,Heymade,Other / Unknown,1,"Fri, 05 Mar 2021 10:22:39 -0800",invalid
+Pending,Julie,julie@cactusinc.com,Cactus,Ad Agency,1,"Fri, 05 Mar 2021 10:19:37 -0800",invalid
+Pending,Meaghan Mckeon,meaghan.mckeon@tracylocke.com,Tracylocke,Other / Unknown,1,"Fri, 05 Mar 2021 10:17:01 -0800",invalid
+Pending,Nicole Madeira,nicole.madeira@tracylocke.com,Tracylocke,Other / Unknown,1,"Fri, 05 Mar 2021 10:16:39 -0800",invalid
+Pending,Hwatson,hwatson@themarketingarm.com,The Marketing Arm,Ad Agency,1,"Fri, 05 Mar 2021 10:15:24 -0800",invalid
+Pending,Brent,brent@theinfiniteagency.com,Theinfinite,Other / Unknown,1,"Fri, 05 Mar 2021 10:14:09 -0800",invalid
+Pending,Julia Gibson,julia.gibson@reelfx.com,Reelfx,Other / Unknown,1,"Fri, 05 Mar 2021 10:13:32 -0800",invalid
+Pending,Tpacheco,tpacheco@dieste.com,Dieste,Other / Unknown,1,"Fri, 05 Mar 2021 10:08:52 -0800",invalid
+Pending,Cwollenstein,cwollenstein@dieste.com,Dieste,Other / Unknown,1,"Fri, 05 Mar 2021 10:08:37 -0800",invalid
+Pending,Ori,ori@31000ft.net,31000Ft,Other / Unknown,1,"Fri, 05 Mar 2021 10:07:03 -0800",invalid
+Pending,Brian Woolbright,brian.woolbright@ckmk.com,Ckmk,Other / Unknown,1,"Thu, 04 Mar 2021 10:43:06 -0800",invalid
+Pending,Sarah Shockley,sarah.shockley@ckmk.com,Ckmk,Other / Unknown,1,"Thu, 04 Mar 2021 10:42:49 -0800",invalid
+Pending,John Gualdoni,john.gualdoni@ckmk.com,Ckmk,Other / Unknown,1,"Thu, 04 Mar 2021 10:42:32 -0800",invalid
+Pending,Leslie Bogosian,leslie.bogosian@ckmk.com,Ckmk,Other / Unknown,1,"Thu, 04 Mar 2021 10:42:15 -0800",invalid
+Pending,Ltharp,ltharp@meringcarson.com,Meringcarson,Other / Unknown,1,"Wed, 03 Mar 2021 11:43:33 -0800",invalid
+Pending,Ybarriga,ybarriga@toth.com,Toth,Other / Unknown,1,"Wed, 03 Mar 2021 10:09:00 -0800",invalid
+Pending,Emily Collins,emily.collins@moxieusa.com,Moxieusa,Other / Unknown,1,"Wed, 03 Mar 2021 09:38:25 -0800",invalid
+Pending,Stacey Coker,stacey.coker@bbdo.com,BBDO,Ad Agency,1,"Wed, 03 Mar 2021 09:35:35 -0800",invalid
+Pending,Reid Howard,reid.howard@bbdo.com,BBDO,Ad Agency,1,"Wed, 03 Mar 2021 09:34:41 -0800",invalid
+Pending,Patrick Clarici,patrick.clarici@22squared.com,22Squared,Other / Unknown,1,"Wed, 03 Mar 2021 09:32:13 -0800",invalid
+Pending,Lwilliams,lwilliams@droga5.com,Droga5,Other / Unknown,1,"Wed, 03 Feb 2021 18:27:49 +0000",invalid
+Pending,Avevang,avevang@mergeworld.com,Mergeworld,Other / Unknown,1,"Wed, 13 Jan 2021 20:59:47 +0000",invalid
+Pending,Nora,nora@popskullchicago.com,Popskullchicago,Other / Unknown,1,"Wed, 13 Jan 2021 17:58:59 +0000",invalid
+Pending,Cathy Looze,cathy.looze@affirmagency.com,Affirm,Other / Unknown,1,"Fri, 08 Jan 2021 17:16:06 +0000",invalid
+Pending,Alex,alex@nelsonschmidt.com,Nelsonschmidt,Other / Unknown,1,"Fri, 08 Jan 2021 17:01:16 +0000",invalid
+Pending,Aspradley,aspradley@uwginc.com,Uwginc,Other / Unknown,1,"Tue, 27 Oct 2020 10:41:21 -0700",invalid
+Pending,Lnewton,lnewton@uwginc.com,Uwginc,Other / Unknown,1,"Tue, 27 Oct 2020 10:40:54 -0700",invalid
+Pending,Philinese Kirkwood,philinese.kirkwood@translationllc.com,Translationllc,Other / Unknown,1,"Tue, 27 Oct 2020 10:40:25 -0700",invalid
+Pending,Melanie Baublis,melanie.baublis@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 27 Oct 2020 10:38:12 -0700",invalid
+Pending,Victoria Krueger,victoria.krueger@nissanunited.com,Nissanunited,Other / Unknown,1,"Tue, 27 Oct 2020 10:37:59 -0700",invalid
+Pending,Melissa Recine,melissa.recine@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 27 Oct 2020 10:36:48 -0700",invalid
+Pending,Ruganzu Howard,ruganzu.howard@tbwachiat.com,TBWA\Chiat\Day,Ad Agency,1,"Tue, 27 Oct 2020 10:34:52 -0700",invalid
+Pending,Bconley,bconley@sullivannyc.com,Sullivannyc,Other / Unknown,1,"Tue, 27 Oct 2020 10:33:27 -0700",invalid
+Pending,Diane Burton,diane.burton@saatchi.com,Saatchi & Saatchi,Ad Agency,1,"Tue, 27 Oct 2020 10:32:14 -0700",invalid
+Pending,Jourdan Valdes,jourdan.valdes@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 10:00:46 -0700",invalid
+Pending,Suyun Wu,suyun.wu@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 10:00:33 -0700",invalid
+Pending,Shreya Patel,shreya.patel@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 10:00:19 -0700",invalid
+Pending,Sarah Ferrier,sarah.ferrier@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 10:00:07 -0700",invalid
+Pending,Haley Rankin,haley.rankin@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 09:59:27 -0700",invalid
+Pending,Ariana Ekonomou,ariana.ekonomou@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 09:59:16 -0700",invalid
+Pending,Danielle Dynan,danielle.dynan@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 09:59:03 -0700",invalid
+Pending,Rachel Tierney,rachel.tierney@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 09:58:45 -0700",invalid
+Pending,Dylan Mizner,dylan.mizner@publicisna.com,Publicisna,Other / Unknown,1,"Tue, 27 Oct 2020 09:58:30 -0700",invalid
+Pending,Rhea Phipps,rhea.phipps@ogilvh.com,Ogilvh,Other / Unknown,1,"Tue, 27 Oct 2020 09:55:50 -0700",invalid
+Pending,Danielle Knight,danielle.knight@egplusww.com,Egplusww,Other / Unknown,1,"Tue, 27 Oct 2020 09:48:10 -0700",invalid
+Pending,Rachel Kamrasch,rachel.kamrasch@egplusww.com,Egplusww,Other / Unknown,1,"Tue, 27 Oct 2020 09:47:59 -0700",invalid
+Pending,Lauren,lauren@nutmegcreative.com,Nutmeg,Other / Unknown,1,"Tue, 27 Oct 2020 09:47:48 -0700",invalid
+Pending,Anthony Lee,anthony.lee@mry.com,Mry,Other / Unknown,1,"Tue, 27 Oct 2020 09:47:07 -0700",invalid
+Pending,Lucy Scott,lucy.scott@mry.com,Mry,Other / Unknown,1,"Tue, 27 Oct 2020 09:46:52 -0700",invalid
+Pending,Dana Eisenberg,dana.eisenberg@mry.com,Mry,Other / Unknown,1,"Tue, 27 Oct 2020 09:46:39 -0700",invalid
+Pending,Sarah,sarah@mothernewyork.com,Mothernewyork,Other / Unknown,1,"Tue, 27 Oct 2020 09:45:53 -0700",invalid
+Pending,Tian,tian@mothernewyork.com,Mothernewyork,Other / Unknown,1,"Tue, 27 Oct 2020 09:45:36 -0700",invalid
+Pending,Melania,melania@mothernewyork.com,Mothernewyork,Other / Unknown,1,"Tue, 27 Oct 2020 09:45:22 -0700",invalid
+Pending,Jay,jay@mothernewyork.com,Mothernewyork,Other / Unknown,1,"Tue, 27 Oct 2020 09:45:07 -0700",invalid
+Pending,Katie,katie@mothernewyork.com,Mothernewyork,Other / Unknown,1,"Tue, 27 Oct 2020 09:44:45 -0700",invalid
+Pending,Cordelia Kipp,cordelia.kipp@mccannny.com,Mccannny,Other / Unknown,1,"Tue, 27 Oct 2020 09:37:58 -0700",invalid
+Pending,Laura Kellerman,laura.kellerman@mccannny.com,Mccannny,Other / Unknown,1,"Tue, 27 Oct 2020 09:37:26 -0700",invalid
+Pending,Isabel Conte,isabel.conte@mccannny.com,Mccannny,Other / Unknown,1,"Tue, 27 Oct 2020 09:37:13 -0700",invalid
+Pending,Loly Mcindoe,loly.mcindoe@mccannny.com,Mccannny,Other / Unknown,1,"Tue, 27 Oct 2020 09:36:59 -0700",invalid
+Pending,Allie Edwards,allie.edwards@ketchum.com,Ketchum,Other / Unknown,1,"Tue, 27 Oct 2020 09:33:18 -0700",invalid
+Pending,Nathaly Charria,nathaly_charria@gspsf.com,Goodby Silverstein & Partners,Ad Agency,1,"Tue, 27 Oct 2020 09:24:49 -0700",invalid
+Pending,Cneff,cneff@droga5.com,Droga5,Other / Unknown,1,"Tue, 27 Oct 2020 09:17:38 -0700",invalid
+Pending,Chagan,chagan@droga5.com,Droga5,Other / Unknown,1,"Tue, 27 Oct 2020 09:17:04 -0700",invalid
+Pending,Ilebovitz,ilebovitz@droga5.com,Droga5,Other / Unknown,1,"Tue, 27 Oct 2020 09:16:54 -0700",invalid
+Pending,Sarah Knowlton,sarah.knowlton@bbdo.com,BBDO,Ad Agency,1,"Tue, 27 Oct 2020 09:05:02 -0700",invalid
+Pending,Luke Butler,luke.butler@bbdo.com,BBDO,Ad Agency,1,"Tue, 27 Oct 2020 09:04:48 -0700",invalid
+Pending,Chava Quinn,chava.quinn@bbdo.com,BBDO,Ad Agency,1,"Tue, 27 Oct 2020 09:03:48 -0700",invalid
+Pending,Cameron Ferrell,cameron.ferrell@bartonmail.com,Bartonmail,Other / Unknown,1,"Tue, 27 Oct 2020 09:02:52 -0700",invalid
+Pending,Brooke Kaylor,brooke.kaylor@bartleboglehegarty.com,Bartleboglehegarty,Other / Unknown,1,"Tue, 27 Oct 2020 09:02:35 -0700",invalid
+Pending,Brooke Carter,brooke.carter@b-reel.com,B Reel,Other / Unknown,1,"Tue, 27 Oct 2020 09:01:48 -0700",invalid
+Pending,Claudia Brodsky,claudia.brodsky@b-reel.com,B Reel,Other / Unknown,1,"Tue, 27 Oct 2020 09:01:22 -0700",invalid
+Pending,Mcouch,mcouch@anomaly.com,Anomaly,Ad Agency,1,"Tue, 27 Oct 2020 08:59:45 -0700",invalid
+Pending,Julie Etheridge,julieetheridge@quickenloans.com,Quickenloans,Other / Unknown,1,"Fri, 23 Oct 2020 08:44:21 -0700",invalid
+Pending,Pmack,pmack@dpplus.com,Dpplus,Other / Unknown,1,"Fri, 23 Oct 2020 08:40:32 -0700",invalid
+Pending,Jordan Haiduk,jordan.haiduk@signaltheory.com,Signal Theory,Ad Agency,1,"Fri, 23 Oct 2020 08:35:29 -0700",invalid
+Pending,Enagorski,enagorski@williamswhittle.com,Williamswhittle,Other / Unknown,1,"Fri, 23 Oct 2020 08:29:54 -0700",invalid
+Pending,Dbrigham,dbrigham@srbcommunications.com,Srbcommunications,Other / Unknown,1,"Fri, 23 Oct 2020 08:28:47 -0700",invalid
+Pending,Eschwam,eschwam@putnampartners.net,Putnampartners,Other / Unknown,1,"Fri, 23 Oct 2020 08:26:14 -0700",invalid
+Pending,Serge Ohana,serge.ohana@gmmb.com,Gmmb,Ad Agency,1,"Fri, 23 Oct 2020 08:23:08 -0700",invalid
+Pending,Lindsey Seltzer,lindsey.seltzer@gmmb.com,Gmmb,Ad Agency,1,"Fri, 23 Oct 2020 08:21:43 -0700",invalid
+Pending,Marcela Hawkins,marcela.hawkins@gmmb.com,Gmmb,Ad Agency,1,"Fri, 23 Oct 2020 08:21:23 -0700",invalid
+Pending,Mbodenberger,mbodenberger@rtop.com,Rtop,Other / Unknown,1,"Thu, 22 Oct 2020 09:02:37 -0700",invalid
+Pending,Sbauduhin,sbauduhin@republicahavas.com,Republicahavas,Other / Unknown,1,"Thu, 22 Oct 2020 08:52:50 -0700",invalid
+Pending,Kallen,kallen@chewy.com,Chewy,Other / Unknown,1,"Thu, 22 Oct 2020 08:50:13 -0700",invalid
+Pending,John,john@seismicproductions.com,Seismic,Other / Unknown,1,"Thu, 24 Sep 2020 18:59:36 +0000",invalid
+Pending,Lee Nichnowitz,lee.nichnowitz@gsdm.com,GSD&M,Ad Agency,1,"Thu, 20 Aug 2020 16:07:39 +0000",invalid
+Pending,Taylor,taylor.nitta@thisisheat.com,Thisisheat,Other / Unknown,1,"Thu, 30 Jul 2020 15:44:29 +0000",invalid
+Pending,Abby Hinojosa,abby.hinojosa@gsdm.com,GSD&M,Ad Agency,1,"Mon, 27 Jul 2020 16:58:23 +0000",invalid
+Pending,Kduff,kduff@integer.com,Integer,Other / Unknown,1,"Mon, 27 Jul 2020 16:00:40 +0000",invalid
+Pending,Kathryn Lemke,kathryn.lemke@saatchi.com,Saatchi & Saatchi,Ad Agency,1,"Thu, 23 Jul 2020 16:53:19 +0000",invalid
+Pending,Julia Keane,julia.keane@mullenloweus.com,Mullenloweus,Other / Unknown,1,"Wed, 22 Jul 2020 17:35:03 +0000",invalid
+Pending,Mchester,mchester@kovelfuller.com,Kovelfuller,Other / Unknown,1,"Wed, 22 Jul 2020 17:33:31 +0000",invalid
+Pending,,jacquie.s@side.com,Side,Other / Unknown,1,"Wed, 01 Jul 2020 20:15:04 +0000",invalid
+Pending,Karla Macias,karla.macias@gsdm.com,GSD&M,Ad Agency,1,"Wed, 10 Jun 2020 17:00:36 +0000",invalid
+Pending,Lfraser,lfraser@laughlin.com,Laughlin,Other / Unknown,1,"Tue, 09 Jun 2020 09:22:38 -0700",invalid
+Pending,Zoe Grubbe,zoe.grubbe@ddb.com,DDB,Ad Agency,1,"Tue, 09 Jun 2020 09:19:12 -0700",invalid
+Pending,Nora Brosnan,nora.brosnan@abelsontaylor.com,Abelson Taylor,Ad Agency,1,"Tue, 09 Jun 2020 09:17:45 -0700",invalid
+Rejected,Joann Baker,joann.baker@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,3,"Tue, 09 Jun 2020 09:19:39 -0700",unknown
+Rejected,Christen James,christen.james@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,2,"Thu, 20 Feb 2025 17:46:31 +0000",unknown
+Rejected,Hayley Ward,hayley.ward@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 22 Mar 2022 10:28:25 -0700",unknown
+Rejected,Sara Martin,sara.martin@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 22 Mar 2022 10:28:02 -0700",unknown
+Rejected,Adam Hughes,adam.hughes@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:40:24 -0700",unknown
+Rejected,Melissa Tifrere,melissa.tifrere@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:40:14 -0700",unknown
+Rejected,Chance Bassett,chance.bassett@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:40:04 -0700",unknown
+Rejected,Lauren Lampasi,lauren.lampasi@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:39:52 -0700",unknown
+Rejected,Stacy Kay,stacy.kay@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:39:39 -0700",unknown
+Rejected,Steve Ford,steve.ford@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:39:28 -0700",unknown
+Rejected,Celia Everett,celia.everett@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:39:14 -0700",unknown
+Rejected,David Chester,david.chester@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:38:58 -0700",unknown
+Rejected,Katie West,katie.west@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:38:48 -0700",unknown
+Rejected,Todd Scheifele,todd.scheifele@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:38:32 -0700",unknown
+Rejected,Eddie Perodin,eddie.perodin@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:38:20 -0700",unknown
+Rejected,Jeff Goodnow,jeff.goodnow@mcgarrybowen.com,Dentsu Creative (fka McGarryBowen),Ad Agency,1,"Tue, 27 Oct 2020 09:38:09 -0700",unknown

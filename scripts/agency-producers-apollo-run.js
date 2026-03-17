@@ -349,10 +349,13 @@ async function run() {
     }
   }
 
+  const EXCLUDED_TITLE_KEYWORDS = ['experiential', 'events', 'event marketing', 'activation', 'field marketing'];
   const revealCandidates = people.filter((p) => {
     const organizationName = getOrganizationName(p);
     const hasName = Boolean(p?.first_name && (p?.last_name || p?.last_name_obfuscated));
-    return Boolean(organizationName && hasName);
+    const title = String(p?.title || '').toLowerCase();
+    const isExcluded = EXCLUDED_TITLE_KEYWORDS.some((kw) => title.includes(kw));
+    return Boolean(organizationName && hasName && !isExcluded);
   });
 
   console.log('People eligible for reveal:', revealCandidates.length);

@@ -1,0 +1,189 @@
+email,name,company_guess,message_count,first_seen,last_seen,mv_result,mv_quality
+amy@wehmann.com,Amy Oppegaard,Wehmann,28,"Mon, 30 Jun 2025 15:22:49 +0000","Mon, 30 Sep 2024 21:30:27 +0000",ok,good
+susanf@grossmanjack.com,Susan Farlik,Grossmanjack,21,"Wed, 22 Oct 2025 09:00:11 -0700","Thu, 24 Oct 2024 11:40:14 -0700",ok,good
+roberts@grossmanjack.com,Robert Schroeder,Grossmanjack,18,"Tue, 18 Mar 2025 17:20:32 -0500","Thu, 24 Oct 2024 11:40:14 -0700",ok,good
+sumeet@voexpress.com,Sumeet Iyengar,Voexpress,17,"Fri, 13 Feb 2026 05:00:34 +0000","Tue, 13 Aug 2024 20:27:20 +0000",ok,good
+maureen@osbrinkagency.com,Maureen Rose,Osbrinkagency,17,"Fri, 25 Apr 2025 18:01:23 -0700","Tue, 17 Sep 2024 19:16:16 -0700",ok,good
+travis@starsagency.com,Travis Valentine,Starsagency,15,"Fri, 27 Jun 2025 12:09:33 -0700","Thu, 26 Sep 2024 17:22:46 +0000",ok,good
+lramirez@peoplestore.net,Lina Ramirez,Peoplestore,14,"Fri, 24 Jan 2025 09:26:54 -0800","Fri, 27 Sep 2024 21:17:26 +0000",ok,good
+michelle@councilconsultingcorp.com,Michelle Council,Councilconsultingcorp,13,"Tue, 03 Sep 2024 18:53:22 +0000","Thu, 08 Aug 2024 22:39:59 +0000",ok,good
+gina@rsatalent.net,Gina Nuccio,Rsatalent,12,"Thu, 16 Jan 2025 11:15:19 -0800","Thu, 07 Nov 2024 12:08:19 -0800",ok,good
+vanessa@rsatalent.net,Vanessa Gilbert,Rsatalent,12,"Thu, 16 Jan 2025 11:15:19 -0800","Tue, 22 Oct 2024 12:22:59 -0700",ok,good
+stacie@modelogic.com,Stacie Vanchieri,Modelogic,11,"Tue, 26 Aug 2025 15:19:54 +0000","Mon, 10 Mar 2025 10:31:58 -0700",ok,good
+micaela@eristalentagency.com,Micaela Hicks,Eristalentagency,11,"Wed, 02 Jul 2025 23:53:03 +0000","Mon, 04 Nov 2024 16:42:20 -0800",ok,good
+bc@bactalent.com,Brandon Cohen,Bactalent,11,"Fri, 16 May 2025 16:39:09 -0700","Fri, 27 Sep 2024 16:10:46 +0000",ok,good
+arlene@danielhoffagency.com,arlene@danielhoffagency.com,Danielhoffagency,11,"Fri, 16 May 2025 16:30:16 +0000","Thu, 07 Nov 2024 12:55:42 -0800",ok,good
+kelly@bigmouthtalent.com,Kelly Wilkening,Bigmouthtalent,11,"Mon, 31 Mar 2025 08:41:35 -0700","Mon, 28 Oct 2024 08:53:04 -0700",ok,good
+jennifer@dpntalent.com,Jennifer York,Dpntalent,11,"Tue, 11 Feb 2025 11:04:04 -0800","Mon, 04 Nov 2024 14:17:57 -0800",ok,good
+deven@paonessatalent.com,Deven Hartley,Paonessatalent,11,"Tue, 28 Jan 2025 08:48:59 -0800","Mon, 04 Nov 2024 09:23:24 -0800",ok,good
+kristen@paonessatalent.com,Kristen Bock,Paonessatalent,11,"Tue, 28 Jan 2025 08:48:59 -0800","Thu, 26 Sep 2024 18:31:50 +0000",ok,good
+barbara.coleman@iany.com,Barbara Coleman,Iany,11,"Thu, 16 Jan 2025 11:28:32 -0800","Tue, 22 Oct 2024 15:36:08 -0700",ok,good
+keegan@osbrinkagency.com,Keegan Montikewley,Osbrinkagency,9,"Fri, 25 Apr 2025 18:01:23 -0700","Tue, 17 Sep 2024 19:16:16 -0700",ok,good
+allison@rsatalent.net,Associate RSA,Rsatalent,9,"Mon, 09 Dec 2024 16:17:07 -0800","Fri, 15 Nov 2024 03:16:58 +0000",ok,good
+phil@stewarttalent.com,Phil Cassese,Stewarttalent,8,"Wed, 20 Aug 2025 11:19:13 -0700","Tue, 22 Oct 2024 14:22:14 -0700",ok,good
+alison.quartin@stewarttalent.com,Alison Quartin,Stewarttalent,8,"Wed, 20 Aug 2025 11:19:13 -0700","Tue, 22 Oct 2024 14:22:14 -0700",ok,good
+kevin.k@stewarttalent.com,Kevin Koulopoulos,Stewarttalent,8,"Wed, 20 Aug 2025 11:19:13 -0700","Tue, 22 Oct 2024 14:22:14 -0700",ok,good
+tracey@talentunlimited.com,Tracey Turner,Talentunlimited,8,"Wed, 23 Apr 2025 11:19:32 -0700","Tue, 22 Oct 2024 09:58:38 -0700",ok,good
+lramirez@formationtalent.com,Lina Ramirez,Formationtalent,8,"Wed, 23 Apr 2025 09:33:55 -0700","Fri, 24 Jan 2025 11:18:36 -0800",ok,good
+eseastrand@acmtalent.com,Erik Seastrand,Acmtalent,8,"Wed, 05 Mar 2025 13:29:02 -0800","Wed, 02 Oct 2024 18:05:17 -0700",ok,good
+heathero@grossmanjack.com,Heather Olofson,Grossmanjack,8,"Tue, 11 Feb 2025 13:49:56 -0800","Mon, 28 Oct 2024 09:20:18 -0700",ok,good
+asst.barbara.coleman@iany.com,Rashell Encalada,Iany,8,"Thu, 16 Jan 2025 11:28:32 -0800","Tue, 17 Dec 2024 07:03:13 -0800",ok,good
+ckim@peoplestore.net,Christine Kim,Peoplestore,8,"Mon, 16 Dec 2024 19:32:51 +0000","Thu, 14 Nov 2024 21:07:41 +0000",ok,good
+pnagency@pnagency.com,Roger King,Pnagency,7,"Mon, 02 Jun 2025 08:44:01 -0700","Wed, 23 Apr 2025 09:29:24 -0700",ok,good
+bookkeeper@councilconsultingcorp.com,Bookkeeper,Councilconsultingcorp,7,"Tue, 03 Sep 2024 18:53:22 +0000","Wed, 14 Aug 2024 08:01:27 -0700",ok,good
+mike@select-casting.com,Mike Gullickson,Select Casting,6,"Wed, 07 Jan 2026 20:18:43 +0000","Mon, 21 Jul 2025 14:18:38 +0000",ok,good
+jason@stewarttalent.com,Jason Sasportas,Stewarttalent,6,"Thu, 15 May 2025 08:54:09 -0700","Wed, 16 Oct 2024 11:17:50 -0700",ok,good
+osbrinkasst@osbrinkagency.com,Brenna Epstein,Osbrinkagency,6,"Fri, 25 Apr 2025 18:01:23 -0700","Tue, 17 Sep 2024 19:16:16 -0700",ok,good
+scottvo@osbrinkagency.com,Scott Carelli,Osbrinkagency,6,"Fri, 25 Apr 2025 18:01:23 -0700","Tue, 17 Sep 2024 19:16:16 -0700",ok,good
+brian@osbrinkagency.com,Brian Mathias,Osbrinkagency,6,"Fri, 25 Apr 2025 18:01:23 -0700","Tue, 17 Sep 2024 19:16:16 -0700",ok,good
+oliver@lilystalent.com,Oliver Al,Lilystalent,6,"Wed, 23 Apr 2025 11:51:56 -0700","Fri, 27 Sep 2024 22:27:08 +0000",ok,good
+sylvia@desantitalents.com,sylvia@desantitalents.com,Desantitalents,6,"Mon, 31 Mar 2025 16:30:48 -0700","Sat, 26 Oct 2024 09:32:53 -0700",ok,good
+marisa@paonessatalent.com,Marisa Paonessa,Paonessatalent,6,"Tue, 18 Mar 2025 17:18:55 -0500","Tue, 28 Jan 2025 07:39:20 -0800",ok,good
+maria@eristalentagency.com,Maria Gee,Eristalentagency,6,"Fri, 07 Mar 2025 10:07:50 -0800","Thu, 06 Mar 2025 10:39:24 -0800",ok,good
+stacey@moxietalentagency.com,stacey@moxietalentagency.com,Moxietalentagency,6,"Wed, 05 Mar 2025 08:19:19 -0800","Wed, 15 Jan 2025 09:13:53 -0800",ok,good
+lcrawford@peoplestore.net,Laura Crawford,Peoplestore,6,"Thu, 16 Jan 2025 11:18:10 -0800","Fri, 15 Nov 2024 18:09:06 +0000",ok,good
+casey.ritts@cape-agency.com,Casey Ritts,Cape Agency,6,"Fri, 20 Dec 2024 09:44:23 -0800","Tue, 12 Nov 2024 12:34:32 -0800",ok,good
+cindy@eristalentagency.com,Cindy Schoonover,Eristalentagency,5,"Thu, 03 Jul 2025 08:18:05 -0700","Wed, 02 Jul 2025 16:50:29 -0700",ok,good
+awatkins@lermaagency.com,Anne Watkins,Lermaagency,5,"Mon, 23 Jun 2025 12:39:24 -0700","Thu, 06 Mar 2025 16:38:02 +0000",ok,good
+trish@dpntalent.com,Trish Ryan,Dpntalent,5,"Wed, 11 Jun 2025 15:22:27 -0700","Tue, 01 Oct 2024 15:58:55 +0000",ok,good
+melanie@pnagency.com,Melanie Davis,Pnagency,5,"Mon, 02 Jun 2025 08:44:01 -0700","Fri, 02 May 2025 08:55:42 -0700",ok,good
+jdoryon@ctctalent.com,Jeremiah Doryon,Ctctalent,5,"Wed, 28 May 2025 11:44:50 -0700","Wed, 23 Apr 2025 11:27:21 -0700",ok,good
+celia@moxietalentagency.com,Celia Gannon,Moxietalentagency,5,"Tue, 04 Mar 2025 09:29:21 -0800","Mon, 27 Jan 2025 10:40:53 -0800",ok,good
+rosie@stewarttalent.com,Rosie Bross-Rice,Stewarttalent,5,"Tue, 21 Jan 2025 08:50:20 -0800","Tue, 29 Oct 2024 08:40:27 -0700",ok,good
+restimond@peoplestore.net,Rick Estimond,Peoplestore,5,"Thu, 16 Jan 2025 11:18:10 -0800","Wed, 04 Dec 2024 21:39:58 +0000",ok,good
+risar@grossmanjack.com,Risa Rubin,Grossmanjack,5,"Thu, 16 Jan 2025 11:07:48 -0800","Mon, 28 Oct 2024 09:20:18 -0700",ok,good
+bias@liquidtalentgroup.com,Sheri Bias,Liquidtalentgroup,4,"Wed, 20 Aug 2025 13:33:18 -0700","Mon, 10 Mar 2025 10:35:55 -0700",ok,good
+pvarano@avotalent.com,Peter Varano,Avotalent,4,"Mon, 30 Jun 2025 09:31:00 -0700","Tue, 01 Oct 2024 15:37:21 +0000",ok,good
+natet@starsagency.com,Nate Tico,Starsagency,4,"Mon, 02 Jun 2025 08:42:57 -0700","Tue, 20 May 2025 10:11:59 -0700",ok,good
+lana@shortlisttalent.com,Lana Burstein,Shortlisttalent,4,"Mon, 02 Jun 2025 15:23:04 +0000","Thu, 07 Nov 2024 13:27:51 -0800",ok,good
+jonathan.saul@stewarttalent.com,Jonathan Saul,Stewarttalent,4,"Thu, 15 May 2025 08:54:09 -0700","Wed, 16 Oct 2024 11:17:50 -0700",ok,good
+kathleen@radicalartistsagency.com,Kathleen Ham,Radicalartistsagency,4,"Mon, 28 Apr 2025 12:47:23 -0700","Thu, 16 Jan 2025 11:16:56 -0800",ok,good
+ssax@lermaagency.com,Sara Sax,Lermaagency,4,"Tue, 28 Jan 2025 04:26:12 +0000","Mon, 21 Oct 2024 09:53:17 -0700",ok,good
+mickey.shera@iany.com,Mickey.Shera@iany.com,Iany,4,"Thu, 16 Jan 2025 11:28:32 -0800","Tue, 17 Dec 2024 17:36:55 +0000",ok,good
+tom.flanagan@iany.com,tom.flanagan@iany.com,Iany,4,"Thu, 16 Jan 2025 11:28:32 -0800","Tue, 17 Dec 2024 17:36:55 +0000",ok,good
+asst.mickey.shera@iany.com,asst.mickey.shera@iany.com,Iany,4,"Thu, 16 Jan 2025 11:28:32 -0800","Tue, 17 Dec 2024 17:36:55 +0000",ok,good
+jfloryance@peoplestore.net,Jocelyn Floryance,Peoplestore,4,"Thu, 16 Jan 2025 11:18:10 -0800","Thu, 12 Dec 2024 21:52:24 +0000",ok,good
+adriana@wehmann.com,Adriana Fontaine,Wehmann,4,"Mon, 18 Nov 2024 07:05:55 -0800","Tue, 29 Oct 2024 14:18:09 -0700",ok,good
+tata@councilconsultingcorp.com,Tata Charity Dewara,Councilconsultingcorp,4,"Fri, 15 Nov 2024 08:18:03 -0800","Tue, 03 Sep 2024 10:05:44 -0700",ok,good
+garrett@danielhoffagency.com,Garrett Hershey,Danielhoffagency,4,"Fri, 08 Nov 2024 11:01:26 -0800","Thu, 07 Nov 2024 13:22:16 -0800",ok,good
+jeff@voexpress.com,Jeff Keown,Voexpress,4,"Tue, 03 Sep 2024 16:29:59 -0700","Tue, 13 Aug 2024 20:27:20 +0000",ok,good
+jennifer@prcasting.com,Jennifer Rudnicke,Prcasting,3,"Wed, 22 Oct 2025 10:01:54 -0700","Wed, 15 Oct 2025 15:14:33 -0700",ok,good
+mickie@prcasting.com,mickie@prcasting.com,Prcasting,3,"Wed, 22 Oct 2025 10:01:54 -0700","Wed, 15 Oct 2025 15:14:33 -0700",ok,good
+marco.vidalis@batteryagency.com,Marco Vidalis,Batteryagency,3,"Wed, 06 Aug 2025 10:56:49 -0700","Mon, 27 Jan 2025 10:21:16 -0800",ok,good
+sabrina@starsagency.com,Sabrina Bohan,Starsagency,3,"Fri, 27 Jun 2025 12:09:33 -0700","Thu, 16 Jan 2025 11:46:25 -0800",ok,good
+kristin@healthinkagency.com,Kristin Kirgan,Healthinkagency,3,"Thu, 15 May 2025 16:49:33 +0000","Fri, 02 May 2025 23:56:16 +0000",ok,good
+sheriah@isadoradigitalagency.com,Sheriah Altobar,Isadoradigitalagency,3,"Mon, 12 May 2025 22:13:37 +0000","Tue, 29 Apr 2025 18:35:40 +0000",ok,good
+jstevens@kernagency.com,Jennifer Stevens,Kernagency,3,"Mon, 12 May 2025 20:02:52 +0000","Wed, 30 Apr 2025 23:46:59 +0000",ok,good
+rayanne.piana@sayloragency.com,Rayanne Piana,Sayloragency,3,"Thu, 08 May 2025 22:37:51 +0000","Fri, 25 Apr 2025 23:37:09 +0000",ok,good
+viola@rqagency.com,Viola Luong,Rqagency,3,"Thu, 08 May 2025 20:22:46 +0000","Tue, 29 Apr 2025 17:53:46 +0000",ok,good
+kimberly.smith@xdagency.com,Kimberly Smith,Xdagency,3,"Wed, 07 May 2025 22:50:58 +0000","Thu, 24 Apr 2025 19:17:34 +0000",ok,good
+mike@magtalent.com,Mike O'Dell,Magtalent,3,"Wed, 23 Apr 2025 10:00:13 -0700","Fri, 27 Sep 2024 18:43:32 +0000",ok,good
+sierra@houghtontalent.com,Sierra Grady,Houghtontalent,3,"Wed, 23 Apr 2025 09:39:37 -0700","Mon, 04 Nov 2024 17:15:06 +0000",ok,good
+mystie@houghtontalent.com,Mystie Buice,Houghtontalent,3,"Wed, 23 Apr 2025 09:39:37 -0700","Thu, 26 Sep 2024 16:46:08 +0000",ok,good
+sheila@stewarttalent.com,Sheila Dougherty,Stewarttalent,3,"Tue, 18 Mar 2025 17:17:27 -0500","Tue, 29 Oct 2024 13:41:54 -0700",ok,good
+melania@funday.agency,melania@funday.agency,Funday,3,"Tue, 04 Mar 2025 19:18:15 +0000","Tue, 04 Mar 2025 19:02:22 +0000",ok,good
+kirby@wehmann.com,Kirby Duresky - Wehmann,Wehmann,3,"Tue, 21 Jan 2025 13:34:55 -0800","Thu, 07 Nov 2024 10:34:58 -0800",ok,good
+caseyj@stewarttalent.com,Casey Janney,Stewarttalent,3,"Tue, 21 Jan 2025 08:50:20 -0800","Thu, 16 Jan 2025 11:10:39 -0800",ok,good
+hugh@ctctalent.com,Hugh,Ctctalent,3,"Fri, 08 Nov 2024 11:31:27 -0800","Thu, 07 Nov 2024 11:36:41 -0800",ok,good
+info@impressivetalent.com,Lisa Ristau,Impressivetalent,3,"Tue, 22 Oct 2024 09:55:05 -0700","Tue, 22 Oct 2024 09:50:09 -0700",ok,good
+l2@councilconsultingcorp.com,l2@councilconsultingcorp.com,Councilconsultingcorp,3,"Fri, 16 Aug 2024 22:16:36 +0000","Thu, 08 Aug 2024 22:39:59 +0000",ok,good
+kristin@starsagency.com,Kristin Claxon,Starsagency,2,"Mon, 27 Oct 2025 10:30:58 -0700","Fri, 27 Jun 2025 12:09:33 -0700",ok,good
+matt.torres@sayloragency.com,Matt Torres,Sayloragency,2,"Thu, 01 May 2025 23:52:17 +0000","Thu, 24 Apr 2025 22:28:12 +0000",ok,good
+kathey@radicalartistsagency.com,Kathey True,Radicalartistsagency,2,"Mon, 28 Apr 2025 12:47:23 -0700","Wed, 23 Apr 2025 11:23:51 -0700",ok,good
+michael@tinyadagency.com,Michael Stoopack,Tinyadagency,2,"Thu, 24 Apr 2025 19:27:21 +0000","Thu, 24 Apr 2025 17:43:37 +0000",ok,good
+brad@marqueecasting.com,,Marqueecasting,2,"Tue, 15 Apr 2025 16:49:01 -0500","Wed, 09 Apr 2025 10:41:36 -0700",ok,good
+kkauffman@thisisredagency.com,Katja Kauffman,Thisisredagency,2,"Mon, 17 Mar 2025 22:03:37 +0000","Thu, 13 Mar 2025 18:31:51 +0000",ok,good
+kwhalen@badgeagency.com,Kevin Whalen,Badgeagency,2,"Mon, 17 Mar 2025 18:21:49 +0000","Thu, 13 Mar 2025 19:42:22 +0000",ok,good
+roberthunnisett@oliver.agency,Robert Hunnisett,Oliver,2,"Fri, 14 Mar 2025 18:33:20 +0000","Tue, 11 Mar 2025 18:31:46 +0000",ok,good
+nadja@unfoldagency.com,Nadja Pantawapirom,Unfoldagency,2,"Fri, 14 Mar 2025 17:13:15 +0000","Tue, 11 Mar 2025 17:11:25 +0000",ok,good
+jillian@thehypeagency.com,Jillian Mccormick,Thehypeagency,2,"Tue, 11 Mar 2025 16:12:52 +0000","Fri, 07 Mar 2025 17:08:56 +0000",ok,good
+olivia.gage@unfoldagency.com,Olivia Gage,Unfoldagency,2,"Tue, 11 Mar 2025 15:16:39 +0000","Fri, 07 Mar 2025 18:49:56 +0000",ok,good
+peyton.lustig@firstagency.com,Peyton Lustig,Firstagency,2,"Tue, 11 Mar 2025 15:07:01 +0000","Thu, 06 Mar 2025 17:59:31 +0000",ok,good
+jmiller@strongagency.com,Jed Miller,Strongagency,2,"Mon, 10 Mar 2025 20:00:05 +0000","Thu, 06 Mar 2025 20:50:10 +0000",ok,good
+kaleigh.botello@unfoldagency.com,Kaleigh Botello,Unfoldagency,2,"Mon, 10 Mar 2025 18:36:46 +0000","Thu, 06 Mar 2025 16:29:25 +0000",ok,good
+katy@denveragency.com,Capi Katy Hyman Roth,Denveragency,2,"Mon, 10 Mar 2025 18:29:14 +0000","Thu, 06 Mar 2025 20:39:23 +0000",ok,good
+erin.rodela@thesis.agency,Erin Rodela,Thesis,2,"Mon, 10 Mar 2025 18:05:59 +0000","Thu, 06 Mar 2025 17:36:05 +0000",ok,good
+dara.smith@thesis.agency,Dara Smith,Thesis,2,"Mon, 10 Mar 2025 17:26:15 +0000","Thu, 06 Mar 2025 17:57:39 +0000",ok,good
+eric@thesussmanagency.com,Eric Macmichael,Thesussmanagency,2,"Fri, 07 Mar 2025 19:38:21 +0000","Tue, 04 Mar 2025 19:37:44 +0000",ok,good
+kaitlyn.marcure@thesis.agency,Kaitlyn Marcure,Thesis,2,"Fri, 07 Mar 2025 18:51:38 +0000","Tue, 04 Mar 2025 18:50:36 +0000",ok,good
+eleanorlambert@oliver.agency,Eleanor Lambert,Oliver,2,"Fri, 07 Mar 2025 17:49:08 +0000","Tue, 04 Mar 2025 17:45:55 +0000",ok,good
+erin.roetker@thesis.agency,Erin Roetker,Thesis,2,"Fri, 07 Mar 2025 16:45:53 +0000","Tue, 04 Mar 2025 16:38:07 +0000",ok,good
+angel.lariva@thesis.agency,Angel Esteban La Riva,Thesis,2,"Tue, 04 Mar 2025 20:48:39 +0000","Tue, 04 Mar 2025 20:07:09 +0000",ok,good
+clark@iandiagency.com,,Iandiagency,2,"Tue, 04 Mar 2025 09:14:57 -0800","Wed, 15 Jan 2025 09:52:46 -0800",ok,good
+trevor.potts@mustacheagency.com,Trevor Potts,Mustacheagency,2,"Mon, 03 Mar 2025 17:10:16 +0000","Wed, 26 Feb 2025 18:19:15 +0000",ok,good
+kate.arnold@firstagency.com,Kate Arnold,Firstagency,2,"Fri, 28 Feb 2025 23:15:36 +0000","Tue, 25 Feb 2025 23:15:05 +0000",ok,good
+jason@integrated.agency,Jason Bell,Integrated,2,"Fri, 28 Feb 2025 19:30:48 +0000","Tue, 25 Feb 2025 19:28:12 +0000",ok,good
+dan.blaney@figagency.com,Dan Blaney,Figagency,2,"Tue, 25 Feb 2025 00:29:54 +0000","Fri, 21 Feb 2025 20:24:41 +0000",ok,good
+shane@idiomtalent.com,Shane Cormier,Idiomtalent,2,"Tue, 25 Feb 2025 00:13:14 +0000","Thu, 20 Feb 2025 20:42:18 +0000",ok,good
+janelle@danielhoffagency.com,Janelle Bernard,Danielhoffagency,2,"Mon, 03 Feb 2025 13:49:31 -0800","Mon, 03 Feb 2025 09:14:30 -0800",ok,good
+invoices@danielhoffagency.com,Invoices Mailbox,Danielhoffagency,2,"Mon, 03 Feb 2025 13:49:31 -0800","Mon, 03 Feb 2025 09:14:30 -0800",ok,good
+daniel@danielhoffagency.com,Daniel Hoff,Danielhoffagency,2,"Mon, 03 Feb 2025 13:49:31 -0800","Mon, 03 Feb 2025 09:14:30 -0800",ok,good
+lynne@shirleyhamiltontalent.com,Lynne Hamilton,Shirleyhamiltontalent,2,"Wed, 22 Jan 2025 07:55:04 -0800","Fri, 27 Sep 2024 18:55:23 +0000",ok,good
+dawn@osbrinkagency.com,Dawn Osbrink,Osbrinkagency,2,"Thu, 16 Jan 2025 11:56:03 -0800","Thu, 07 Nov 2024 14:23:40 -0800",ok,good
+doasst@osbrinkagency.com,Paola Del Bosque,Osbrinkagency,2,"Thu, 16 Jan 2025 11:56:03 -0800","Thu, 07 Nov 2024 14:23:40 -0800",ok,good
+media@osbrinkagency.com,Jackson Campbell,Osbrinkagency,2,"Thu, 16 Jan 2025 11:56:03 -0800","Thu, 07 Nov 2024 14:23:40 -0800",ok,good
+christy@houghtontalent.com,christy@houghtontalent.com,Houghtontalent,2,"Thu, 16 Jan 2025 11:26:56 -0800","Mon, 04 Nov 2024 17:15:06 +0000",ok,good
+alex@osbrinkagency.com,Alex Kelly,Osbrinkagency,2,"Thu, 07 Nov 2024 14:23:40 -0800","Thu, 07 Nov 2024 12:40:32 -0800",ok,good
+kevin@tgmdtalent.com,Kevin Motley,Tgmdtalent,2,"Thu, 07 Nov 2024 13:40:24 -0800","Fri, 27 Sep 2024 19:30:50 +0000",ok,good
+voiceover@eristalentagency.com,Eris Voiceover,Eristalentagency,2,"Mon, 04 Nov 2024 16:42:20 -0800","Mon, 04 Nov 2024 12:55:42 -0800",ok,good
+marci@artistictalentla.com,Marci Polzin,Artistictalentla,2,"Tue, 29 Oct 2024 12:56:56 -0700","Fri, 27 Sep 2024 22:50:48 +0000",ok,good
+legit.chicago@stewarttalent.com,legit.chicago@stewarttalent.com,Stewarttalent,2,"Tue, 29 Oct 2024 16:34:52 +0000","Tue, 29 Oct 2024 08:40:27 -0700",ok,good
+sam@stewarttalent.com,sam@stewarttalent.com,Stewarttalent,2,"Tue, 29 Oct 2024 16:34:52 +0000","Tue, 29 Oct 2024 08:40:27 -0700",ok,good
+billing@select-casting.com,Info Billing,Select Casting,1,"Wed, 09 Jul 2025 19:28:25 +0000","Wed, 09 Jul 2025 19:28:25 +0000",ok,good
+mikiel@starsagency.com,,Starsagency,1,"Fri, 27 Jun 2025 12:09:33 -0700","Fri, 27 Jun 2025 12:09:33 -0700",ok,good
+elena@starsagency.com,,Starsagency,1,"Fri, 27 Jun 2025 12:09:33 -0700","Fri, 27 Jun 2025 12:09:33 -0700",ok,good
+nwehrman@bettyagency.com,,Bettyagency,1,"Mon, 16 Jun 2025 09:06:07 -0700","Mon, 16 Jun 2025 09:06:07 -0700",ok,good
+hello@agencysquid.com,,Agencysquid,1,"Mon, 09 Jun 2025 12:32:45 -0700","Mon, 09 Jun 2025 12:32:45 -0700",ok,good
+cassie.greenwald@trg.agency,Cassie Greenwald,Trg,1,"Tue, 20 May 2025 09:59:56 -0700","Tue, 20 May 2025 09:59:56 -0700",ok,good
+maggie.logler@stewarttalent.com,Maggie Logler,Stewarttalent,1,"Thu, 15 May 2025 08:54:09 -0700","Thu, 15 May 2025 08:54:09 -0700",ok,good
+tiffany.scott@stewarttalent.com,Tiffany Scott,Stewarttalent,1,"Thu, 15 May 2025 08:54:09 -0700","Thu, 15 May 2025 08:54:09 -0700",ok,good
+angela@osbrinkagency.com,Angela Strange,Osbrinkagency,1,"Fri, 25 Apr 2025 18:01:23 -0700","Fri, 25 Apr 2025 18:01:23 -0700",ok,good
+cdo@osbrinkagency.com,Cindy Osbrink,Osbrinkagency,1,"Fri, 25 Apr 2025 18:01:23 -0700","Fri, 25 Apr 2025 18:01:23 -0700",ok,good
+contracts@osbrinkagency.com,Danielle Medina,Osbrinkagency,1,"Fri, 25 Apr 2025 18:01:23 -0700","Fri, 25 Apr 2025 18:01:23 -0700",ok,good
+accounting@osbrinkagency.com,Osbrink Accounting,Osbrinkagency,1,"Fri, 25 Apr 2025 18:01:23 -0700","Fri, 25 Apr 2025 18:01:23 -0700",ok,good
+kama@dpntalent.com,Kama Nist,Dpntalent,1,"Wed, 23 Apr 2025 10:07:36 -0700","Wed, 23 Apr 2025 10:07:36 -0700",ok,good
+lynn.louria@trg.agency,,Trg,1,"Thu, 27 Mar 2025 14:16:37 -0700","Thu, 27 Mar 2025 14:16:37 -0700",ok,good
+elle@eptalent.com,elle@eptalent.com,Eptalent,1,"Sat, 08 Mar 2025 00:57:32 +0000","Sat, 08 Mar 2025 00:57:32 +0000",ok,good
+invoices@lermaagency.com,invoices@lermaagency.com,Lermaagency,1,"Thu, 06 Mar 2025 16:38:02 +0000","Thu, 06 Mar 2025 16:38:02 +0000",ok,good
+amy@veracityagency.com,amy@veracityagency.com,Veracityagency,1,"Wed, 12 Feb 2025 19:35:52 +0000","Wed, 12 Feb 2025 19:35:52 +0000",ok,good
+joconnell@hijinxagency.com,joconnell@hijinxagency.com,Hijinxagency,1,"Wed, 12 Feb 2025 16:50:35 +0000","Wed, 12 Feb 2025 16:50:35 +0000",ok,good
+adam@manifestoagency.com,adam@manifestoagency.com,Manifestoagency,1,"Wed, 12 Feb 2025 16:24:16 +0000","Wed, 12 Feb 2025 16:24:16 +0000",ok,good
+tim@manifestoagency.com,tim@manifestoagency.com,Manifestoagency,1,"Wed, 12 Feb 2025 16:22:59 +0000","Wed, 12 Feb 2025 16:22:59 +0000",ok,good
+rachel@zo.agency,rachel@zo.agency,Zo,1,"Wed, 12 Feb 2025 00:12:17 +0000","Wed, 12 Feb 2025 00:12:17 +0000",ok,good
+mhirsch@hijinxagency.com,mhirsch@hijinxagency.com,Hijinxagency,1,"Tue, 11 Feb 2025 23:40:16 +0000","Tue, 11 Feb 2025 23:40:16 +0000",ok,good
+mholden@cmdagency.com,,Cmdagency,1,"Tue, 11 Feb 2025 15:11:59 -0800","Tue, 11 Feb 2025 15:11:59 -0800",ok,good
+bwignall@cmdagency.com,bwignall@cmdagency.com,Cmdagency,1,"Tue, 11 Feb 2025 23:06:01 +0000","Tue, 11 Feb 2025 23:06:01 +0000",ok,good
+anna@avenueagency.com,anna@avenueagency.com,Avenueagency,1,"Tue, 11 Feb 2025 22:57:30 +0000","Tue, 11 Feb 2025 22:57:30 +0000",ok,good
+sarah@danielhoffagency.com,Sarah Enzminger,Danielhoffagency,1,"Mon, 03 Feb 2025 13:49:31 -0800","Mon, 03 Feb 2025 13:49:31 -0800",ok,good
+jeremiah@majorityagency.com,,Majorityagency,1,"Mon, 03 Feb 2025 12:50:04 -0800","Mon, 03 Feb 2025 12:50:04 -0800",ok,good
+jessica.shepard@batteryagency.com,,Batteryagency,1,"Mon, 03 Feb 2025 12:42:03 -0800","Mon, 03 Feb 2025 12:42:03 -0800",ok,good
+sabrina@starsmanagement.com,Sabrina Bohan,Starsmanagement,1,"Fri, 24 Jan 2025 21:22:17 +0000","Fri, 24 Jan 2025 21:22:17 +0000",ok,good
+siobhan@stewarttalent.com,Siobhan Reddy-Best,Stewarttalent,1,"Tue, 21 Jan 2025 08:50:20 -0800","Tue, 21 Jan 2025 08:50:20 -0800",ok,good
+brittainy@graytalentgroup.com,,Graytalentgroup,1,"Thu, 07 Nov 2024 11:30:39 -0800","Thu, 07 Nov 2024 11:30:39 -0800",ok,good
+emily@bigfishtalent.com,,Bigfishtalent,1,"Thu, 07 Nov 2024 10:39:45 -0800","Thu, 07 Nov 2024 10:39:45 -0800",ok,good
+leslie@wehmann.com,Leslie Gorski,Wehmann,1,"Thu, 07 Nov 2024 10:34:58 -0800","Thu, 07 Nov 2024 10:34:58 -0800",ok,good
+micheleandlisa@eristalentagency.com,Amy Lord,Eristalentagency,1,"Mon, 04 Nov 2024 12:55:42 -0800","Mon, 04 Nov 2024 12:55:42 -0800",ok,good
+tina@eristalentagency.com,Tina Randolph Contogenis,Eristalentagency,1,"Mon, 04 Nov 2024 12:55:42 -0800","Mon, 04 Nov 2024 12:55:42 -0800",ok,good
+flaczko@sbvtalent.com,Ferenc Laczko,Sbvtalent,1,"Mon, 04 Nov 2024 09:41:43 -0800","Mon, 04 Nov 2024 09:41:43 -0800",ok,good
+ealcaraz@sbvtalent.com,Erika Alcaraz,Sbvtalent,1,"Mon, 04 Nov 2024 09:41:43 -0800","Mon, 04 Nov 2024 09:41:43 -0800",ok,good
+vo@stewarttalent.com,Chicago Voiceover,Stewarttalent,1,"Tue, 29 Oct 2024 13:41:54 -0700","Tue, 29 Oct 2024 13:41:54 -0700",ok,good
+erik@sheppard.agency,Erik Sheppard,Sheppard,1,"Sat, 26 Oct 2024 09:40:17 -0700","Sat, 26 Oct 2024 09:40:17 -0700",ok,good
+bonnie.shumofsky@stewarttalent.com,Bonnie Shumofsky Bloom,Stewarttalent,1,"Wed, 23 Oct 2024 08:29:28 -0700","Wed, 23 Oct 2024 08:29:28 -0700",ok,good
+danielle@commercialtalentagency.com,Danielle Manuselis,Commercialtalentagency,1,"Tue, 22 Oct 2024 14:10:37 -0700","Tue, 22 Oct 2024 14:10:37 -0700",ok,good
+shari.hoffman@iany.com,Shari Hoffman,Iany,1,"Tue, 01 Oct 2024 18:43:36 +0000","Tue, 01 Oct 2024 18:43:36 +0000",ok,good
+debra.sherry@iany.com,Debra Sherry,Iany,1,"Tue, 01 Oct 2024 18:20:06 +0000","Tue, 01 Oct 2024 18:20:06 +0000",ok,good
+talent@arcieritalent.com,Ed Batchelor,Arcieritalent,1,"Mon, 30 Sep 2024 21:40:05 +0000","Mon, 30 Sep 2024 21:40:05 +0000",ok,good
+jfelrice@kmrtalent.com,Jessica Felrice,Kmrtalent,1,"Mon, 30 Sep 2024 19:54:13 +0000","Mon, 30 Sep 2024 19:54:13 +0000",ok,good
+julie@rsatalent.net,Julie Keller,Rsatalent,1,"Mon, 30 Sep 2024 16:34:12 +0000","Mon, 30 Sep 2024 16:34:12 +0000",ok,good
+oscar@omacmodels.com,Oscar Gonzalez,Omacmodels,1,"Sat, 28 Sep 2024 00:54:07 +0000","Sat, 28 Sep 2024 00:54:07 +0000",ok,good
+steph@navotalent.com,Steph Huske,Navotalent,1,"Sat, 28 Sep 2024 00:26:07 +0000","Sat, 28 Sep 2024 00:26:07 +0000",ok,good
+vo@ab2talent.com,Andrea Beane,Ab2Talent,1,"Sat, 28 Sep 2024 00:04:54 +0000","Sat, 28 Sep 2024 00:04:54 +0000",ok,good
+agents@bhtalent.com,Bell Hall Talent INC.,Bhtalent,1,"Fri, 27 Sep 2024 23:26:44 +0000","Fri, 27 Sep 2024 23:26:44 +0000",ok,good
+amym@dpntalent.com,Amy Mclnerney,Dpntalent,1,"Fri, 27 Sep 2024 00:26:10 +0000","Fri, 27 Sep 2024 00:26:10 +0000",ok,good
+jason@voexpress.com,Jason Baird,Voexpress,1,"Thu, 26 Sep 2024 23:50:54 +0000","Thu, 26 Sep 2024 23:50:54 +0000",ok,good
+lzinbarg@kmrtalent.com,Lindsey Zinbarg,Kmrtalent,1,"Thu, 26 Sep 2024 23:26:18 +0000","Thu, 26 Sep 2024 23:26:18 +0000",ok,good
+brianj@starsagency.com,Brian Jones,Starsagency,1,"Thu, 26 Sep 2024 23:14:14 +0000","Thu, 26 Sep 2024 23:14:14 +0000",ok,good
+rvennari@sbvtalent.com,Rita Vennari,Sbvtalent,1,"Thu, 26 Sep 2024 19:18:54 +0000","Thu, 26 Sep 2024 19:18:54 +0000",ok,good
+clinton@talentunlimited.com,Clinton,Talentunlimited,1,"Thu, 26 Sep 2024 18:55:22 +0000","Thu, 26 Sep 2024 18:55:22 +0000",ok,good
+allan.duncan@iany.com,Allan,Iany,1,"Thu, 26 Sep 2024 17:10:29 +0000","Thu, 26 Sep 2024 17:10:29 +0000",ok,good
+steven@arcieritalent.com,Steven Arcieri,Arcieritalent,1,"Tue, 10 Sep 2024 15:38:45 +0000","Tue, 10 Sep 2024 15:38:45 +0000",ok,good
