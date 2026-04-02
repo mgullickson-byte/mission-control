@@ -1,9 +1,16 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { Task } from "../tasks/page";
 
-type ColumnKey = "Recurring" | "Backlog" | "In Progress" | "Review" | "Live Activity";
+// Local type — actual data uses agent names as assignee, not the narrower API union
+type Task = {
+  id: string;
+  title: string;
+  description: string;
+  assignee: string;
+  column: string;
+  createdAt: string;
+};
 
 type Activity = {
   id: string;
@@ -11,13 +18,117 @@ type Activity = {
   createdAt: string;
 };
 
-type AgentCard = {
+type AgentDef = {
   id: string;
   name: string;
   role: string;
-  focusProjects: string[];
-  filter: (task: Task) => boolean;
+  description: string;
+  focus: string[];
+  assignees: string[];   // assignee values in tasks.json that belong to this agent
 };
+
+type MacAgentDef = {
+  id: string;
+  name: string;
+  role: string;
+  model: string;
+  ip: string;
+  specialty: string;
+};
+
+const AGENTS: AgentDef[] = [
+  {
+    id: "raimey",
+    name: "Raimey",
+    role: "Chief of Staff",
+    description: "Oversees all projects, writes strategy, manages heartbeats.",
+    focus: [
+      "Cross-project oversight and planning",
+      "Heartbeat management and status reporting",
+      "Daily ops coordination",
+    ],
+    assignees: ["Raimey", "OpenClaw"],
+  },
+  {
+    id: "scout",
+    name: "Scout",
+    role: "Lead Gen",
+    description: "Runs Apollo pipeline for Select Casting small/mid agency leads.",
+    focus: [
+      "Apollo pipeline for small/mid agencies",
+      "Deduplication & MillionVerifier enrichment",
+      "SmartReach push & outbound sequences",
+    ],
+    assignees: ["Scout"],
+  },
+  {
+    id: "echo",
+    name: "Echo",
+    role: "Studio Leads",
+    description: "Runs Apollo pipeline for Studio Awesome ADR/audio prospects.",
+    focus: [
+      "Apollo pipeline for ADR/audio prospects",
+      "2-mile radius local ADR outreach",
+      "SmartReach push for SA leads",
+    ],
+    assignees: ["Echo"],
+  },
+  {
+    id: "forge",
+    name: "Forge",
+    role: "Engineering",
+    description: "Builds and ships code across all projects.",
+    focus: [
+      "Mission Control, tinyGIANT, SA Mix Platform",
+      "Select Casting CRM",
+      "Lead gen tooling and integrations",
+    ],
+    assignees: ["Forge"],
+  },
+  {
+    id: "quill",
+    name: "Quill",
+    role: "Content",
+    description: "Writes SEO blog posts for Select Casting.",
+    focus: [
+      "SEO blog posts for Select Casting",
+      "Landing page copy",
+      "Outreach email templates",
+    ],
+    assignees: ["Quill"],
+  },
+  {
+    id: "radar",
+    name: "Radar",
+    role: "Intel",
+    description: "Monitors advertising industry news and trends.",
+    focus: [
+      "Ad industry news and trend monitoring",
+      "Competitor tracking",
+      "Weekly intel briefs",
+    ],
+    assignees: ["Radar"],
+  },
+];
+
+const MAC_AGENTS: MacAgentDef[] = [
+  {
+    id: "llama",
+    name: "Llama",
+    role: "Fast AI",
+    model: "Llama 3.3 70B",
+    ip: "192.168.5.223",
+    specialty: "Quick research, summaries, and data tasks",
+  },
+  {
+    id: "qwen",
+    name: "Qwen",
+    role: "Code AI",
+    model: "Qwen 2.5 Coder 32B",
+    ip: "192.168.5.223",
+    specialty: "Code generation and technical tasks",
+  },
+];
 
 function getInitials(name: string): string {
   return name
@@ -41,115 +152,26 @@ export default function OfficePage() {
           tasks: Task[];
           activities: Activity[];
         };
-        setTasks(data.tasks);
-        setActivities(data.activities);
+        setTasks(data.tasks ?? []);
+        setActivities(data.activities ?? []);
       } catch {
         // ignore
       }
     };
-
     load();
   }, []);
 
-  const groupedByColumn = useMemo(() => {
-    const base: Record<ColumnKey, Task[]> = {
-      Recurring: [],
-      Backlog: [],
-      "In Progress": [],
-      Review: [],
-      "Live Activity": []
-    };
-    for (const task of tasks) {
-      base[task.column].push(task);
+  const tasksByAgent = useMemo(() => {
+    const result = new Map<string, { inProgress: Task[]; recurring: Task[] }>();
+    for (const agent of AGENTS) {
+      const matched = tasks.filter((t) => agent.assignees.includes(t.assignee));
+      result.set(agent.id, {
+        inProgress: matched.filter((t) => t.column === "In Progress"),
+        recurring: matched.filter((t) => t.column === "Recurring"),
+      });
     }
-    return base;
+    return result;
   }, [tasks]);
-
-  const agents: AgentCard[] = useMemo(
-    () => [
-      {
-        id: "mike",
-        name: "Mike",
-        role: "Founder / Director",
-        focusProjects: [
-          "Mission Control v1",
-          "Select Casting Lead Gen – Small/Mid Agencies",
-          "Studio Awesome Website"
-        ],
-        filter: (task) => task.assignee === "Mike"
-      },
-      {
-        id: "henry",
-        name: "Henry",
-        role: "Mission Control Operator",
-        focusProjects: [
-          "Mission Control v1",
-          "Lead Gen Integrations – Apollo / MillionVerifier / SmartReach",
-          "Studio Awesome Mix Booking App"
-        ],
-        filter: (task) => task.assignee === "OpenClaw"
-      },
-      {
-        id: "scout",
-        name: "Scout",
-        role: "Select Casting Lead Research",
-        focusProjects: [
-          "Select Casting Lead Gen – Small/Mid Agencies",
-          "Lead Gen Integrations – Apollo / MillionVerifier / SmartReach"
-        ],
-        filter: (task) =>
-          task.id.startsWith("task-select-") ||
-          task.title.toLowerCase().includes("agency")
-      },
-      {
-        id: "echo",
-        name: "Echo",
-        role: "Studio Awesome Lead Research",
-        focusProjects: [
-          "ADR Leads – 2-Mile Radius of 1608 Argyle",
-          "Lead Gen Integrations – Apollo / MillionVerifier / SmartReach"
-        ],
-        filter: (task) =>
-          task.id.startsWith("task-adr-") ||
-          task.title.toLowerCase().includes("adr")
-      },
-      {
-        id: "radar",
-        name: "Radar",
-        role: "Advertising News & Trends",
-        focusProjects: [
-          "Fractional Advertising Model",
-          "Select Casting Blog Posts"
-        ],
-        filter: () => false // will populate once we add news/trend tasks
-      },
-      {
-        id: "forge",
-        name: "Forge",
-        role: "Builder / Code",
-        focusProjects: [
-          "Mission Control v1",
-          "Studio Awesome Mix Booking App",
-          "Studio Awesome Website"
-        ],
-        filter: (task) =>
-          task.title.toLowerCase().includes("code") ||
-          task.title.toLowerCase().includes("build") ||
-          task.title.toLowerCase().includes("implement")
-      },
-      {
-        id: "quill",
-        name: "Quill",
-        role: "Docs & Content",
-        focusProjects: ["Select Casting Blog Posts", "Studio Awesome Website"],
-        filter: (task) =>
-          task.title.toLowerCase().includes("write") ||
-          task.title.toLowerCase().includes("blog") ||
-          task.title.toLowerCase().includes("copy")
-      }
-    ],
-    []
-  );
 
   return (
     <main className="page-shell">
@@ -157,144 +179,180 @@ export default function OfficePage() {
         <div>
           <h1 className="page-title-main">Office</h1>
           <p className="page-subtitle-main">
-            A live-ish view of what you, me, and each sub-agent are focused on
-            based on the current Tasks and Projects.
+            Agent roster — what each agent owns and what&apos;s in flight.
           </p>
         </div>
       </header>
 
-      <section className="office-map">
-        <div className="office-map-header">
-          <h2 className="section-title">Mission Control office</h2>
-          <p className="section-help">
-            A little seating chart for Mike, Henry, and the sub-agents at their
-            "desks".
-          </p>
-        </div>
-        <div className="office-map-grid">
-          {agents.map((agent) => (
-            <div
-              key={agent.id}
-              className={`office-seat office-seat-${agent.id}`}
-            >
-              <div className="office-seat-desk">
-                <div className="office-seat-monitor" />
-                <div className="office-seat-avatar">
-                  <div className="office-sprite">
-                    <div className="office-sprite-head" />
-                    <div className="office-sprite-body" />
-                  </div>
-                </div>
-              </div>
-              <div className="office-seat-label">
-                <div className="office-seat-name">{agent.name}</div>
-                <div className="office-seat-role">{agent.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Agent Cards */}
+      <section className="office-agents">
+        {AGENTS.map((agent) => {
+          const { inProgress, recurring } = tasksByAgent.get(agent.id) ?? {
+            inProgress: [],
+            recurring: [],
+          };
+          const isActive = inProgress.length > 0;
 
-      <section className="office-body">
-        <section className="office-agents">
-          {agents.map((agent) => {
-            const myRecurring = groupedByColumn["Recurring"].filter(agent.filter);
-            const myInProgress =
-              groupedByColumn["In Progress"].filter(agent.filter);
-
-            return (
-              <article key={agent.id} className="office-card">
-                <header className="office-card-header">
-                  <div>
+          return (
+            <article key={agent.id} className={`office-card office-card-${agent.id}`}>
+              <header className="office-card-header">
+                <div className="office-card-avatar">{getInitials(agent.name)}</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                     <h2 className="office-card-name">{agent.name}</h2>
-                    <p className="office-card-role">{agent.role}</p>
-                  </div>
-                  <div className="office-card-counts">
-                    <span className="pill pill-soft">
-                      {myInProgress.length} in progress
+                    <span
+                      className="pill pill-soft"
+                      style={{
+                        fontSize: 10,
+                        color: isActive ? "#22c55e" : "#6b7280",
+                        borderColor: isActive ? "rgba(34,197,94,0.4)" : undefined,
+                      }}
+                    >
+                      {isActive ? "active" : "idle"}
                     </span>
-                    <span className="pill pill-soft">
-                      {myRecurring.length} recurring
-                    </span>
                   </div>
-                </header>
+                  <p className="office-card-role">{agent.role}</p>
+                </div>
+                <div className="office-card-counts">
+                  <span className="pill pill-soft">{inProgress.length} active</span>
+                  <span className="pill pill-soft">{recurring.length} recurring</span>
+                </div>
+              </header>
 
-                <div className="office-card-body">
+              <p className="office-card-desc">{agent.description}</p>
+
+              <div className="office-card-body">
+                <div className="office-section">
+                  <h3 className="section-title">Focus</h3>
+                  <ul className="office-list">
+                    {agent.focus.map((item) => (
+                      <li key={item} className="office-list-item">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {inProgress.length > 0 && (
                   <div className="office-section">
-                    <h3 className="section-title">Focus</h3>
+                    <h3 className="section-title">In Progress</h3>
                     <ul className="office-list">
-                      {agent.focusProjects.map((p) => (
-                        <li key={p} className="office-list-item">
-                          {p}
+                      {inProgress.map((task) => (
+                        <li key={task.id} className="office-list-item">
+                          <span className="office-task-title">{task.title}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
+                )}
 
-                  {myInProgress.length > 0 && (
-                    <div className="office-section">
-                      <h3 className="section-title">Currently in progress</h3>
-                      <ul className="office-list">
-                        {myInProgress.map((task) => (
-                          <li key={task.id} className="office-list-item">
-                            <span className="office-task-title">
-                              {task.title}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
+                {recurring.length > 0 && (
+                  <div className="office-section">
+                    <h3 className="section-title">Recurring</h3>
+                    <ul className="office-list">
+                      {recurring.map((task) => (
+                        <li key={task.id} className="office-list-item">
+                          <span className="office-task-title">{task.title}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {inProgress.length === 0 && recurring.length === 0 && (
+                  <p className="section-help">No tasks on the board yet.</p>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </section>
+
+      {/* Mac Studio Section */}
+      <section style={{ marginTop: 32 }}>
+        <div style={{ marginBottom: 12 }}>
+          <h2 className="page-title-main" style={{ fontSize: 18, marginBottom: 4 }}>
+            Mac Studio
+          </h2>
+          <p className="page-subtitle-main">
+            Local AI running on Mac Studio at 192.168.5.223.
+          </p>
+        </div>
+        <section className="office-mac-studio">
+          <div className="office-mac-studio-grid">
+            {MAC_AGENTS.map((agent) => (
+              <article
+                key={agent.id}
+                className="office-card office-card-mac-studio"
+              >
+                <header className="office-card-header">
+                  <div className="office-card-avatar office-card-avatar-mac">
+                    {getInitials(agent.name)}
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <h2 className="office-card-name">{agent.name}</h2>
+                      <span
+                        className="pill pill-soft"
+                        style={{
+                          fontSize: 10,
+                          color: "#fbbf24",
+                          borderColor: "rgba(251,191,36,0.4)",
+                        }}
+                      >
+                        local
+                      </span>
                     </div>
-                  )}
-
-                  {myRecurring.length > 0 && (
-                    <div className="office-section">
-                      <h3 className="section-title">Recurring responsibilities</h3>
-                      <ul className="office-list">
-                        {myRecurring.map((task) => (
-                          <li key={task.id} className="office-list-item">
-                            <span className="office-task-title">
-                              {task.title}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {myInProgress.length === 0 && myRecurring.length === 0 && (
-                    <p className="section-help">
-                      No tasks on the board for this agent yet. As we add more
-                      work, they&apos;ll show up here.
+                    <p className="office-card-role">{agent.role}</p>
+                  </div>
+                  <span className="pill pill-soft" style={{ fontSize: 11 }}>
+                    {agent.model}
+                  </span>
+                </header>
+                <div className="office-card-body">
+                  <div className="office-section">
+                    <h3 className="section-title">Specialty</h3>
+                    <p className="section-help" style={{ marginBottom: 0 }}>
+                      {agent.specialty}
                     </p>
-                  )}
+                  </div>
+                  <div className="office-section">
+                    <h3 className="section-title">Host</h3>
+                    <p
+                      className="section-help"
+                      style={{ marginBottom: 0, fontFamily: "monospace", fontSize: 12 }}
+                    >
+                      {agent.ip}
+                    </p>
+                  </div>
                 </div>
               </article>
-            );
-          })}
-        </section>
-
-        <section className="office-activity">
-          <h2 className="page-title-main">Recent activity</h2>
-          <p className="page-subtitle-main">
-            High-level log pulled from the Tasks activity feed.
-          </p>
-          <ul className="activity-list">
-            {activities.map((activity) => (
-              <li key={activity.id} className="activity-item">
-                <div className="activity-message">{activity.message}</div>
-                <div className="activity-meta">{activity.createdAt}</div>
-              </li>
             ))}
-            {activities.length === 0 && (
-              <li className="activity-item">
-                <div className="activity-message">
-                  No activity logged yet. Updates from the Tasks board will
-                  appear here.
-                </div>
-              </li>
-            )}
-          </ul>
+          </div>
         </section>
+      </section>
+
+      {/* Activity Feed */}
+      <section className="office-activity" style={{ marginTop: 32 }}>
+        <h2 className="page-title-main" style={{ fontSize: 18, marginBottom: 4 }}>
+          Recent activity
+        </h2>
+        <p className="page-subtitle-main">
+          High-level log from the Tasks activity feed.
+        </p>
+        <ul className="activity-list">
+          {activities.slice(0, 20).map((activity) => (
+            <li key={activity.id} className="activity-item">
+              <div className="activity-message">{activity.message}</div>
+              <div className="activity-meta">{activity.createdAt}</div>
+            </li>
+          ))}
+          {activities.length === 0 && (
+            <li className="activity-item">
+              <div className="activity-message">
+                No activity logged yet. Updates from the Tasks board will appear here.
+              </div>
+            </li>
+          )}
+        </ul>
       </section>
     </main>
   );

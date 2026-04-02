@@ -6,7 +6,7 @@ const baseDir = path.join(process.cwd(), 'data');
 const tasksFile = path.join(baseDir, 'tasks.json');
 
 export type ColumnKey = 'Recurring' | 'Backlog' | 'In Progress' | 'Review' | 'Live Activity';
-export type Assignee = 'Mike' | 'OpenClaw' | 'Sub-agent';
+export type Assignee = 'Mike' | 'OpenClaw' | 'Sub-agent' | 'Scout' | 'Echo' | 'Forge' | 'Quill' | 'Raimey' | 'Radar';
 
 export type Task = {
   id: string;

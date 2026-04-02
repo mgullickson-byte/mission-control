@@ -129,6 +129,40 @@
       "assignee": "Forge",
       "column": "In Progress",
       "createdAt": "2026-03-08 17:14 PT"
+    },
+    {
+      "id": "task-ai-mix-sfx-library",
+      "title": "AI Mix: Wire in SFX library API for direction-driven sound search",
+      "description": "When Claude receives a direction like \"add a waterfall sound\" or \"find me a [X] effect\", it should search a licensed SFX library and drop the result onto the SFX track. New action type: search_sfx with query param. Options: Epidemic Sound, Artlist, Soundsnap, Freesound (free/CC). Wire search results back to frontend — Claude auto-picks best match or returns top 3 for user to choose.",
+      "column": "Backlog",
+      "assignee": "Forge",
+      "priority": "Medium",
+      "project": "ai-mix-platform",
+      "tags": [
+        "ai-mix",
+        "sfx",
+        "library",
+        "direction"
+      ],
+      "createdAt": "2026-04-01",
+      "notes": "Current mock SFX library has no real audio. Direction AI correctly declines SFX requests it cannot fulfill. This unblocks iterative conversational mixing — producer describes what they hear, Claude refines continuously including adding real SFX."
+    },
+    {
+      "id": "task-ai-mix-voice-load-assets",
+      "title": "AI Mix: Load assets from My Files via voice command",
+      "description": "When user says \"let's mix the :60\" or \"load the VO and music\", Claude should look at My Files, infer track assignments from filenames (VO/talent/announcer → VO1, music/bed → Music, tag/donut → VO2, sfx/effect → SFX), assign them to tracks, set spot duration, and confirm ready to mix. No manual drag required.",
+      "column": "Backlog",
+      "assignee": "Forge",
+      "priority": "Medium",
+      "project": "ai-mix-platform",
+      "tags": [
+        "ai-mix",
+        "direction",
+        "ux",
+        "assets"
+      ],
+      "createdAt": "2026-04-01",
+      "notes": "Makes the intake flow fully conversational. Producer uploads files to My Files, then just says what they want to mix."
     }
   ],
   "activities": [

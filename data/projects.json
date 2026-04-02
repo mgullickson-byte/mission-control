@@ -1,124 +1,114 @@
 {
   "projects": [
     {
-      "id": "mission-control-v1",
-      "name": "Mission Control v1",
+      "id": "tinygiant",
+      "name": "tinyGIANT",
       "company": "Both",
-      "description": "Stand up Mission Control as the operating system for Select Casting and Studio Awesome: leads, tasks, tools, calendar, memory, docs, and team.",
+      "url": "https://tgiant.ai",
+      "description": "Exclusive fractional advertising & production platform. Invitation-only member collective — best creatives, directors, colorists, editors, engineers, all fractional. Phase 1 MVP shipped (vendor directory, DB, auth, 60 vendors, full client flow). Phase 2: wire Send Brief to real DB, member dashboard, deploy to tgiant.ai.",
       "status": "In Progress",
-      "progress": 70,
+      "progress": 30,
+      "tags": ["tinygiant", "fractional", "advertising", "platform", "product"]
+    },
+    {
+      "id": "ai-mix-platform",
+      "name": "AI Mix Platform (app.studioawesome.ai)",
+      "url": "https://ai-mix-platform.vercel.app",
+      "company": "Studio Awesome",
+      "description": "End-to-end commercial audio production platform. Phase 1 LIVE at ai-mix-platform.vercel.app. Full workflow: scoping → casting → recording → video upload → AI music/SFX suggestions → AI mix → engineer handoff → versioning → QC delivery. v2 design locked: VO 1 + VO 2 tracks, AI direction layer (Claude with full project context), live engineer button, readability-first UI (16px+, dark charcoal, SA gradient as accent).",
+      "status": "In Progress",
+      "progress": 25,
+      "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product", "select-casting"]
+    },
+    {
+      "id": "select-casting-crm",
+      "name": "Select Casting CRM",
+      "company": "Select Casting",
+      "description": "Full CRM replacing Pipedrive ($100/mo → $15/mo). Kanban drag-and-drop board, SC/SA checkboxes per contact, automated email triggers on column moves, Microsoft Graph API email sync (mike@select-casting.com + josiah@studioawesome.la), Calendly webhook for demo bookings, 500 emails/day limit. 1,954 contacts imported to Postgres as of 2026-03-19. Separate logins for Mike (all) and Josiah (SA + shared SC).",
+      "status": "In Progress",
+      "progress": 20,
+      "tags": ["select casting", "crm", "contacts", "email", "automation"]
+    },
+    {
+      "id": "mission-control-v1",
+      "name": "Mission Control",
+      "company": "Both",
+      "description": "Operating system for Select Casting and Studio Awesome: projects, tasks, leads, tools, calendar, memory, docs, and team. Light theme redesign in progress. Llama-driven auto-sync for real-time project updates.",
+      "status": "In Progress",
+      "progress": 75,
       "tags": ["mission control", "internal", "infrastructure"]
     },
     {
-      "id": "studio-awesome-website",
-      "name": "Studio Awesome Website",
-      "company": "Studio Awesome",
-      "description": "Design and launch a focused Studio Awesome website that clearly explains services (mix, ADR, creative), showcases work, and supports lead capture.",
+      "id": "select-casting-lead-gen-smb-agencies",
+      "name": "Select Casting Lead Gen — Small/Mid Agencies",
+      "company": "Select Casting",
+      "description": "Scout pipeline: Apollo → dedupe → MillionVerifier → SmartReach push. 951+ SmartReach-ready leads across SC + SA. Query rotation active (4 SC variants, 3 SA variants). Fully autonomous, runs on cron.",
       "status": "In Progress",
       "progress": 80,
-      "tags": ["studio awesome", "website", "brand"]
-    },
-    {
-      "id": "studio-awesome-mix-booking",
-      "name": "Studio Awesome Mix Booking App",
-      "company": "Studio Awesome",
-      "description": "Build and ship the Studio Awesome Mix booking app so clients can easily view availability and book sessions.",
-      "status": "In Progress",
-      "progress": 75,
-      "tags": ["studio awesome", "mix", "product", "booking"]
-    },
-    {
-      "id": "select-casting-lead-gen-smb-agencies",
-      "name": "Select Casting Lead Gen - Small/Mid Agencies",
-      "company": "Select Casting",
-      "description": "Design and implement a repeatable lead gen system for Select Casting focused on small and mid-sized ad agencies (ICP, lists, outreach, and tracking).",
-      "status": "In Progress",
-      "progress": 65,
-      "tags": ["select casting", "leads", "outbound", "agencies", "system"]
+      "tags": ["select casting", "leads", "outbound", "agencies", "apollo", "smartreach"]
     },
     {
       "id": "studio-awesome-adr-radius-leads",
-      "name": "ADR Leads - 2-Mile Radius of 1608 Argyle",
+      "name": "ADR Leads — 2-Mile Radius of 1608 Argyle",
       "company": "Studio Awesome",
-      "description": "Build a lightweight system to identify and engage companies within ~2 miles of 1608 Argyle Ave that need ADR/audio post, and create a steady pipeline of local leads.",
+      "description": "Echo pipeline for Studio Awesome. 796+ SmartReach-ready leads (production companies, post houses, ad agencies, gaming studios). ADR campaign via josiah@studioawesome.net targeting post supervisors and producers within reach of the Hollywood studio.",
       "status": "In Progress",
-      "progress": 35,
-      "tags": ["studio awesome", "ADR", "leads", "local", "system"]
-    },
-    {
-      "id": "fractional-advertising-rail",
-      "name": "Fractional Advertising Model",
-      "company": "Both",
-      "description": "Design and validate a fractional advertising service that brings brand strategy, creative, production, post, and business affairs together in a single app/service.",
-      "status": "In Progress",
-      "progress": 20,
-      "tags": ["fractional", "advertising", "rails", "audio-first"]
+      "progress": 45,
+      "tags": ["studio awesome", "ADR", "leads", "local", "apollo", "smartreach"]
     },
     {
       "id": "select-casting-blog-posts",
       "name": "Select Casting Blog Posts",
       "company": "Select Casting",
-      "description": "Plan and produce a series of SEO-focused blog posts for Select Casting to drive organic traffic around casting, production, and advertising topics.",
+      "description": "SEO-focused blog series for Select Casting. Posts in Review: AI vs. Human VO (ready to publish NOW — Meta NewFronts + Sora shutdown as news hooks), CTV spend post (publish this week — $38B CTV market). Drafts: VO casting brief template, non-union rates for social/digital.",
       "status": "In Progress",
-      "progress": 40,
+      "progress": 50,
       "tags": ["select casting", "blog", "SEO", "content"]
     },
     {
-      "id": "lead-gen-integrations-apollo-mv-smartreach",
-      "name": "Lead Gen Integrations - Apollo / MillionVerifier / SmartReach",
+      "id": "mac-studio-setup",
+      "name": "Mac Studio — Local AI Coding Machine",
       "company": "Both",
-      "description": "Wire Scout and Echo to find, verify, and route leads from Apollo into Mission Control, MillionVerifier, and SmartReach campaigns.",
+      "description": "Mac Studio (M4, high RAM) at 192.168.5.223. SSH ready from MacBook. Ollama installed and running. Models live: Qwen 2.5 Coder 32B (code generation) + Llama 3.2 3B (research, writing, data work). Goal: zero API cost for coding tasks. Qwen = developer, Llama = analyst, Claude = decisions.",
       "status": "In Progress",
-      "progress": 75,
-      "tags": [
-        "select casting",
-        "studio awesome",
-        "leads",
-        "apollo",
-        "millionverifier",
-        "smartreach",
-        "automation"
-      ]
+      "progress": 60,
+      "tags": ["mac studio", "ollama", "qwen", "llama", "infrastructure", "AI"]
     },
     {
       "id": "mikegullickson-author-site",
       "name": "MikeGullickson.com Author Site",
       "company": "Both",
-      "description": "Design, build, and deploy a dedicated author site for Mike (mikegullickson.com) that showcases The Northern Star trilogy, The Seethe, world art, reviews, and an updated author bio.",
+      "description": "Author site for Mike showcasing The Northern Star trilogy, The Seethe, world art, reviews, and author bio. Site is live at mikegullickson.com.",
       "status": "In Progress",
-      "progress": 55,
+      "progress": 75,
       "tags": ["author", "website", "books", "worldbuilding"]
-    }
-  ,
+    },
     {
       "id": "the-promise-novel",
       "name": "The Promise (Novel)",
       "company": "Both",
-      "description": "Editorial development of Mike's finished fantasy/apocalyptic novel. Protagonist: Amal (they/them), a genetically engineered soldier — 'amalgamate' — navigating identity and survival at the end of the world. Key decisions: commit to Amal/they-them throughout, shed 'Adam' as the state-assigned name. Title: The Promise (God's rainbow covenant, inverted). 107k words. Next: editorial pass chapter by chapter — pronoun/name consistency, prose tightening, structural notes.",
+      "description": "Editorial development of Mike's finished fantasy/apocalyptic novel. Protagonist: Amal (they/them), a genetically engineered soldier navigating identity and survival at the end of the world. 107k words. Next: editorial pass — pronoun/name consistency, prose tightening, structural notes.",
       "status": "In Progress",
       "progress": 10,
       "tags": ["novel", "editorial", "writing", "the-promise", "amal"]
-    }
-  ,
-    {
-      "id": "ai-mix-platform",
-      "name": "AI Mix Platform (app.studioawesome.ai)",
-      "url": "https://ai-mix-platform-l8z42xkpm-select-casting.vercel.app",
-      "company": "Studio Awesome",
-      "description": "End-to-end commercial audio production platform. Two tiers: full-service (Studio Awesome runs it) and self-serve (client runs it, SA available for QC). Full workflow: (1) Project scoping upfront — client declares ALL versions needed at the start (e.g., :60 TV + :30 TV + :15 TV + :30 radio); can upload multiple locked videos (one per length) if each version has its own edit; one project, multiple deliverables, no starting over; scope feeds directly into rate calculator for full budget before casting begins; (2) Script timing analysis — AI predicts clock time per script, flags if any version will run long before session is booked; (3) Select Casting integration — builds casting brief directly, usage/term answers auto-populate rate calculator; (4) Casting via Select Casting; (5) Recording — live at Studio Awesome, remote via Source Connect/Audiomovers, or self-recorded; (6) Video upload (locked picture per version) — AI analyzes visual cues (cuts, scene changes, product reveals) to suggest music and SFX placement at timecodes; (7) Licensed music + SFX library (Artlist/Epidemic Sound/Musicbed via API) — two-layer UI: (a) AI surfaces top 5 context-matched suggestions; (b) full browse mode — searchable/filterable catalog, client searches 'car crash' and auditions all 30 licensed results; everything auditionable in-context against their actual VO and video, not in isolation; all pre-cleared for commercial use; (8) AI mix — automated mix to picture per version, Dolby.io processing, natural language feedback loop; (9) Engineer handoff package if AI mix needs human touch: WAV stems at 48kHz/24-bit (Voice, SFX, Music separate), all source assets, notes doc (EQ, processing decisions); (10) Engineer exports approved mix back into platform; (11) AI versioning — approved mix generates market versions (swap tags, same mix); (12) QC + delivery — platform auto-outputs to correct loudness/format spec per medium based on version settings selected at scoping: Broadcast TV -24 LKFS ATSC A/85 (48kHz/24-bit WAV); Netflix -27 LKFS; Amazon/Apple -24 LKFS; YouTube/Digital -14 LKFS (MP3 320/AAC); Radio -24 LKFS (MP3 or WAV); Podcast -16 LKFS (MP3); Dolby.io handles normalization + format conversion; client receives delivery package with each version in correct spec, ready to send directly to station/platform; engineer handoff notes include target spec per version. Moat: SA owns the casting platform (Select Casting) + the studio (1608 Argyle) — closed loop no competitor has. Josiah (SA business partner) confirmed engineer handoff spec + full feature review 2026-03-13.",
-      "status": "In Progress",
-      "progress": 15,
-      "tags": ["studio awesome", "AI", "mixing", "platform", "audio", "product", "video", "select-casting", "versioning"]
-    }
-  ,
+    },
     {
       "id": "select-casting-ai-chat-rate-calculator",
       "name": "Select Casting AI — Casting Assistant + Rate Tool",
       "company": "Select Casting",
-      "description": "AI features embedded into the Select Casting platform (select-casting.com). Two primary areas: (1) CASTING BRIEF AI ASSIST — buyer uploads script(s), AI auto-fills: role names (adult and youth separated), number of roles, talent spec draft from character descriptions/tone in script, product type suggestion, usage type suggestion; AI does NOT auto-fill script timing (not relevant to casting); for Talent Budget field, a 'Our Recommendation' button above the field suggests a rate based on filled-in usage/market/term using SC real-world data (linked to rate calculator for full breakdown); buyer still enters their own number but gets a data anchor; AI asks clarifying questions for fields it cannot infer (union status, markets, due date); works for both VO and On-Camera forms; (2) AUDITION REVIEW AI ASSIST — team vote tracking is OPTIONAL (opt-in per project, off by default) — project owner enables "Team Review" to invite stakeholders; AI surfaces consensus picks when enabled; audition tone tagging removed from scope; (3) TALENT AGENCY ROSTER MATCHING — when a brief comes in, AI scans agency roster and surfaces top 5-10 talent matches so agents don't manually scan; pre-generates audition sides from script (relevant lines, clean format); flags audition QC issues before agent submits (background noise, over-length takes); (4) RETURNING BUYER HISTORY — AI learns from a buyer's past castings to pre-fill defaults on new projects. No script timing analysis feature (belongs on AI Mix Platform only).",
+      "description": "AI features embedded into select-casting.com: (1) Casting Brief AI Assist — auto-fills roles, talent spec, usage from uploaded script; (2) Audition Review AI — optional team vote tracking, consensus picks; (3) Talent Agency Roster Matching — surfaces top talent matches when brief arrives; (4) Returning Buyer History — learns past castings to pre-fill defaults.",
       "status": "Planning",
       "progress": 5,
-      "tags": ["select casting", "AI", "casting", "rate calculator", "SAG", "GVAA", "website", "audition", "talent-agency"]
+      "tags": ["select casting", "AI", "casting", "rate calculator", "audition"]
+    },
+    {
+      "id": "studio-awesome-website",
+      "name": "Studio Awesome Website",
+      "company": "Studio Awesome",
+      "description": "studioawesome.la — currently frozen. Services: mix, ADR, creative audio. Credits: GOAT, Your Friends & Neighbors, Unfrosted, The Morning Show, Fargo. No further edits until ADR campaign results are in.",
+      "status": "On Hold",
+      "progress": 80,
+      "tags": ["studio awesome", "website", "brand"]
     }
   ]
 }

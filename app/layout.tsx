@@ -49,6 +49,9 @@ export default function RootLayout({
               <Link href="/office" className="mc-nav-link">
                 Office
               </Link>
+              <Link href="/smartreach" className="mc-nav-link">
+                Outreach
+              </Link>
             </nav>
           </div>
         </header>

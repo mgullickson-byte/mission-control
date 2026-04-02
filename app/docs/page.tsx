@@ -8,6 +8,7 @@ export type Doc = {
   description: string;
   createdAt: string;
   tags: string[];
+  folder?: string;
 };
 
 type DocDetail = {
@@ -99,6 +100,11 @@ export default function DocsPage() {
                 </button>
                 <div className="docs-item-meta">
                   <span className="meta-label">{doc.createdAt}</span>
+                  {doc.folder && doc.folder !== "root" && (
+                    <span className="pill pill-soft" style={{ fontSize: 11 }}>
+                      {doc.folder}
+                    </span>
+                  )}
                   <div className="docs-tags">
                     {doc.tags.map((tag) => (
                       <span key={tag} className="pill pill-soft">
