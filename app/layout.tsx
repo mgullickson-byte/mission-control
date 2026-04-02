@@ -4,7 +4,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Mission Control',
-  description: 'Leads, tasks, tools, and projects for Select Casting and Studio Awesome'
+  description: 'Tasks, tools, and projects for Select Casting and Studio Awesome'
 };
 
 export default function RootLayout({
@@ -31,13 +31,7 @@ export default function RootLayout({
               <Link href="/calendar" className="mc-nav-link">
                 Calendar
               </Link>
-              <Link href="/" className="mc-nav-link">
-                Leads
-              </Link>
-              <Link href="/adr-leads" className="mc-nav-link">
-                ADR Leads
-              </Link>
-              <Link href="/memory" className="mc-nav-link">
+<Link href="/memory" className="mc-nav-link">
                 Memory
               </Link>
               <Link href="/docs" className="mc-nav-link">
