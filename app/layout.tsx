@@ -19,33 +19,16 @@ export default function RootLayout({
           <div className="mc-nav-left">
             <span className="mc-nav-brand">Mission Control</span>
             <nav className="mc-nav-links">
-              <Link href="/tasks" className="mc-nav-link">
-                Tasks
-              </Link>
-              <Link href="/tools" className="mc-nav-link">
-                Tools
-              </Link>
-              <Link href="/projects" className="mc-nav-link">
-                Projects
-              </Link>
-              <Link href="/calendar" className="mc-nav-link">
-                Calendar
-              </Link>
-<Link href="/memory" className="mc-nav-link">
-                Memory
-              </Link>
-              <Link href="/docs" className="mc-nav-link">
-                Docs
-              </Link>
-              <Link href="/team" className="mc-nav-link">
-                Team
-              </Link>
-              <Link href="/office" className="mc-nav-link">
-                Office
-              </Link>
-              <Link href="/smartreach" className="mc-nav-link">
-                Outreach
-              </Link>
+              <Link href="/tasks" className="mc-nav-link">Tasks</Link>
+              <Link href="/tools" className="mc-nav-link">Tools</Link>
+              <Link href="/projects" className="mc-nav-link">Projects</Link>
+              <Link href="/calendar" className="mc-nav-link">Calendar</Link>
+              <Link href="/memory" className="mc-nav-link">Memory</Link>
+              <Link href="/docs" className="mc-nav-link">Docs</Link>
+              <Link href="/team" className="mc-nav-link">Team</Link>
+              <Link href="/office" className="mc-nav-link">Office</Link>
+              <Link href="/cron" className="mc-nav-link">Cron</Link>
+              <Link href="/smartreach" className="mc-nav-link">Outreach</Link>
             </nav>
           </div>
         </header>
