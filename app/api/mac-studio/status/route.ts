@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const OLLAMA_BASE = 'http://192.168.5.223:11434';
+const OLLAMA_BASE = 'https://eli-glomerate-hamfistedly.ngrok-free.dev';
 const TIMEOUT_MS = 3000;
 
 type OllamaModel = { name: string };
