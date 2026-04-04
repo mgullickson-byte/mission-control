@@ -1,423 +1,233 @@
-"use client";
+'use client';
 
-import { useEffect, useMemo, useState } from "react";
+// app/tasks/page.tsx
+// ─── Tasks Page ─── Kanban display (no drag-drop for v2).
+// Columns: Backlog | In Progress | Review | Recurring | Live Activity
+// Click a task card to expand inline with full detail.
 
-const COLUMNS = [
-  "Recurring",
-  "Backlog",
-  "In Progress",
-  "Review",
-  "Live Activity"
-] as const;
+import { useEffect, useMemo, useState } from 'react';
+import {
+  COLORS, ASSIGNEE_COLORS, PRIORITY_COLORS,
+  CARD_STYLE, SECTION_LABEL_STYLE, badgeStyle,
+  FONT_SIZE, FONT_WEIGHT, SPACE, RADIUS,
+} from '@/lib/design';
 
-export type ColumnKey = (typeof COLUMNS)[number];
+// ─── Types ───
+type ColumnKey = 'Backlog' | 'In Progress' | 'Review' | 'Recurring' | 'Live Activity';
+type Assignee  = 'Mike' | 'OpenClaw' | 'Sub-agent' | 'Scout' | 'Echo' | 'Forge' | 'Quill' | 'Raimey' | 'Radar';
 
-export type Assignee = "Mike" | "OpenClaw" | "Sub-agent";
-
-export type Task = {
-  id: string;
-  title: string;
+interface Task {
+  id:          string;
+  title:       string;
   description: string;
-  assignee: Assignee;
-  column: ColumnKey;
-  createdAt: string;
-};
-
-type Activity = {
-  id: string;
-  message: string;
-  createdAt: string;
-};
-
-const initialTasks: Task[] = [
-  {
-    id: "task-seed-1",
-    title: "Draft Mission Control spec",
-    description: "Capture the first version of what Mission Control should be.",
-    assignee: "Mike",
-    column: "Review",
-    createdAt: "Seeded in Mission Control"
-  },
-  {
-    id: "task-seed-2",
-    title: "Wire up initial tools shell",
-    description:
-      "Create Linear-style tools UI in Next.js and add a couple of starter tools.",
-    assignee: "OpenClaw",
-    column: "In Progress",
-    createdAt: "Seeded in Mission Control"
-  }
-];
-
-const seedActivities: Activity[] = [
-  {
-    id: "activity-seed-1",
-    message: "Seeded Mission Control tasks board.",
-    createdAt: "Seeded in Mission Control"
-  }
-];
-
-function columnClassName(column: ColumnKey): string {
-  const slug = column.toLowerCase().replace(/\s+/g, "-");
-  return `tasks-column tasks-column-${slug}`;
+  assignee:    Assignee;
+  column:      ColumnKey;
+  priority?:   string;
+  createdAt:   string;
 }
 
-export default function TasksPage() {
-  const [tasks, setTasks] = useState<Task[]>(initialTasks);
-  const [activities, setActivities] = useState<Activity[]>(seedActivities);
-  const [selectedTaskId, setSelectedTaskId] = useState<string | null>(
-    initialTasks[0]?.id ?? null
+interface Activity {
+  id:        string;
+  message:   string;
+  createdAt: string;
+}
+
+// ─── Column Config ───
+const COLUMNS: ColumnKey[] = ['Backlog', 'In Progress', 'Review', 'Recurring', 'Live Activity'];
+
+const COLUMN_ACCENT: Record<ColumnKey, string> = {
+  'Backlog':       COLORS.textMuted,
+  'In Progress':   COLORS.accentOrange,
+  'Review':        COLORS.warning,
+  'Recurring':     COLORS.accentBlue,
+  'Live Activity': COLORS.accentGreen,
+};
+
+// ─── Priority dot helper ───
+function PriorityDot({ priority }: { priority?: string }) {
+  if (!priority) return null;
+  const color = PRIORITY_COLORS[priority] ?? COLORS.textMuted;
+  return (
+    <div style={{ width: 7, height: 7, borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} title={priority} />
   );
-  const [showNewTask, setShowNewTask] = useState(false);
-  const [draftTitle, setDraftTitle] = useState("");
-  const [draftDescription, setDraftDescription] = useState("");
-  const [draftAssignee, setDraftAssignee] = useState<Assignee>("OpenClaw");
-  const [draftColumn, setDraftColumn] = useState<ColumnKey>("Backlog");
+}
 
-  const selectedTask = useMemo(
-    () => tasks.find((t) => t.id === selectedTaskId) ?? tasks[0] ?? null,
-    [selectedTaskId, tasks]
-  );
-
-  const groupedTasks = useMemo(
-    () =>
-      COLUMNS.map((column) => ({
-        column,
-        tasks: tasks.filter((task) => task.column === column)
-      })),
-    [tasks]
-  );
-
-  // Load from API on mount so we pick up the persisted task board.
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await fetch("/api/tasks");
-        if (!res.ok) return;
-        const data = (await res.json()) as {
-          tasks: Task[];
-          activities: Activity[];
-        };
-        setTasks(data.tasks);
-        setActivities(data.activities);
-        if (!selectedTaskId && data.tasks[0]) {
-          setSelectedTaskId(data.tasks[0].id);
-        }
-      } catch {
-        // Fail silently; UI will keep using in-memory seeds.
-      }
-    };
-
-    load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const persist = (nextTasks: Task[], nextActivities: Activity[]) => {
-    setTasks(nextTasks);
-    setActivities(nextActivities);
-    // Fire and forget; persistence lives on the server side.
-    void fetch("/api/tasks", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ tasks: nextTasks, activities: nextActivities })
-    });
-  };
-
-  const pushActivity = (message: string, nextTasks: Task[] | null = null) => {
-    setActivities((current) => {
-      const activity: Activity = {
-        id: `activity-${current.length + 1}-${Date.now()}`,
-        message,
-        createdAt: new Date().toLocaleString()
-      };
-      const nextActivities = [activity, ...current];
-      // Mirror to disk together with current or provided tasks.
-      persist(nextTasks ?? tasks, nextActivities);
-      return nextActivities;
-    });
-  };
-
-  const handleCreateTask = () => {
-    if (!draftTitle.trim()) return;
-
-    const task: Task = {
-      id: `task-${tasks.length + 1}-${Date.now()}`,
-      title: draftTitle.trim(),
-      description: draftDescription.trim(),
-      assignee: draftAssignee,
-      column: draftColumn,
-      createdAt: new Date().toLocaleString()
-    };
-
-    const nextTasks = [task, ...tasks];
-    setSelectedTaskId(task.id);
-    setShowNewTask(false);
-    pushActivity(
-      `Created task "${task.title}" in ${task.column} and assigned to ${task.assignee}.`,
-      nextTasks
-    );
-    setDraftTitle("");
-    setDraftDescription("");
-    setDraftAssignee("OpenClaw");
-    setDraftColumn("Backlog");
-  };
-
-  const handleColumnChange = (task: Task, column: ColumnKey) => {
-    if (task.column === column) return;
-
-    const nextTasks = tasks.map((t) =>
-      t.id === task.id ? { ...t, column } : t
-    );
-    setSelectedTaskId(task.id);
-    pushActivity(
-      `Moved task "${task.title}" from ${task.column} to ${column}.`,
-      nextTasks
-    );
-  };
-
-  const handleAssigneeChange = (task: Task, assignee: Assignee) => {
-    if (task.assignee === assignee) return;
-
-    const nextTasks = tasks.map((t) =>
-      t.id === task.id ? { ...t, assignee } : t
-    );
-    setSelectedTaskId(task.id);
-    pushActivity(
-      `Reassigned task "${task.title}" from ${task.assignee} to ${assignee}.`,
-      nextTasks
-    );
-  };
+// ─── Task Card ───
+function TaskCard({ task, expanded, onToggle }: {
+  task:     Task;
+  expanded: boolean;
+  onToggle: () => void;
+}) {
+  const assigneeColor = ASSIGNEE_COLORS[task.assignee] ?? COLORS.textMuted;
 
   return (
-    <main className="tasks-root">
-      <header className="tasks-header">
-        <div>
-          <h1 className="tasks-title">Tasks</h1>
-          <p className="tasks-subtitle">
-            Kanban board for you, OpenClaw, and future sub-agents.
-          </p>
-        </div>
-        <button
-          type="button"
-          className="primary-button"
-          onClick={() => setShowNewTask(true)}
-        >
-          New task
-        </button>
-      </header>
+    <div
+      onClick={onToggle}
+      style={{
+        backgroundColor: COLORS.surface,
+        border:          '1px solid ' + (expanded ? COLORS.borderActive : COLORS.border),
+        borderRadius:    RADIUS.card,
+        padding:         '0.75rem 1rem',
+        cursor:          'pointer',
+        transition:      'border-color 0.2s',
+        marginBottom:    SPACE.cardGap,
+      }}
+    >
+      {/* Header row */}
+      <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: expanded ? '0.5rem' : 0 }}>
+        <PriorityDot priority={task.priority} />
+        <span style={{
+          fontSize:   FONT_SIZE.cardBody,
+          fontWeight: FONT_WEIGHT.cardTitle,
+          color:      COLORS.textPrimary,
+          flex:       1,
+          lineHeight: 1.4,
+        }}>
+          {task.title}
+        </span>
+        <span style={badgeStyle(assigneeColor)}>{task.assignee}</span>
+      </div>
 
-      <section className="tasks-body">
-        <div className="tasks-board">
-          {groupedTasks.map((group) => (
-            <section className={columnClassName(group.column)} key={group.column}>
-              <header className="tasks-column-header">
-                <h2 className="tasks-column-title">{group.column}</h2>
-                <span className="tasks-column-count">{group.tasks.length}</span>
-              </header>
-              <ul className="tasks-column-list">
-                {group.tasks.map((task) => (
-                  <li key={task.id}>
-                    <button
-                      type="button"
-                      className={
-                        "task-card" +
-                        (selectedTask?.id === task.id ? " task-card-active" : "")
-                      }
-                      onClick={() => setSelectedTaskId(task.id)}
-                    >
-                      <div className="task-card-main">
-                        <h3 className="task-card-title">{task.title}</h3>
-                        {task.description && (
-                          <p className="task-card-description">
-                            {task.description}
-                          </p>
-                        )}
-                      </div>
-                      <div className="task-card-meta">
-                        <span className="pill pill-soft">{task.assignee}</span>
-                      </div>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-        </div>
-
-        <aside className="tasks-detail">
-          {selectedTask ? (
-            <div className="tasks-detail-card">
-              <header className="tasks-detail-header">
-                <div>
-                  <h2 className="tasks-detail-title">{selectedTask.title}</h2>
-                  {selectedTask.description && (
-                    <p className="tasks-detail-subtitle">
-                      {selectedTask.description}
-                    </p>
-                  )}
-                </div>
-                <div className="tasks-detail-meta">
-                  <span className="meta-label">
-                    Created {selectedTask.createdAt}
-                  </span>
-                </div>
-              </header>
-
-              <div className="tasks-detail-body">
-                <div className="tasks-detail-section">
-                  <h3 className="section-title">Assignment</h3>
-                  <p className="section-help">
-                    This is who owns the task right now.
-                  </p>
-                  <div className="field-row">
-                    <label className="field">
-                      <span className="field-label">Assignee</span>
-                      <select
-                        className="field-input"
-                        value={selectedTask.assignee}
-                        onChange={(e) =>
-                          handleAssigneeChange(
-                            selectedTask,
-                            e.target.value as Assignee
-                          )
-                        }
-                      >
-                        <option value="Mike">Mike</option>
-                        <option value="OpenClaw">OpenClaw</option>
-                        <option value="Sub-agent">Sub-agent</option>
-                      </select>
-                    </label>
-                    <label className="field">
-                      <span className="field-label">Column</span>
-                      <select
-                        className="field-input"
-                        value={selectedTask.column}
-                        onChange={(e) =>
-                          handleColumnChange(
-                            selectedTask,
-                            e.target.value as ColumnKey
-                          )
-                        }
-                      >
-                        {COLUMNS.map((column) => (
-                          <option key={column} value={column}>
-                            {column}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
-                  </div>
-                </div>
-
-                <div className="tasks-detail-section">
-                  <h3 className="section-title">Live activity feed</h3>
-                  <p className="section-help">
-                    A log of what Mission Control is doing. Later this will show
-                    real-time agent work.
-                  </p>
-                  <ul className="activity-list">
-                    {activities.map((activity) => (
-                      <li key={activity.id} className="activity-item">
-                        <div className="activity-message">
-                          {activity.message}
-                        </div>
-                        <div className="activity-meta">
-                          {activity.createdAt}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="tasks-detail-empty">
-              <p>Select or create a task to see details.</p>
+      {/* Expanded details */}
+      {expanded && (
+        <div style={{ paddingTop: '0.5rem', borderTop: '1px solid ' + COLORS.border, marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.375rem' }}>
+          {task.description && (
+            <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textSecondary, margin: 0, lineHeight: 1.5 }}>
+              {task.description}
+            </p>
+          )}
+          {task.priority && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <PriorityDot priority={task.priority} />
+              <span style={{ fontSize: FONT_SIZE.badge, color: PRIORITY_COLORS[task.priority] ?? COLORS.textMuted }}>
+                {task.priority} priority
+              </span>
             </div>
           )}
-        </aside>
-      </section>
-
-      {showNewTask && (
-        <div className="overlay" onClick={() => setShowNewTask(false)}>
-          <div className="overlay-card" onClick={(e) => e.stopPropagation()}>
-            <h2 className="overlay-title">New task</h2>
-            <p className="overlay-subtitle">
-              Tasks can be assigned to you, OpenClaw, or later sub-agents.
-            </p>
-            <div className="overlay-form">
-              <label className="field">
-                <span className="field-label">Title</span>
-                <input
-                  className="field-input"
-                  value={draftTitle}
-                  onChange={(e) => setDraftTitle(e.target.value)}
-                  placeholder="e.g. Set up first Studio Awesome project"
-                />
-              </label>
-              <label className="field">
-                <span className="field-label">Description</span>
-                <textarea
-                  className="field-input field-textarea"
-                  value={draftDescription}
-                  onChange={(e) => setDraftDescription(e.target.value)}
-                  placeholder="Optional details for this task"
-                  rows={3}
-                />
-              </label>
-              <div className="field-row">
-                <label className="field">
-                  <span className="field-label">Assignee</span>
-                  <select
-                    className="field-input"
-                    value={draftAssignee}
-                    onChange={(e) =>
-                      setDraftAssignee(e.target.value as Assignee)
-                    }
-                  >
-                    <option value="Mike">Mike</option>
-                    <option value="OpenClaw">OpenClaw</option>
-                    <option value="Sub-agent">Sub-agent</option>
-                  </select>
-                </label>
-                <label className="field">
-                  <span className="field-label">Column</span>
-                  <select
-                    className="field-input"
-                    value={draftColumn}
-                    onChange={(e) =>
-                      setDraftColumn(e.target.value as ColumnKey)
-                    }
-                  >
-                    {COLUMNS.map((column) => (
-                      <option key={column} value={column}>
-                        {column}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              </div>
-            </div>
-            <div className="overlay-actions">
-              <button
-                type="button"
-                className="ghost-button"
-                onClick={() => setShowNewTask(false)}
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                className="primary-button"
-                onClick={handleCreateTask}
-                disabled={!draftTitle.trim()}
-              >
-                Create task
-              </button>
-            </div>
-          </div>
+          <span style={{ fontSize: FONT_SIZE.badge, color: COLORS.textMuted }}>
+            Created {task.createdAt}
+          </span>
         </div>
       )}
-    </main>
+    </div>
+  );
+}
+
+// ─── Kanban Column ───
+function KanbanColumn({ column, tasks, expandedId, onToggle }: {
+  column:     ColumnKey;
+  tasks:      Task[];
+  expandedId: string | null;
+  onToggle:   (id: string) => void;
+}) {
+  const accentColor = COLUMN_ACCENT[column];
+
+  return (
+    <div style={{
+      display:         'flex',
+      flexDirection:   'column',
+      minWidth:        '220px',
+      flex:            '1 1 220px',
+    }}>
+      {/* Column header */}
+      <div style={{
+        display:        'flex',
+        alignItems:     'center',
+        justifyContent: 'space-between',
+        marginBottom:   '0.75rem',
+        paddingBottom:  '0.5rem',
+        borderBottom:   '2px solid ' + accentColor,
+      }}>
+        <span style={{ fontSize: FONT_SIZE.sectionLabel, fontWeight: FONT_WEIGHT.sectionLabel, textTransform: 'uppercase', letterSpacing: '0.08em', color: COLORS.textMuted }}>
+          {column}
+        </span>
+        <span style={{
+          ...badgeStyle(accentColor),
+          fontSize: FONT_SIZE.badge,
+        }}>
+          {tasks.length}
+        </span>
+      </div>
+
+      {/* Task cards */}
+      <div>
+        {tasks.map(task => (
+          <TaskCard
+            key={task.id}
+            task={task}
+            expanded={expandedId === task.id}
+            onToggle={() => onToggle(task.id)}
+          />
+        ))}
+        {tasks.length === 0 && (
+          <p style={{ fontSize: FONT_SIZE.small, color: COLORS.textMuted, margin: 0 }}>Empty</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Page ───
+export default function TasksPage() {
+  const [tasks,    setTasks]    = useState<Task[]>([]);
+  const [_activities, setActivities] = useState<Activity[]>([]);
+  const [loading,  setLoading]  = useState(true);
+  const [expanded, setExpanded] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch('/api/tasks')
+      .then(r => r.json())
+      .then((data: { tasks: Task[]; activities: Activity[] }) => {
+        setTasks(data.tasks ?? []);
+        setActivities(data.activities ?? []);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  const grouped = useMemo(
+    () => COLUMNS.map(col => ({ col, tasks: tasks.filter(t => t.column === col) })),
+    [tasks],
+  );
+
+  const handleToggle = (id: string) =>
+    setExpanded(prev => prev === id ? null : id);
+
+  return (
+    <div style={{ padding: SPACE.pagePadding, minHeight: '100vh' }}>
+
+      {/* ─── Header ─── */}
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '20px', fontWeight: 700, color: COLORS.textPrimary, margin: 0 }}>
+          Tasks
+        </h1>
+        <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textMuted, marginTop: '4px', marginBottom: 0 }}>
+          Kanban board across all agents and team members.
+        </p>
+      </div>
+
+      {loading && <p style={{ color: COLORS.textMuted, fontSize: FONT_SIZE.cardBody }}>Loading…</p>}
+
+      {/* ─── Kanban Board ─── */}
+      {!loading && (
+        <div style={{
+          display:   'flex',
+          gap:       '1.25rem',
+          overflowX: 'auto',
+          alignItems: 'flex-start',
+          paddingBottom: '1rem',
+        }}>
+          {grouped.map(({ col, tasks: colTasks }) => (
+            <KanbanColumn
+              key={col}
+              column={col}
+              tasks={colTasks}
+              expandedId={expanded}
+              onToggle={handleToggle}
+            />
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
