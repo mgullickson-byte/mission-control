@@ -1,103 +1,165 @@
 'use client';
 
 // app/connections/page.tsx
-// ─── Connections Page ───
-// Shows all services Raimey is connected to with live status.
-// Reference for any agent (Haiku, Sonnet, Llama) needing credential info.
+// ─── Connections / API Station ───
+// Grid of integration cards with live status pings.
+// Each card shows: name, emoji, status dot, credential path, notes.
 
 import { useEffect, useState } from 'react';
+import {
+  COLORS, CARD_STYLE, SECTION_LABEL_STYLE, FONT_SIZE, FONT_WEIGHT, SPACE, RADIUS,
+} from '@/lib/design';
+
+// ─── Types ───
+type ConnectionStatus = 'connected' | 'configured' | 'unknown';
 
 interface Connection {
-  id: string;
-  name: string;
-  emoji: string;
-  purpose: string;
+  id:             string;
+  name:           string;
+  emoji:          string;
+  purpose:        string;
   credentialPath: string;
-  notes?: string;
-  pingUrl?: string;
-  status?: 'connected' | 'configured' | 'unknown';
+  notes?:         string;
+  pingUrl?:       string;
+  status?:        ConnectionStatus;
 }
 
-const STATUS_COLORS: Record<string, string> = {
-  connected: '#10b981',
-  configured: '#f59e0b',
-  unknown: '#6b7280',
+// ─── Status Config ───
+const STATUS_COLORS: Record<ConnectionStatus, string> = {
+  connected:  COLORS.accentGreen,
+  configured: COLORS.warning,
+  unknown:    COLORS.textMuted,
 };
 
-const STATUS_LABELS: Record<string, string> = {
-  connected: 'Connected',
+const STATUS_LABELS: Record<ConnectionStatus, string> = {
+  connected:  'Connected',
   configured: 'Configured',
-  unknown: 'Unknown',
+  unknown:    'Unknown',
 };
 
+// ─── Connection Card ───
+function ConnectionCard({ conn }: { conn: Connection }) {
+  const status      = conn.status ?? 'unknown';
+  const statusColor = STATUS_COLORS[status];
+  const statusLabel = STATUS_LABELS[status];
+
+  return (
+    <div style={{ ...CARD_STYLE, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+      {/* Header: icon + name + status */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span style={{ fontSize: '1.5rem', lineHeight: 1 }}>{conn.emoji}</span>
+          <span style={{ fontWeight: FONT_WEIGHT.cardTitle, fontSize: FONT_SIZE.cardTitle, color: COLORS.textPrimary }}>
+            {conn.name}
+          </span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: statusColor }} />
+          <span style={{ fontSize: FONT_SIZE.badge, color: statusColor, fontWeight: 600 }}>
+            {statusLabel}
+          </span>
+        </div>
+      </div>
+
+      {/* Purpose */}
+      <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textSecondary, margin: 0, lineHeight: 1.5 }}>
+        {conn.purpose}
+      </p>
+
+      {/* Credential path */}
+      <code style={{
+        fontSize:        FONT_SIZE.badge,
+        color:           COLORS.textMuted,
+        backgroundColor: COLORS.background,
+        padding:         '4px 8px',
+        borderRadius:    RADIUS.badge,
+        display:         'block',
+        wordBreak:       'break-all',
+      }}>
+        {conn.credentialPath}
+      </code>
+
+      {/* Notes */}
+      {conn.notes && (
+        <p style={{ fontSize: FONT_SIZE.badge, color: COLORS.textMuted, margin: 0 }}>
+          {conn.notes}
+        </p>
+      )}
+    </div>
+  );
+}
+
+// ─── Page ───
 export default function ConnectionsPage() {
   const [connections, setConnections] = useState<Connection[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [loading,     setLoading]     = useState(true);
+  const [error,       setError]       = useState(false);
 
   useEffect(() => {
     fetch('/api/connections')
       .then(res => { if (!res.ok) throw new Error(); return res.json(); })
-      .then(setConnections)
+      .then((data: Connection[]) => setConnections(data))
       .catch(() => setError(true))
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <div style={{ padding: '2rem', color: '#f0f0f0' }}>Loading connections...</div>;
-  if (error) return <div style={{ padding: '2rem', color: '#ef4444' }}>Failed to load connections.</div>;
+  const connected  = connections.filter(c => c.status === 'connected');
+  const configured = connections.filter(c => c.status === 'configured');
+  const unknown    = connections.filter(c => !c.status || c.status === 'unknown');
 
   return (
-    <div style={{ padding: '2rem', fontFamily: '-apple-system, Helvetica, sans-serif' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '0.25rem', color: '#f0f0f0' }}>
-        Connections
-      </h1>
-      <p style={{ color: '#6b7280', marginBottom: '2rem', fontSize: '0.95rem' }}>
-        Every service Raimey is connected to — credentials, status, and usage notes.
-      </p>
+    <div style={{ padding: SPACE.pagePadding, minHeight: '100vh' }}>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.25rem' }}>
-        {connections.map(conn => {
-          const status = conn.status || 'configured';
-          const statusColor = STATUS_COLORS[status] || '#6b7280';
-          return (
-            <div key={conn.id} style={{
-              backgroundColor: '#1a1d27',
-              border: '1px solid #2a2d3a',
-              borderRadius: '10px',
-              padding: '1.25rem',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '0.5rem',
-            }}>
-              {/* Header */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span style={{ fontSize: '1.5rem' }}>{conn.emoji}</span>
-                  <span style={{ fontWeight: '600', fontSize: '1rem', color: '#f0f0f0' }}>{conn.name}</span>
-                </div>
-                {/* Status badge */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                  <div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: statusColor }} />
-                  <span style={{ fontSize: '0.75rem', color: statusColor }}>{STATUS_LABELS[status]}</span>
-                </div>
-              </div>
-
-              {/* Purpose */}
-              <p style={{ color: '#9ca3af', fontSize: '0.85rem', margin: 0 }}>{conn.purpose}</p>
-
-              {/* Credential path */}
-              <code style={{ fontSize: '0.75rem', color: '#6b7280', backgroundColor: '#0f1117', padding: '4px 8px', borderRadius: '4px', display: 'block', wordBreak: 'break-all' }}>
-                {conn.credentialPath}
-              </code>
-
-              {/* Notes */}
-              {conn.notes && (
-                <p style={{ color: '#6b7280', fontSize: '0.75rem', margin: 0 }}>{conn.notes}</p>
-              )}
-            </div>
-          );
-        })}
+      {/* ─── Header ─── */}
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '20px', fontWeight: 700, color: COLORS.textPrimary, margin: 0 }}>
+          Connections
+        </h1>
+        <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textMuted, marginTop: '4px', marginBottom: 0 }}>
+          Every service integration — credentials, status, and usage notes.
+        </p>
       </div>
+
+      {loading && <p style={{ color: COLORS.textMuted, fontSize: FONT_SIZE.cardBody }}>Checking connections…</p>}
+      {error   && <p style={{ color: COLORS.danger,    fontSize: FONT_SIZE.cardBody }}>Failed to load connections.</p>}
+
+      {!loading && !error && (
+        <>
+          {/* ─── Connected ─── */}
+          {connected.length > 0 && (
+            <>
+              <p style={SECTION_LABEL_STYLE}>Live — {connected.length}</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '0.875rem', marginBottom: '2rem' }}>
+                {connected.map(c => <ConnectionCard key={c.id} conn={c} />)}
+              </div>
+            </>
+          )}
+
+          {/* ─── Configured ─── */}
+          {configured.length > 0 && (
+            <>
+              <p style={SECTION_LABEL_STYLE}>Configured — {configured.length}</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '0.875rem', marginBottom: '2rem' }}>
+                {configured.map(c => <ConnectionCard key={c.id} conn={c} />)}
+              </div>
+            </>
+          )}
+
+          {/* ─── Unknown ─── */}
+          {unknown.length > 0 && (
+            <>
+              <p style={SECTION_LABEL_STYLE}>Unknown — {unknown.length}</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '0.875rem' }}>
+                {unknown.map(c => <ConnectionCard key={c.id} conn={c} />)}
+              </div>
+            </>
+          )}
+
+          {connections.length === 0 && (
+            <p style={{ color: COLORS.textMuted, fontSize: FONT_SIZE.cardBody }}>No connections configured.</p>
+          )}
+        </>
+      )}
     </div>
   );
 }
