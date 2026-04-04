@@ -28,6 +28,7 @@ export default function RootLayout({
               <Link href="/team" className="mc-nav-link">Team</Link>
               <Link href="/office" className="mc-nav-link">Office</Link>
               <Link href="/cron" className="mc-nav-link">Cron</Link>
+              <Link href="/billing" className="mc-nav-link">Billing</Link>
               <Link href="/smartreach" className="mc-nav-link">Outreach</Link>
             </nav>
           </div>
