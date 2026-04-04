@@ -1,211 +1,301 @@
 'use client';
 
 // app/page.tsx
-// ─── Mission Control Overview (Homepage) ───
-// Shows today's digest, project grid with live status, and active tasks.
+// ─── Mission Control Overview ───
+// Daily digest bar, project grid with inline expand, active tasks list.
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import {
+  COLORS, COMPANY_COLORS, ASSIGNEE_COLORS, STATUS_COLORS,
+  CARD_STYLE, SECTION_LABEL_STYLE, badgeStyle,
+  FONT_SIZE, FONT_WEIGHT, SPACE,
+} from '@/lib/design';
 
 // ─── Types ───
 interface Project {
-  id: string;
-  name: string;
-  company: string;
+  id:          string;
+  name:        string;
+  company:     string;
   description: string;
-  status: 'In Progress' | 'Done' | 'Backlog';
-  progress: number;
-  notes?: string;
-  tags?: string[];
-  url?: string;
+  status:      string;
+  progress:    number;
+  notes?:      string;
+  tags?:       string[];
+  url?:        string;
   liveStatus?: 'online' | 'offline' | 'unknown';
 }
 
 interface Task {
-  id: string;
-  title: string;
-  column: string;
-  assignee: string;
+  id:        string;
+  title:     string;
+  column:    string;
+  assignee:  string;
   priority?: string;
 }
 
 // ─── Constants ───
-const COMPANY_COLORS: Record<string, string> = {
-  SC: '#3b82f6',
-  SA: '#10b981',
-  Both: '#8b5cf6',
-};
+const QUICK_LINKS: { label: string; id: string; url: string }[] = [
+  { label: 'MC ↗',     id: 'mc',  url: 'https://mission-control-coral-three.vercel.app' },
+  { label: 'AI Mix ↗', id: 'mix', url: 'https://app.studioawesome.ai'                   },
+  { label: 'CRM ↗',    id: 'crm', url: 'https://sc-crm.vercel.app'                      },
+];
 
-const STATUS_COLORS: Record<string, string> = {
-  'In Progress': '#f97316',
-  'Done': '#10b981',
-  'Backlog': '#6b7280',
-};
-
-const ASSIGNEE_COLORS: Record<string, string> = {
-  OpenClaw: '#14b8a6',
-  Forge: '#8b5cf6',
-  Scout: '#3b82f6',
-  Echo: '#10b981',
-  Quill: '#eab308',
-  Mike: '#6b7280',
-  Raimey: '#14b8a6',
-};
-
-const VERCEL_URLS: Record<string, string> = {
-  'mission-control-v1': 'https://mission-control-coral-three.vercel.app',
-  'ai-mix-platform': 'https://app.studioawesome.ai',
-  'select-casting-lead-gen-smb-agencies': 'https://sc-crm.vercel.app',
-  'tinygiant': 'https://tgiant.vercel.app',
-  'mikegullickson-author-site': 'https://mikegullickson.com',
-};
+const MAX_TASKS_SHOWN = 10;
 
 // ─── Helpers ───
-const today = () => new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-const truncate = (str: string, n: number) => str.length > n ? str.slice(0, n) + '…' : str;
+const formatToday = (): { weekday: string; dayDate: string } => {
+  const now = new Date();
+  return {
+    weekday: now.toLocaleDateString('en-US', { weekday: 'long' }),
+    dayDate: now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }),
+  };
+};
 
+const truncate = (str: string, n: number): string =>
+  str.length > n ? str.slice(0, n) + '…' : str;
+
+const companyShort = (company: string): string => {
+  if (company === 'Select Casting') return 'SC';
+  if (company === 'Studio Awesome') return 'SA';
+  return company;
+};
+
+// ─── Digest Bar ───
+function DigestBar({ projects, tasks }: { projects: Project[]; tasks: Task[] }) {
+  const { weekday, dayDate } = formatToday();
+  const inProgressCount = projects.filter(p => p.status === 'In Progress').length;
+  const activeTaskCount = tasks.filter(t => t.column === 'In Progress').length;
+  const offlineProjects = projects.filter(p => p.liveStatus === 'offline');
+
+  return (
+    <div style={{ ...CARD_STYLE, marginBottom: SPACE.sectionGap }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
+        <div>
+          <div style={{ fontSize: '18px', fontWeight: 700, color: COLORS.textPrimary }}>
+            {weekday}, {dayDate}
+          </div>
+          <div style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textMuted, marginTop: '4px' }}>
+            {inProgressCount} project{inProgressCount !== 1 ? 's' : ''} in progress
+            {' · '}
+            {activeTaskCount} active task{activeTaskCount !== 1 ? 's' : ''}
+          </div>
+        </div>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          {QUICK_LINKS.map(link => (
+            <a
+              key={link.id}
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                fontSize:        FONT_SIZE.badge,
+                color:           COLORS.textSecondary,
+                textDecoration:  'none',
+                padding:         '4px 10px',
+                border:          `1px solid ${COLORS.border}`,
+                borderRadius:    '20px',
+                backgroundColor: COLORS.background,
+              }}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Alert strip for offline projects */}
+      {offlineProjects.length > 0 && (
+        <div style={{ marginTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          {offlineProjects.map(p => (
+            <div key={p.id} style={{
+              padding:         '6px 12px',
+              backgroundColor: '#2d1b1b',
+              border:          `1px solid ${COLORS.danger}`,
+              borderRadius:    '6px',
+              fontSize:        FONT_SIZE.cardBody,
+              color:           '#fca5a5',
+            }}>
+              ⚠️ <strong>{p.name}</strong> is offline
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Project Card ───
+function ProjectCard({
+  project, expanded, onToggle,
+}: {
+  project:  Project;
+  expanded: boolean;
+  onToggle: () => void;
+}) {
+  const short        = companyShort(project.company);
+  const companyColor = COMPANY_COLORS[project.company] ?? COLORS.textMuted;
+  const statusColor  = STATUS_COLORS[project.status]   ?? COLORS.textMuted;
+
+  return (
+    <div
+      onClick={onToggle}
+      style={{
+        ...CARD_STYLE,
+        cursor:      'pointer',
+        borderColor: expanded ? COLORS.borderActive : COLORS.border,
+        transition:  'border-color 0.2s',
+      }}
+    >
+      {/* Header: name + company badge */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+        <span style={{ fontWeight: FONT_WEIGHT.cardTitle, fontSize: FONT_SIZE.cardTitle, color: COLORS.textPrimary, flex: 1, marginRight: '0.5rem' }}>
+          {project.name}
+        </span>
+        <span style={badgeStyle(companyColor)}>{short}</span>
+      </div>
+
+      {/* Description */}
+      <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textSecondary, margin: '0 0 0.75rem', lineHeight: 1.5 }}>
+        {expanded ? project.description : truncate(project.description, 90)}
+      </p>
+
+      {/* Status dot + progress % */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: statusColor }} />
+          <span style={{ fontSize: FONT_SIZE.small, color: statusColor }}>{project.status}</span>
+        </div>
+        <span style={{ fontSize: FONT_SIZE.cardBody, fontWeight: 700, color: COLORS.accentOrange }}>
+          {project.progress}%
+        </span>
+      </div>
+
+      {/* Progress bar */}
+      <div style={{ height: 6, backgroundColor: COLORS.border, borderRadius: 3, overflow: 'hidden', marginBottom: expanded ? '0.75rem' : 0 }}>
+        <div style={{ height: '100%', width: `${project.progress}%`, backgroundColor: COLORS.accentOrange, borderRadius: 3 }} />
+      </div>
+
+      {/* Expanded details */}
+      {expanded && (
+        <div style={{ borderTop: `1px solid ${COLORS.border}`, paddingTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          {project.url && (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              onClick={e => e.stopPropagation()}
+              style={{ fontSize: FONT_SIZE.small, color: COLORS.accentBlue, textDecoration: 'none' }}
+            >
+              {project.url} ↗
+            </a>
+          )}
+          {project.notes && (
+            <p style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textSecondary, margin: 0, lineHeight: 1.5 }}>
+              {project.notes}
+            </p>
+          )}
+          <Link
+            href="/projects"
+            onClick={e => e.stopPropagation()}
+            style={{ fontSize: FONT_SIZE.small, color: COLORS.textMuted, textDecoration: 'none', alignSelf: 'flex-end', marginTop: '0.25rem' }}
+          >
+            View in Projects →
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Page ───
 export default function OverviewPage() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [tasks, setTasks] = useState<Task[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [tasks,    setTasks]    = useState<Task[]>([]);
+  const [loading,  setLoading]  = useState(true);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('/api/projects')
       .then(r => r.json())
-      .then(data => {
-        setProjects(data.projects || []);
-        setTasks(data.tasks || []);
+      .then((data: { projects: Project[]; tasks: Task[] }) => {
+        setProjects(data.projects ?? []);
+        setTasks(data.tasks ?? []);
       })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
 
-  const activeTasks = tasks.filter(t => t.column === 'In Progress');
   const inProgressProjects = projects.filter(p => p.status === 'In Progress');
+  const activeTasks        = tasks.filter(t => t.column === 'In Progress');
+  const shownTasks         = activeTasks.slice(0, MAX_TASKS_SHOWN);
 
   return (
-    <div style={{ padding: '2rem', fontFamily: '-apple-system, Helvetica, sans-serif', minHeight: '100vh' }}>
+    <div style={{ padding: SPACE.pagePadding, minHeight: '100vh' }}>
 
-      {/* Digest Bar */}
-      <div style={{
-        backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
-        borderRadius: '10px', padding: '1.25rem', marginBottom: '2rem',
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem',
-      }}>
-        <div>
-          <div style={{ fontWeight: '700', fontSize: '1.1rem', color: '#f0f0f0' }}>{today()}</div>
-          <div style={{ color: '#6b7280', fontSize: '0.9rem', marginTop: '4px' }}>
-            {inProgressProjects.length} projects in progress · {activeTasks.length} active tasks
-          </div>
-        </div>
-        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-          {['mission-control-v1', 'ai-mix-platform', 'select-casting-lead-gen-smb-agencies'].map(id => (
-            VERCEL_URLS[id] && (
-              <a key={id} href={VERCEL_URLS[id]} target="_blank" rel="noreferrer"
-                style={{ fontSize: '0.8rem', color: '#9ca3af', textDecoration: 'none', padding: '4px 10px', border: '1px solid #2a2d3a', borderRadius: '4px' }}>
-                {id === 'mission-control-v1' ? 'MC ↗' : id === 'ai-mix-platform' ? 'AI Mix ↗' : 'CRM ↗'}
-              </a>
-            )
-          ))}
-        </div>
-      </div>
+      {/* ─── Digest Bar ─── */}
+      {!loading && <DigestBar projects={projects} tasks={tasks} />}
 
-      {loading && <p style={{ color: '#6b7280' }}>Loading...</p>}
+      {loading && (
+        <p style={{ color: COLORS.textMuted, fontSize: FONT_SIZE.cardBody }}>Loading…</p>
+      )}
 
-      {/* Projects Grid */}
       {!loading && (
         <>
-          <h2 style={{ color: '#6b7280', fontSize: '0.85rem', fontWeight: '600', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            Projects
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
-            {projects.map(project => {
-              const url = VERCEL_URLS[project.id];
-              const isExpanded = expanded === project.id;
-              return (
-                <div key={project.id} style={{
-                  backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
-                  borderRadius: '10px', padding: '1.25rem', cursor: 'pointer',
-                  transition: 'border-color 0.2s',
-                }} onClick={() => setExpanded(isExpanded ? null : project.id)}>
-
-                  {/* Header row */}
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                    <span style={{ fontWeight: '700', fontSize: '1rem', color: '#f0f0f0', flex: 1, marginRight: '0.5rem' }}>
-                      {project.name}
-                    </span>
-                    <span style={{
-                      backgroundColor: COMPANY_COLORS[project.company] || '#6b7280',
-                      color: 'white', padding: '2px 7px',
-                      borderRadius: '4px', fontSize: '0.7rem', fontWeight: '600', whiteSpace: 'nowrap',
-                    }}>
-                      {project.company}
-                    </span>
-                  </div>
-
-                  {/* Description */}
-                  <p style={{ color: '#9ca3af', fontSize: '0.85rem', margin: '0 0 0.75rem', lineHeight: 1.4 }}>
-                    {truncate(project.description, 80)}
-                  </p>
-
-                  {/* Status + Progress */}
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: STATUS_COLORS[project.status] || '#6b7280' }} />
-                      <span style={{ fontSize: '0.8rem', color: STATUS_COLORS[project.status] || '#6b7280' }}>{project.status}</span>
-                    </div>
-                    <span style={{ fontSize: '0.85rem', fontWeight: '700', color: '#f97316' }}>{project.progress}%</span>
-                  </div>
-
-                  {/* Progress bar */}
-                  <div style={{ height: 6, backgroundColor: '#2a2d3a', borderRadius: 3, marginBottom: '0.75rem', overflow: 'hidden' }}>
-                    <div style={{ height: '100%', width: `${project.progress}%`, backgroundColor: '#f97316', borderRadius: 3 }} />
-                  </div>
-
-                  {/* Vercel link */}
-                  {url && (
-                    <a href={url} target="_blank" rel="noreferrer"
-                      onClick={e => e.stopPropagation()}
-                      style={{ fontSize: '0.75rem', color: '#6b7280', textDecoration: 'none' }}>
-                      Open ↗
-                    </a>
-                  )}
-
-                  {/* Expanded notes */}
-                  {isExpanded && project.notes && (
-                    <div style={{ marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid #2a2d3a' }}>
-                      <p style={{ color: '#9ca3af', fontSize: '0.8rem', lineHeight: 1.5 }}>{project.notes}</p>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+          {/* ─── Projects Grid ─── */}
+          <p style={SECTION_LABEL_STYLE}>In Progress</p>
+          <div style={{
+            display:             'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+            gap:                 SPACE.cardGap,
+            marginBottom:        SPACE.sectionGap,
+          }}>
+            {inProgressProjects.map(project => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                expanded={expanded === project.id}
+                onToggle={() => setExpanded(prev => prev === project.id ? null : project.id)}
+              />
+            ))}
+            {inProgressProjects.length === 0 && (
+              <p style={{ color: COLORS.textMuted, fontSize: FONT_SIZE.cardBody }}>No projects in progress.</p>
+            )}
           </div>
 
-          {/* Active Tasks */}
+          {/* ─── Active Tasks ─── */}
           {activeTasks.length > 0 && (
             <>
-              <h2 style={{ color: '#6b7280', fontSize: '0.85rem', fontWeight: '600', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                Active Tasks
-              </h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                {activeTasks.map(task => (
-                  <div key={task.id} style={{
-                    backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
-                    borderRadius: '8px', padding: '0.75rem 1rem',
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                  }}>
-                    <span style={{ color: '#f0f0f0', fontSize: '0.9rem' }}>{task.title}</span>
-                    <span style={{
-                      backgroundColor: ASSIGNEE_COLORS[task.assignee] || '#6b7280',
-                      color: 'white', padding: '2px 8px',
-                      borderRadius: '4px', fontSize: '0.75rem', fontWeight: '500', whiteSpace: 'nowrap',
-                    }}>
+              <p style={SECTION_LABEL_STYLE}>Active Tasks</p>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                {shownTasks.map((task, i) => (
+                  <div
+                    key={task.id}
+                    style={{
+                      display:        'flex',
+                      alignItems:     'center',
+                      justifyContent: 'space-between',
+                      padding:        '0.625rem 0',
+                      borderBottom:   i < shownTasks.length - 1 ? `1px solid ${COLORS.border}` : 'none',
+                    }}
+                  >
+                    <span style={{ fontSize: FONT_SIZE.cardBody, color: COLORS.textPrimary }}>
+                      {task.title}
+                    </span>
+                    <span style={badgeStyle(ASSIGNEE_COLORS[task.assignee] ?? COLORS.textMuted)}>
                       {task.assignee}
                     </span>
                   </div>
                 ))}
               </div>
+              {activeTasks.length > MAX_TASKS_SHOWN && (
+                <Link
+                  href="/tasks"
+                  style={{ fontSize: FONT_SIZE.small, color: COLORS.textMuted, textDecoration: 'none', display: 'block', marginTop: '0.75rem' }}
+                >
+                  View all {activeTasks.length} tasks →
+                </Link>
+              )}
             </>
           )}
         </>
