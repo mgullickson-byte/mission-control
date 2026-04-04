@@ -7,9 +7,11 @@ import fs from 'fs';
 import path from 'path';
 
 // ─── Constants ───
-const WORKSPACE_PATH = '/Users/henry/.openclaw/workspace/mission-control/';
-const PROJECTS_FILE = path.join(WORKSPACE_PATH, 'projects.json');
-const TASKS_FILE = path.join(WORKSPACE_PATH, 'tasks.json');
+// data/ lives inside the Next.js project root — works locally and on Vercel.
+// Do NOT use absolute Mac paths here; they break in cloud deployments.
+const DATA_DIR = path.join(process.cwd(), 'data');
+const PROJECTS_FILE = path.join(DATA_DIR, 'projects.json');
+const TASKS_FILE = path.join(DATA_DIR, 'tasks.json');
 const STATUS_CHECK_TIMEOUT_MS = 3000;
 
 // Hardcoded Vercel URLs per project ID

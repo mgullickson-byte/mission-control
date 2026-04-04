@@ -7,8 +7,12 @@ import fs from 'fs';
 import path from 'path';
 
 // ─── Constants ───
-const MEMORY_DIR = '/Users/henry/.openclaw/workspace/memory/';
-const LONG_TERM_MEMORY_FILE = '/Users/henry/.openclaw/workspace/MEMORY.md';
+// Memory files live in the OpenClaw workspace on the Mac — they are NOT committed
+// to git and are NOT available on Vercel. The try/catch fallbacks in getMemoryEntries()
+// and getLongTermMemory() handle this gracefully by returning [] and '' respectively.
+// To surface memory in production, consider a Vercel KV or API sync in future.
+const MEMORY_DIR = path.join(process.cwd(), 'data', 'memory');
+const LONG_TERM_MEMORY_FILE = path.join(process.cwd(), 'data', 'MEMORY.md');
 const DATE_FILE_PATTERN = /^\d{4}-\d{2}-\d{2}\.md$/;
 const PREVIEW_LENGTH = 150;
 
