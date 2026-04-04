@@ -1,0 +1,75 @@
+status,first_name,last_name,company_name,title,website,email,city,notes,added_date,source
+Pending,John,Pratt,Energy BBDO,"EVP, Head of Production",energybbdo.com,john.pratt@energybbdo.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Stefeni,Tormanen,Energy BBDO,Senior Producer,energybbdo.com,stefeni.tormanen@energybbdo.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Nina,Xoomsai,Energy BBDO,"VP, Senior Producer",energybbdo.com,nina.xoomsai@energybbdo.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Serena,Lignel,Highdive,Senior Producer,highdiveus.com,serena.lignel@highdiveus.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Abby,Merhar,Highdive,Producer,highdiveus.com,abby.merhar@highdiveus.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Henry,Reed,Highdive,Producer / Production Manager,highdiveus.com,henry.reed@highdiveus.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jack,Levy,Manifest,Executive Producer,manifest.com,jack.levy@manifest.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Mark,Knell,Manifest,Executive Producer,manifest.com,mark.knell@manifest.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Shaan,Sharma,Manifest,Executive Producer,manifest.com,shaan.sharma@manifest.com,Chicago,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,David,Emery,DDB Chicago,Executive Producer and Head of Production,ddb.com,demery@ddb.com,Chicago,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Brian,Winterton,DDB Chicago,Head of Studio Production,ddb.com,bwinterton@ddb.com,Chicago,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Jarrett,Hughes,DDB Chicago,Associate Producer,ddb.com,jhughes@ddb.com,Chicago,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Ruben,Mercadal,Droga5,Global Head of Production,droga5.com,ruben.mercadal@droga5.com,New York,Format: first_initial_last,2026-04-02,Agency Pipeline v2
+Pending,Adam,Vevang,Droga5,"Senior Producer, Film",droga5.com,adam.vevang@droga5.com,New York,Format: first_initial_last,2026-04-02,Agency Pipeline v2
+Pending,Sally,Brewin,Wieden+Kennedy NY,Senior Producer,wk.com,sally.brewin@wk.com,New York,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Lynn,Louria,The Richards Group,Director of Production,richards.com,lynn.louria@richards.com,Dallas,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Kim,Alexander,The Richards Group,Broadcast Producer,richards.com,kim.alexander@richards.com,Dallas,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Laurie,Shannon,The Richards Group,Broadcast Producer,richards.com,laurie.shannon@richards.com,Dallas,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Peter,Atherton,GSD&M,Senior Content Producer,gsdm.com,peter.atherton@gsdm.com,Dallas,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Steve,Shaw,GSD&M,Producer,gsdm.com,steve.shaw@gsdm.com,Dallas,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Tara,Westberg,Dieste,Senior Producer,dieste.com,tara.westberg@dieste.com,Dallas,Format: first_initial last,2026-04-02,Agency Pipeline v2
+Pending,Matt,Maples,Dieste,Senior Producer,dieste.com,matt.maples@dieste.com,Dallas,Format: first_initial last,2026-04-02,Agency Pipeline v2
+Pending,Guillermo,Dieste,Dieste,"Filmmaker (Note: While not explicitly listed as a production role, he is involved in creating content which could be considered part of the production process)",dieste.com,guillermo.dieste@dieste.com,Dallas,Format: first_initial last,2026-04-02,Agency Pipeline v2
+Pending,Fallon,Jethroe,Fallon,Podcast Executive Producer,fallon.com,fallon.jethroe@fallon.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Debbie,Fallon,Fallon,Executive Producer - LIVE Events,fallon.com,debbie.fallon@fallon.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Monique,H.,Fallon,Associate Producer - Fallon,fallon.com,monique.h.@fallon.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Kristoffer,Knutson,mono,Executive Producer,monoagency.com,kristoffer.knutson@monoagency.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jungsuk,Ha,mono,Head Producer,monoagency.com,jungsuk.ha@monoagency.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Topper,Anton,mono,Senior Post Producer,monoagency.com,topper.anton@monoagency.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Chelsey,Werth,Colle McVoy,Senior Producer,collemcvoy.com,chelsey.werth@collemcvoy.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jada,Jesberg,Colle McVoy,Producer,collemcvoy.com,jada.jesberg@collemcvoy.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jonathan,Wachala,Colle McVoy,Senior Producer,collemcvoy.com,jonathan.wachala@collemcvoy.com,Minneapolis,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Tara,Leinwohl,22squared,Freelance Executive Producer,22squared.com,tara.leinwohl@22squared.com,Atlanta,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Patrick,Clarici,22squared,Producer,22squared.com,patrick.clarici@22squared.com,Atlanta,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Sarah,Suits,22squared,Digital Producer,22squared.com,sarah.suits@22squared.com,Atlanta,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Patrick,Carney,Arnold Worldwide,Senior Producer,arnoldworldwide.com,pcarney@arnoldworldwide.com,Boston,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Dylan,Mizner,Arnold Worldwide,Executive Producer,arnoldworldwide.com,dmizner@arnoldworldwide.com,Boston,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,William,Gregg,Arnold Worldwide,Producer/Editor,arnoldworldwide.com,wgregg@arnoldworldwide.com,Boston,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Amy,Jo Deguzis,Mullen Lowe Boston,SVP/Executive Producer,mullenlowe.com,amy.jo deguzis@mullenlowe.com,Boston,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Mary,Robinson,Mullen Lowe Boston,"VP, Group Executive Producer",mullenlowe.com,mary.robinson@mullenlowe.com,Boston,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Matt,Abramson,Mullen Lowe Boston,Executive Producer,mullenlowe.com,matt.abramson@mullenlowe.com,Boston,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Richard,Colombus,Creature,Executive Producer,welcometocreature.com,richard.colombus@welcometocreature.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Kathy,Fox,Creature,Senior Producer,welcometocreature.com,kathy.fox@welcometocreature.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jon,Yap,Creature,Executive Producer,welcometocreature.com,jon.yap@welcometocreature.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Trinity,Wheeler,T3,Broadway Producer,t3.com,trinity.wheeler@t3.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Lisa,Sarver,T3,Sr. Producer,t3.com,lisa.sarver@t3.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Krista,Gilbert,T3,Associate Producer,t3.com,krista.gilbert@t3.com,Seattle,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Cristina,Matracia,72andSunny LA,Interim Head of Production,72andsunny.com,cristina.matracia@72andsunny.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Will,Conover,RPA,Producer,rpa.com,wconover@rpa.com,Los Angeles,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Daniel,Ott,RPA,Senior Producer,rpa.com,dott@rpa.com,Los Angeles,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Kaylynn,Dutcher,RPA,"VP, Executive Producer",rpa.com,kdutcher@rpa.com,Los Angeles,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Jeri,Low,Zambezi,Executive Producer,zambeziagency.com,jeri.low@zambeziagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Morgan,Menco,Zambezi,Senior Producer,zambeziagency.com,morgan.menco@zambeziagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Faye,Armstrong,Zambezi,Senior Producer,zambeziagency.com,faye.armstrong@zambeziagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Jill,Rothman,Mistress Agency,Head of Production,mistressagency.com,jill.rothman@mistressagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Emma,Duncan,Mistress Agency,Executive Producer,mistressagency.com,emma.duncan@mistressagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Deb,Archambault,Mistress Agency,Director of Unprecedented Productions,mistressagency.com,deb.archambault@mistressagency.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Sarah,Smith,Team One,Executive Producer,teamone-usa.com,sarah.smith@teamone-usa.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Scott,Tinter,Team One,Senior Production Leader,teamone-usa.com,scott.tinter@teamone-usa.com,Los Angeles,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Luke,Power,Made Movement,Head of Production & Executive Producer,mademovement.com,lpower@mademovement.com,Denver,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Sherri,Levy,Made Movement,Head of Production,mademovement.com,slevy@mademovement.com,Denver,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,David,Williams,Made Movement,Transmission,mademovement.com,dwilliams@mademovement.com,Denver,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Jackie,Nelms,Goodby Silverstein & Partners,Producer,gspsf.com,jackie.nelms@gspsf.com,San Francisco,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Sara,Ward,Goodby Silverstein & Partners,Executive Producer,gspsf.com,sara.ward@gspsf.com,San Francisco,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Christine,Oh,Goodby Silverstein & Partners,Executive Producer,gspsf.com,christine.oh@gspsf.com,San Francisco,Format: first_last,2026-04-02,Agency Pipeline v2
+Pending,Dani,Hiravy,Mekanism,Senior Producer,mekanism.com,dani.hiravy@mekanism.com,San Francisco,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Chris,Spencer,Mekanism,Broadcast Producer,mekanism.com,chris.spencer@mekanism.com,San Francisco,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Laurentiu,Garofeanu,Mekanism,Producer,mekanism.com,laurentiu.garofeanu@mekanism.com,San Francisco,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Kelli,Rose Bratvold,BarrettSF,Senior Producer,barrettsf.com,kelli.rose bratvold@barrettsf.com,San Francisco,Format: first.last,2026-04-02,Agency Pipeline v2
+Pending,Ioanna,Bolomyti,ARGONAUT,Executive Producer,argonautinc.com,ibolomyti@argonautinc.com,San Francisco,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Panos,Papahadzis,ARGONAUT,Executive Producer,argonautinc.com,ppapahadzis@argonautinc.com,San Francisco,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Nefeli,Sarri,ARGONAUT,Script / Director,argonautinc.com,nsarri@argonautinc.com,San Francisco,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Ian,Baptiste,Duncan Channon,Executive Producer,duncanchannon.com,ibaptiste@duncanchannon.com,San Francisco,Format: flast,2026-04-02,Agency Pipeline v2
+Pending,Amanda,Chaffin,Duncan Channon,Senior Producer,duncanchannon.com,achaffin@duncanchannon.com,San Francisco,Format: flast,2026-04-02,Agency Pipeline v2

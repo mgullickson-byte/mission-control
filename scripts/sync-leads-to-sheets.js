@@ -57,6 +57,30 @@ const SHEET_TABS = [
     files: ['studio-awesome-local-leads.csv']
   },
   {
+    title: 'SC - Agency Contacts (All Markets)',
+    type: 'lead',
+    headers: ['status', 'first_name', 'last_name', 'company_name', 'title', 'website', 'email', 'city', 'notes', 'added_date', 'source'],
+    files: ['all-agency-contacts.csv']
+  },
+  {
+    title: 'SC - SF Agencies',
+    type: 'lead',
+    headers: ['status', 'first_name', 'last_name', 'company_name', 'title', 'website', 'email', 'city', 'notes', 'added_date', 'source'],
+    files: ['sf-agencies.csv']
+  },
+  {
+    title: 'SC - Active Clients',
+    type: 'lead',
+    headers: ['status', 'first_name', 'last_name', 'company_name', 'title', 'website', 'email', 'city', 'notes', 'added_date', 'source'],
+    files: ['sc-active-clients-sheet.csv']
+  },
+  {
+    title: 'SC - Recording Studios',
+    type: 'lead',
+    headers: ['status', 'first_name', 'last_name', 'company_name', 'title', 'website', 'email', 'city', 'notes', 'added_date', 'source'],
+    files: ['sc-recording-studios.csv']
+  },
+  {
     title: 'SA - Email Contacts',
     type: 'email_contacts',
     headers: ['status', 'name', 'email', 'company_guess', 'company_domain', 'refined_industry', 'industry_segment', 'mailbox_owner', 'message_count', 'adr_related', 'adr_message_count', 'last_seen', 'mv_result', 'mv_quality', 'relationship_type_mike', 'relationship_confidence_mike', 'relationship_type_josiah', 'relationship_confidence_josiah', 'linkedin_url'],
@@ -180,6 +204,22 @@ function normalizeLeadRow(sourceFile, record) {
   const website = String(record.website || '').trim();
   const companyName = String(record.company_name || record.company || record.name || '').trim();
   const notes = String(record.notes || '').trim();
+
+  if (sourceFile === 'all-agency-contacts.csv' || sourceFile === 'sf-agencies.csv' || sourceFile === 'sc-active-clients-sheet.csv' || sourceFile === 'sc-recording-studios.csv') {
+    return {
+      status: STATUS_PENDING,
+      first_name: String(record.first_name || '').trim(),
+      last_name: String(record.last_name || '').trim(),
+      email,
+      company_name: companyName,
+      title: String(record.title || '').trim(),
+      city: String(record.city || '').trim(),
+      website,
+      notes,
+      source,
+      added_date: String(record.added_date || '').trim()
+    };
+  }
 
   if (sourceFile === 'agency-production-contacts.csv') {
     return {
