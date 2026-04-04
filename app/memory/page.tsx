@@ -1,425 +1,131 @@
-"use client";
+'use client';
 
-import { useEffect, useMemo, useRef, useState } from "react";
+// app/memory/page.tsx
+// ─── Memory Page ───
+// Shows daily memory logs and long-term memory. Supports live search.
 
-type MemoryDay = {
+import { useEffect, useState, useRef } from 'react';
+
+interface MemoryEntry {
   date: string;
-  summary: string;
+  filename: string;
   content: string;
-};
-
-// ─── Markdown renderer ──────────────────────────────────────────────────────
-
-function parseInline(text: string): React.ReactNode {
-  const parts: React.ReactNode[] = [];
-  let remaining = text;
-  let key = 0;
-
-  while (remaining.length > 0) {
-    // Bold **text**
-    const boldIdx = remaining.indexOf("**");
-    const codeIdx = remaining.indexOf("`");
-    const nextSpecial =
-      boldIdx === -1 && codeIdx === -1
-        ? -1
-        : boldIdx === -1
-        ? codeIdx
-        : codeIdx === -1
-        ? boldIdx
-        : Math.min(boldIdx, codeIdx);
-
-    if (nextSpecial === -1) {
-      parts.push(remaining);
-      break;
-    }
-
-    if (nextSpecial > 0) {
-      parts.push(<span key={key++}>{remaining.slice(0, nextSpecial)}</span>);
-      remaining = remaining.slice(nextSpecial);
-      continue;
-    }
-
-    if (remaining.startsWith("**")) {
-      const end = remaining.indexOf("**", 2);
-      if (end !== -1) {
-        parts.push(<strong key={key++}>{remaining.slice(2, end)}</strong>);
-        remaining = remaining.slice(end + 2);
-        continue;
-      }
-    }
-
-    if (remaining.startsWith("`")) {
-      const end = remaining.indexOf("`", 1);
-      if (end !== -1) {
-        parts.push(
-          <code key={key++} className="md-inline-code">
-            {remaining.slice(1, end)}
-          </code>
-        );
-        remaining = remaining.slice(end + 1);
-        continue;
-      }
-    }
-
-    parts.push(<span key={key++}>{remaining[0]}</span>);
-    remaining = remaining.slice(1);
-  }
-
-  if (parts.length === 0) return null;
-  if (parts.length === 1) return parts[0];
-  return <>{parts}</>;
+  preview: string;
 }
 
-function MarkdownTable({ lines }: { lines: string[] }) {
-  const parseCells = (line: string) =>
-    line
-      .split("|")
-      .slice(1, -1)
-      .map((c) => c.trim());
-
-  const sepIdx = lines.findIndex((l) => /^\|[\s|:-]+\|$/.test(l.trim()));
-  const headerLines = sepIdx > 0 ? lines.slice(0, sepIdx) : [];
-  const bodyLines = sepIdx > 0 ? lines.slice(sepIdx + 1) : lines;
-
-  return (
-    <div className="md-table-wrap">
-      <table className="md-table">
-        {headerLines.length > 0 && (
-          <thead>
-            {headerLines.map((line, i) => (
-              <tr key={i}>
-                {parseCells(line).map((cell, j) => (
-                  <th key={j}>{parseInline(cell)}</th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-        )}
-        <tbody>
-          {bodyLines.filter((l) => l.trim()).map((line, i) => (
-            <tr key={i}>
-              {parseCells(line).map((cell, j) => (
-                <td key={j}>{parseInline(cell)}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+interface MemoryResponse {
+  entries: MemoryEntry[];
+  longTerm: string;
 }
-
-function MarkdownContent({ content }: { content: string }) {
-  const nodes = useMemo(() => {
-    const lines = content.split("\n");
-    const result: React.ReactNode[] = [];
-    let i = 0;
-
-    while (i < lines.length) {
-      const line = lines[i];
-
-      // Empty line
-      if (!line.trim()) {
-        i++;
-        continue;
-      }
-
-      // Horizontal rule
-      if (/^---+$/.test(line.trim())) {
-        result.push(<hr key={i} className="md-hr" />);
-        i++;
-        continue;
-      }
-
-      // Headings
-      const h4 = line.match(/^#### (.+)/);
-      if (h4) {
-        result.push(<h4 key={i} className="md-h4">{parseInline(h4[1])}</h4>);
-        i++;
-        continue;
-      }
-      const h3 = line.match(/^### (.+)/);
-      if (h3) {
-        result.push(<h3 key={i} className="md-h3">{parseInline(h3[1])}</h3>);
-        i++;
-        continue;
-      }
-      const h2 = line.match(/^## (.+)/);
-      if (h2) {
-        result.push(<h2 key={i} className="md-h2">{parseInline(h2[1])}</h2>);
-        i++;
-        continue;
-      }
-      const h1 = line.match(/^# (.+)/);
-      if (h1) {
-        result.push(<h1 key={i} className="md-h1">{parseInline(h1[1])}</h1>);
-        i++;
-        continue;
-      }
-
-      // Fenced code block
-      if (line.startsWith("```")) {
-        const codeLines: string[] = [];
-        const lang = line.slice(3).trim();
-        i++;
-        while (i < lines.length && !lines[i].startsWith("```")) {
-          codeLines.push(lines[i]);
-          i++;
-        }
-        i++; // skip closing ```
-        result.push(
-          <pre key={i} className="md-pre" data-lang={lang || undefined}>
-            <code>{codeLines.join("\n")}</code>
-          </pre>
-        );
-        continue;
-      }
-
-      // Table
-      if (line.includes("|") && line.trim().startsWith("|")) {
-        const tableLines: string[] = [line];
-        i++;
-        while (
-          i < lines.length &&
-          lines[i].includes("|") &&
-          lines[i].trim().startsWith("|")
-        ) {
-          tableLines.push(lines[i]);
-          i++;
-        }
-        result.push(<MarkdownTable key={`table-${i}`} lines={tableLines} />);
-        continue;
-      }
-
-      // Numbered list
-      if (/^\d+\. /.test(line)) {
-        const items: string[] = [];
-        while (i < lines.length && /^\d+\. /.test(lines[i])) {
-          items.push(lines[i].replace(/^\d+\. /, ""));
-          i++;
-        }
-        result.push(
-          <ol key={`ol-${i}`} className="md-ol">
-            {items.map((item, j) => (
-              <li key={j}>{parseInline(item)}</li>
-            ))}
-          </ol>
-        );
-        continue;
-      }
-
-      // Bullet list
-      if (/^[-*] /.test(line)) {
-        const items: string[] = [];
-        while (i < lines.length && /^[-*] /.test(lines[i])) {
-          items.push(lines[i].replace(/^[-*] /, ""));
-          i++;
-        }
-        result.push(
-          <ul key={`ul-${i}`} className="md-ul">
-            {items.map((item, j) => (
-              <li key={j}>{parseInline(item)}</li>
-            ))}
-          </ul>
-        );
-        continue;
-      }
-
-      // Paragraph
-      result.push(
-        <p key={i} className="md-p">
-          {parseInline(line)}
-        </p>
-      );
-      i++;
-    }
-
-    return result;
-  }, [content]);
-
-  return <div className="md-body">{nodes}</div>;
-}
-
-// ─── Page ────────────────────────────────────────────────────────────────────
-
-const TODAY = new Date().toISOString().slice(0, 10);
 
 export default function MemoryPage() {
-  const [days, setDays] = useState<MemoryDay[]>([]);
-  const [total, setTotal] = useState(0);
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [query, setQuery] = useState("");
+  const [entries, setEntries] = useState<MemoryEntry[]>([]);
+  const [longTerm, setLongTerm] = useState('');
   const [loading, setLoading] = useState(true);
-  const todayRef = useRef<HTMLButtonElement>(null);
-  const sidebarRef = useRef<HTMLElement>(null);
+  const [query, setQuery] = useState('');
+  const [expanded, setExpanded] = useState<string | null>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    const load = async () => {
-      setLoading(true);
-      try {
-        const url = query.trim()
-          ? `/api/memory?q=${encodeURIComponent(query.trim())}`
-          : "/api/memory";
-        const res = await fetch(url);
-        if (!res.ok) return;
-        const data = await res.json();
-        setDays(data.days || []);
-        setTotal(data.total ?? data.days?.length ?? 0);
-      } catch {
-        // ignore
-      } finally {
-        setLoading(false);
+  const fetchMemory = async (q = '') => {
+    setLoading(true);
+    try {
+      const url = q ? `/api/memory?query=${encodeURIComponent(q)}` : '/api/memory';
+      const res = await fetch(url);
+      const data = await res.json();
+      if (q) {
+        setEntries(data);
+      } else {
+        setEntries((data as MemoryResponse).entries || []);
+        setLongTerm((data as MemoryResponse).longTerm || '');
       }
-    };
-    load();
-  }, [query]);
-
-  // Always select today on first load (even if no file exists yet)
-  useEffect(() => {
-    if (!loading && !selectedDate) {
-      setSelectedDate(TODAY);
+    } catch {
+      // silent fail
+    } finally {
+      setLoading(false);
     }
-  }, [loading, selectedDate]);
+  };
 
-  const selected = useMemo(() => {
-    if (!selectedDate) return null;
-    return days.find((d) => d.date === selectedDate) ?? null;
-  }, [days, selectedDate]);
+  useEffect(() => { fetchMemory(); }, []);
 
-  function jumpToToday() {
-    setSelectedDate(TODAY);
-    setTimeout(() => {
-      todayRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
-    }, 50);
-  }
-
-  function formatDate(dateStr: string) {
-    const d = new Date(dateStr + "T12:00:00");
-    return d.toLocaleDateString("en-US", {
-      weekday: "short",
-      month: "short",
-      day: "numeric",
-    });
-  }
-
-  const isToday = (dateStr: string) => dateStr === TODAY;
+  const handleSearch = (value: string) => {
+    setQuery(value);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => fetchMemory(value), 300);
+  };
 
   return (
-    <div className="memory-root">
-      <header className="memory-header">
-        <div>
-          <h1 className="memory-title">Memory</h1>
-          <p className="memory-subtitle">
-            Daily log — every day we worked together, in full.
-          </p>
-        </div>
-        <div className="memory-header-actions">
-          {total > 0 && (
-            <span className="memory-count-pill">{total} sessions</span>
-          )}
-          <button type="button" className="ghost-button" onClick={jumpToToday}>
-            Today
-          </button>
-        </div>
-      </header>
+    <div style={{ padding: '2rem', fontFamily: '-apple-system, Helvetica, sans-serif' }}>
+      <h1 style={{ fontSize: '2rem', fontWeight: '700', color: '#f0f0f0', marginBottom: '0.25rem' }}>Memory</h1>
+      <p style={{ color: '#6b7280', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+        Daily logs + long-term memory. Search across all entries.
+      </p>
 
-      <div className="memory-body">
-        {/* Sidebar */}
-        <aside className="memory-sidebar" ref={sidebarRef}>
-          <div className="memory-search-wrap">
-            <input
-              className="field-input memory-search-input"
-              placeholder="Search all days…"
-              value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
-                setSelectedDate(null);
-              }}
-            />
-          </div>
-          <ul className="memory-day-list">
-            {/* Pinned Today — always at top even when no log file exists yet */}
-            {!query && !days.some((d) => d.date === TODAY) && (
-              <li key="today-pin">
-                <button
-                  type="button"
-                  ref={todayRef}
-                  className={`memory-day-btn memory-day-btn-today${selectedDate === TODAY ? " memory-day-btn-active" : ""}`}
-                  onClick={() => setSelectedDate(TODAY)}
-                >
-                  <span className="memory-day-date-label">
-                    {formatDate(TODAY)}
-                    <span className="memory-today-dot" />
-                  </span>
-                  <span className="memory-day-preview">No log yet today.</span>
-                </button>
-              </li>
-            )}
-            {days.map((day) => {
-              const active = selected?.date === day.date;
-              const today = isToday(day.date);
-              return (
-                <li key={day.date}>
-                  <button
-                    type="button"
-                    ref={today ? todayRef : undefined}
-                    className={`memory-day-btn${active ? " memory-day-btn-active" : ""}${today ? " memory-day-btn-today" : ""}`}
-                    onClick={() => setSelectedDate(day.date)}
-                  >
-                    <span className="memory-day-date-label">
-                      {formatDate(day.date)}
-                      {today && <span className="memory-today-dot" />}
-                    </span>
-                    <span className="memory-day-preview">{day.summary}</span>
-                  </button>
-                </li>
-              );
-            })}
-            {!loading && days.length === 0 && (
-              <li className="memory-day-empty">
-                {query ? "No days match that search." : "No memory logs found."}
-              </li>
-            )}
-          </ul>
-        </aside>
+      {/* Search */}
+      <input
+        type="text"
+        placeholder="Search memory..."
+        value={query}
+        onChange={e => handleSearch(e.target.value)}
+        style={{
+          width: '100%', maxWidth: '500px', padding: '10px 14px',
+          backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
+          borderRadius: '8px', color: '#f0f0f0', fontSize: '0.95rem',
+          marginBottom: '2rem', outline: 'none',
+        }}
+      />
 
-        {/* Detail */}
-        <main className="memory-main">
-          {loading && !selected && selectedDate !== TODAY ? (
-            <div className="memory-empty">Loading…</div>
-          ) : selected ? (
-            <div className="memory-detail-card">
-              <div className="memory-detail-header">
-                <div>
-                  <h2 className="memory-detail-date">{formatDate(selected.date)}</h2>
-                  <p className="memory-detail-full-date">{selected.date}</p>
+      {loading && <p style={{ color: '#6b7280' }}>Loading...</p>}
+
+      {/* Daily Logs */}
+      {!loading && (
+        <div style={{ marginBottom: '3rem' }}>
+          <h2 style={{ color: '#f0f0f0', fontSize: '1.2rem', marginBottom: '1rem' }}>
+            Daily Logs ({entries.length})
+          </h2>
+          {entries.length === 0 && <p style={{ color: '#6b7280' }}>No entries found.</p>}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {entries.map(entry => (
+              <div key={entry.date} style={{
+                backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
+                borderRadius: '8px', padding: '1rem', cursor: 'pointer',
+              }} onClick={() => setExpanded(expanded === entry.date ? null : entry.date)}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ fontWeight: '700', fontSize: '1rem', color: '#f0f0f0' }}>{entry.date}</span>
+                  <span style={{ color: '#6b7280', fontSize: '0.8rem' }}>{expanded === entry.date ? '▲ collapse' : '▼ expand'}</span>
                 </div>
-                {isToday(selected.date) && (
-                  <span className="pill" style={{ alignSelf: "flex-start" }}>Today</span>
+                {expanded !== entry.date && (
+                  <p style={{ color: '#9ca3af', fontSize: '0.85rem', marginTop: '0.5rem', margin: '0.5rem 0 0' }}>
+                    {entry.preview}...
+                  </p>
+                )}
+                {expanded === entry.date && (
+                  <pre style={{
+                    color: '#d1d5db', fontSize: '0.8rem', marginTop: '0.75rem',
+                    whiteSpace: 'pre-wrap', wordBreak: 'break-word', lineHeight: 1.6,
+                  }}>
+                    {entry.content}
+                  </pre>
                 )}
               </div>
-              <MarkdownContent content={selected.content} />
-            </div>
-          ) : selectedDate === TODAY ? (
-            <div className="memory-detail-card">
-              <div className="memory-detail-header">
-                <div>
-                  <h2 className="memory-detail-date">{formatDate(TODAY)}</h2>
-                  <p className="memory-detail-full-date">{TODAY}</p>
-                </div>
-                <span className="pill" style={{ alignSelf: "flex-start" }}>Today</span>
-              </div>
-              <div className="memory-empty" style={{ marginTop: 24 }}>
-                No memory log for today yet. It will appear here once written.
-              </div>
-            </div>
-          ) : (
-            <div className="memory-empty">
-              {query ? "No results — try a different search." : "Select a day to read the log."}
-            </div>
-          )}
-        </main>
-      </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Long-term Memory */}
+      {!loading && !query && longTerm && (
+        <div>
+          <h2 style={{ color: '#f0f0f0', fontSize: '1.2rem', marginBottom: '1rem' }}>Long-term Memory</h2>
+          <pre style={{
+            backgroundColor: '#1a1d27', border: '1px solid #2a2d3a',
+            borderRadius: '8px', padding: '1.25rem', color: '#d1d5db',
+            fontSize: '0.8rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word',
+            lineHeight: 1.6, maxHeight: '600px', overflowY: 'auto',
+          }}>
+            {longTerm}
+          </pre>
+        </div>
+      )}
     </div>
   );
 }
