@@ -1,5 +1,8 @@
+/* ─── Mission Control Global Styles ─── */
+/* Design system: dark background, flat cards, orange accents. */
+
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -9,8 +12,8 @@
 
 body {
   margin: 0;
-  background: #f8fafc;
-  color: #0f172a;
+  background: #0f1117;
+  color: #f0f0f0;
 }
 
 .mc-nav {
@@ -61,7 +64,7 @@ body {
 }
 
 .mc-shell {
-  min-height: calc(100vh - 44px);
+  min-height: calc(100vh - 52px);
 }
 
 .app-shell {
