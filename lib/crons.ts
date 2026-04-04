@@ -27,7 +27,8 @@ export async function getCrons(): Promise<CronJob[]> {
       }
       try {
         const parsed = JSON.parse(stdout);
-        const crons = Array.isArray(parsed) ? parsed : (parsed.crons || []);
+        // openclaw cron list --json returns { jobs: [...] }
+        const crons = Array.isArray(parsed) ? parsed : (parsed.jobs || parsed.crons || []);
         resolve(crons as CronJob[]);
       } catch {
         resolve([]);
